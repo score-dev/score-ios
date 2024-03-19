@@ -11,6 +11,8 @@
 		FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C39692BA9914B00CC05AA /* ContentView.swift */; };
 		FD0C396C2BA9914D00CC05AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0C396B2BA9914D00CC05AA /* Assets.xcassets */; };
 		FD0C396F2BA9914D00CC05AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0C396E2BA9914D00CC05AA /* Preview Assets.xcassets */; };
+		FD0C39762BA9D99D00CC05AA /* PretendardVariable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */; };
+		FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C39792BA9DA4A00CC05AA /* Font+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		FD0C39692BA9914B00CC05AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD0C396B2BA9914D00CC05AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0C396E2BA9914D00CC05AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PretendardVariable.ttf; sourceTree = "<group>"; };
+		FD0C39782BA9D9DE00CC05AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FD0C39792BA9DA4A00CC05AA /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +56,10 @@
 		FD0C39662BA9914B00CC05AA /* Score */ = {
 			isa = PBXGroup;
 			children = (
+				FD0C39782BA9D9DE00CC05AA /* Info.plist */,
+				FD0C39772BA9D9AA00CC05AA /* Font */,
 				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
+				FD0C39792BA9DA4A00CC05AA /* Font+.swift */,
 				FD0C39692BA9914B00CC05AA /* ContentView.swift */,
 				FD0C396B2BA9914D00CC05AA /* Assets.xcassets */,
 				FD0C396D2BA9914D00CC05AA /* Preview Content */,
@@ -65,6 +73,14 @@
 				FD0C396E2BA9914D00CC05AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD0C39772BA9D9AA00CC05AA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +143,7 @@
 			files = (
 				FD0C396F2BA9914D00CC05AA /* Preview Assets.xcassets in Resources */,
 				FD0C396C2BA9914D00CC05AA /* Assets.xcassets in Resources */,
+				FD0C39762BA9D99D00CC05AA /* PretendardVariable.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
 				FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */,
 			);
@@ -275,6 +293,7 @@
 				DEVELOPMENT_TEAM = 4N97P5J52N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Score/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "스코어";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -311,6 +330,7 @@
 				DEVELOPMENT_TEAM = 4N97P5J52N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Score/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "스코어";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
