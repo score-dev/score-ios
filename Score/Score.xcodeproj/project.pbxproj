@@ -13,6 +13,7 @@
 		FD0C396F2BA9914D00CC05AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0C396E2BA9914D00CC05AA /* Preview Assets.xcassets */; };
 		FD0C39762BA9D99D00CC05AA /* PretendardVariable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */; };
 		FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C39792BA9DA4A00CC05AA /* Font+.swift */; };
+		FD0C397D2BA9E48400CC05AA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C397C2BA9E48400CC05AA /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PretendardVariable.ttf; sourceTree = "<group>"; };
 		FD0C39782BA9D9DE00CC05AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FD0C39792BA9DA4A00CC05AA /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		FD0C397C2BA9E48400CC05AA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,7 @@
 				FD0C39782BA9D9DE00CC05AA /* Info.plist */,
 				FD0C39772BA9D9AA00CC05AA /* Font */,
 				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
-				FD0C39792BA9DA4A00CC05AA /* Font+.swift */,
+				FD0C397B2BA9E47400CC05AA /* Extension */,
 				FD0C39692BA9914B00CC05AA /* ContentView.swift */,
 				FD0C396B2BA9914D00CC05AA /* Assets.xcassets */,
 				FD0C396D2BA9914D00CC05AA /* Preview Content */,
@@ -81,6 +83,15 @@
 				FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		FD0C397B2BA9E47400CC05AA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FD0C39792BA9DA4A00CC05AA /* Font+.swift */,
+				FD0C397C2BA9E48400CC05AA /* Color.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
+				FD0C397D2BA9E48400CC05AA /* Color.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
 				FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */,
 			);
