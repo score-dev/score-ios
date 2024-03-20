@@ -14,6 +14,14 @@ extension Color {
         case subBlueColor = 0x19114D
         case subGrayColor = 0xC7C7C7
         case subWhiteColor = 0xF5F6F8
+        
+        case subColor300 = 0xFF6C3E
+        case subColor200 = 0xFFD8CC
+        case subColor100 = 0xFFF0EC
+        
+        case grayColor300 = 0x494F58
+        case grayColor200 = 0x6B737F
+        case grayColor100 = 0xF3F4F7
     }
     
     //MARK: - init
@@ -42,7 +50,6 @@ extension Color {
         ForEach(Color.BrandColor.allCases,
                 id: \.rawValue) { color in
                 Rectangle()
-                    .frame(width: 100, height: 100)
                     .foregroundStyle(Color.brandColor(color: color))
         }
     }
