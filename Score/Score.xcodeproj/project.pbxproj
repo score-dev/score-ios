@@ -15,6 +15,7 @@
 		FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C39792BA9DA4A00CC05AA /* Font+.swift */; };
 		FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C397C2BA9E48400CC05AA /* Color+.swift */; };
 		FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4972BAB56AA0016F0A0 /* SCButton.swift */; };
+		FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FD0C39792BA9DA4A00CC05AA /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
 		FD0C397C2BA9E48400CC05AA /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		FD13D4972BAB56AA0016F0A0 /* SCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCButton.swift; sourceTree = "<group>"; };
+		FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FD13D4972BAB56AA0016F0A0 /* SCButton.swift */,
+				FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
 				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
 				FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
