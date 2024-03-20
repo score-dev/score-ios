@@ -76,6 +76,15 @@ extension Text {
     }
 }
 
+extension View {
+    func pretendard(_ style: Font.Pretendard.Style) -> some View {
+        let fontStyle = style.weightAndSize()
+        return self
+            .font(.custom(fontStyle.weight.rawValue,
+                          size: fontStyle.size.rawValue))
+    }
+}
+
 #Preview {
     VStack {
         Text("Pretendard Font Style")
