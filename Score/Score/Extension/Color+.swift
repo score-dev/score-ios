@@ -19,9 +19,18 @@ extension Color {
         case subColor200 = 0xFFD8CC
         case subColor100 = 0xFFF0EC
         
-        case grayColor300 = 0x494F58
-        case grayColor200 = 0x6B737F
+//        case grayColor300 = 0x494F58
+//        case grayColor200 = 0x6B737F
         case grayColor100 = 0xF3F4F7
+        
+        case subRed = 0xFF4343
+        case subLightBlue = 0x1975FF
+        
+        case textColor1 = 0x2A3038
+        case textColor2 = 0x494F58
+        case textColor3 = 0xB2B6C2
+        
+        case iconColor = 0x6B737F
     }
     
     //MARK: - init

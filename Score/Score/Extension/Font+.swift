@@ -74,6 +74,12 @@ extension Text {
         return self.font(.custom(fontStyle.weight.rawValue,
                           size: fontStyle.size.rawValue))
     }
+    
+    func pretendard(weight: Font.Pretendard.Weight,
+                    size: Font.Pretendard.Size) -> Text {
+        self.font(.custom(weight.rawValue,
+                          size: size.rawValue))
+    }
 }
 
 extension View {
@@ -82,6 +88,12 @@ extension View {
         return self
             .font(.custom(fontStyle.weight.rawValue,
                           size: fontStyle.size.rawValue))
+    }
+    
+    func pretendard(weight: Font.Pretendard.Weight,
+                    size: Font.Pretendard.Size) -> some View {
+        self.font(.custom(weight.rawValue,
+                          size: size.rawValue))
     }
 }
 
