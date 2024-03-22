@@ -29,7 +29,7 @@ struct SCCheckBox: View {
         } else {
             Image(systemName: "checkmark")
                 .frame(width: 17, height: 17)
-                .foregroundStyle(Color.brandColor(color: .grayColor200))
+                .foregroundStyle(Color.brandColor(color: .iconColor))
                 .padding(5)
                 .background(Color.brandColor(color: .grayColor100),
                             in: Circle())
