@@ -30,14 +30,14 @@ struct SCRadioButton: View {
                         .frame(width: 10,
                                height: 10)
                 }
-                .foregroundStyle(Color.brandColor(color: .mainColor))
+                .foregroundStyle(Color.brandColor(color: .main))
             
         } else {
             Circle()
                 .stroke()
                 .frame(width: 20,
                        height: 20)
-                .foregroundStyle(Color.brandColor(color: .subGrayColor))
+                .foregroundStyle(Color.brandColor(color: .gray1))
         }
     }
 }

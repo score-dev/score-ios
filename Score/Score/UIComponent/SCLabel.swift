@@ -47,11 +47,11 @@ struct SCLabel: View {
                 .resizable()
                 .frame(width: imageSize,
                        height: imageSize)
-                .foregroundStyle(Color.brandColor(color: .iconColor))
+                .foregroundStyle(Color.brandColor(color: .icon))
             
             Text(title)
                 .pretendard(fontStyle)
-                .foregroundStyle(Color.brandColor(color: .textColor2))
+                .foregroundStyle(Color.brandColor(color: .text2))
         }
     }
 }
