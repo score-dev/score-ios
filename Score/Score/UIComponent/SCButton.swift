@@ -39,32 +39,32 @@ struct SCButtonViewModifier: ViewModifier {
                 .foregroundStyle(Color.white)
                 .padding(.horizontal, 19)
                 .padding(.vertical, 19)
-                .background(Color.brandColor(color: .subColor300),
+                .background(Color.brandColor(color: .main),
                             in: RoundedRectangle(cornerRadius: 15))
                 
         case .secondary:
             content
                 .pretendard(.button)
-                .foregroundStyle(Color.brandColor(color: .mainColor))
+                .foregroundStyle(Color.brandColor(color: .main))
                 .padding(.horizontal, 19)
                 .padding(.vertical, 19)
-                .background(Color.brandColor(color: .subColor200),
+                .background(Color.brandColor(color: .sub2),
                             in: RoundedRectangle(cornerRadius: 15))
         case .teritary:
             content
                 .pretendard(.button)
-                .foregroundStyle(Color.white)
+                .foregroundStyle(Color.brandColor(color: .main))
                 .padding(.horizontal, 19)
                 .padding(.vertical, 19)
-                .background(Color.brandColor(color: .mainColor),
+                .background(Color.brandColor(color: .gray2),
                             in: RoundedRectangle(cornerRadius: 15))
         case .gray:
             content
                 .pretendard(.button)
-                .foregroundStyle(Color.brandColor(color: .textColor2))
+                .foregroundStyle(Color.brandColor(color: .text2))
                 .padding(.horizontal, 38)
                 .padding(.vertical, 19)
-                .background(Color.brandColor(color: .grayColor100),
+                .background(Color.brandColor(color: .gray3),
                             in: RoundedRectangle(cornerRadius: 15))
         }
     }

@@ -24,19 +24,22 @@ struct SCCheckBox: View {
                 .frame(width: 17, height: 17)
                 .foregroundStyle(Color.white)
                 .padding(5)
-                .background(Color.brandColor(color: .mainColor),
+                .background(Color.brandColor(color: .main),
                             in: Circle())
         } else {
             Image(systemName: "checkmark")
                 .frame(width: 17, height: 17)
-                .foregroundStyle(Color.brandColor(color: .iconColor))
+                .foregroundStyle(Color.brandColor(color: .icon))
                 .padding(5)
-                .background(Color.brandColor(color: .grayColor100),
+                .background(Color.brandColor(color: .gray3),
                             in: Circle())
         }
     }
 }
 
 #Preview {
-    SCCheckBox(isOn: .constant(false))
+    VStack {
+        SCCheckBox(isOn: .constant(true))
+        SCCheckBox(isOn: .constant(false))
+    }
 }
