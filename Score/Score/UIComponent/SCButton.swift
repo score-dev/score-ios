@@ -7,12 +7,17 @@
 
 import SwiftUI
 
+//MARK: - SCButtonStyle
+
 enum SCButtonStyle {
     case primary
     case secondary
     case teritary
     case gray
+    case black
 }
+
+//MARK: - SCButton
 
 struct SCButton<Label : View>: View {
     let style: SCButtonStyle
@@ -27,6 +32,9 @@ struct SCButton<Label : View>: View {
 }
 
 
+//MARK: - SCButtonViewModifier
+
+/// SCButtonStyle에 따라 View를 꾸밉니다.
 struct SCButtonViewModifier: ViewModifier {
     let style: SCButtonStyle
     
@@ -37,8 +45,8 @@ struct SCButtonViewModifier: ViewModifier {
             content
                 .pretendard(.button)
                 .foregroundStyle(Color.white)
-                .padding(.horizontal, 19)
                 .padding(.vertical, 19)
+                .padding(.horizontal, 19)
                 .background(Color.brandColor(color: .main),
                             in: RoundedRectangle(cornerRadius: 15))
                 
@@ -46,30 +54,42 @@ struct SCButtonViewModifier: ViewModifier {
             content
                 .pretendard(.button)
                 .foregroundStyle(Color.brandColor(color: .main))
-                .padding(.horizontal, 19)
                 .padding(.vertical, 19)
+                .padding(.horizontal, 19)
                 .background(Color.brandColor(color: .sub2),
                             in: RoundedRectangle(cornerRadius: 15))
         case .teritary:
             content
                 .pretendard(.button)
                 .foregroundStyle(Color.brandColor(color: .main))
-                .padding(.horizontal, 19)
                 .padding(.vertical, 19)
+                .padding(.horizontal, 19)
                 .background(Color.brandColor(color: .gray2),
                             in: RoundedRectangle(cornerRadius: 15))
         case .gray:
             content
                 .pretendard(.button)
                 .foregroundStyle(Color.brandColor(color: .text2))
-                .padding(.horizontal, 38)
                 .padding(.vertical, 19)
+                .padding(.horizontal, 38)
                 .background(Color.brandColor(color: .gray3),
+                            in: RoundedRectangle(cornerRadius: 15))
+        case .black:
+            content
+                .pretendard(weight: .medium,
+                            size: .xs)
+                .foregroundStyle(Color.white)
+                .padding(.vertical, 12)
+                .padding(.horizontal, 24)
+                .background(Color.black,
                             in: RoundedRectangle(cornerRadius: 15))
         }
     }
 }
 
+//MARK: - Preview
+
+/// 모든 Button Style 프리뷰
 #Preview {
     VStack {
         SCButton(style: .primary) {
@@ -92,6 +112,12 @@ struct SCButtonViewModifier: ViewModifier {
             
         } label: {
             Text("gray")
+        }
+        
+        SCButton(style: .black) {
+            
+        } label: {
+            Text("black")
         }
     }
 }
