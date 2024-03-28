@@ -9,6 +9,9 @@ import SwiftUI
 
 extension Font {
     enum Pretendard {
+        
+        //MARK: - Weight(Pretendard)
+        
         enum Weight: String {
             case regular = "PretendardVariable-Regular"
             case thin = "PretendardVariable-Thin"
@@ -21,6 +24,8 @@ extension Font {
             case black = "PretendardVariable-Black"
         }
         
+        //MARK: - Size(Pretendard)
+        
         enum Size: CGFloat {
             case xxs = 12
             case xs = 14
@@ -30,6 +35,8 @@ extension Font {
             case xl = 22
             case xxl = 24
         }
+        
+        //MARK: - Style(Pretendard)
         
         enum Style {
             case headline
@@ -41,7 +48,9 @@ extension Font {
             case caption
             case button
             
-            /// Style에 맞는 weight와 size를 반환하는 메서드입니다. 
+            //MARK: - weightAndSize
+            
+            /// Style에 맞는 weight와 size를 반환하는 메서드입니다.
             func weightAndSize() -> (weight: Font.Pretendard.Weight,
                                      size: Font.Pretendard.Size) {
                 switch self {
@@ -68,19 +77,21 @@ extension Font {
 }
 
 
-extension Text {
-    func pretendard(_ style: Font.Pretendard.Style) -> Text {
-        let fontStyle = style.weightAndSize()
-        return self.font(.custom(fontStyle.weight.rawValue,
-                          size: fontStyle.size.rawValue))
-    }
-    
-    func pretendard(weight: Font.Pretendard.Weight,
-                    size: Font.Pretendard.Size) -> Text {
-        self.font(.custom(weight.rawValue,
-                          size: size.rawValue))
-    }
-}
+//extension Text {
+//    func pretendard(_ style: Font.Pretendard.Style) -> Text {
+//        let fontStyle = style.weightAndSize()
+//        return self.font(.custom(fontStyle.weight.rawValue,
+//                          size: fontStyle.size.rawValue))
+//    }
+//    
+//    func pretendard(weight: Font.Pretendard.Weight,
+//                    size: Font.Pretendard.Size) -> Text {
+//        self.font(.custom(weight.rawValue,
+//                          size: size.rawValue))
+//    }
+//}
+
+//MARK: - View+Pretendard
 
 extension View {
     func pretendard(_ style: Font.Pretendard.Style) -> some View {
@@ -97,6 +108,9 @@ extension View {
     }
 }
 
+//MARK: - Preview
+
+/// Typography 프리뷰
 #Preview {
     VStack {
         Text("Pretendard Font Style")
