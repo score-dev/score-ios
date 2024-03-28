@@ -8,6 +8,9 @@
 import SwiftUI
 
 extension Font {
+    
+    //MARK: - Pretendard
+    
     enum Pretendard {
         
         //MARK: - Weight(Pretendard)
