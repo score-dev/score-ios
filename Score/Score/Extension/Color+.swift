@@ -8,6 +8,9 @@
 import SwiftUI
 
 extension Color {
+    
+    //MARK: - BrandColor
+    
     // Brand Color
     enum BrandColor: UInt, CaseIterable {
         case main = 0xFF4D01
@@ -32,6 +35,7 @@ extension Color {
     }
     
     //MARK: - init
+    
     /// hex 값으로 색을 초기화합니다.
     init(hex: UInt,
          alpha: Double = 1) {
@@ -44,12 +48,18 @@ extension Color {
         )
     }
     
+    //MARK: - brandColor
+    
+    /// brandColor 값을 Color로 반환합니다.
     static func brandColor(color: Color.BrandColor) -> Color {
         Color.init(hex: color.rawValue)
     }
 }
 
 
+//MARK: - Preview
+
+/// Brand color에 등록된 모든 색상 프리뷰 
 #Preview {
     VStack {
         Text("Color system")
