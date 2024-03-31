@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//MARK: - SCLabelStyle
+
 // FIXME: 이름 수정 예정
 enum SCLabelStyle {
     case banner
@@ -14,11 +16,14 @@ enum SCLabelStyle {
     case button
 }
 
+//MARK: - SCLabel
+
 struct SCLabel: View {
     let style: SCLabelStyle
     let imageName: String
     let title: String
     
+    /// - Returns: style에 따라 SCLabel에 사용되는 이미지 크기를 반환합니다.
     private var imageSize: CGFloat {
         switch style {
         case .banner:
@@ -30,6 +35,7 @@ struct SCLabel: View {
         }
     }
     
+    /// - Returns: style에 따라 SCLabel에 사용되는 폰트 스타일을 반환합니다.
     private var fontStyle: Font.Pretendard.Style {
         switch style {
         case .banner:
@@ -45,6 +51,7 @@ struct SCLabel: View {
         HStack(spacing: 4) {
             Image(imageName)
                 .resizable()
+                .renderingMode(.template)
                 .frame(width: imageSize,
                        height: imageSize)
                 .foregroundStyle(Color.brandColor(color: .icon))
@@ -56,16 +63,19 @@ struct SCLabel: View {
     }
 }
 
+//MARK: - Preview
+
+/// 모든 SCLabel의 프리뷰입니다.
 #Preview {
     VStack {
         SCLabel(style: .banner,
-                imageName: "",
+                imageName: Constant.ImageName.check.rawValue,
                 title: "123")
         SCLabel(style: .button,
-                imageName: "",
+                imageName: Constant.ImageName.camera.rawValue,
                 title: "123")
         SCLabel(style: .chip,
-                imageName: "",
+                imageName: Constant.ImageName.dustSad.rawValue,
                 title: "123")
     }
 }
