@@ -13,13 +13,13 @@ extension Color {
     
     // Brand Color
     enum BrandColor: UInt, CaseIterable {
-        case main = 0xFF4D01
+        case main = 0xFF6C3E
         case subBlue = 0x19114D
         case subWhite = 0xF5F6F8
         case subRed = 0xFF4343
         case subLightBlue = 0x1975FF
         
-        case sub1 = 0xFF6C3E
+        case sub1 = 0xFF4D01
         case sub2 = 0xFFD8CC
         case sub3 = 0xFFF0EC
     
@@ -61,14 +61,19 @@ extension Color {
 
 /// Brand color에 등록된 모든 색상 프리뷰 
 #Preview {
-    VStack {
-        Text("Color system")
-            .pretendard(.title)
-        
-        ForEach(Color.BrandColor.allCases,
-                id: \.rawValue) { color in
+    ScrollView {
+        VStack {
+            Text("Color system")
+                .pretendard(.title)
+            
+            ForEach(Color.BrandColor.allCases,
+                    id: \.rawValue) { color in
+                Text("\(color)")
+                    .pretendard(.body1)
                 Rectangle()
                     .foregroundStyle(Color.brandColor(color: color))
+                    .frame(height: 30)
+            }
         }
     }
 }
