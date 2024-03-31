@@ -89,7 +89,7 @@ struct SCButtonViewModifier: ViewModifier {
 
 //MARK: - Preview
 
-/// 모든 Button Style 프리뷰
+/// 모든 Button Style 프리뷰입니다.
 #Preview {
     VStack {
         SCButton(style: .primary) {

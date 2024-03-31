@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//MARK: - SCRadioButton
+
 struct SCRadioButton: View {
     @Binding var isOn: Bool
     
@@ -31,7 +33,6 @@ struct SCRadioButton: View {
                                height: 10)
                 }
                 .foregroundStyle(Color.brandColor(color: .main))
-            
         } else {
             Circle()
                 .stroke()
@@ -42,6 +43,9 @@ struct SCRadioButton: View {
     }
 }
 
+//MARK: - Preview
+
+/// SCRadioButton의 프리뷰입니다.
 #Preview {
     VStack {
         SCRadioButton(isOn: .constant(true))

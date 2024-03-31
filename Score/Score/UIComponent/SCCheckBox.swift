@@ -7,8 +7,11 @@
 
 import SwiftUI
 
+//MARK: - SCCheckBox
+
 struct SCCheckBox: View {
     @Binding var isOn: Bool
+    
     var body: some View {
         Button {
             isOn.toggle()
@@ -37,6 +40,9 @@ struct SCCheckBox: View {
     }
 }
 
+//MARK: - Preview
+
+/// SCCheckBox의 프리뷰입니다.
 #Preview {
     VStack {
         SCCheckBox(isOn: .constant(true))
