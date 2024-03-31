@@ -16,6 +16,9 @@
 		FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C397C2BA9E48400CC05AA /* Color+.swift */; };
 		FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4972BAB56AA0016F0A0 /* SCButton.swift */; };
 		FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */; };
+		FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FB92BB634AF00DD4D3B /* SCTextField.swift */; };
+		FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */; };
+		FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FBD2BB6F70200DD4D3B /* View+.swift */; };
 		FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A26092BAC837000F7B317 /* SCRadioButton.swift */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +35,9 @@
 		FD0C397C2BA9E48400CC05AA /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		FD13D4972BAB56AA0016F0A0 /* SCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCButton.swift; sourceTree = "<group>"; };
 		FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCheckBox.swift; sourceTree = "<group>"; };
+		FD208FB92BB634AF00DD4D3B /* SCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTextField.swift; sourceTree = "<group>"; };
+		FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
+		FD208FBD2BB6F70200DD4D3B /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		FD2A26092BAC837000F7B317 /* SCRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRadioButton.swift; sourceTree = "<group>"; };
 		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +105,7 @@
 			children = (
 				FD0C39792BA9DA4A00CC05AA /* Font+.swift */,
 				FD0C397C2BA9E48400CC05AA /* Color+.swift */,
+				FD208FBD2BB6F70200DD4D3B /* View+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -110,6 +117,8 @@
 				FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */,
 				FD2A26092BAC837000F7B317 /* SCRadioButton.swift */,
 				FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */,
+				FD208FB92BB634AF00DD4D3B /* SCTextField.swift */,
+				FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -189,9 +198,12 @@
 				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
 				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
 				FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */,
+				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
+				FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
 				FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */,
 				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
+				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
 				FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
