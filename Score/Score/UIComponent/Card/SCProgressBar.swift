@@ -38,7 +38,7 @@ struct SCProgressBar: View {
                             .foregroundStyle(Color.brandColor(color: .main))
                             .frame(width: geometry.size.width * progressInBound)
                         if progress <= 0.9 {
-                            Image(Constant.ImageName.footsteps.rawValue)
+                            Image(Constants.ImageName.footsteps.rawValue)
                                 .renderingMode(.template)
                                 .foregroundStyle(Color.brandColor(color: .main))
                                 .rotationEffect(.degrees(90))

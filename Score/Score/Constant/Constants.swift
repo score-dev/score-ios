@@ -1,5 +1,5 @@
 //
-//  Constant.swift
+//  Constants.swift
 //  Score
 //
 //  Created by sole on 4/1/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Constant {
+enum Constants {
     enum ImageName: String, CaseIterable {
         /// Plain Icons
         case heart
@@ -67,7 +67,7 @@ enum Constant {
         Text("SCIcon(templete, original)")
             .pretendard(.title)
         VStack {
-            ForEach(Constant.ImageName.allCases,
+            ForEach(Constants.ImageName.allCases,
                     id: \.self) { imageName in
                 HStack {
                     Text(imageName.rawValue)
