@@ -30,12 +30,19 @@ extension Font {
         //MARK: - Size(Pretendard)
         
         enum Size: CGFloat {
+            /// rawValue: 12
             case xxs = 12
+            /// rawValue: 14
             case xs = 14
+            /// rawValue: 16
             case s = 16
+            /// rawValue: 18
             case m = 18
+            /// rawValue: 20
             case l = 20
+            /// rawValue: 22
             case xl = 22
+            /// rawValue: 24
             case xxl = 24
         }
         

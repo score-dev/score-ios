@@ -26,6 +26,8 @@
 		FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */; };
 		FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */; };
 		FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A26092BAC837000F7B317 /* SCRadioButton.swift */; };
+		FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */; };
+		FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressCard.swift; sourceTree = "<group>"; };
 		FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCInformationCard.swift; sourceTree = "<group>"; };
 		FD2A26092BAC837000F7B317 /* SCRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRadioButton.swift; sourceTree = "<group>"; };
+		FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecordButton.swift; sourceTree = "<group>"; };
+		FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCapsuleButton.swift; sourceTree = "<group>"; };
 		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +153,8 @@
 				FD2A26092BAC837000F7B317 /* SCRadioButton.swift */,
 				FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */,
 				FD13D4972BAB56AA0016F0A0 /* SCButton.swift */,
+				FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */,
+				FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -266,9 +272,11 @@
 				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
 				FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */,
 				FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */,
+				FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */,
 				FD208FC72BB9E13A00DD4D3B /* SCProgressBar.swift in Sources */,
 				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
 				FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */,
+				FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
 				FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */,
 				FD208FC32BB9B2FC00DD4D3B /* Constant.swift in Sources */,
