@@ -18,13 +18,13 @@ enum Weather: String {
     func imageName() -> String {
         switch self {
         case .sun:
-            return Constant.ImageName.weatherSun.rawValue
+            return Constants.ImageName.weatherSun.rawValue
         case .cloudy:
-            return Constant.ImageName.weatherCloudy.rawValue
+            return Constants.ImageName.weatherCloudy.rawValue
         case .snow:
-            return Constant.ImageName.weatherSnow.rawValue
+            return Constants.ImageName.weatherSnow.rawValue
         case .rain:
-            return Constant.ImageName.weatherSnow.rawValue
+            return Constants.ImageName.weatherSnow.rawValue
         }
     }
 }
@@ -39,11 +39,11 @@ enum Dust: String  {
     func imageName() -> String {
         switch self {
         case .bad:
-            return Constant.ImageName.dustSad.rawValue
+            return Constants.ImageName.dustSad.rawValue
         case .regular:
-            return Constant.ImageName.dustMood.rawValue
+            return Constants.ImageName.dustMood.rawValue
         case .good:
-            return Constant.ImageName.dustSmile.rawValue
+            return Constants.ImageName.dustSmile.rawValue
         }
     }
 }

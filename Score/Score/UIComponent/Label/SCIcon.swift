@@ -29,23 +29,23 @@ enum SCIconStyle: String,
         switch self {
         case .tintHeart,
                 .heart:
-            return Constant.ImageName.heart.rawValue
+            return Constants.ImageName.heart.rawValue
         case .footsteps:
-            return Constant.ImageName.footsteps.rawValue
+            return Constants.ImageName.footsteps.rawValue
         case .check,
                 .reverseCheck,
                 .bigCheck:
-            return Constant.ImageName.check.rawValue
+            return Constants.ImageName.check.rawValue
         case .flag:
-            return Constant.ImageName.flag.rawValue
+            return Constants.ImageName.flag.rawValue
         case .reactionHeart:
-            return Constant.ImageName.reactionHeart.rawValue
+            return Constants.ImageName.reactionHeart.rawValue
         case .reactionFire:
-            return Constant.ImageName.reactionFire.rawValue
+            return Constants.ImageName.reactionFire.rawValue
         case .reacitonStar:
-            return Constant.ImageName.reactionStar.rawValue
+            return Constants.ImageName.reactionStar.rawValue
         case .reactionConfetti:
-            return Constant.ImageName.reactionConfetti.rawValue
+            return Constants.ImageName.reactionConfetti.rawValue
         }
     }
 }

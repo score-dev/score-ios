@@ -69,13 +69,13 @@ struct SCLabel: View {
 #Preview {
     VStack {
         SCLabel(style: .card,
-                imageName: Constant.ImageName.check.rawValue,
+                imageName: Constants.ImageName.check.rawValue,
                 title: "123")
         SCLabel(style: .button,
-                imageName: Constant.ImageName.camera.rawValue,
+                imageName: Constants.ImageName.camera.rawValue,
                 title: "123")
         SCLabel(style: .chip,
-                imageName: Constant.ImageName.dustSad.rawValue,
+                imageName: Constants.ImageName.dustSad.rawValue,
                 title: "123")
     }
 }

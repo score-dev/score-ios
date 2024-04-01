@@ -20,7 +20,7 @@
 		FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */; };
 		FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FBD2BB6F70200DD4D3B /* View+.swift */; };
 		FD208FC02BB9AF3500DD4D3B /* SCIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FBF2BB9AF3500DD4D3B /* SCIcon.swift */; };
-		FD208FC32BB9B2FC00DD4D3B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC22BB9B2FC00DD4D3B /* Constant.swift */; };
+		FD208FC32BB9B2FC00DD4D3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC22BB9B2FC00DD4D3B /* Constants.swift */; };
 		FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC42BB9C45700DD4D3B /* SCNumberIcon.swift */; };
 		FD208FC72BB9E13A00DD4D3B /* SCProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */; };
 		FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */; };
@@ -47,7 +47,7 @@
 		FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
 		FD208FBD2BB6F70200DD4D3B /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		FD208FBF2BB9AF3500DD4D3B /* SCIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCIcon.swift; sourceTree = "<group>"; };
-		FD208FC22BB9B2FC00DD4D3B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FD208FC22BB9B2FC00DD4D3B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FD208FC42BB9C45700DD4D3B /* SCNumberIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNumberIcon.swift; sourceTree = "<group>"; };
 		FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressBar.swift; sourceTree = "<group>"; };
 		FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressCard.swift; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 		FD208FC12BB9B2E400DD4D3B /* Constant */ = {
 			isa = PBXGroup;
 			children = (
-				FD208FC22BB9B2FC00DD4D3B /* Constant.swift */,
+				FD208FC22BB9B2FC00DD4D3B /* Constants.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
 				FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */,
-				FD208FC32BB9B2FC00DD4D3B /* Constant.swift in Sources */,
+				FD208FC32BB9B2FC00DD4D3B /* Constants.swift in Sources */,
 				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
 				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
 				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,
