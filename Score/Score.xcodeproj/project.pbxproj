@@ -22,6 +22,9 @@
 		FD208FC02BB9AF3500DD4D3B /* SCIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FBF2BB9AF3500DD4D3B /* SCIcon.swift */; };
 		FD208FC32BB9B2FC00DD4D3B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC22BB9B2FC00DD4D3B /* Constant.swift */; };
 		FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC42BB9C45700DD4D3B /* SCNumberIcon.swift */; };
+		FD208FC72BB9E13A00DD4D3B /* SCProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */; };
+		FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */; };
+		FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */; };
 		FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A26092BAC837000F7B317 /* SCRadioButton.swift */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +47,9 @@
 		FD208FBF2BB9AF3500DD4D3B /* SCIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCIcon.swift; sourceTree = "<group>"; };
 		FD208FC22BB9B2FC00DD4D3B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		FD208FC42BB9C45700DD4D3B /* SCNumberIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNumberIcon.swift; sourceTree = "<group>"; };
+		FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressBar.swift; sourceTree = "<group>"; };
+		FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressCard.swift; sourceTree = "<group>"; };
+		FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCInformationCard.swift; sourceTree = "<group>"; };
 		FD2A26092BAC837000F7B317 /* SCRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRadioButton.swift; sourceTree = "<group>"; };
 		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +134,9 @@
 				FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */,
 				FD208FBF2BB9AF3500DD4D3B /* SCIcon.swift */,
 				FD208FC42BB9C45700DD4D3B /* SCNumberIcon.swift */,
+				FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */,
+				FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */,
+				FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -215,7 +224,9 @@
 				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
 				FD208FC02BB9AF3500DD4D3B /* SCIcon.swift in Sources */,
 				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
+				FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */,
 				FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */,
+				FD208FC72BB9E13A00DD4D3B /* SCProgressBar.swift in Sources */,
 				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
 				FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
@@ -223,6 +234,7 @@
 				FD208FC32BB9B2FC00DD4D3B /* Constant.swift in Sources */,
 				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
 				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
+				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,
 				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
 				FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */,
 			);
