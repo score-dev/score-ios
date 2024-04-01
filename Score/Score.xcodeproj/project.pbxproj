@@ -126,17 +126,11 @@
 		FD13D4962BAB56A00016F0A0 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
-				FD13D4972BAB56AA0016F0A0 /* SCButton.swift */,
-				FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */,
-				FD2A26092BAC837000F7B317 /* SCRadioButton.swift */,
-				FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */,
-				FD208FB92BB634AF00DD4D3B /* SCTextField.swift */,
-				FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */,
-				FD208FBF2BB9AF3500DD4D3B /* SCIcon.swift */,
-				FD208FC42BB9C45700DD4D3B /* SCNumberIcon.swift */,
-				FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */,
-				FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */,
-				FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */,
+				FD4A3B412BBADC0000D2DFFA /* Shape */,
+				FD4A3B402BBADBED00D2DFFA /* TextField */,
+				FD4A3B3F2BBADBDE00D2DFFA /* Card */,
+				FD4A3B3E2BBADBCE00D2DFFA /* Label */,
+				FD4A3B3D2BBADBBE00D2DFFA /* Button */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -147,6 +141,52 @@
 				FD208FC22BB9B2FC00DD4D3B /* Constant.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		FD4A3B3D2BBADBBE00D2DFFA /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				FD2A26092BAC837000F7B317 /* SCRadioButton.swift */,
+				FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */,
+				FD13D4972BAB56AA0016F0A0 /* SCButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		FD4A3B3E2BBADBCE00D2DFFA /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				FD208FC42BB9C45700DD4D3B /* SCNumberIcon.swift */,
+				FD208FBF2BB9AF3500DD4D3B /* SCIcon.swift */,
+				FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		FD4A3B3F2BBADBDE00D2DFFA /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */,
+				FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */,
+				FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		FD4A3B402BBADBED00D2DFFA /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				FD208FB92BB634AF00DD4D3B /* SCTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		FD4A3B412BBADC0000D2DFFA /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */,
+			);
+			path = Shape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
