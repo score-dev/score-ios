@@ -23,6 +23,7 @@ enum Constants {
         case photograph
         case search
         case user
+        case home
         
         case dustMood = "dust.mood"
         case dustSad = "dust.sad"

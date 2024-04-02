@@ -19,7 +19,8 @@ extension Color {
         case subRed = 0xFF4343
         case subLightBlue = 0x1975FF
         
-        case sub1 = 0xFF4D01
+        // 0xFF4D01
+        case sub1 = 0x000000
         case sub2 = 0xFFD8CC
         case sub3 = 0xFFF0EC
     
