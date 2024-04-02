@@ -26,6 +26,7 @@
 		FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */; };
 		FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */; };
 		FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A26092BAC837000F7B317 /* SCRadioButton.swift */; };
+		FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EB72BBC41A000B14FF9 /* SCTabBar.swift */; };
 		FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */; };
 		FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
@@ -53,6 +54,7 @@
 		FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressCard.swift; sourceTree = "<group>"; };
 		FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCInformationCard.swift; sourceTree = "<group>"; };
 		FD2A26092BAC837000F7B317 /* SCRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRadioButton.swift; sourceTree = "<group>"; };
+		FD3C6EB72BBC41A000B14FF9 /* SCTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabBar.swift; sourceTree = "<group>"; };
 		FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecordButton.swift; sourceTree = "<group>"; };
 		FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCapsuleButton.swift; sourceTree = "<group>"; };
 		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		FD13D4962BAB56A00016F0A0 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				FD3C6EB52BBC418C00B14FF9 /* TabBar */,
 				FD4A3B412BBADC0000D2DFFA /* Shape */,
 				FD4A3B402BBADBED00D2DFFA /* TextField */,
 				FD4A3B3F2BBADBDE00D2DFFA /* Card */,
@@ -145,6 +148,14 @@
 				FD208FC22BB9B2FC00DD4D3B /* Constants.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		FD3C6EB52BBC418C00B14FF9 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FD3C6EB72BBC41A000B14FF9 /* SCTabBar.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		FD4A3B3D2BBADBBE00D2DFFA /* Button */ = {
@@ -281,6 +292,7 @@
 				FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */,
 				FD208FC32BB9B2FC00DD4D3B /* Constants.swift in Sources */,
 				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
+				FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */,
 				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
 				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,
 				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
