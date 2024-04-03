@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// FIXME: icon ImageName에서 바로 쓸 수 있도록 변경 필요
 //MARK: - SCIconStyle
 
 enum SCIconStyle: String,
