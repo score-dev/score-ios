@@ -7,46 +7,42 @@
 
 import SwiftUI
 
-/// FIXME: icon ImageName에서 바로 쓸 수 있도록 변경 필요
 //MARK: - SCIconStyle
 
-enum SCIconStyle: String,
-                  CaseIterable {
-    case tintHeart
-    case heart
-    case footsteps
-    case check
-    case reverseCheck
-    case bigCheck
-    case flag
+/// - Parameters:
+///     - size: Icon의 크기를 정의합니다.
+///     - color: Icon의 색상 스타일을 정의합니다.
+struct SCIconStyle {
+    let size: SCIconSize
+    let color: SCIconColorStyle
     
-    case reactionHeart
-    case reactionFire
-    case reacitonStar
-    case reactionConfetti
+    /// Icon의 size를 정의합니다.
+    @frozen
+    enum SCIconSize {
+        /// circle: 20, image: 10
+        case small
+        /// circle: 32, image: 19
+        case medium
+        /// circle: 62, image: 32
+        case big
+    }
     
-    /// - Returns: SCIcon에 쓰이는 이미지 이름을 반환합니다.
-    func imageName() -> String {
-        switch self {
-        case .tintHeart,
-                .heart:
-            return Constants.ImageName.heart.rawValue
-        case .footsteps:
-            return Constants.ImageName.footsteps.rawValue
-        case .check,
-                .reverseCheck,
-                .bigCheck:
-            return Constants.ImageName.check.rawValue
-        case .flag:
-            return Constants.ImageName.flag.rawValue
-        case .reactionHeart:
-            return Constants.ImageName.reactionHeart.rawValue
-        case .reactionFire:
-            return Constants.ImageName.reactionFire.rawValue
-        case .reacitonStar:
-            return Constants.ImageName.reactionStar.rawValue
-        case .reactionConfetti:
-            return Constants.ImageName.reactionConfetti.rawValue
+    /// Icon의 색상 스타일을 정의합니다.
+    /// background 색상(Circle의 색상)을 기준으로 합니다.
+    enum SCIconColorStyle {
+        case main
+        case sub2
+        case gray3
+        
+        func backgrounColor() -> Color {
+            switch self {
+            case .main:
+                return .brandColor(color: .main)
+            case .sub2:
+                return .brandColor(color: .sub2)
+            case .gray3:
+                return .brandColor(color: .gray3)
+            }
         }
     }
 }
@@ -55,9 +51,10 @@ enum SCIconStyle: String,
 
 struct SCIcon: View {
     let style: SCIconStyle
+    let imageName: Constants.ImageName
     
     var body: some View {
-        Image(style.imageName())
+        Image(imageName.rawValue)
             .resizable()
             .renderingMode(.template)
             .modifier(SCIconViewModifier(style: style))
@@ -66,111 +63,57 @@ struct SCIcon: View {
 
 //MARK: - SCIconViewModifier
 
+/// - Parameters:
+///     - style: Icon의 스타일을 정의합니다.
 struct SCIconViewModifier: ViewModifier {
     let style: SCIconStyle
     
+    private var imageColor: Color {
+        switch style.color {
+        case .main:
+            return .white
+        case .sub2:
+            return .brandColor(color: .main)
+        case .gray3:
+            return .brandColor(color: .icon)
+        }
+    }
+    
     @ViewBuilder
     func body(content: Content) -> some View {
-        switch style {
-        case .tintHeart:
+        switch style.size {
+        case .small:
             content
-                .foregroundStyle(Color.white)
-                .frame(width: 15, height: 15)
-                .background {
-                    Circle()
-                        .foregroundStyle(Color.brandColor(color: .main))
-                        .frame(width: 32, height: 32)
-                }
-                .frame(width: 32, height: 32)
-            
-        case .heart:
-            content
-                .foregroundStyle(Color.brandColor(color: .icon))
-                .frame(width: 15, height: 15)
-                .background {
-                    Circle()
-                        .foregroundStyle(Color.brandColor(color: .gray3))
-                        .frame(width: 32, height: 32)
-                }
-                .frame(width: 32, height: 32)
-            
-        case .footsteps:
-            content
-                .foregroundStyle(Color.brandColor(color: .icon))
-                .frame(width: 19, height: 19)
-                .background {
-                    Circle()
-                        .foregroundStyle(Color.brandColor(color: .gray3))
-                        .frame(width: 32, height: 32)
-                }
-                .frame(width: 32, height: 32)
-            
-        case .check:
-            content
-                .foregroundStyle(Color.white)
-                .frame(width: 19, height: 19)
-                .background {
-                    Circle()
-                        .foregroundStyle(Color.brandColor(color: .main))
-                        .frame(width: 32, height: 32)
-                }
-                .frame(width: 32, height: 32)
-            
-        case .reverseCheck:
-            content
-                .foregroundStyle(Color.brandColor(color: .main))
-                .frame(width: 19, height: 19)
-                .background {
-                    Circle()
-                        .foregroundStyle(Color.brandColor(color: .sub2))
-                        .frame(width: 32, height: 32)
-                }
-                .frame(width: 32, height: 32)
-            
-        case .bigCheck:
-            content
-                .foregroundStyle(Color.white)
-                .frame(width: 36, height: 36)
-                .background {
-                    Circle()
-                        .foregroundStyle(Color.brandColor(color: .main))
-                        .frame(width: 62, height: 62)
-                }
-                .frame(width: 62, height: 62)
-        case .flag:
-            content
-                .foregroundStyle(Color.white)
                 .frame(width: 10, height: 10)
+                .foregroundStyle(self.imageColor)
                 .background {
                     Circle()
-                        .foregroundStyle(Color.brandColor(color: .main))
+                        .foregroundStyle(style.color.backgrounColor())
                         .frame(width: 20, height: 20)
                 }
                 .frame(width: 20, height: 20)
             
-        case .reactionHeart,
-                .reactionFire,
-                .reacitonStar:
+        case .medium:
             content
-                .foregroundStyle(Color.brandColor(color: .icon))
-                .frame(width: 18, height: 18)
+                .frame(width: 19, height: 19)
+                .foregroundStyle(self.imageColor)
                 .background {
                     Circle()
-                        .foregroundStyle(Color.brandColor(color: .gray2))
+                        .foregroundStyle(style.color.backgrounColor())
                         .frame(width: 32, height: 32)
                 }
                 .frame(width: 32, height: 32)
-        
-        case .reactionConfetti:
+            
+        case .big:
             content
-                .foregroundStyle(Color.brandColor(color: .icon))
-                .frame(width: 20, height: 20)
+                .frame(width: 32, height: 32)
+                .foregroundStyle(self.imageColor)
                 .background {
                     Circle()
-                        .foregroundStyle(Color.brandColor(color: .gray2))
-                        .frame(width: 32, height: 32)
+                        .foregroundStyle(style.color.backgrounColor())
+                        .frame(width: 62, height: 62)
                 }
-                .frame(width: 32, height: 32)
+                .frame(width: 62, height: 62)
         }
     }
 }
@@ -183,12 +126,15 @@ struct SCIconViewModifier: ViewModifier {
         VStack {
             Text("SCIcon")
                 .pretendard(.title)
-            ForEach(SCIconStyle.allCases,
-                    id: \.self) { style in
-                Text("\(style)")
-                    .pretendard(.body1)
-                SCIcon(style: style)
-            }
+            SCIcon(style: .init(size: .small,
+                                color: .main),
+                   imageName: .check)
+            SCIcon(style: .init(size: .medium,
+                                color: .sub2),
+                   imageName: .footsteps)
+            SCIcon(style: .init(size: .big,
+                                color: .gray3),
+                   imageName: .search)
         }
         .frame(maxWidth: .infinity)
     }
