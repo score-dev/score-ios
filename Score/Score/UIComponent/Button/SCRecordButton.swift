@@ -52,6 +52,8 @@ struct SCRecordButton: View {
     }
 }
 
+//MARK: - SCRecordTriangle
+
 struct SCRecordTriangle: Shape {
     let cornerRadius: CGFloat
     
@@ -73,6 +75,8 @@ struct SCRecordTriangle: Shape {
         return path
     }
 }
+
+//MARK: - Preview
 
 #Preview {
     VStack {

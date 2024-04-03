@@ -126,7 +126,6 @@ struct SCInformationCard: View {
             .padding(.horizontal, 29)
         }
     }
-    
 }
 
 //MARK: - Preview

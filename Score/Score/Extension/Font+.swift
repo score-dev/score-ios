@@ -8,12 +8,11 @@
 import SwiftUI
 
 extension Font {
-    
     //MARK: - Pretendard
     
     enum Pretendard {
-        
         //MARK: - Weight(Pretendard)
+        
         @frozen
         enum Weight: String {
             case regular = "PretendardVariable-Regular"
@@ -28,6 +27,7 @@ extension Font {
         }
         
         //MARK: - Size(Pretendard)
+        
         @frozen
         enum Size: CGFloat {
             /// rawValue: 12
@@ -47,6 +47,7 @@ extension Font {
         }
         
         //MARK: - Style(Pretendard)
+        
         @frozen
         enum Style {
             /// regular xxl
@@ -93,21 +94,6 @@ extension Font {
         }
     }
 }
-
-
-//extension Text {
-//    func pretendard(_ style: Font.Pretendard.Style) -> Text {
-//        let fontStyle = style.weightAndSize()
-//        return self.font(.custom(fontStyle.weight.rawValue,
-//                          size: fontStyle.size.rawValue))
-//    }
-//    
-//    func pretendard(weight: Font.Pretendard.Weight,
-//                    size: Font.Pretendard.Size) -> Text {
-//        self.font(.custom(weight.rawValue,
-//                          size: size.rawValue))
-//    }
-//}
 
 //MARK: - View+Pretendard
 

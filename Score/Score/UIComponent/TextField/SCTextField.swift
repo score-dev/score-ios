@@ -56,12 +56,12 @@ struct SCTextField: View {
         @ViewBuilder label: () -> Label)
     -> some View {
         overlay(alignment: .trailing) {
-                Button(action: action) {
-                    label()
-                }
-                .foregroundStyle(Color.brandColor(color: .icon))
-                .padding(.trailing, 14)
+            Button(action: action) {
+                label()
             }
+            .foregroundStyle(Color.brandColor(color: .icon))
+            .padding(.trailing, 14)
+        }
     }
 }
 

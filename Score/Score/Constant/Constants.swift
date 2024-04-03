@@ -7,7 +7,11 @@
 
 import SwiftUI
 
+//MARK: - Constants
+
 enum Constants {
+    //MARK: - ImageName
+    
     enum ImageName: String, CaseIterable {
         /// Plain Icons
         case heart
@@ -61,8 +65,9 @@ enum Constants {
     }
 }
 
+//MARK: - Preview
 
-/// 모든 아이콘 이미지 에셋 프리뷰입니다. 
+/// 모든 아이콘 이미지 에셋 프리뷰입니다.
 #Preview {
     ScrollView {
         Text("SCIcon(templete, original)")
