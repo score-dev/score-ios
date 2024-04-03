@@ -49,13 +49,21 @@ extension Font {
         //MARK: - Style(Pretendard)
         
         enum Style {
+            /// regular xxl
             case headline
+            /// semibold l
             case title
+            /// semibold m
             case body1
+            /// semibold s
             case body2
+            /// semibold xs
             case body3
+            /// regular s
             case subHeading
+            /// medium xxs
             case caption
+            /// semibold s
             case button
             
             //MARK: - weightAndSize
@@ -141,5 +149,8 @@ extension View {
             .pretendard(.caption)
         Text("Button")
             .pretendard(.button)
+        Text("Weight and Size")
+            .pretendard(weight: .black,
+                        size: .s)
     }
 }
