@@ -61,7 +61,7 @@ struct SCTabBar: View {
             Rectangle()
                 .foregroundStyle(Color.white)
                 .frame(height: 56)
-            //FIXME: 탭바 구분 방식 변경 필요
+            //FIXME: 배경과 탭바 사이 경계 나타내는 방식의 변경 필요
                 .shadow(radius: 12, x: 0, y: 0)
 //                .border(Color.brandColor(color: .gray1),
 //                        width: 0.5)
@@ -69,7 +69,6 @@ struct SCTabBar: View {
         }
         .frame(height: 56)
     }
-    
     
     //MARK: - tabButtonBuilder
     
@@ -125,7 +124,7 @@ struct SCTabBar: View {
     }
 }
 
-//MARK: - View+
+//MARK: - View+SCTabBar
 
 extension View {
     /// - Parameters:
@@ -157,6 +156,7 @@ struct SCTabBarAdoptViewModifier: ViewModifier {
     }
 }
 
+//MARK: - Preview
 
 #Preview {
     VStack {

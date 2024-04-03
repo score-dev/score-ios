@@ -74,7 +74,6 @@ struct SCNumberIconViewModifier: ViewModifier {
     }
 }
 
-
 //MARK: - Preview
 
 /// 모든 SCNumberIcon의 프리뷰입니다.

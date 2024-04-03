@@ -8,6 +8,7 @@
 import SwiftUI
 
 //MARK: - SCSearchChip
+
 /// 검색어 기록 Chip입니다.
 /// - Parameters:
 ///     - text: 저장될 검색어를 정의합니다.

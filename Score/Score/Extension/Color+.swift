@@ -8,7 +8,6 @@
 import SwiftUI
 
 extension Color {
-    
     //MARK: - BrandColor
     
     // Brand Color
@@ -56,7 +55,6 @@ extension Color {
         Color.init(hex: color.rawValue)
     }
 }
-
 
 //MARK: - Preview
 
