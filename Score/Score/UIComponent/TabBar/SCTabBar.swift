@@ -29,7 +29,7 @@ enum SCTabItem: String {
         case .record:
             return Constants.ImageName.footsteps.rawValue
         case .schoolGroup:
-            return Constants.ImageName.groupUsers.rawValue
+            return Constants.ImageName.navigationUsers.rawValue
         }
     }
 }
