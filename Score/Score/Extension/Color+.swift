@@ -15,8 +15,8 @@ extension Color {
         case main = 0xFF6C3E
         case subBlue = 0x19114D
         case subWhite = 0xF5F6F8
-        case subRed = 0xFF4343
-        case subLightBlue = 0x1975FF
+        case red = 0xFF4343
+        case blue = 0x1975FF
         
         // 0xFF4D01
         case sub1 = 0x000000
@@ -51,8 +51,13 @@ extension Color {
     //MARK: - brandColor
     
     /// brandColor 값을 Color로 반환합니다.
-    static func brandColor(color: Color.BrandColor) -> Color {
-        Color.init(hex: color.rawValue)
+    /// - Parameters:
+    ///     - color: 색상을 정의합니다.
+    ///     - alpha: opacity 값을 정의합니다. 기본값은 1 입니다.
+    static func brandColor(color: Color.BrandColor,
+                           alpha: Double = 1) -> Color {
+        Color.init(hex: color.rawValue,
+                   alpha: alpha)
     }
 }
 
