@@ -11,6 +11,28 @@
 		FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C39692BA9914B00CC05AA /* ContentView.swift */; };
 		FD0C396C2BA9914D00CC05AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0C396B2BA9914D00CC05AA /* Assets.xcassets */; };
 		FD0C396F2BA9914D00CC05AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0C396E2BA9914D00CC05AA /* Preview Assets.xcassets */; };
+		FD0C39762BA9D99D00CC05AA /* PretendardVariable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */; };
+		FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C39792BA9DA4A00CC05AA /* Font+.swift */; };
+		FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C397C2BA9E48400CC05AA /* Color+.swift */; };
+		FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4972BAB56AA0016F0A0 /* SCButton.swift */; };
+		FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */; };
+		FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FB92BB634AF00DD4D3B /* SCTextField.swift */; };
+		FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */; };
+		FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FBD2BB6F70200DD4D3B /* View+.swift */; };
+		FD208FC02BB9AF3500DD4D3B /* SCIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FBF2BB9AF3500DD4D3B /* SCIcon.swift */; };
+		FD208FC32BB9B2FC00DD4D3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC22BB9B2FC00DD4D3B /* Constants.swift */; };
+		FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC42BB9C45700DD4D3B /* SCNumberIcon.swift */; };
+		FD208FC72BB9E13A00DD4D3B /* SCProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */; };
+		FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */; };
+		FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */; };
+		FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A26092BAC837000F7B317 /* SCRadioButton.swift */; };
+		FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EB72BBC41A000B14FF9 /* SCTabBar.swift */; };
+		FD3C6EBB2BBC79FE00B14FF9 /* SCSearchChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EBA2BBC79FE00B14FF9 /* SCSearchChip.swift */; };
+		FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */; };
+		FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */; };
+		FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */; };
+		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
+		FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +41,29 @@
 		FD0C39692BA9914B00CC05AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD0C396B2BA9914D00CC05AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0C396E2BA9914D00CC05AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PretendardVariable.ttf; sourceTree = "<group>"; };
+		FD0C39782BA9D9DE00CC05AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FD0C39792BA9DA4A00CC05AA /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		FD0C397C2BA9E48400CC05AA /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		FD13D4972BAB56AA0016F0A0 /* SCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCButton.swift; sourceTree = "<group>"; };
+		FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCheckBox.swift; sourceTree = "<group>"; };
+		FD208FB92BB634AF00DD4D3B /* SCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTextField.swift; sourceTree = "<group>"; };
+		FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
+		FD208FBD2BB6F70200DD4D3B /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		FD208FBF2BB9AF3500DD4D3B /* SCIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCIcon.swift; sourceTree = "<group>"; };
+		FD208FC22BB9B2FC00DD4D3B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FD208FC42BB9C45700DD4D3B /* SCNumberIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNumberIcon.swift; sourceTree = "<group>"; };
+		FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressBar.swift; sourceTree = "<group>"; };
+		FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressCard.swift; sourceTree = "<group>"; };
+		FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCInformationCard.swift; sourceTree = "<group>"; };
+		FD2A26092BAC837000F7B317 /* SCRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRadioButton.swift; sourceTree = "<group>"; };
+		FD3C6EB72BBC41A000B14FF9 /* SCTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabBar.swift; sourceTree = "<group>"; };
+		FD3C6EBA2BBC79FE00B14FF9 /* SCSearchChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchChip.swift; sourceTree = "<group>"; };
+		FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTagChip.swift; sourceTree = "<group>"; };
+		FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecordButton.swift; sourceTree = "<group>"; };
+		FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCapsuleButton.swift; sourceTree = "<group>"; };
+		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
+		FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPopUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +96,13 @@
 		FD0C39662BA9914B00CC05AA /* Score */ = {
 			isa = PBXGroup;
 			children = (
+				FD0C39782BA9D9DE00CC05AA /* Info.plist */,
+				FD0C39772BA9D9AA00CC05AA /* Font */,
 				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
+				FD208FC12BB9B2E400DD4D3B /* Constant */,
+				FD0C397B2BA9E47400CC05AA /* Extension */,
 				FD0C39692BA9914B00CC05AA /* ContentView.swift */,
+				FD13D4962BAB56A00016F0A0 /* UIComponent */,
 				FD0C396B2BA9914D00CC05AA /* Assets.xcassets */,
 				FD0C396D2BA9914D00CC05AA /* Preview Content */,
 			);
@@ -65,6 +115,120 @@
 				FD0C396E2BA9914D00CC05AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD0C39772BA9D9AA00CC05AA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		FD0C397B2BA9E47400CC05AA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FD0C39792BA9DA4A00CC05AA /* Font+.swift */,
+				FD0C397C2BA9E48400CC05AA /* Color+.swift */,
+				FD208FBD2BB6F70200DD4D3B /* View+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FD13D4962BAB56A00016F0A0 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9EA202BBDCA01007AA4D7 /* PopUp */,
+				FD3C6EB92BBC79ED00B14FF9 /* Chip */,
+				FD3C6EB52BBC418C00B14FF9 /* TabBar */,
+				FD4A3B412BBADC0000D2DFFA /* Shape */,
+				FD4A3B402BBADBED00D2DFFA /* TextField */,
+				FD4A3B3F2BBADBDE00D2DFFA /* Card */,
+				FD4A3B3E2BBADBCE00D2DFFA /* Label */,
+				FD4A3B3D2BBADBBE00D2DFFA /* Button */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		FD208FC12BB9B2E400DD4D3B /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				FD208FC22BB9B2FC00DD4D3B /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		FD3C6EB52BBC418C00B14FF9 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FD3C6EB72BBC41A000B14FF9 /* SCTabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		FD3C6EB92BBC79ED00B14FF9 /* Chip */ = {
+			isa = PBXGroup;
+			children = (
+				FD3C6EBA2BBC79FE00B14FF9 /* SCSearchChip.swift */,
+				FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */,
+			);
+			path = Chip;
+			sourceTree = "<group>";
+		};
+		FD4A3B3D2BBADBBE00D2DFFA /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				FD2A26092BAC837000F7B317 /* SCRadioButton.swift */,
+				FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */,
+				FD13D4972BAB56AA0016F0A0 /* SCButton.swift */,
+				FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */,
+				FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		FD4A3B3E2BBADBCE00D2DFFA /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				FD208FC42BB9C45700DD4D3B /* SCNumberIcon.swift */,
+				FD208FBF2BB9AF3500DD4D3B /* SCIcon.swift */,
+				FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		FD4A3B3F2BBADBDE00D2DFFA /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */,
+				FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */,
+				FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		FD4A3B402BBADBED00D2DFFA /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				FD208FB92BB634AF00DD4D3B /* SCTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		FD4A3B412BBADC0000D2DFFA /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		FDE9EA202BBDCA01007AA4D7 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */,
+			);
+			path = PopUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +291,7 @@
 			files = (
 				FD0C396F2BA9914D00CC05AA /* Preview Assets.xcassets in Resources */,
 				FD0C396C2BA9914D00CC05AA /* Assets.xcassets in Resources */,
+				FD0C39762BA9D99D00CC05AA /* PretendardVariable.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +302,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */,
+				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
+				FD208FC02BB9AF3500DD4D3B /* SCIcon.swift in Sources */,
+				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
+				FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */,
+				FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */,
+				FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */,
+				FD3C6EBB2BBC79FE00B14FF9 /* SCSearchChip.swift in Sources */,
+				FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */,
+				FD208FC72BB9E13A00DD4D3B /* SCProgressBar.swift in Sources */,
+				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
+				FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */,
+				FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
+				FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */,
+				FD208FC32BB9B2FC00DD4D3B /* Constants.swift in Sources */,
+				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
+				FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */,
+				FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */,
+				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
+				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,
+				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
 				FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +461,7 @@
 				DEVELOPMENT_TEAM = 4N97P5J52N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Score/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "스코어";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -311,6 +498,7 @@
 				DEVELOPMENT_TEAM = 4N97P5J52N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Score/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "스코어";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
