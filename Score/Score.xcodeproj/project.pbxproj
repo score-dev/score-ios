@@ -33,6 +33,7 @@
 		FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
 		FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */; };
+		FDE9EA252BBED551007AA4D7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FDE9EA242BBED551007AA4D7 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE9EA252BBED551007AA4D7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +99,13 @@
 			isa = PBXGroup;
 			children = (
 				FD0C39782BA9D9DE00CC05AA /* Info.plist */,
-				FD0C39772BA9D9AA00CC05AA /* Font */,
 				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
+				FDE9EA282BBED5A7007AA4D7 /* View */,
+				FDE9EA272BBED5A0007AA4D7 /* Store */,
+				FDE9EA262BBED595007AA4D7 /* Reducer */,
+				FD0C39772BA9D9AA00CC05AA /* Font */,
 				FD208FC12BB9B2E400DD4D3B /* Constant */,
 				FD0C397B2BA9E47400CC05AA /* Extension */,
-				FD0C39692BA9914B00CC05AA /* ContentView.swift */,
-				FD13D4962BAB56A00016F0A0 /* UIComponent */,
 				FD0C396B2BA9914D00CC05AA /* Assets.xcassets */,
 				FD0C396D2BA9914D00CC05AA /* Preview Content */,
 			);
@@ -231,6 +234,29 @@
 			path = PopUp;
 			sourceTree = "<group>";
 		};
+		FDE9EA262BBED595007AA4D7 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		FDE9EA272BBED5A0007AA4D7 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		FDE9EA282BBED5A7007AA4D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD0C39692BA9914B00CC05AA /* ContentView.swift */,
+				FD13D4962BAB56A00016F0A0 /* UIComponent */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,6 +273,9 @@
 			dependencies = (
 			);
 			name = Score;
+			packageProductDependencies = (
+				FDE9EA242BBED551007AA4D7 /* ComposableArchitecture */,
+			);
 			productName = Score;
 			productReference = FD0C39642BA9914B00CC05AA /* Score.app */;
 			productType = "com.apple.product-type.application";
@@ -275,6 +304,9 @@
 				Base,
 			);
 			mainGroup = FD0C395B2BA9914B00CC05AA;
+			packageReferences = (
+				FDE9EA232BBED551007AA4D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = FD0C39652BA9914B00CC05AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -546,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDE9EA232BBED551007AA4D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDE9EA242BBED551007AA4D7 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDE9EA232BBED551007AA4D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FD0C395C2BA9914B00CC05AA /* Project object */;
 }
