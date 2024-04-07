@@ -103,11 +103,9 @@
 				FDE9EA282BBED5A7007AA4D7 /* View */,
 				FDE9EA272BBED5A0007AA4D7 /* Store */,
 				FDE9EA262BBED595007AA4D7 /* Reducer */,
-				FD0C39772BA9D9AA00CC05AA /* Font */,
 				FD208FC12BB9B2E400DD4D3B /* Constant */,
 				FD0C397B2BA9E47400CC05AA /* Extension */,
-				FD0C396B2BA9914D00CC05AA /* Assets.xcassets */,
-				FD0C396D2BA9914D00CC05AA /* Preview Content */,
+				FD6783922BC2DC51008743D4 /* Resource */,
 			);
 			path = Score;
 			sourceTree = "<group>";
@@ -224,6 +222,16 @@
 				FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */,
 			);
 			path = Shape;
+			sourceTree = "<group>";
+		};
+		FD6783922BC2DC51008743D4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FD0C396B2BA9914D00CC05AA /* Assets.xcassets */,
+				FD0C39772BA9D9AA00CC05AA /* Font */,
+				FD0C396D2BA9914D00CC05AA /* Preview Content */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		FDE9EA202BBDCA01007AA4D7 /* PopUp */ = {
