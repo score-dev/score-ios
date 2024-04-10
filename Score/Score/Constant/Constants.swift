@@ -12,7 +12,8 @@ import SwiftUI
 enum Constants {
     //MARK: - ImageName
     
-    enum ImageName: String, CaseIterable {
+    enum ImageName: String,
+                    CaseIterable {
         /// Plain Icons
         case heart
         case footsteps
@@ -64,6 +65,24 @@ enum Constants {
         case arrowUp = "arrow.up"
         case arrowDown = "arrow.down"
         case flag
+    }
+    
+    //MARK: - APIKey
+    
+    enum APIKey {
+        
+        //MARK: - Naver
+        
+        enum Naver: String {
+            case clientID = "NAVER_CLIENT_ID"
+            case secretKey = "NAVER_SECRET_KEY"
+            
+            //MARK: - findValueInBundle
+            func findValueInBundle() -> String {
+                Bundle.main.infoDictionary?[self.rawValue]
+                as? String ?? "none"
+            }
+        }
     }
 }
 
