@@ -32,7 +32,7 @@
 		FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */; };
 		FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */; };
 		FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */; };
-		FD6185F42BC6CE360096C8D1 /* Scretes.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD6185F32BC6CE360096C8D1 /* Scretes.xcconfig */; };
+		FDC18D392BC6D92A00A86D41 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
 		FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */; };
 		FDE9EA252BBED551007AA4D7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FDE9EA242BBED551007AA4D7 /* ComposableArchitecture */; };
@@ -68,7 +68,7 @@
 		FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTagChip.swift; sourceTree = "<group>"; };
 		FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecordButton.swift; sourceTree = "<group>"; };
 		FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCapsuleButton.swift; sourceTree = "<group>"; };
-		FD6185F32BC6CE360096C8D1 /* Scretes.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Scretes.xcconfig; sourceTree = "<group>"; };
+		FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
 		FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPopUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,7 +256,7 @@
 				FD0C39782BA9D9DE00CC05AA /* Info.plist */,
 				FD0C396B2BA9914D00CC05AA /* Assets.xcassets */,
 				FD0C39772BA9D9AA00CC05AA /* Font */,
-				FD6185F32BC6CE360096C8D1 /* Scretes.xcconfig */,
+				FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD6185F42BC6CE360096C8D1 /* Scretes.xcconfig in Resources */,
+				FDC18D392BC6D92A00A86D41 /* Secrets.xcconfig in Resources */,
 				FD0C396F2BA9914D00CC05AA /* Preview Assets.xcassets in Resources */,
 				FD0C396C2BA9914D00CC05AA /* Assets.xcassets in Resources */,
 				FD0C39762BA9D99D00CC05AA /* PretendardVariable.ttf in Resources */,
@@ -445,7 +445,7 @@
 /* Begin XCBuildConfiguration section */
 		FD0C39702BA9914D00CC05AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD6185F32BC6CE360096C8D1 /* Scretes.xcconfig */;
+			baseConfigurationReference = FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -509,7 +509,7 @@
 		};
 		FD0C39712BA9914D00CC05AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD6185F32BC6CE360096C8D1 /* Scretes.xcconfig */;
+			baseConfigurationReference = FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
