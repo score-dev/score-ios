@@ -43,7 +43,7 @@
 		FD0C396B2BA9914D00CC05AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0C396E2BA9914D00CC05AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PretendardVariable.ttf; sourceTree = "<group>"; };
-		FD0C39782BA9D9DE00CC05AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FD0C39782BA9D9DE00CC05AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD0C39792BA9DA4A00CC05AA /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
 		FD0C397C2BA9E48400CC05AA /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		FD13D4972BAB56AA0016F0A0 /* SCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCButton.swift; sourceTree = "<group>"; };
@@ -98,7 +98,6 @@
 		FD0C39662BA9914B00CC05AA /* Score */ = {
 			isa = PBXGroup;
 			children = (
-				FD0C39782BA9D9DE00CC05AA /* Info.plist */,
 				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
 				FDE9EA282BBED5A7007AA4D7 /* View */,
 				FDE9EA272BBED5A0007AA4D7 /* Store */,
@@ -227,9 +226,10 @@
 		FD6783922BC2DC51008743D4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FD0C396D2BA9914D00CC05AA /* Preview Content */,
+				FD0C39782BA9D9DE00CC05AA /* Info.plist */,
 				FD0C396B2BA9914D00CC05AA /* Assets.xcassets */,
 				FD0C39772BA9D9AA00CC05AA /* Font */,
-				FD0C396D2BA9914D00CC05AA /* Preview Content */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -497,11 +497,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Score/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Score/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = 4N97P5J52N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Score/Info.plist;
+				INFOPLIST_FILE = Score/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "스코어";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -534,11 +534,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Score/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Score/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = 4N97P5J52N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Score/Info.plist;
+				INFOPLIST_FILE = Score/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "스코어";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
