@@ -32,6 +32,13 @@
 		FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */; };
 		FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */; };
 		FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */; };
+		FD8FC3B02BC8251700B80B3D /* CalendarFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3AF2BC8251700B80B3D /* CalendarFeature.swift */; };
+		FD8FC3B22BC826F600B80B3D /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3B12BC826F600B80B3D /* Date+.swift */; };
+		FD8FC3B52BC834F300B80B3D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3B42BC834F300B80B3D /* CalendarView.swift */; };
+		FD8FC3B72BC8426800B80B3D /* CalendarGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3B62BC8426800B80B3D /* CalendarGridItem.swift */; };
+		FD8FC3B92BC8465D00B80B3D /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3B82BC8465D00B80B3D /* DayOfWeek.swift */; };
+		FD8FC3BB2BC8470700B80B3D /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3BA2BC8470700B80B3D /* Month.swift */; };
+		FD8FC3BE2BC86EB100B80B3D /* DateComponentsWithID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */; };
 		FDC18D392BC6D92A00A86D41 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
 		FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */; };
@@ -68,6 +75,13 @@
 		FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTagChip.swift; sourceTree = "<group>"; };
 		FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecordButton.swift; sourceTree = "<group>"; };
 		FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCapsuleButton.swift; sourceTree = "<group>"; };
+		FD8FC3AF2BC8251700B80B3D /* CalendarFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarFeature.swift; sourceTree = "<group>"; };
+		FD8FC3B12BC826F600B80B3D /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		FD8FC3B42BC834F300B80B3D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		FD8FC3B62BC8426800B80B3D /* CalendarGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarGridItem.swift; sourceTree = "<group>"; };
+		FD8FC3B82BC8465D00B80B3D /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
+		FD8FC3BA2BC8470700B80B3D /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponentsWithID.swift; sourceTree = "<group>"; };
 		FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
 		FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPopUp.swift; sourceTree = "<group>"; };
@@ -126,6 +140,7 @@
 			children = (
 				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
 				FDE9EA282BBED5A7007AA4D7 /* View */,
+				FD8FC3BC2BC86E8C00B80B3D /* Model */,
 				FDE9EA272BBED5A0007AA4D7 /* Store */,
 				FDE9EA262BBED595007AA4D7 /* Reducer */,
 				FD208FC12BB9B2E400DD4D3B /* Constant */,
@@ -157,6 +172,7 @@
 				FD0C39792BA9DA4A00CC05AA /* Font+.swift */,
 				FD0C397C2BA9E48400CC05AA /* Color+.swift */,
 				FD208FBD2BB6F70200DD4D3B /* View+.swift */,
+				FD8FC3B12BC826F600B80B3D /* Date+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -180,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				FD208FC22BB9B2FC00DD4D3B /* Constants.swift */,
+				FD8FC3B82BC8465D00B80B3D /* DayOfWeek.swift */,
+				FD8FC3BA2BC8470700B80B3D /* Month.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -261,6 +279,23 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		FD8FC3B32BC834E400B80B3D /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FD8FC3B42BC834F300B80B3D /* CalendarView.swift */,
+				FD8FC3B62BC8426800B80B3D /* CalendarGridItem.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FD8FC3BC2BC86E8C00B80B3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FDE9EA202BBDCA01007AA4D7 /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +307,7 @@
 		FDE9EA262BBED595007AA4D7 /* Reducer */ = {
 			isa = PBXGroup;
 			children = (
+				FD8FC3AF2BC8251700B80B3D /* CalendarFeature.swift */,
 			);
 			path = Reducer;
 			sourceTree = "<group>";
@@ -287,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				FD0C39692BA9914B00CC05AA /* ContentView.swift */,
+				FD8FC3B32BC834E400B80B3D /* Calendar */,
 				FD13D4962BAB56A00016F0A0 /* UIComponent */,
 			);
 			path = View;
@@ -414,12 +451,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8FC3BE2BC86EB100B80B3D /* DateComponentsWithID.swift in Sources */,
+				FD8FC3B72BC8426800B80B3D /* CalendarGridItem.swift in Sources */,
 				FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */,
 				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
 				FD208FC02BB9AF3500DD4D3B /* SCIcon.swift in Sources */,
 				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
 				FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */,
 				FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */,
+				FD8FC3B52BC834F300B80B3D /* CalendarView.swift in Sources */,
+				FD8FC3BB2BC8470700B80B3D /* Month.swift in Sources */,
+				FD8FC3B02BC8251700B80B3D /* CalendarFeature.swift in Sources */,
+				FD8FC3B22BC826F600B80B3D /* Date+.swift in Sources */,
 				FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */,
 				FD3C6EBB2BBC79FE00B14FF9 /* SCSearchChip.swift in Sources */,
 				FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */,
@@ -427,6 +470,7 @@
 				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
 				FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */,
 				FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */,
+				FD8FC3B92BC8465D00B80B3D /* DayOfWeek.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
 				FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */,
 				FD208FC32BB9B2FC00DD4D3B /* Constants.swift in Sources */,

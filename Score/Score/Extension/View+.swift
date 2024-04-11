@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//MARK: - View+Feature
+
 extension View {
     //MARK: - hideKeyBoard
     
@@ -20,3 +22,24 @@ extension View {
     }
 }
 
+//MARK: - View+UI
+
+extension View {
+    //MARK: - layout
+    @ViewBuilder
+    func layout() -> some View{
+        padding(.horizontal, 24)
+    }
+    
+    //MARK: - layoutOfCalendarItem
+    
+    @ViewBuilder
+    func layoutOfCalendarItem() -> some View {
+        // 양쪽에 padding이 들어가므로 2배를 곱해줍니다.
+        let paddingHorizontal: CGFloat = CGFloat(Constants.Layout.horizontal.rawValue * 2)
+        frame(
+            width: (UIScreen.main.bounds.width - paddingHorizontal) / 7,
+            height: (UIScreen.main.bounds.width - paddingHorizontal) / 7
+        )
+    }
+}

@@ -15,6 +15,9 @@ enum Weather: String {
     case snow
     case rain
     
+    //MARK: - imageName
+    
+    /// 날씨에 해당하는 이미지 이름을 반환합니다.
     func imageName() -> String {
         switch self {
         case .sun:
@@ -36,6 +39,9 @@ enum Dust: String  {
     case regular = "보통"
     case good = "좋음"
     
+    //MARK: - imageName
+    
+    /// 미세먼지 농도에 해당하는 이미지 이름을 반환합니다.
     func imageName() -> String {
         switch self {
         case .bad:
@@ -68,6 +74,8 @@ struct SCInformationCard: View {
             .background(Color.brandColor(color: .gray2),
                         in: RoundedRectangle(cornerRadius: 7))
     }
+    
+    //MARK: - labelBuilder
     
     @ViewBuilder
     func labelBuilder() -> some View {

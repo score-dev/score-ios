@@ -10,13 +10,19 @@ import SwiftUI
 //MARK: - SCNumberIconStyle
 
 enum SCNumberIconStyle: CaseIterable {
+    case plain
     case tint
     case black
     case gray
+    case none
 }
 
 //MARK: - SCNumberIcon
 
+/// Calendar View 날짜를 표시하는 component입니다.
+/// - Parameters:
+///     - style: SCNumberIcon의 스타일을 정의합니다.
+///     - number: 날짜(day)를 정의합니다.
 struct SCNumberIcon: View {
     let style: SCNumberIconStyle
     let number: Int
@@ -29,12 +35,21 @@ struct SCNumberIcon: View {
 
 //MARK: - SCNumberIconViewModifier
 
+/// - Parameters:
+///     - style: SCNumberIcon의 스타일을 정의합니다. 
 struct SCNumberIconViewModifier: ViewModifier {
     let style: SCNumberIconStyle
     
     @ViewBuilder
     func body(content: Content) -> some View {
         switch style {
+        case .plain:
+            content
+                .pretendard(weight: .regular,
+                            size: .xs)
+                .foregroundStyle(Color.black)
+                .frame(width: 34, height: 34)
+            
         case .tint:
             content
                 .pretendard(weight: .regular,
@@ -70,6 +85,11 @@ struct SCNumberIconViewModifier: ViewModifier {
                         .foregroundStyle(Color.brandColor(color: .gray2))
                 }
                 .frame(width: 34, height: 34)
+            
+        case .none:
+            Rectangle()
+                .frame(width: 34, height: 34)
+                .foregroundStyle(Color.clear)
         }
     }
 }
