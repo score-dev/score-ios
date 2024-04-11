@@ -70,7 +70,6 @@ enum Constants {
     //MARK: - APIKey
     
     enum APIKey {
-        
         //MARK: - Naver
         
         enum Naver: String {
@@ -78,11 +77,18 @@ enum Constants {
             case secretKey = "NAVER_SECRET_KEY"
             
             //MARK: - findValueInBundle
+            
             func findValueInBundle() -> String {
                 Bundle.main.infoDictionary?[self.rawValue]
                 as? String ?? "none"
             }
         }
+    }
+    
+    //MARK: - Layout
+    
+    enum Layout: Int {
+        case horizontal = 24
     }
 }
 
