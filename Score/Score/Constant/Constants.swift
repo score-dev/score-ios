@@ -90,6 +90,18 @@ enum Constants {
     enum Layout: CGFloat {
         case horizontal = 24
     }
+    
+    //MARK: - View
+    
+    enum View {
+        //MARK: - MyPage
+        
+        enum MyPage: String {
+            case nickNamePlaceHolder = "현재 닉네임"
+            case heightPlaceHolder = "000cm"
+            case weightPlaceHolder = "00kg"
+        }
+    }
 }
 
 //MARK: - Preview
