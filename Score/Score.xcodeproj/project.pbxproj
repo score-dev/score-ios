@@ -39,6 +39,11 @@
 		FD8FC3B92BC8465D00B80B3D /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3B82BC8465D00B80B3D /* DayOfWeek.swift */; };
 		FD8FC3BB2BC8470700B80B3D /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3BA2BC8470700B80B3D /* Month.swift */; };
 		FD8FC3BE2BC86EB100B80B3D /* DateComponentsWithID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */; };
+		FD9E06FC2BC97D29000109FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E06FB2BC97D29000109FD /* User.swift */; };
+		FD9E06FF2BC97DF6000109FD /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */; };
+		FD9E07012BC97F20000109FD /* ProfileEditFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */; };
+		FD9E07082BCB0913000109FD /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07072BCB0913000109FD /* PhotoPickerView.swift */; };
+		FD9E070A2BCB0A1C000109FD /* PhotoPickerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07092BCB0A1C000109FD /* PhotoPickerFeature.swift */; };
 		FDC18D392BC6D92A00A86D41 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
 		FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */; };
@@ -82,6 +87,11 @@
 		FD8FC3B82BC8465D00B80B3D /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		FD8FC3BA2BC8470700B80B3D /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 		FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponentsWithID.swift; sourceTree = "<group>"; };
+		FD9E06FB2BC97D29000109FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
+		FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditFeature.swift; sourceTree = "<group>"; };
+		FD9E07072BCB0913000109FD /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
+		FD9E07092BCB0A1C000109FD /* PhotoPickerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerFeature.swift; sourceTree = "<group>"; };
 		FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
 		FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPopUp.swift; sourceTree = "<group>"; };
@@ -180,6 +190,7 @@
 		FD13D4962BAB56A00016F0A0 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				FD9E07022BCAD9BB000109FD /* Picker */,
 				FDE9EA202BBDCA01007AA4D7 /* PopUp */,
 				FD3C6EB92BBC79ED00B14FF9 /* Chip */,
 				FD3C6EB52BBC418C00B14FF9 /* TabBar */,
@@ -292,8 +303,25 @@
 			isa = PBXGroup;
 			children = (
 				FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */,
+				FD9E06FB2BC97D29000109FD /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FD9E06FD2BC97DE1000109FD /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */,
+				FD9E07072BCB0913000109FD /* PhotoPickerView.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		FD9E07022BCAD9BB000109FD /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Picker;
 			sourceTree = "<group>";
 		};
 		FDE9EA202BBDCA01007AA4D7 /* PopUp */ = {
@@ -308,6 +336,8 @@
 			isa = PBXGroup;
 			children = (
 				FD8FC3AF2BC8251700B80B3D /* CalendarFeature.swift */,
+				FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */,
+				FD9E07092BCB0A1C000109FD /* PhotoPickerFeature.swift */,
 			);
 			path = Reducer;
 			sourceTree = "<group>";
@@ -323,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				FD0C39692BA9914B00CC05AA /* ContentView.swift */,
+				FD9E06FD2BC97DE1000109FD /* MyPage */,
 				FD8FC3B32BC834E400B80B3D /* Calendar */,
 				FD13D4962BAB56A00016F0A0 /* UIComponent */,
 			);
@@ -451,10 +482,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD9E070A2BCB0A1C000109FD /* PhotoPickerFeature.swift in Sources */,
 				FD8FC3BE2BC86EB100B80B3D /* DateComponentsWithID.swift in Sources */,
 				FD8FC3B72BC8426800B80B3D /* CalendarGridItem.swift in Sources */,
+				FD9E06FF2BC97DF6000109FD /* ProfileEditView.swift in Sources */,
 				FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */,
 				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
+				FD9E06FC2BC97D29000109FD /* User.swift in Sources */,
 				FD208FC02BB9AF3500DD4D3B /* SCIcon.swift in Sources */,
 				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
 				FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */,
@@ -464,6 +498,7 @@
 				FD8FC3B02BC8251700B80B3D /* CalendarFeature.swift in Sources */,
 				FD8FC3B22BC826F600B80B3D /* Date+.swift in Sources */,
 				FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */,
+				FD9E07082BCB0913000109FD /* PhotoPickerView.swift in Sources */,
 				FD3C6EBB2BBC79FE00B14FF9 /* SCSearchChip.swift in Sources */,
 				FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */,
 				FD208FC72BB9E13A00DD4D3B /* SCProgressBar.swift in Sources */,
@@ -473,6 +508,7 @@
 				FD8FC3B92BC8465D00B80B3D /* DayOfWeek.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
 				FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */,
+				FD9E07012BC97F20000109FD /* ProfileEditFeature.swift in Sources */,
 				FD208FC32BB9B2FC00DD4D3B /* Constants.swift in Sources */,
 				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
 				FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */,
