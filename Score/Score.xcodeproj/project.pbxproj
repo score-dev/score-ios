@@ -44,10 +44,15 @@
 		FD9E07012BC97F20000109FD /* ProfileEditFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */; };
 		FD9E07082BCB0913000109FD /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07072BCB0913000109FD /* PhotoPickerView.swift */; };
 		FD9E070A2BCB0A1C000109FD /* PhotoPickerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07092BCB0A1C000109FD /* PhotoPickerFeature.swift */; };
+		FD9E070D2BCB4E66000109FD /* SCNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E070C2BCB4E66000109FD /* SCNavigationBar.swift */; };
+		FD9E070F2BCB58BC000109FD /* SCLineTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E070E2BCB58BC000109FD /* SCLineTabBar.swift */; };
+		FD9E07112BCC99DE000109FD /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07102BCC99DE000109FD /* DismissButton.swift */; };
 		FDC18D392BC6D92A00A86D41 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
 		FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */; };
 		FDE9EA252BBED551007AA4D7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FDE9EA242BBED551007AA4D7 /* ComposableArchitecture */; };
+		FDFAA42D2BCE05BF0053CD9F /* SCLineProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAA42C2BCE05BF0053CD9F /* SCLineProgress.swift */; };
+		FDFAA42F2BCE0A550053CD9F /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAA42E2BCE0A550053CD9F /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,9 +97,14 @@
 		FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditFeature.swift; sourceTree = "<group>"; };
 		FD9E07072BCB0913000109FD /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		FD9E07092BCB0A1C000109FD /* PhotoPickerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerFeature.swift; sourceTree = "<group>"; };
+		FD9E070C2BCB4E66000109FD /* SCNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNavigationBar.swift; sourceTree = "<group>"; };
+		FD9E070E2BCB58BC000109FD /* SCLineTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLineTabBar.swift; sourceTree = "<group>"; };
+		FD9E07102BCC99DE000109FD /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
 		FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
 		FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPopUp.swift; sourceTree = "<group>"; };
+		FDFAA42C2BCE05BF0053CD9F /* SCLineProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLineProgress.swift; sourceTree = "<group>"; };
+		FDFAA42E2BCE0A550053CD9F /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +200,8 @@
 		FD13D4962BAB56A00016F0A0 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				FDFAA42B2BCE05720053CD9F /* Progress */,
+				FD9E070B2BCB4E53000109FD /* Navigation */,
 				FD9E07022BCAD9BB000109FD /* Picker */,
 				FDE9EA202BBDCA01007AA4D7 /* PopUp */,
 				FD3C6EB92BBC79ED00B14FF9 /* Chip */,
@@ -217,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				FD3C6EB72BBC41A000B14FF9 /* SCTabBar.swift */,
+				FD9E070E2BCB58BC000109FD /* SCLineTabBar.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -238,6 +251,7 @@
 				FD13D4972BAB56AA0016F0A0 /* SCButton.swift */,
 				FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */,
 				FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */,
+				FD9E07102BCC99DE000109FD /* DismissButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -255,7 +269,6 @@
 		FD4A3B3F2BBADBDE00D2DFFA /* Card */ = {
 			isa = PBXGroup;
 			children = (
-				FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */,
 				FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */,
 				FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */,
 			);
@@ -274,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */,
+				FDFAA42E2BCE0A550053CD9F /* Line.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -324,6 +338,14 @@
 			path = Picker;
 			sourceTree = "<group>";
 		};
+		FD9E070B2BCB4E53000109FD /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E070C2BCB4E66000109FD /* SCNavigationBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		FDE9EA202BBDCA01007AA4D7 /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +380,15 @@
 				FD13D4962BAB56A00016F0A0 /* UIComponent */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FDFAA42B2BCE05720053CD9F /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */,
+				FDFAA42C2BCE05BF0053CD9F /* SCLineProgress.swift */,
+			);
+			path = Progress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,6 +520,8 @@
 				FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */,
 				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
 				FD9E06FC2BC97D29000109FD /* User.swift in Sources */,
+				FD9E070F2BCB58BC000109FD /* SCLineTabBar.swift in Sources */,
+				FDFAA42D2BCE05BF0053CD9F /* SCLineProgress.swift in Sources */,
 				FD208FC02BB9AF3500DD4D3B /* SCIcon.swift in Sources */,
 				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
 				FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */,
@@ -505,11 +538,14 @@
 				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
 				FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */,
 				FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */,
+				FD9E070D2BCB4E66000109FD /* SCNavigationBar.swift in Sources */,
 				FD8FC3B92BC8465D00B80B3D /* DayOfWeek.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
 				FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */,
+				FDFAA42F2BCE0A550053CD9F /* Line.swift in Sources */,
 				FD9E07012BC97F20000109FD /* ProfileEditFeature.swift in Sources */,
 				FD208FC32BB9B2FC00DD4D3B /* Constants.swift in Sources */,
+				FD9E07112BCC99DE000109FD /* DismissButton.swift in Sources */,
 				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
 				FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */,
 				FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */,
