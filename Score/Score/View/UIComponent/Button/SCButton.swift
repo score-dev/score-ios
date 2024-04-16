@@ -29,6 +29,28 @@ struct SCButton<Label : View>: View {
                 .modifier(SCButtonViewModifier(style: style))
         }
     }
+    
+    //MARK: - buttonDisabled
+    
+    /// SCButton을 disable합니다.
+    /// - Parameters:
+    ///     - isDisabled: true일 때 Button이 disable됩니다. 
+    @ViewBuilder
+    func buttonDisabled(
+        _ isDisabled: Bool
+    ) -> some View {
+        if isDisabled {
+            self
+                .disabled(isDisabled)
+                .overlay {
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundStyle(Color.white)
+                        .opacity(0.7)
+                }
+        } else { 
+            self
+        }
+    }
 }
 
 
@@ -97,11 +119,27 @@ struct SCButtonViewModifier: ViewModifier {
         } label: {
             Text("primary")
         }
+        
+        SCButton(style: .primary) {
+            
+        } label: {
+            Text("primary")
+        }
+        .buttonDisabled(true)
+        
         SCButton(style: .secondary) {
             
         } label: {
             Text("secondary")
         }
+        
+        SCButton(style: .secondary) {
+            
+        } label: {
+            Text("secondary")
+        }
+        .buttonDisabled(false)
+        
         SCButton(style: .teritary) {
             
         } label: {
