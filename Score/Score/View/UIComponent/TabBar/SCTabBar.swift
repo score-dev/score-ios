@@ -23,13 +23,14 @@ enum SCTabItem: String {
     case schoolGroup = "학교 그룹"
     
     func imageName() -> String {
+        let constant = Constants.ImageName.self
         switch self {
         case .home:
-            return Constants.ImageName.home.rawValue
+            return constant.home.rawValue
         case .record:
-            return Constants.ImageName.footsteps.rawValue
+            return constant.footsteps.rawValue
         case .schoolGroup:
-            return Constants.ImageName.navigationUsers.rawValue
+            return constant.navigationUsers.rawValue
         }
     }
 }
@@ -61,10 +62,13 @@ struct SCTabBar: View {
             Rectangle()
                 .foregroundStyle(Color.white)
                 .frame(height: 56)
-            //FIXME: 배경과 탭바 사이 경계 나타내는 방식의 변경 필요
-                .shadow(radius: 12, x: 0, y: 0)
-//                .border(Color.brandColor(color: .gray1),
-//                        width: 0.5)
+                .edgeBorder(lineWidth: 0.5,
+                            edges: [.top],
+                            color: Color.brandColor(
+                                color: .gray3
+                            )
+                )
+
                 .offset(y: 15)
         }
         .frame(height: 56)
@@ -89,14 +93,19 @@ struct SCTabBar: View {
                     Image(item.imageName())
                         .resizable()
                         .renderingMode(.template)
-                        .frame(width: 24, height: 24)
-                        .foregroundStyle(Color.brandColor(color: selectedTab == item ?
-                            .gray1 : .sub1))
+                        .frame(width: 24,
+                               height: 24)
+                        .foregroundStyle(Color.brandColor(
+                            color: selectedTab == item ?
+                            .gray1 : .sub1)
+                        )
                     
                     Text(item.rawValue)
                         .pretendard(.caption)
-                        .foregroundStyle(Color.brandColor(color: selectedTab == item ?
-                            .gray1 : .sub1))
+                        .foregroundStyle(Color.brandColor(
+                            color: selectedTab == item ?
+                            .gray1 : .sub1)
+                        )
                 }
             }
             
@@ -107,13 +116,19 @@ struct SCTabBar: View {
                         .resizable()
                         .renderingMode(.template)
                         .foregroundStyle(Color.white)
-                        .frame(width: 24, height: 24)
+                        .frame(width: 24,
+                               height: 24)
                         .background {
                             Circle()
-                                .foregroundStyle(Color.brandColor(color: .main))
+                                .foregroundStyle(
+                                    Color.brandColor(
+                                        color: .main
+                                    )
+                                )
                                 .frame(width: 60, height: 60)
                         }
-                        .frame(width: 60, height: 60)
+                        .frame(width: 60,
+                               height: 60)
                     
                     Text(item.rawValue)
                         .pretendard(.caption)
