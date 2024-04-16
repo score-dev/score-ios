@@ -47,6 +47,7 @@ enum Constants {
         case weatherSun = "weather.sun"
         
         case navigationUsers = "navigation.users"
+        case chevronLeft = "chevron.left"
         
         /// Colored Icons
         case colorCamera = "color.camera"
