@@ -10,12 +10,21 @@ import SwiftUI
 //MARK: - SCTextFieldStyle
 
 enum SCTextFieldStyle {
-    case plain
-    case line
+    case plain(error: SCTextFieldError? = nil)
+    case line(error: SCTextFieldError? = nil)
     case search
     /// - Parameters:
     ///     - lineLimit: TextEditor에서 나타낼 최대 줄 수
     case editor(lineLimit: Int = 1)
+}
+
+//MARK: - SCTextFieldError
+
+// - FIXME: error message 변경 필요
+enum SCTextFieldError: String,
+                       Error {
+    case emptyFieldError = "빈 텍스트 필드입니다."
+    case regexError = "형식에 맞지 않습니다."
 }
 
 //MARK: - SCTextField
@@ -33,34 +42,41 @@ struct SCTextField: View {
         TextField(placeHolder,
                   text: $text,
                   axis: .vertical)
-            .textInputAutocapitalization(.never)
-            .autocorrectionDisabled()
-            .modifier(SCTextFieldViewModifier(style: style))
-            .tint(Color.brandColor(color: .main))
-            .onTapGesture {
-                hideKeyboard()
-            }
+        .textInputAutocapitalization(.never)
+        .autocorrectionDisabled()
+        .modifier(SCTextFieldViewModifier(style: style))
+        .onTapGesture {
+            hideKeyboard()
+        }
     }
     
-    //MARK: - trailingButtonItem
+    //MARK: - scButtonItem
     
-    // FIXME: 글자 수가 많아질 경우 버튼과 겹치는 현상 해결 필요
-    /// textField trailing에 버튼을 추가합니다.
+    /// SCTextField trailing에 버튼이 추가된 형태로 반환됩니다.
     /// - Parameters:
-    ///     - action: 버튼을 눌렀을 때 실행될 action을 정의합니다.
+    ///     - action: 버튼을 탭했을 때 수행할 동작을 정의합니다.
     ///     - label: 버튼의 Label을 정의합니다.
-    /// - Returns: trailing에 버튼이 overlay된 View가 반환됩니다.
     @ViewBuilder
-    func trailingButtonItem<Label: View>(
+    func scButtonItem<Label: View>(
         action: @escaping () -> (Void),
-        @ViewBuilder label: () -> Label)
-    -> some View {
-        overlay(alignment: .trailing) {
+        @ViewBuilder label: () -> Label
+    ) -> some View {
+        HStack {
+            TextField(placeHolder,
+                      text: $text,
+                      axis: .vertical)
+            .textInputAutocapitalization(.never)
+            .autocorrectionDisabled()
+            
+            Spacer()
+            
             Button(action: action) {
                 label()
             }
-            .foregroundStyle(Color.brandColor(color: .icon))
-            .padding(.trailing, 14)
+        }
+        .modifier(SCTextFieldViewModifier(style: style))
+        .onTapGesture {
+            hideKeyboard()
         }
     }
 }
@@ -76,24 +92,52 @@ struct SCTextFieldViewModifier: ViewModifier {
     @ViewBuilder
     func body(content: Content) -> some View {
         switch style {
-
-        case .plain:
+        case .plain(let error):
             content
                 .pretendard(.body3)
                 .padding(.vertical, 18)
                 .padding(.horizontal, 17)
+                .tint(
+                    error == nil ?
+                    Color.brandColor(color: .main):
+                    Color.brandColor(color: .red)
+                )
                 .overlay {
                     RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.brandColor(color: .gray3))
+                        .stroke(
+                            isFocused ?
+                            Color.brandColor(color: .main) :
+                            Color.brandColor(color: .gray3)
+                        )
                 }
+                .overlay {
+                    if error != nil {
+                        RoundedRectangle(cornerRadius: 14)
+                            .stroke(
+                                Color.brandColor(color: .red)
+                            )
+                    }
+                }
+                .focused($isFocused)
             
-        case .line:
+        case .line(let error):
             content
                 .pretendard(.body3)
                 .padding(.bottom, 8)
+                .tint(
+                    error == nil ?
+                    Color.brandColor(color: .main):
+                    Color.brandColor(color: .red)
+                )
                 .edgeBorder(edges: [.bottom],
-                            color: isFocused ? Color.brandColor(color: .main) :
-                                Color.brandColor(color: .gray3))
+                            color: isFocused ?
+                            .brandColor(color: .main) :
+                            .brandColor(color: .gray3))
+                .edgeBorder(edges: [.bottom],
+                            color: error != nil ?
+                            .brandColor(color: .red) :
+                            .clear
+                )
                 .focused($isFocused)
             
         case .search:
@@ -101,21 +145,29 @@ struct SCTextFieldViewModifier: ViewModifier {
                 .pretendard(.body3)
                 .padding(.vertical, 10)
                 .padding(.horizontal, 14)
+            // - FIXME: 디자인 쪽에 확인
+                .tint(.brandColor(color: .text3))
                 .background(Color.brandColor(color: .gray2),
                             in: RoundedRectangle(cornerRadius: 10))
                 .focused($isFocused)
-        
+            
         case .editor(let lineLimit):
             content
                 .lineLimit(lineLimit,
                            reservesSpace: true)
                 .pretendard(.body3)
+                .tint(.brandColor(color: .main))
                 .padding(.vertical, 18)
                 .padding(.horizontal, 17)
                 .overlay {
                     RoundedRectangle(cornerRadius: 14)
-                        .stroke(Color.brandColor(color: .gray3))
+                        .stroke(
+                            isFocused ?
+                            Color.brandColor(color: .gray3) :
+                            Color.brandColor(color: .main)
+                        )
                 }
+                .focused($isFocused)
         }
     }
 }
@@ -125,27 +177,51 @@ struct SCTextFieldViewModifier: ViewModifier {
 /// SCTextField 모든 스타일 프리뷰 입니다.
 #Preview {
     VStack {
-        SCTextField(style: .plain,
+        SCTextField(style: .plain(error: .emptyFieldError),
                     placeHolder: "12312",
                     text: .constant("hi"))
-        
-        SCTextField(style: .line,
-                    placeHolder: "12312",
-                    text: .constant("hi"))
-        .trailingButtonItem {
-            
+        .scButtonItem {
+            print("1")
         } label: {
-            Image(systemName: "xmark")
+            Image(systemName: "checkmark")
         }
         
+        SCTextField(style: .plain(),
+                    placeHolder: "12312",
+                    text: .constant("hi"))
+        .scButtonItem {
+            print("1")
+        } label: {
+            Image(systemName: "checkmark")
+        }
+        
+        
+        SCTextField(style: .line(),
+                    placeHolder: "12312",
+                    text: .constant("hi"))
+        .scButtonItem {
+            print("1")
+        } label: {
+            Image(systemName: "checkmark")
+        }
+        
+        SCTextField(style: .line(error: .emptyFieldError),
+                    placeHolder: "12312",
+                    text: .constant("hi"))
+        .scButtonItem {
+            print("1")
+        } label: {
+            Image(systemName: "checkmark")
+        }
         
         SCTextField(style: .search,
                     placeHolder: "22",
                     text: .constant("hi"))
-        .trailingButtonItem {
-            
+        .scButtonItem {
+            print("1")
         } label: {
-            Image(systemName: "magnifyingglass")
+            Image(systemName: "checkmark")
+                .foregroundStyle(Color.brandColor(color: .icon))
         }
         
         SCTextField(style: .editor(lineLimit: 5),
