@@ -8,6 +8,8 @@
 import ComposableArchitecture
 import SwiftUI
 
+//MARK: - ProfileEditView
+
 struct ProfileEditView: View {
     let store: StoreOf<ProfileEditFeature>
     let constant = Constants.View.MyPage.self
@@ -109,7 +111,7 @@ struct ProfileEditView: View {
                 Color.brandColor(color: .text1)
             )
         
-        SCTextField(style: .line,
+        SCTextField(style: .line(),
                     placeHolder: constant.nickNamePlaceHolder.rawValue,
                     text: viewStore.$displayedNickName)
     }
@@ -228,7 +230,8 @@ struct ProfileEditView: View {
                     .pretendard(.body2)
                     .foregroundStyle(Color.brandColor(color: .text1))
                 
-                SCTextField(style: .line,
+                /// FIXME: error control
+                SCTextField(style: .line(),
                             placeHolder: constant.heightPlaceHolder.rawValue,
                             text: viewStore.$displayedWeight)
                 .keyboardType(.numberPad)
@@ -239,7 +242,8 @@ struct ProfileEditView: View {
                     .pretendard(.body2)
                     .foregroundStyle(Color.brandColor(color: .text1))
                 
-                SCTextField(style: .line,
+                /// - FIXME: error control
+                SCTextField(style: .line(),
                             placeHolder: constant.heightPlaceHolder.rawValue,
                             text: viewStore.$displayedHeight)
                 .keyboardType(.numberPad)
@@ -248,7 +252,7 @@ struct ProfileEditView: View {
     }
 }
 
-
+//MARK: - Preview
 
 #Preview {
     ProfileEditView(
