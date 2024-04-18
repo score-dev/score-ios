@@ -36,11 +36,18 @@ struct SCProgressBar: View {
                     HStack(spacing: 4) {
                         RoundedRectangle(cornerRadius: 7)
                             .foregroundStyle(Color.brandColor(color: .main))
-                            .frame(width: geometry.size.width * progressInBound)
-                        if progress <= 0.9 {
+                            .frame(
+                                width: geometry.size.width * progressInBound
+                            )
+                        // 발바닥 이미지 크기만큼 progressBar의 공간이 남아있으면
+                        if geometry.size.width * (1 - progress) > 19 {
                             Image(Constants.ImageName.footsteps.rawValue)
+                                .resizable()
                                 .renderingMode(.template)
-                                .foregroundStyle(Color.brandColor(color: .main))
+                                .frame(width: 19, height: 19)
+                                .foregroundStyle(
+                                    Color.brandColor(color: .main)
+                                )
                                 .rotationEffect(.degrees(90))
                         }
                     }

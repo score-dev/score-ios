@@ -7,19 +7,46 @@
 
 import SwiftUI
 
+//MARK: - DismissButtonStyle
+
+enum DismissButtonStyle: String {
+    case close
+    case chevron
+    
+    //MARK: - imageName
+    
+    /// 해당하는 이미지 이름을 반환합니다.
+    func imageName() -> String {
+        let constant = Constants.ImageName.self
+        switch self {
+        case .close:
+            return constant.close.rawValue
+        case .chevron:
+            return constant.chevronLeft.rawValue
+        }
+    }
+}
+
 //MARK: - DismissButton
 
 struct DismissButton: View {
+    private let constant = Constants.ImageName.self
+    
+    let style: DismissButtonStyle
     let color: Color
     let action: () -> (Void)
     
-    init(action: @escaping () -> (Void)) {
+    init(style: DismissButtonStyle,
+         action: @escaping () -> (Void)) {
+        self.style = style
         self.color = Color.brandColor(color: .sub1)
         self.action = action
     }
     
-    init(color: Color,
+    init(style: DismissButtonStyle,
+         color: Color,
          action: @escaping () -> (Void)) {
+        self.style = style
         self.color = color
         self.action = action
     }
@@ -27,7 +54,7 @@ struct DismissButton: View {
     
     var body: some View {
         Button(action: action) {
-            Image(Constants.ImageName.chevronLeft.rawValue)
+            Image(style.imageName())
                 .renderingMode(.template)
                 .foregroundStyle(color)
         }
@@ -40,11 +67,12 @@ struct DismissButton: View {
 
 #Preview {
     VStack {
-        DismissButton {
+        DismissButton(style: .chevron) {
             
         }
         
-        DismissButton(color: .blue) {
+        DismissButton(style: .close,
+                      color: .blue) {
             
         }
     }
