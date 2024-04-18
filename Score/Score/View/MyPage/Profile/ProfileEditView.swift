@@ -12,7 +12,7 @@ import SwiftUI
 
 struct ProfileEditView: View {
     let store: StoreOf<ProfileEditFeature>
-    let constant = Constants.View.MyPage.self
+    let constant = Contexts.MyPage.self
     
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
