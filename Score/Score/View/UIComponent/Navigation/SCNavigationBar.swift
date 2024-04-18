@@ -36,8 +36,6 @@ struct SCNavigationBar<Content: View>: View {
                 .foregroundStyle(
                     Color.brandColor(color: .text1)
                 )
-            
-            Spacer()
         }
         .padding(.vertical, 10)
         .layout()
@@ -59,23 +57,27 @@ extension View {
         switch style {
         case .overlay:
            self
+                .frame(maxWidth: .infinity,
+                       maxHeight: .infinity)
                 .toolbar(.hidden)
                 .overlay(alignment: .topLeading) {
                     SCNavigationBar(style: style) {
                         content()
                     }
                 }
-            .frame(maxHeight: .infinity)
             
         case .vertical:
             VStack(alignment: .leading) {
                 SCNavigationBar(style: style) {
                     content()
                 }
+                
                 self
                     .toolbar(.hidden)
+                
+                Spacer()
             }
-            .frame(maxHeight: .infinity)
+            .frame(maxWidth: .infinity)
         }
     }
 }
@@ -101,7 +103,8 @@ extension View {
         }
         .navigationTitle("123")
         .scNavigationBar(style: .overlay) {
-            DismissButton(color: .white) {
+            DismissButton(style: .chevron,
+                          color: .white) {
                 
             }
             
@@ -140,7 +143,8 @@ extension View {
             Image(systemName: "checkmark")
         }
         .scNavigationBar(style: .vertical) {
-            DismissButton(color: .white) {
+            DismissButton(style: .chevron,
+                          color: .white) {
                 
             }
             
