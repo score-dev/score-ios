@@ -57,14 +57,14 @@ struct SCTextField: View {
     ///     - action: 버튼을 탭했을 때 수행할 동작을 정의합니다.
     ///     - label: 버튼의 Label을 정의합니다.
     @ViewBuilder
-    func scButtonItem<Label: View>(
+    func scButtonItem<C: View>(
         action: @escaping () -> (Void),
-        @ViewBuilder label: () -> Label
+        @ViewBuilder label: () -> C
     ) -> some View {
         HStack {
             TextField(placeHolder,
                       text: $text,
-                      axis: .vertical)
+                      axis: .horizontal)
             .textInputAutocapitalization(.never)
             .autocorrectionDisabled()
             
@@ -163,8 +163,8 @@ struct SCTextFieldViewModifier: ViewModifier {
                     RoundedRectangle(cornerRadius: 14)
                         .stroke(
                             isFocused ?
-                            Color.brandColor(color: .gray3) :
-                            Color.brandColor(color: .main)
+                            Color.brandColor(color: .main) :
+                            Color.brandColor(color: .gray3)
                         )
                 }
                 .focused($isFocused)
