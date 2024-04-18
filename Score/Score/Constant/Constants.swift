@@ -14,7 +14,7 @@ enum Constants {
     
     enum ImageName: String,
                     CaseIterable {
-        /// Plain Icons
+        // Plain Icons
         case heart
         case footsteps
         case check
@@ -30,6 +30,7 @@ enum Constants {
         case user
         case home
         
+        // Member Icons
         case dustMood = "dust.mood"
         case dustSad = "dust.sad"
         case dustSmile = "dust.smile"
@@ -48,8 +49,10 @@ enum Constants {
         
         case navigationUsers = "navigation.users"
         case chevronLeft = "chevron.left"
+        case chevronRight = "chevron.right"
+        case closeCircle = "close.circle"
         
-        /// Colored Icons
+        // Colored Icons
         case colorCamera = "color.camera"
         case colorRoad = "color.road"
         case colorLetter = "color.letter"
@@ -60,7 +63,7 @@ enum Constants {
         case colorSecond = "color.second"
         case colorThird = "color.third"
         
-        /// Small Icons
+        // Small Icons
         case triangleUp = "triangle.up"
         case triangleDown = "triangle.down"
         case arrowUp = "arrow.up"
@@ -90,18 +93,6 @@ enum Constants {
     
     enum Layout: CGFloat {
         case horizontal = 24
-    }
-    
-    //MARK: - View
-    
-    enum View {
-        //MARK: - MyPage
-        
-        enum MyPage: String {
-            case nickNamePlaceHolder = "현재 닉네임"
-            case heightPlaceHolder = "000cm"
-            case weightPlaceHolder = "00kg"
-        }
     }
 }
 
