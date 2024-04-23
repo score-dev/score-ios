@@ -5,22 +5,41 @@
 //  Created by sole on 4/16/24.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
-//MARK: - SettingMainView.swift
+//MARK: - SettingMainView
 
 struct SettingMainView: View {
-    private let navigationLabels = SettingNavigation.Main.self
+    private let navigationDestinations = Navigation.Main.self
+    
+    let store: StoreOf<SettingMainFeature>
+    @ObservedObject var viewStore: ViewStoreOf<SettingMainFeature>
+    
+    init(store: StoreOf<SettingMainFeature>) {
+        self.store = store
+        viewStore = .init(store,
+                          observe: { $0 })
+    }
+    
+    //MARK: - body
     
     var body: some View {
+        self.core
+            .navigationDestinationBuilder(store: store)
+    }
+    
+    //MARK: - core
+    
+    var core: some View {
         VStack(alignment: .leading,
                spacing: 0) {
-            ForEach(navigationLabels.allCases,
-                    id: \.self) { settingLabel in
+            ForEach(navigationDestinations.allCases,
+                    id: \.self) { destination in
                 Button {
-                    // navigate to detail view
+                    viewStore.send(.navigationButtonTapped(destination))
                 } label: {
-                    Text(settingLabel.rawValue)
+                    Text(destination.rawValue)
                         .settingRowModifier()
                 }
             }
@@ -29,50 +48,76 @@ struct SettingMainView: View {
         .layout()
         .scNavigationBar(style: .vertical) {
             DismissButton(style: .chevron) {
-               // dismiss this view
+                viewStore.send(.dismissButtonTapped)
             }
             
             Text("환경설정")
         }
-        
-    }
-}
-
-//MARK: - SettingNavigationRow
-
-struct SettingNavigationRowViewModifier: ViewModifier {
-    let imageNames = Constants.ImageName.self
-    
-    func body(content: Content) -> some View {
-        HStack {
-            content
-                .pretendard(.body2)
-                .foregroundStyle(
-                    Color.brandColor(color: .text1)
-                )
-            Spacer()
-            
-            Image(imageNames.chevronRight.rawValue)
-                .frame(width: 24,
-                       height: 24)
+        .scPopUp(style: .dialog,
+                 isPresented: viewStore.$isPresentedSignOutDialog) {
+            SignOutPopUp(viewStore: viewStore)
         }
-        .padding(.vertical, 16)
     }
 }
 
-//MARK: - View+SettingNavigationRowViewModifier
+//MARK: - View+navigationDestinationBuilder
 
+///            The compiler is unable to type-check this expression in reasonable time; try breaking up the expression into distinct sub-expressions
+///            많은 navigationDestination 호출 시 발생하는 type check 에러 해결을 위해 navigationDestinationBuilder로 navigationDestination 단락을 따로 뺍니다.
 extension View {
     @ViewBuilder
-    func settingRowModifier() -> some View {
-        modifier(SettingNavigationRowViewModifier())
+    func navigationDestinationBuilder(
+        store: StoreOf<SettingMainFeature>
+    ) -> some View {
+        self
+            .navigationDestination(
+                store: store.scope(
+                    state: \.$destination.alarmSetting,
+                    action: \.destination.alarmSetting
+                )
+            ) { store in
+                AlarmSettingView(store: store)
+            }
+            .navigationDestination(
+                store: store.scope(
+                    state: \.$destination.blockUserSetting,
+                    action: \.destination.blockUserSetting
+                )
+            ) { store in
+                BlockUserSettingView(store: store)
+            }
+            .navigationDestination(
+                store: store.scope(
+                    state: \.$destination.policy,
+                    action: \.destination.policy
+                )
+            ) { store in
+                PolicyView(store: store)
+            }
+            .navigationDestination(
+                store: store.scope(
+                    state: \.$destination.unregister,
+                    action: \.destination.unregister
+                )
+            ) { store in
+                UnregisterView(store: store)
+            }
+            .sheet(
+                store: store.scope(
+                    state: \.$destination.contact,
+                    action: \.destination.contact
+                )
+            ) { store in
+                ContactView(store: store)
+            }
     }
 }
-
-
 
 //MARK: - Preview
 
 #Preview {
-    SettingMainView()
+    NavigationStack {
+        SettingMainView(store: .init(initialState: .init(),
+                                     reducer: { SettingMainFeature() }))
+    }
 }
