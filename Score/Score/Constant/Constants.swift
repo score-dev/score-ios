@@ -92,7 +92,7 @@ enum Constants {
     //MARK: - Layout
     
     enum Layout: CGFloat {
-        case horizontal = 24
+        case horizontal = 16
     }
 }
 
