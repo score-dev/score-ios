@@ -27,11 +27,25 @@
 		FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */; };
 		FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */; };
 		FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A26092BAC837000F7B317 /* SCRadioButton.swift */; };
+		FD38E98C2BD527AB00D3BDB7 /* PolicyFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38E98B2BD527AB00D3BDB7 /* PolicyFeature.swift */; };
+		FD38E98E2BD5297E00D3BDB7 /* PolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38E98D2BD5297E00D3BDB7 /* PolicyView.swift */; };
+		FD38E9902BD530AC00D3BDB7 /* SettingNavigationRowViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38E98F2BD530AC00D3BDB7 /* SettingNavigationRowViewModifier.swift */; };
+		FD38E9932BD53D0900D3BDB7 /* SignOutFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38E9922BD53D0900D3BDB7 /* SignOutFeature.swift */; };
+		FD38E9952BD53D8F00D3BDB7 /* SignOutDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38E9942BD53D8F00D3BDB7 /* SignOutDialog.swift */; };
+		FD38E9992BD5A1A300D3BDB7 /* BlockUserSettingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38E9982BD5A1A300D3BDB7 /* BlockUserSettingFeature.swift */; };
+		FD38E99F2BD5C4FD00D3BDB7 /* BlockUserSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38E99E2BD5C4FD00D3BDB7 /* BlockUserSettingView.swift */; };
+		FD38E9A92BD83F0B00D3BDB7 /* EmailGuideSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38E9A82BD83F0B00D3BDB7 /* EmailGuideSheet.swift */; };
 		FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EB72BBC41A000B14FF9 /* SCTabBar.swift */; };
 		FD3C6EBB2BBC79FE00B14FF9 /* SCSearchChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EBA2BBC79FE00B14FF9 /* SCSearchChip.swift */; };
 		FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */; };
 		FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */; };
 		FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */; };
+		FD8B639B2BD1FF1E000500BF /* SettingMainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B639A2BD1FF1E000500BF /* SettingMainFeature.swift */; };
+		FD8B639D2BD200CD000500BF /* AlarmSettingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B639C2BD200CD000500BF /* AlarmSettingFeature.swift */; };
+		FD8B639F2BD20124000500BF /* PrivacyPolicyFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B639E2BD20124000500BF /* PrivacyPolicyFeature.swift */; };
+		FD8B63A12BD2016D000500BF /* ServicePolicyFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B63A02BD2016D000500BF /* ServicePolicyFeature.swift */; };
+		FD8B63A32BD201CC000500BF /* UnregisterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B63A22BD201CC000500BF /* UnregisterFeature.swift */; };
+		FD8B63A62BD21802000500BF /* ContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B63A52BD21802000500BF /* ContactFeature.swift */; };
 		FD8FC3B02BC8251700B80B3D /* CalendarFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3AF2BC8251700B80B3D /* CalendarFeature.swift */; };
 		FD8FC3B22BC826F600B80B3D /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3B12BC826F600B80B3D /* Date+.swift */; };
 		FD8FC3B52BC834F300B80B3D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3B42BC834F300B80B3D /* CalendarView.swift */; };
@@ -88,11 +102,25 @@
 		FD208FC82BB9EAEF00DD4D3B /* SCProgressCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCProgressCard.swift; sourceTree = "<group>"; };
 		FD208FCA2BB9EDCD00DD4D3B /* SCInformationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCInformationCard.swift; sourceTree = "<group>"; };
 		FD2A26092BAC837000F7B317 /* SCRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRadioButton.swift; sourceTree = "<group>"; };
+		FD38E98B2BD527AB00D3BDB7 /* PolicyFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyFeature.swift; sourceTree = "<group>"; };
+		FD38E98D2BD5297E00D3BDB7 /* PolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyView.swift; sourceTree = "<group>"; };
+		FD38E98F2BD530AC00D3BDB7 /* SettingNavigationRowViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingNavigationRowViewModifier.swift; sourceTree = "<group>"; };
+		FD38E9922BD53D0900D3BDB7 /* SignOutFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutFeature.swift; sourceTree = "<group>"; };
+		FD38E9942BD53D8F00D3BDB7 /* SignOutDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutDialog.swift; sourceTree = "<group>"; };
+		FD38E9982BD5A1A300D3BDB7 /* BlockUserSettingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockUserSettingFeature.swift; sourceTree = "<group>"; };
+		FD38E99E2BD5C4FD00D3BDB7 /* BlockUserSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockUserSettingView.swift; sourceTree = "<group>"; };
+		FD38E9A82BD83F0B00D3BDB7 /* EmailGuideSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailGuideSheet.swift; sourceTree = "<group>"; };
 		FD3C6EB72BBC41A000B14FF9 /* SCTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabBar.swift; sourceTree = "<group>"; };
 		FD3C6EBA2BBC79FE00B14FF9 /* SCSearchChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchChip.swift; sourceTree = "<group>"; };
 		FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTagChip.swift; sourceTree = "<group>"; };
 		FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecordButton.swift; sourceTree = "<group>"; };
 		FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCapsuleButton.swift; sourceTree = "<group>"; };
+		FD8B639A2BD1FF1E000500BF /* SettingMainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMainFeature.swift; sourceTree = "<group>"; };
+		FD8B639C2BD200CD000500BF /* AlarmSettingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingFeature.swift; sourceTree = "<group>"; };
+		FD8B639E2BD20124000500BF /* PrivacyPolicyFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyFeature.swift; sourceTree = "<group>"; };
+		FD8B63A02BD2016D000500BF /* ServicePolicyFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePolicyFeature.swift; sourceTree = "<group>"; };
+		FD8B63A22BD201CC000500BF /* UnregisterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnregisterFeature.swift; sourceTree = "<group>"; };
+		FD8B63A52BD21802000500BF /* ContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFeature.swift; sourceTree = "<group>"; };
 		FD8FC3AF2BC8251700B80B3D /* CalendarFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarFeature.swift; sourceTree = "<group>"; };
 		FD8FC3B12BC826F600B80B3D /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		FD8FC3B42BC834F300B80B3D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -177,7 +205,6 @@
 				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
 				FDE9EA282BBED5A7007AA4D7 /* View */,
 				FD8FC3BC2BC86E8C00B80B3D /* Model */,
-				FDE9EA272BBED5A0007AA4D7 /* Store */,
 				FDE9EA262BBED595007AA4D7 /* Reducer */,
 				FD208FC12BB9B2E400DD4D3B /* Constant */,
 				FD0C397B2BA9E47400CC05AA /* Extension */,
@@ -218,7 +245,6 @@
 			children = (
 				FDFAA42B2BCE05720053CD9F /* Progress */,
 				FD9E070B2BCB4E53000109FD /* Navigation */,
-				FD9E07022BCAD9BB000109FD /* Picker */,
 				FDE9EA202BBDCA01007AA4D7 /* PopUp */,
 				FD3C6EB92BBC79ED00B14FF9 /* Chip */,
 				FD3C6EB52BBC418C00B14FF9 /* TabBar */,
@@ -234,12 +260,133 @@
 		FD208FC12BB9B2E400DD4D3B /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				FDFAA4362BCE23180053CD9F /* SettingNavigation.swift */,
 				FD208FC22BB9B2FC00DD4D3B /* Constants.swift */,
 				FD8FC3B82BC8465D00B80B3D /* DayOfWeek.swift */,
 				FD8FC3BA2BC8470700B80B3D /* Month.swift */,
 				FDFAA43A2BCE6F240053CD9F /* Contexts.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		FD38E99A2BD5C43000D3BDB7 /* Policy */ = {
+			isa = PBXGroup;
+			children = (
+				FD38E98D2BD5297E00D3BDB7 /* PolicyView.swift */,
+				FDFAA43F2BCE7B5F0053CD9F /* ServicePolicyView.swift */,
+				FDFAA43C2BCE72FA0053CD9F /* PrivacyPolicyView.swift */,
+			);
+			path = Policy;
+			sourceTree = "<group>";
+		};
+		FD38E99B2BD5C46B00D3BDB7 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				FDFAA4342BCE21400053CD9F /* AlarmSettingView.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		FD38E99C2BD5C48A00D3BDB7 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				FDFAA4382BCE6E430053CD9F /* ContactView.swift */,
+				FD38E9A82BD83F0B00D3BDB7 /* EmailGuideSheet.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		FD38E99D2BD5C4C300D3BDB7 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				FD38E99E2BD5C4FD00D3BDB7 /* BlockUserSettingView.swift */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		FD38E9A02BD5C51200D3BDB7 /* Unregister */ = {
+			isa = PBXGroup;
+			children = (
+				FDFAA4412BCE7C7D0053CD9F /* UnregisterView.swift */,
+			);
+			path = Unregister;
+			sourceTree = "<group>";
+		};
+		FD38E9A12BD5C9AB00D3BDB7 /* Policy */ = {
+			isa = PBXGroup;
+			children = (
+				FD38E98B2BD527AB00D3BDB7 /* PolicyFeature.swift */,
+				FD8B639E2BD20124000500BF /* PrivacyPolicyFeature.swift */,
+				FD8B63A02BD2016D000500BF /* ServicePolicyFeature.swift */,
+			);
+			path = Policy;
+			sourceTree = "<group>";
+		};
+		FD38E9A22BD5C9B700D3BDB7 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				FD8B63A52BD21802000500BF /* ContactFeature.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		FD38E9A32BD5C9BB00D3BDB7 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				FD8B639C2BD200CD000500BF /* AlarmSettingFeature.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		FD38E9A42BD5C9C400D3BDB7 /* Unregister */ = {
+			isa = PBXGroup;
+			children = (
+				FD8B63A22BD201CC000500BF /* UnregisterFeature.swift */,
+			);
+			path = Unregister;
+			sourceTree = "<group>";
+		};
+		FD38E9A52BD5CA5400D3BDB7 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				FD38E9982BD5A1A300D3BDB7 /* BlockUserSettingFeature.swift */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		FD38E9AA2BD8403100D3BDB7 /* SignOut */ = {
+			isa = PBXGroup;
+			children = (
+				FD38E9922BD53D0900D3BDB7 /* SignOutFeature.swift */,
+			);
+			path = SignOut;
+			sourceTree = "<group>";
+		};
+		FD38E9AB2BD8474700D3BDB7 /* SignOut */ = {
+			isa = PBXGroup;
+			children = (
+				FD38E9942BD53D8F00D3BDB7 /* SignOutDialog.swift */,
+			);
+			path = SignOut;
+			sourceTree = "<group>";
+		};
+		FD38E9AC2BD849F500D3BDB7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */,
+				FD9E07092BCB0A1C000109FD /* PhotoPickerFeature.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FD38E9AD2BD84A1500D3BDB7 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				FD8B63A42BD217EA000500BF /* Setting */,
+				FD38E9AC2BD849F500D3BDB7 /* Profile */,
+				FD8FC3AF2BC8251700B80B3D /* CalendarFeature.swift */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		FD3C6EB52BBC418C00B14FF9 /* TabBar */ = {
@@ -321,6 +468,20 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		FD8B63A42BD217EA000500BF /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				FD8B639A2BD1FF1E000500BF /* SettingMainFeature.swift */,
+				FD38E9AA2BD8403100D3BDB7 /* SignOut */,
+				FD38E9A52BD5CA5400D3BDB7 /* Block */,
+				FD38E9A42BD5C9C400D3BDB7 /* Unregister */,
+				FD38E9A32BD5C9BB00D3BDB7 /* Alarm */,
+				FD38E9A22BD5C9B700D3BDB7 /* Contact */,
+				FD38E9A12BD5C9AB00D3BDB7 /* Policy */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		FD8FC3B32BC834E400B80B3D /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,13 +509,6 @@
 			path = MyPage;
 			sourceTree = "<group>";
 		};
-		FD9E07022BCAD9BB000109FD /* Picker */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Picker;
-			sourceTree = "<group>";
-		};
 		FD9E070B2BCB4E53000109FD /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,18 +528,9 @@
 		FDE9EA262BBED595007AA4D7 /* Reducer */ = {
 			isa = PBXGroup;
 			children = (
-				FD8FC3AF2BC8251700B80B3D /* CalendarFeature.swift */,
-				FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */,
-				FD9E07092BCB0A1C000109FD /* PhotoPickerFeature.swift */,
+				FD38E9AD2BD84A1500D3BDB7 /* MyPage */,
 			);
 			path = Reducer;
-			sourceTree = "<group>";
-		};
-		FDE9EA272BBED5A0007AA4D7 /* Store */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Store;
 			sourceTree = "<group>";
 		};
 		FDE9EA282BBED5A7007AA4D7 /* View */ = {
@@ -412,12 +557,13 @@
 			isa = PBXGroup;
 			children = (
 				FDFAA4322BCE1C780053CD9F /* SettingMainView.swift */,
-				FDFAA4342BCE21400053CD9F /* AlarmSettingView.swift */,
-				FDFAA4382BCE6E430053CD9F /* ContactView.swift */,
-				FDFAA43C2BCE72FA0053CD9F /* PrivacyPolicyView.swift */,
-				FDFAA4362BCE23180053CD9F /* SettingNavigation.swift */,
-				FDFAA43F2BCE7B5F0053CD9F /* ServicePolicyView.swift */,
-				FDFAA4412BCE7C7D0053CD9F /* UnregisterView.swift */,
+				FD38E98F2BD530AC00D3BDB7 /* SettingNavigationRowViewModifier.swift */,
+				FD38E9AB2BD8474700D3BDB7 /* SignOut */,
+				FD38E9A02BD5C51200D3BDB7 /* Unregister */,
+				FD38E99D2BD5C4C300D3BDB7 /* Block */,
+				FD38E99C2BD5C48A00D3BDB7 /* Contact */,
+				FD38E99B2BD5C46B00D3BDB7 /* Alarm */,
+				FD38E99A2BD5C43000D3BDB7 /* Policy */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -560,41 +706,55 @@
 				FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */,
 				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
 				FDFAA43D2BCE72FB0053CD9F /* PrivacyPolicyView.swift in Sources */,
+				FD8B639D2BD200CD000500BF /* AlarmSettingFeature.swift in Sources */,
 				FD9E06FC2BC97D29000109FD /* User.swift in Sources */,
 				FDFAA4332BCE1C780053CD9F /* SettingMainView.swift in Sources */,
 				FD9E070F2BCB58BC000109FD /* SCLineTabBar.swift in Sources */,
 				FDFAA42D2BCE05BF0053CD9F /* SCLineProgress.swift in Sources */,
+				FD38E9952BD53D8F00D3BDB7 /* SignOutDialog.swift in Sources */,
 				FD208FC02BB9AF3500DD4D3B /* SCIcon.swift in Sources */,
 				FDFAA4372BCE23180053CD9F /* SettingNavigation.swift in Sources */,
 				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
 				FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */,
 				FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */,
+				FD8B63A62BD21802000500BF /* ContactFeature.swift in Sources */,
 				FD8FC3B52BC834F300B80B3D /* CalendarView.swift in Sources */,
 				FD8FC3BB2BC8470700B80B3D /* Month.swift in Sources */,
 				FD8FC3B02BC8251700B80B3D /* CalendarFeature.swift in Sources */,
+				FD8B639B2BD1FF1E000500BF /* SettingMainFeature.swift in Sources */,
 				FD8FC3B22BC826F600B80B3D /* Date+.swift in Sources */,
 				FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */,
 				FD9E07082BCB0913000109FD /* PhotoPickerView.swift in Sources */,
+				FD38E99F2BD5C4FD00D3BDB7 /* BlockUserSettingView.swift in Sources */,
 				FDFAA4422BCE7C7D0053CD9F /* UnregisterView.swift in Sources */,
+				FD38E9902BD530AC00D3BDB7 /* SettingNavigationRowViewModifier.swift in Sources */,
 				FD3C6EBB2BBC79FE00B14FF9 /* SCSearchChip.swift in Sources */,
+				FD38E9992BD5A1A300D3BDB7 /* BlockUserSettingFeature.swift in Sources */,
 				FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */,
 				FDFAA4402BCE7B5F0053CD9F /* ServicePolicyView.swift in Sources */,
 				FDFAA4392BCE6E430053CD9F /* ContactView.swift in Sources */,
 				FD208FC72BB9E13A00DD4D3B /* SCProgressBar.swift in Sources */,
 				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
+				FD8B639F2BD20124000500BF /* PrivacyPolicyFeature.swift in Sources */,
+				FD38E9932BD53D0900D3BDB7 /* SignOutFeature.swift in Sources */,
 				FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */,
 				FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */,
 				FD9E070D2BCB4E66000109FD /* SCNavigationBar.swift in Sources */,
 				FD8FC3B92BC8465D00B80B3D /* DayOfWeek.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
+				FD38E98C2BD527AB00D3BDB7 /* PolicyFeature.swift in Sources */,
 				FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */,
+				FD8B63A12BD2016D000500BF /* ServicePolicyFeature.swift in Sources */,
 				FDFAA42F2BCE0A550053CD9F /* Line.swift in Sources */,
 				FDFAA43B2BCE6F240053CD9F /* Contexts.swift in Sources */,
 				FD9E07012BC97F20000109FD /* ProfileEditFeature.swift in Sources */,
 				FD208FC32BB9B2FC00DD4D3B /* Constants.swift in Sources */,
 				FD9E07112BCC99DE000109FD /* DismissButton.swift in Sources */,
+				FD38E9A92BD83F0B00D3BDB7 /* EmailGuideSheet.swift in Sources */,
+				FD38E98E2BD5297E00D3BDB7 /* PolicyView.swift in Sources */,
 				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
 				FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */,
+				FD8B63A32BD201CC000500BF /* UnregisterFeature.swift in Sources */,
 				FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */,
 				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
 				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,

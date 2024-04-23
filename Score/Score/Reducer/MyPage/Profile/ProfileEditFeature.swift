@@ -25,7 +25,6 @@ struct ProfileEditFeature {
         
         @BindingState var isPresentingEditGradeSheet: Bool
         @BindingState var isPresentingEditSchoolSheet: Bool
-
     }
     
     enum Action: BindableAction {
