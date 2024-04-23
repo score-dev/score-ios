@@ -78,7 +78,7 @@ struct SCButtonViewModifier: ViewModifier {
                 .foregroundStyle(Color.brandColor(color: .main))
                 .padding(.vertical, 19)
                 .padding(.horizontal, 19)
-                .background(Color.brandColor(color: .sub2),
+                .background(Color.brandColor(color: .sub3),
                             in: RoundedRectangle(cornerRadius: 15))
         case .teritary:
             content
