@@ -55,7 +55,7 @@ struct SettingMainView: View {
         }
         .scPopUp(style: .dialog,
                  isPresented: viewStore.$isPresentedSignOutDialog) {
-            SignOutPopUp(viewStore: viewStore)
+            SignOutDialog(viewStore: viewStore)
         }
     }
 }
