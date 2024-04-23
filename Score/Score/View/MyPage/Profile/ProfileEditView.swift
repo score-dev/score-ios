@@ -52,8 +52,7 @@ struct ProfileEditView: View {
     /// 프로필 이미지를 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
     func profileImageSection(
-        viewStore: ViewStore<ProfileEditFeature.State,
-        ProfileEditFeature.Action>
+        viewStore: ViewStoreOf<ProfileEditFeature>
     ) -> some View {
         if let image = viewStore.displayedProfileImage {
             image
@@ -102,8 +101,7 @@ struct ProfileEditView: View {
     @MainActor
     @ViewBuilder
     func nickNameSection(
-        viewStore: ViewStore<ProfileEditFeature.State,
-        ProfileEditFeature.Action>
+        viewStore: ViewStoreOf<ProfileEditFeature>
     ) -> some View {
         Text("닉네임")
             .pretendard(.body2)
@@ -121,8 +119,7 @@ struct ProfileEditView: View {
     /// 알람 시간을 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
     func workOutAlarmTimeSection(
-        viewStore: ViewStore<ProfileEditFeature.State,
-        ProfileEditFeature.Action>
+        viewStore: ViewStoreOf<ProfileEditFeature>
     ) -> some View {
         Text("운동 알람 시간")
             .pretendard(.body2)
@@ -143,8 +140,7 @@ struct ProfileEditView: View {
     /// 학교를 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
     func schoolSection(
-        viewStore: ViewStore<ProfileEditFeature.State,
-        ProfileEditFeature.Action>
+        viewStore: ViewStoreOf<ProfileEditFeature>
     ) -> some View {
         Text("학교")
             .pretendard(.body2)
@@ -164,8 +160,7 @@ struct ProfileEditView: View {
     /// 학년을 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
     func gradeSection(
-        viewStore: ViewStore<ProfileEditFeature.State,
-        ProfileEditFeature.Action>
+        viewStore: ViewStoreOf<ProfileEditFeature>
     ) -> some View {
         Text("학년")
             .pretendard(.body2)
@@ -185,8 +180,7 @@ struct ProfileEditView: View {
     /// 성별을 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
     func sexSelectSection(
-        viewStore: ViewStore<ProfileEditFeature.State,
-        ProfileEditFeature.Action>
+        viewStore: ViewStoreOf<ProfileEditFeature>
     ) -> some View {
         Text("성별")
             .pretendard(.body2)
@@ -221,8 +215,7 @@ struct ProfileEditView: View {
     @MainActor
     @ViewBuilder
     func heightAndWeightSection(
-        viewStore: ViewStore<ProfileEditFeature.State,
-        ProfileEditFeature.Action>
+        viewStore: ViewStoreOf<ProfileEditFeature>
     ) -> some View {
         HStack(spacing: 32) {
             VStack(alignment: .leading) {

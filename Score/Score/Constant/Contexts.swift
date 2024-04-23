@@ -21,9 +21,10 @@ enum Contexts {
     //MARK: - Cantact
     
     enum Cantact: String {
-        case title = "여러분의 소중한 의견을 들려주세요!"
-        case subTitle = "더 나은 서비스를 위해 스코어가 힘낼게요:)"
-        case textEditorPlaceHolder = "자유롭게 의견을 남겨주세요(500자 이내)"
+        case recipient = "score-official@gmail.com"
+        case subject = "[문의] 스코어 앱 관련 문의합니다."
+        case messageBody = ""
+        case guide = "문의주세요."
     }
     
     //MARK: - Policy
@@ -32,6 +33,13 @@ enum Contexts {
         // - FIXME: 내용 추가
         case service = ""
         case privacy
+    }
+    
+    enum SignOut: String {
+        case guide = 
+        """
+            정말 로그아웃하시겠어요? 데이터는 그대로 남아있지만 푸시알림은 받을 수 없어요.
+        """
     }
     
     //MARK: - Unregister
