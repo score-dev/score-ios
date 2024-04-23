@@ -12,6 +12,7 @@ import SwiftUI
 enum SCCapsuleButtonStyle {
     case primary
     case secondary
+    case gray
 }
 
 //MARK: - SCCapsuleButton
@@ -71,6 +72,16 @@ struct SCCapsuleButtonViewModifier: ViewModifier {
                 .padding(.horizontal, 41)
                 .background(Color.brandColor(color: .sub3),
                             in: RoundedRectangle(cornerRadius: 21))
+            
+        case .gray:
+            content
+                .pretendard(weight: .medium,
+                            size: .xs)
+                .foregroundStyle(.white)
+                .padding(.vertical, 4)
+                .padding(.horizontal, 12)
+                .background(Color.brandColor(color: .gray1),
+                            in: Capsule())
         }
     }
 }
@@ -98,5 +109,11 @@ struct SCCapsuleButtonViewModifier: ViewModifier {
             Text("secondary")
         }
         .disable(true)
+        
+        SCCapsuleButton(style: .gray) {
+            
+        } label: {
+            Text("gray")
+        }
     }
 }
