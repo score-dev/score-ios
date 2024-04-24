@@ -16,23 +16,20 @@ struct PrivacyPolicyView: View {
     let store: StoreOf<PrivacyPolicyFeature>
     
     var body: some View {
-        WithViewStore(store,
-                      observe: { $0 }) { viewStore in
-            ScrollView {
-                VStack(alignment: .leading) {
-                    Text(contexts.service.rawValue)
-                    Text(contexts.privacy.rawValue)
-                }
-                .layout()
+        ScrollView {
+            VStack(alignment: .leading) {
+                Text(contexts.service.rawValue)
+                Text(contexts.privacy.rawValue)
             }
-            .scNavigationBar(style: .vertical) {
-                Text("개인정보처리방침")
-                
-                Spacer()
-                
-                DismissButton(style: .close) {
-                    viewStore.send(.dismissButtonTapped)
-                }
+            .layout()
+        }
+        .scNavigationBar(style: .vertical) {
+            Text("개인정보처리방침")
+            
+            Spacer()
+            
+            DismissButton(style: .close) {
+                store.send(.dismissButtonTapped)
             }
         }
     }
@@ -44,5 +41,5 @@ struct PrivacyPolicyView: View {
     PrivacyPolicyView(store: .init(initialState: .init(),
                                    reducer: { PrivacyPolicyFeature() }
                                   )
-                        )
+    )
 }

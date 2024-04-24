@@ -12,7 +12,7 @@ import SwiftUI
 //MARK: - PhotoPickerView
 
 struct PhotoPickerView<Content: View>: View {
-    let viewStore: ViewStoreOf<ProfileEditFeature>
+    @ObservedObject var viewStore: ViewStoreOf<ProfileEditFeature>
     
     @State var selectedPhotoItem: PhotosPickerItem?
     @ViewBuilder let content: () -> Content
