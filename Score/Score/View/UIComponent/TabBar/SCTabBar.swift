@@ -5,6 +5,7 @@
 //  Created by sole on 4/2/24.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 //MARK: - SCTabBarButtonStyle
@@ -17,7 +18,8 @@ enum SCTabBarButtonStyle {
 
 //MARK: - SCTabItem
 
-enum SCTabItem: String {
+enum SCTabItem: String,
+                CaseIterable {
     case home = "홈"
     case record = "기록하기"
     case schoolGroup = "학교 그룹"
@@ -38,40 +40,42 @@ enum SCTabItem: String {
 //MARK: - SCTabBar
 
 /// - Parameters:
-///     - selectedTab: 선택한 탭을 정의합니다.
+///     - store: SCTabBarFeature Reducer를 정의합니다.
 struct SCTabBar: View {
-    @Binding var selectedTab: SCTabItem
+    let store: StoreOf<SCTabBarFeature>
     
     var body: some View {
-        HStack(spacing: 54) {
-            tabButtonBuilder(.plain(item: .home)) {
-                selectedTab = .home
+        WithPerceptionTracking {
+            HStack(spacing: 54) {
+                tabButtonBuilder(.plain(item: .home)) {
+                    store.send(.tabItemButtonTapped(.home))
+                }
+                
+                tabButtonBuilder(.floating(item: .record)) {
+                    store.send(.tabItemButtonTapped(.record))
+                }
+                
+                tabButtonBuilder(.plain(item: .schoolGroup)) {
+                    store.send(.tabItemButtonTapped(.schoolGroup))
+                }
             }
-            
-            tabButtonBuilder(.floating(item: .record)) {
-                selectedTab = .record
+            .frame(maxWidth: .infinity)
+            .background {
+                Rectangle()
+                    .foregroundStyle(Color.white)
+                    .frame(height: 56)
+                    .edgeBorder(lineWidth: 0.5,
+                                edges: [.top],
+                                color: Color.brandColor(
+                                    color: .gray3
+                                )
+                    )
+                    .offset(y: 15)
             }
-            
-            tabButtonBuilder(.plain(item: .schoolGroup)) {
-                selectedTab = .schoolGroup
-            }
+            .frame(height: 56)
+            // - FIXME: SE 기기 대응 필요
+            .padding(.bottom, 15)
         }
-        .frame(maxWidth: .infinity)
-        .padding(.bottom, 10)
-        .background {
-            Rectangle()
-                .foregroundStyle(Color.white)
-                .frame(height: 56)
-                .edgeBorder(lineWidth: 0.5,
-                            edges: [.top],
-                            color: Color.brandColor(
-                                color: .gray3
-                            )
-                )
-
-                .offset(y: 15)
-        }
-        .frame(height: 56)
     }
     
     //MARK: - tabButtonBuilder
@@ -96,15 +100,15 @@ struct SCTabBar: View {
                         .frame(width: 24,
                                height: 24)
                         .foregroundStyle(Color.brandColor(
-                            color: selectedTab == item ?
-                            .gray1 : .sub1)
+                            color: store.selectedTab == item ?
+                            .sub1 : .gray1)
                         )
                     
                     Text(item.rawValue)
                         .pretendard(.caption)
                         .foregroundStyle(Color.brandColor(
-                            color: selectedTab == item ?
-                            .gray1 : .sub1)
+                            color: store.selectedTab == item ?
+                            .sub1 : .gray1)
                         )
                 }
             }
@@ -145,8 +149,8 @@ extension View {
     /// - Parameters:
     ///     - selectedTab: 선택한 탭을 정의합니다.
     /// - Returns: View에 SCTabBar를 overlay합니다.
-    func scTabBar(selectedTab: Binding<SCTabItem>) -> some View {
-        modifier(SCTabBarAdoptViewModifier(selectedTab: selectedTab))
+    func scTabBar(store: StoreOf<SCTabBarFeature>) -> some View {
+        modifier(SCTabBarAdoptViewModifier(store: store))
     }
 }
 
@@ -155,16 +159,19 @@ extension View {
 /// - Parameters:
 ///     - selectedTab: 선택한 탭을 정의합니다.
 struct SCTabBarAdoptViewModifier: ViewModifier {
-    @Binding var selectedTab: SCTabItem
+//    @Binding var selectedTab: SCTabItem
+    let store: StoreOf<SCTabBarFeature>
     
     func body(content: Content) -> some View {
         ZStack {
             content
+                .toolbar(.hidden,
+                         for: .navigationBar)
                 
             VStack {
                 Spacer()
                 
-                SCTabBar(selectedTab: $selectedTab)
+                SCTabBar(store: store)
             }
             .zIndex(3)
         }
@@ -180,5 +187,7 @@ struct SCTabBarAdoptViewModifier: ViewModifier {
         Text("1")
         Text("1")
     }
-    .scTabBar(selectedTab: .constant(.home))
+    .scTabBar(
+        store: .init(initialState: .init(selectedTab: .home),
+        reducer: { SCTabBarFeature() }))
 }
