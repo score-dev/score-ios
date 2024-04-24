@@ -11,6 +11,8 @@ import SwiftUI
 
 @Reducer
 struct ProfileEditFeature {
+    @Dependency(\.dismiss) var dismiss
+    
     struct State: Equatable {
         var displayedUser: User?
     
@@ -34,6 +36,7 @@ struct ProfileEditFeature {
         case gradeEditButtonTapped
         case sexSelectButtonTapped(Sex)
         case editDoneButtonTapped
+        case dismissButtonTapped
         
         case photoSelectChanging(PhotosPickerItem?)
         case imageUpdating(Image?)
@@ -59,6 +62,10 @@ struct ProfileEditFeature {
             case .editDoneButtonTapped:
                 // to update the remote database
                 return .none
+            case .dismissButtonTapped:
+                return .run { send in
+                    await self.dismiss()
+                }
                 
             case .photoSelectChanging(let photosPickerItem):
                 guard let photosPickerItem
