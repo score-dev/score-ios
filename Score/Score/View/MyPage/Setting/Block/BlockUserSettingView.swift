@@ -12,33 +12,37 @@ import SwiftUI
 
 struct BlockUserSettingView: View {
     let store: StoreOf<BlockUserSettingFeature>
+    @ObservedObject var viewStore: ViewStoreOf<BlockUserSettingFeature>
     
     // - FIXME: mock up data
     let users: [User] = [.defaultModel,
                          .defaultModel]
     
+    init(store: StoreOf<BlockUserSettingFeature>) {
+        self.store = store
+        self.viewStore = ViewStore(store,
+                                   observe: { $0 })
+    }
+    
     var body: some View {
-        WithViewStore(store,
-                      observe: { $0 }) { viewStore in
-            ScrollView {
-                VStack(alignment: .leading,
-                       spacing: 0) {
-                    ForEach(users,
-                            id: \.self) { user in
-                        BlockUserRow(user: user)
-                    }
+        ScrollView {
+            VStack(alignment: .leading,
+                   spacing: 0) {
+                ForEach(users,
+                        id: \.self) { user in
+                    BlockUserRow(user: user)
                 }
-                .layout()
             }
-            .scNavigationBar(style: .vertical) {
-                DismissButton(style: .chevron) {
-                    viewStore.send(.dismissButtonTapped)
-                }
-                
-                Text("차단한 메이트 관리하기")
-                
-                Spacer()
+                   .layout()
+        }
+        .scNavigationBar(style: .vertical) {
+            DismissButton(style: .chevron) {
+                viewStore.send(.dismissButtonTapped)
             }
+            
+            Text("차단한 메이트 관리하기")
+            
+            Spacer()
         }
     }
 }
@@ -79,6 +83,6 @@ struct BlockUserRow: View {
 #Preview {
     BlockUserSettingView(store: .init(initialState: .init(),
                                       reducer: { BlockUserSettingFeature() }
-                                        )
-                                    )
+                                     )
+    )
 }
