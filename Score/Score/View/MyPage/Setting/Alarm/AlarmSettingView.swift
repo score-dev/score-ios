@@ -14,67 +14,72 @@ struct AlarmSettingView: View {
     private let navigationTitles = Navigation.Alarm.self
     
     let store: StoreOf<AlarmSettingFeature>
+    @ObservedObject var viewStore: ViewStoreOf<AlarmSettingFeature>
+    
+    init(store: StoreOf<AlarmSettingFeature>) {
+        self.store = store
+        self.viewStore = ViewStore(store,
+                                   observe: { $0 })
+    }
     
     var body: some View {
-        WithViewStore(store,
-                      observe: { $0 }) { viewStore in
+        VStack(alignment: .leading,
+               spacing: 0) {
+            // 전체 알림
+            Text(navigationTitles.all.rawValue)
+                .alarmSettingModifier(
+                    isOn: viewStore.$isActiveAllAlarmState
+                )
+            
+            // 공지사항
             VStack(alignment: .leading,
-                   spacing: 0) {
-                // 전체 알림
-                Text(navigationTitles.all.rawValue)
-                    .alarmSettingModifier(
-                        isOn: viewStore.$isActiveAllAlarmState
-                    )
+                   spacing: 2) {
+                Text(navigationTitles.notice.rawValue)
                 
-                // 공지사항
-                VStack(alignment: .leading,
-                       spacing: 2) {
-                    Text(navigationTitles.notice.rawValue)
-                    
-                    Text(navigationTitles.notice.subTitle)
-                        .pretendard(.caption)
-                        .foregroundStyle(Color.brandColor(color: .text3))
-                }
-                .alarmSettingModifier(
-                    isOn: viewStore.$isActiveNoticeAlarm
-                )
-                
-                // 소통
-                VStack(alignment: .leading,
-                       spacing: 2) {
-                    Text(navigationTitles.follow.rawValue)
-                
-                    Text(navigationTitles.follow.subTitle)
-                        .pretendard(.caption)
-                        .foregroundStyle(Color.brandColor(color: .text3))
-                }
-                .alarmSettingModifier(
-                    isOn: viewStore.$isActiveFollowAlarm
-                )
-                
-                // 목표 운동 시간
-                VStack(alignment: .leading,
-                       spacing: 2) {
-                    Text(navigationTitles.workOutTime.rawValue)
-                    
-                    Text(navigationTitles.workOutTime.subTitle)
-                        .pretendard(.caption)
-                        .pretendard(.caption)
-                        .foregroundStyle(Color.brandColor(color: .text3))
-                }
-                .alarmSettingModifier(
-                    isOn: viewStore.$isActiveWorkOutTimeAlarm
-                )
-                
-                Spacer()
+                Text(navigationTitles.notice.subTitle)
+                    .pretendard(.caption)
+                    .foregroundStyle(Color.brandColor(color: .text3))
             }
-            .layout()
-            .scNavigationBar(style: .vertical) {
-                DismissButton(style: .chevron) {
-                    viewStore.send(.dismissButtonTapped)
-                }
-                Text("알림 설정")
+            .alarmSettingModifier(
+                isOn: viewStore.$isActiveNoticeAlarm
+            )
+            
+            // 소통
+            VStack(alignment: .leading,
+                   spacing: 2) {
+                Text(navigationTitles.follow.rawValue)
+                
+                Text(navigationTitles.follow.subTitle)
+                    .pretendard(.caption)
+                    .foregroundStyle(Color.brandColor(color: .text3))
             }
+            .alarmSettingModifier(
+                isOn: viewStore.$isActiveFollowAlarm
+            )
+            
+            // 목표 운동 시간
+            VStack(alignment: .leading,
+                   spacing: 2) {
+                Text(navigationTitles.workOutTime.rawValue)
+                
+                Text(navigationTitles.workOutTime.subTitle)
+                    .pretendard(.caption)
+                    .pretendard(.caption)
+                    .foregroundStyle(Color.brandColor(color: .text3))
+            }
+            .alarmSettingModifier(
+                isOn: viewStore.$isActiveWorkOutTimeAlarm
+            )
+            
+            Spacer()
+        }
+        .layout()
+        .scNavigationBar(style: .vertical) {
+            DismissButton(style: .chevron) {
+                viewStore.send(.dismissButtonTapped)
+            }
+            
+            Text("알림 설정")
         }
     }
 }
@@ -104,7 +109,7 @@ struct AlarmSettingViewModifier: ViewModifier {
     }
 }
 
-//MARK: - View+
+//MARK: - View+alarmSettingModifier
 
 extension View {
     @ViewBuilder
