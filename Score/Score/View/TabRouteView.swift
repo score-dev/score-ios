@@ -12,40 +12,38 @@ import SwiftUI
 
 struct TabRouteView: View {
     let store: StoreOf<SCTabBarFeature>
+    @ObservedObject var viewStore: ViewStoreOf<SCTabBarFeature>
+    
+    init(store: StoreOf<SCTabBarFeature>) {
+        self.store = store
+        self.viewStore = ViewStore(store,
+                                   observe: { $0 })
+    }
     
     var body: some View {
-        NavigationStackStore(
-            store.scope(state: \.path,
-                        action: \.path)
-        ) {
-            WithPerceptionTracking {
-                Text("Root View")
-                    .onAppear {
-                        store.send(.viewAppearing)
-                    }
-                    .fullScreenCover(
-                        store: store.scope(
-                            state: \.$destination.record,
-                            action: \.destination.record)
-                    ) { store in
-                        RecordMainView(store: store)
-                    }
-            }
-        } destination: { store in
-            switch store.state {
-            case .home:
-                if let store = store.scope(state: \.home,
-                                           action: \.home) {
-                    HomeMainView(store: store)
-                        .scTabBar(store: self.store)
-                }
-            case .schoolGroup:
-                if let store = store.scope(state: \.schoolGroup,
-                                           action: \.schoolGroup) {
-                    SchoolGroupMainView(store: store)
-                        .scTabBar(store: self.store)
-                }
-            }
+        TabView(selection: viewStore.$selectedTab) {
+            HomeMainView(store: store.scope(state: \.home,
+                                            action: \.home))
+            .tag(SCTabItem.home)
+            
+            SchoolGroupMainView(
+                store: self.store.scope(
+                    state: \.schoolGroup,
+                    action: \.schoolGroup)
+            )
+            
+            .tag(SCTabItem.schoolGroup)
+        }
+        .scTabBar(store: store)
+        .onAppear {
+            store.send(.viewAppearing)
+        }
+        .fullScreenCover(
+            store: store.scope(
+                state: \.$destination.record,
+                action: \.destination.record)
+        ) { store in
+            RecordMainView(store: store)
         }
     }
 }
@@ -53,7 +51,9 @@ struct TabRouteView: View {
 //MARK: - Preview
 
 #Preview {
-    TabRouteView(
-        store: .init(initialState: .init(selectedTab: .home),
-        reducer: { SCTabBarFeature() }))
+    NavigationStack {
+        TabRouteView(
+            store: .init(initialState: .init(selectedTab: .home),
+                         reducer: { SCTabBarFeature() }))
+    }
 }
