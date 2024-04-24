@@ -9,7 +9,7 @@ import ComposableArchitecture
 import SwiftUI
 
 struct SignOutDialog: View {
-    let viewStore: ViewStoreOf<SettingMainFeature>
+    @ObservedObject var viewStore: ViewStoreOf<SettingMainFeature>
     
     var body: some View {
         VStack(spacing: 16) {
