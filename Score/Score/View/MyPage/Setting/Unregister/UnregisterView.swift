@@ -15,77 +15,81 @@ struct UnregisterView: View {
     private let imageNames = Constants.ImageName.self
     
     let store: StoreOf<UnregisterFeature>
+    @ObservedObject var viewStore: ViewStoreOf<UnregisterFeature>
+    
+    init(store: StoreOf<UnregisterFeature>) {
+        self.store = store
+        self.viewStore = ViewStore(store,
+                                   observe: { $0 })
+    }
     
     var body: some View {
-        WithViewStore(store,
-                      observe: { $0 }) { viewStore in
+        VStack(alignment: .leading,
+               spacing: 36) {
+            
             VStack(alignment: .leading,
-                   spacing: 36) {
+                   spacing: 4) {
+                Text(contexts.title.rawValue)
+                    .pretendard(weight: .semiBold,
+                                size: .xxl)
                 
-                VStack(alignment: .leading,
-                       spacing: 4) {
-                    Text(contexts.title.rawValue)
-                        .pretendard(weight: .semiBold,
-                                    size: .xxl)
-                    
-                    Text(contexts.subTitle.rawValue)
-                        .pretendard(.subHeading)
-                }
-                
-                VStack(spacing: 20) {
-                    ForEach(UnregisterReason.allCases,
-                            id: \.self) { reason in
-                        SCButton(
-                            style: viewStore.unregisterReasons.contains(reason) ?
-                                .primary :
+                Text(contexts.subTitle.rawValue)
+                    .pretendard(.subHeading)
+            }
+            
+            VStack(spacing: 20) {
+                ForEach(UnregisterReason.allCases,
+                        id: \.self) { reason in
+                    SCButton(
+                        style: viewStore.unregisterReasons.contains(reason) ?
+                            .primary :
                                 .gray
-                        ) {
-                            //select
-                            viewStore.send(.reasonButtonTapped(reason))
-                        } label: {
-                            Text(reason.rawValue)
-                                .frame(maxWidth: .infinity)
-                        }
-                    }
-                    
-                    // FIXME: text state 적용
-                    SCTextField(
-                        style: .plain(),
-                        placeHolder: contexts.textFieldPlaceHolder.rawValue,
-                        text: viewStore.$ectUnregisterReason
-                    )
-                    .scButtonItem {
-                        viewStore.send(.ectReasonTextFieldClearButtonTapped)
+                    ) {
+                        //select
+                        viewStore.send(.reasonButtonTapped(reason))
                     } label: {
-                        if !viewStore.state.ectUnregisterReason.isEmpty {
-                            Image(imageNames.closeCircle.rawValue)
-                        }
+                        Text(reason.rawValue)
+                            .frame(maxWidth: .infinity)
                     }
                 }
                 
-                Spacer()
-                
-                SCButton(style: .primary) {
-                    viewStore.send(.unregisterButtonTapped)
+                // FIXME: text state 적용
+                SCTextField(
+                    style: .plain(),
+                    placeHolder: contexts.textFieldPlaceHolder.rawValue,
+                    text: viewStore.$ectUnregisterReason
+                )
+                .scButtonItem {
+                    viewStore.send(.ectReasonTextFieldClearButtonTapped)
                 } label: {
-                    Text("탈퇴하기")
-                        .frame(maxWidth: .infinity)
+                    if !viewStore.state.ectUnregisterReason.isEmpty {
+                        Image(imageNames.closeCircle.rawValue)
+                    }
                 }
-                .buttonDisabled(viewStore.isDisableUnregisterButton)
             }
-            .layout()
-            .scNavigationBar(style: .vertical) {
-                DismissButton(style: .chevron) {
-                    viewStore.send(.dismissButtonTapped)
-                }
-                       
+            
+            Spacer()
+            
+            SCButton(style: .primary) {
+                viewStore.send(.unregisterButtonTapped)
+            } label: {
                 Text("탈퇴하기")
+                    .frame(maxWidth: .infinity)
             }
-            .contentShape(Rectangle())
-            .onTapGesture {
-                hideKeyboard()
-            }
+            .buttonDisabled(viewStore.isDisableUnregisterButton)
         }
+               .layout()
+               .scNavigationBar(style: .vertical) {
+                   DismissButton(style: .chevron) {
+                       viewStore.send(.dismissButtonTapped)
+                   }
+                   
+                   Text("탈퇴하기")
+               }
+               .contentShape(Rectangle())
+               .onTapGesture {
+                   hideKeyboard()
+               }
     }
 }
 
