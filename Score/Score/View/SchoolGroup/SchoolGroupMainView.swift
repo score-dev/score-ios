@@ -14,9 +14,7 @@ struct SchoolGroupMainView: View {
     let store: StoreOf<SchoolGroupMainFeature>
     
     var body: some View {
-        WithPerceptionTracking {
-            Text("school group main view")
-        }
+       Text("school group main view")
     }
 }
 
