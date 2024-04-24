@@ -13,9 +13,7 @@ import SwiftUI
 struct HomeMainView: View {
     let store: StoreOf<HomeMainFeature>
     var body: some View {
-        WithPerceptionTracking {
-            Text("home main view")
-        }
+        Text("home main view")
     }
 }
 
