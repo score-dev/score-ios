@@ -12,48 +12,57 @@ import SwiftUI
 
 struct ProfileEditView: View {
     let store: StoreOf<ProfileEditFeature>
+    @ObservedObject var viewStore: ViewStoreOf<ProfileEditFeature>
+    
     let constant = Contexts.MyPage.self
     
+    init(store: StoreOf<ProfileEditFeature>) {
+        self.store = store
+        self.viewStore = ViewStore(store,
+                                   observe: { $0 })
+    }
+    
     var body: some View {
-        WithViewStore(store, observe: { $0 }) { viewStore in
-            ScrollView {
-                VStack(alignment: .leading,
-                       spacing: 28) {
-                    // navigation header 추가
-                    
-                    profileImageSection(viewStore: viewStore)
-                    
-                    nickNameSection(viewStore: viewStore)
-                    
-                    workOutAlarmTimeSection(viewStore: viewStore)
-                    
-                    schoolSection(viewStore: viewStore)
-                    
-                    gradeSection(viewStore: viewStore)
-                    
-                    sexSelectSection(viewStore: viewStore)
-                    
-                    heightAndWeightSection(viewStore: viewStore)
-                    
-                    SCButton(style: .primary) {
-                        viewStore.send(.editDoneButtonTapped)
-                    } label: {
-                        Text("저장하기")
-                            .frame(maxWidth: .infinity)
-                    }
+        ScrollView {
+            VStack(alignment: .leading,
+                   spacing: 28) {
+                profileImageSectionBuilder()
+                
+                nickNameSectionBuilder()
+                
+                workOutAlarmTimeSectionBuilder()
+                
+                schoolSectionBuilder()
+                
+                gradeSectionBuilder()
+                
+                sexSelectSectionBuilder()
+                
+                heightAndWeightSectionBuilder()
+                
+                SCButton(style: .primary) {
+                    viewStore.send(.editDoneButtonTapped)
+                } label: {
+                    Text("저장하기")
+                        .frame(maxWidth: .infinity)
                 }
-                 .layout()
             }
+            .layout()
+        }
+        .scNavigationBar(style: .vertical) {
+            DismissButton(style: .chevron) {
+                viewStore.send(.dismissButtonTapped)
+            }
+            
+            Text("마이페이지")
         }
     }
     
-    //MARK: - profileImageSection
+    //MARK: - profileImageSectionBuilder
     
     /// 프로필 이미지를 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
-    func profileImageSection(
-        viewStore: ViewStoreOf<ProfileEditFeature>
-    ) -> some View {
+    func profileImageSectionBuilder() -> some View {
         if let image = viewStore.displayedProfileImage {
             image
                 .resizable()
@@ -95,14 +104,11 @@ struct ProfileEditView: View {
         }
     }
     
-    //MARK: - nickNameSection
+    //MARK: - nickNameSectionBuilder
     
     /// 닉네임을 수정할 수 있는 부분 뷰입니다.
-    @MainActor
     @ViewBuilder
-    func nickNameSection(
-        viewStore: ViewStoreOf<ProfileEditFeature>
-    ) -> some View {
+    func nickNameSectionBuilder() -> some View {
         Text("닉네임")
             .pretendard(.body2)
             .foregroundStyle(
@@ -114,13 +120,11 @@ struct ProfileEditView: View {
                     text: viewStore.$displayedNickName)
     }
     
-    //MARK: - workOutAlarmTimeSection
+    //MARK: - workOutAlarmTimeSectionBuilder
     
     /// 알람 시간을 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
-    func workOutAlarmTimeSection(
-        viewStore: ViewStoreOf<ProfileEditFeature>
-    ) -> some View {
+    func workOutAlarmTimeSectionBuilder() -> some View {
         Text("운동 알람 시간")
             .pretendard(.body2)
             .foregroundStyle(Color.brandColor(color: .text1))
@@ -135,13 +139,11 @@ struct ProfileEditView: View {
         }
     }
     
-    //MARK: - schoolSection
+    //MARK: - schoolSectionBuilder
     
     /// 학교를 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
-    func schoolSection(
-        viewStore: ViewStoreOf<ProfileEditFeature>
-    ) -> some View {
+    func schoolSectionBuilder() -> some View {
         Text("학교")
             .pretendard(.body2)
             .foregroundStyle(Color.brandColor(color: .text1))
@@ -155,13 +157,11 @@ struct ProfileEditView: View {
         }
     }
     
-    //MARK: - gradeSection
+    //MARK: - gradeSectionBuilder
     
     /// 학년을 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
-    func gradeSection(
-        viewStore: ViewStoreOf<ProfileEditFeature>
-    ) -> some View {
+    func gradeSectionBuilder() -> some View {
         Text("학년")
             .pretendard(.body2)
             .foregroundStyle(Color.brandColor(color: .text1))
@@ -175,13 +175,11 @@ struct ProfileEditView: View {
         }
     }
     
-    //MARK: - sexSelectSection
+    //MARK: - sexSelectSectionBuilder
     
     /// 성별을 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
-    func sexSelectSection(
-        viewStore: ViewStoreOf<ProfileEditFeature>
-    ) -> some View {
+    func sexSelectSectionBuilder() -> some View {
         Text("성별")
             .pretendard(.body2)
             .foregroundStyle(Color.brandColor(color: .text1))
@@ -209,14 +207,11 @@ struct ProfileEditView: View {
         }
     }
     
-    //MARK: - heightAndWeightSection
+    //MARK: - heightAndWeightSectionBuilder
     
     /// 키와 몸무게를 수정할 수 있는 부분 뷰입니다.
-    @MainActor
     @ViewBuilder
-    func heightAndWeightSection(
-        viewStore: ViewStoreOf<ProfileEditFeature>
-    ) -> some View {
+    func heightAndWeightSectionBuilder() -> some View {
         HStack(spacing: 32) {
             VStack(alignment: .leading) {
                 Text("키")
