@@ -14,18 +14,16 @@ struct RecordMainView: View {
     let store: StoreOf<RecordMainFeature>
     
     var body: some View {
-        WithPerceptionTracking {
-            Text("record main view")
-                .scNavigationBar(style: .vertical) {
-                    DismissButton(style: .chevron) {
-                        store.send(.dismissButtonTapped)
-                    }
-                    
-                    Text("기록하기")
-                    
-                    Spacer()
+        Text("record main view")
+            .scNavigationBar(style: .vertical) {
+                DismissButton(style: .chevron) {
+                    store.send(.dismissButtonTapped)
                 }
-        }
+                
+                Text("기록하기")
+                
+                Spacer()
+            }
     }
 }
 

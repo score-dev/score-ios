@@ -19,7 +19,8 @@ enum SCTabBarButtonStyle {
 //MARK: - SCTabItem
 
 enum SCTabItem: String,
-                CaseIterable {
+                CaseIterable,
+                Hashable {
     case home = "홈"
     case record = "기록하기"
     case schoolGroup = "학교 그룹"
@@ -43,9 +44,15 @@ enum SCTabItem: String,
 ///     - store: SCTabBarFeature Reducer를 정의합니다.
 struct SCTabBar: View {
     let store: StoreOf<SCTabBarFeature>
+    @ObservedObject var viewStore: ViewStoreOf<SCTabBarFeature>
+    
+    init(store: StoreOf<SCTabBarFeature>) {
+        self.store = store
+        self.viewStore = ViewStore(store,
+                                   observe: { $0 })
+    }
     
     var body: some View {
-        WithPerceptionTracking {
             HStack(spacing: 54) {
                 tabButtonBuilder(.plain(item: .home)) {
                     store.send(.tabItemButtonTapped(.home))
@@ -63,19 +70,17 @@ struct SCTabBar: View {
             .background {
                 Rectangle()
                     .foregroundStyle(Color.white)
-                    .frame(height: 56)
                     .edgeBorder(lineWidth: 0.5,
                                 edges: [.top],
                                 color: Color.brandColor(
                                     color: .gray3
                                 )
                     )
-                    .offset(y: 15)
+                    .offset(y: 30)
             }
             .frame(height: 56)
             // - FIXME: SE 기기 대응 필요
             .padding(.bottom, 15)
-        }
     }
     
     //MARK: - tabButtonBuilder
@@ -100,17 +105,18 @@ struct SCTabBar: View {
                         .frame(width: 24,
                                height: 24)
                         .foregroundStyle(Color.brandColor(
-                            color: store.selectedTab == item ?
+                            color: viewStore.selectedTab == item ?
                             .sub1 : .gray1)
                         )
                     
                     Text(item.rawValue)
                         .pretendard(.caption)
                         .foregroundStyle(Color.brandColor(
-                            color: store.selectedTab == item ?
+                            color: viewStore.selectedTab == item ?
                             .sub1 : .gray1)
                         )
                 }
+                .frame(width: 45)
             }
             
         case .floating(let item):
@@ -138,6 +144,7 @@ struct SCTabBar: View {
                         .pretendard(.caption)
                         .foregroundStyle(Color.brandColor(color: .gray1))
                 }
+                .frame(height: 77)
             }
         }
     }
@@ -163,17 +170,11 @@ struct SCTabBarAdoptViewModifier: ViewModifier {
     let store: StoreOf<SCTabBarFeature>
     
     func body(content: Content) -> some View {
-        ZStack {
+        ZStack(alignment: .bottom) {
             content
-                .toolbar(.hidden,
-                         for: .navigationBar)
-                
-            VStack {
-                Spacer()
-                
-                SCTabBar(store: store)
-            }
-            .zIndex(3)
+                .frame(maxHeight: .infinity)
+            
+            SCTabBar(store: store)
         }
     }
 }
@@ -187,7 +188,6 @@ struct SCTabBarAdoptViewModifier: ViewModifier {
         Text("1")
         Text("1")
     }
-    .scTabBar(
-        store: .init(initialState: .init(selectedTab: .home),
-        reducer: { SCTabBarFeature() }))
+    .scTabBar(store: .init(initialState: .init(),
+                           reducer: { SCTabBarFeature() }))
 }

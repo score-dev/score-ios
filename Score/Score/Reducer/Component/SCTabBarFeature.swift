@@ -11,52 +11,52 @@ import ComposableArchitecture
 
 @Reducer
 struct SCTabBarFeature {
-    @ObservableState
+    
     struct State: Equatable {
-        var selectedTab: SCTabItem = .home
-        var path = StackState<Path.State>()
-        @Presents var destination: Destination.State?
+        @BindingState var selectedTab: SCTabItem = .home
+        @PresentationState var destination: Destination.State?
+        
+        var home: HomeMainFeature.State = .init()
+        var schoolGroup: SchoolGroupMainFeature.State = .init()
     }
     
-    enum Action {
+    enum Action: BindableAction {
+        case binding(BindingAction<State>)
         case viewAppearing
         case tabItemButtonTapped(SCTabItem)
-        case path(StackAction<Path.State, Path.Action>)
         case destination(PresentationAction<Destination.Action>)
+        
+        case home(HomeMainFeature.Action)
+        case schoolGroup(SchoolGroupMainFeature.Action)
     }
     
     var body: some ReducerOf<Self> {
+        BindingReducer()
+        
         Reduce { state, action in
             switch action {
+            case .binding:
+                return .none
+                
             case .viewAppearing:
-                state.selectedTab = .home
-                return .send(.tabItemButtonTapped(.home))
+                return .none
                 
             case .tabItemButtonTapped(let tabItem):
                 switch tabItem {
                 case .home:
-                    state.path.removeAll()
-                    state.path.append(.home(.init()))
                     state.selectedTab = tabItem
+                    
                 case .schoolGroup:
-                    state.path.removeAll()
-                    state.path.append(.schoolGroup(.init()))
                     state.selectedTab = tabItem
+                    
                 case .record:
                     state.destination = .record(.init())
                 }
-                
-                return .none
-                
-            case .path:
                 return .none
                 
             case .destination:
                 return .none
             }
-        }
-        .forEach(\.path, action: \.path) {
-            Path()
         }
         .ifLet(\.$destination, action: \.destination) {
             Destination()
@@ -66,34 +66,7 @@ struct SCTabBarFeature {
     //MARK: - Destination
     
     @Reducer
-    struct Path {
-        @ObservableState
-        enum State: Equatable {
-            case home(HomeMainFeature.State)
-            case schoolGroup(SchoolGroupMainFeature.State)
-        }
-        
-        enum Action {
-            case home(HomeMainFeature.Action)
-            case schoolGroup(SchoolGroupMainFeature.Action)
-        }
-        
-        var body: some ReducerOf<Self> {
-            Scope(state: \.home, action: \.home) {
-                HomeMainFeature()
-            }
-            
-            Scope(state: \.schoolGroup, action: \.schoolGroup) {
-                SchoolGroupMainFeature()
-            }
-        }
-    }
-    
-    //MARK: - Destination
-    
-    @Reducer
     struct Destination {
-        @ObservableState
         enum State: Equatable {
             case record(RecordMainFeature.State)
         }
