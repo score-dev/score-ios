@@ -54,7 +54,7 @@ struct SettingMainView: View {
             Text("환경설정")
         }
         .scPopUp(style: .dialog,
-                 isPresented: viewStore.$isPresentedSignOutDialog) {
+                 isPresented: viewStore.$isPresentingSignOutDialogDialog) {
             SignOutDialog(viewStore: viewStore)
         }
     }

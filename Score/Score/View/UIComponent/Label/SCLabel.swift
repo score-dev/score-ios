@@ -20,7 +20,7 @@ enum SCLabelStyle {
 
 struct SCLabel: View {
     let style: SCLabelStyle
-    let imageName: String
+    let imageName: Constants.ImageName
     let title: String
     
     /// - Returns: style에 따라 SCLabel에 사용되는 이미지 크기를 반환합니다.
@@ -49,7 +49,7 @@ struct SCLabel: View {
     
     var body: some View {
         HStack(spacing: 4) {
-            Image(imageName)
+            Image(imageName.rawValue)
                 .resizable()
                 .renderingMode(.template)
                 .frame(width: imageSize,
@@ -69,13 +69,13 @@ struct SCLabel: View {
 #Preview {
     VStack {
         SCLabel(style: .card,
-                imageName: Constants.ImageName.check.rawValue,
+                imageName: .check,
                 title: "123")
         SCLabel(style: .button,
-                imageName: Constants.ImageName.camera.rawValue,
+                imageName: .camera,
                 title: "123")
         SCLabel(style: .chip,
-                imageName: Constants.ImageName.dustSad.rawValue,
+                imageName: .dustSad,
                 title: "123")
     }
 }

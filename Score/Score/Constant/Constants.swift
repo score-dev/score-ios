@@ -29,6 +29,7 @@ enum Constants {
         case search
         case user
         case home
+        case setting
         
         // Member Icons
         case dustMood = "dust.mood"
@@ -93,6 +94,8 @@ enum Constants {
     
     enum Layout: CGFloat {
         case horizontal = 16
+        case navigationBarHeight = 56
+        case iconSize = 24
     }
 }
 

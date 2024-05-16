@@ -35,9 +35,6 @@ struct SCTabBarFeature {
         
         Reduce { state, action in
             switch action {
-            case .binding:
-                return .none
-                
             case .viewAppearing:
                 return .none
                 
@@ -54,11 +51,13 @@ struct SCTabBarFeature {
                 }
                 return .none
                 
-            case .destination:
+            case .binding,
+                    .destination:
                 return .none
             }
         }
-        .ifLet(\.$destination, action: \.destination) {
+        .ifLet(\.$destination,
+                action: \.destination) {
             Destination()
         }
     }

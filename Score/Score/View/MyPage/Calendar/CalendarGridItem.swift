@@ -10,16 +10,18 @@ import SwiftUI
 
 //MARK: - CalendarGridItem
 
-// - FIXME: CalendarView에서 무조건 store를 받아와야 하는데, 효율적인지?
 /// - Parameters:
 ///     - store: ViewStore<CalendarFeature.State, CalendarFeature.Action> CalendarView에서 받아옵니다.
 ///     - dateComponents: DateComponents를 정의합니다.
 ///     - action: 사용자가 컴포넌트를 Tap했을 때 수행할 동작을 정의합니다.
 struct CalendarGridItem: View {
-    let store: ViewStore<CalendarFeature.State,
-                         CalendarFeature.Action>
+    let store: StoreOf<CalendarFeature>
+    @ObservedObject var viewStore: ViewStoreOf<CalendarFeature>
+    
     let dateComponents: DateComponents?
     let action: () -> (Void)
+    
+    //MARK: - style
     
     private var style: SCNumberIconStyle {
         guard let dateComponents
@@ -35,7 +37,7 @@ struct CalendarGridItem: View {
         }
         
         // - FIXME: 오늘 날짜가 black인지? 디자인 확인 필요
-        if store.state.selectedDateComponents == dateComponents {
+        if viewStore.state.selectedDateComponents == dateComponents {
             return .gray
         }
         
@@ -44,11 +46,24 @@ struct CalendarGridItem: View {
         return .plain
     }
     
+    //MARK: - init
+    
+    init(store: StoreOf<CalendarFeature>,
+         dateComponents: DateComponents? = nil,
+         action: @escaping () -> Void) {
+        self.store = store
+        self.dateComponents = dateComponents
+        self.action = action
+        self.viewStore = ViewStore(store,
+                                   observe: { $0 })
+    }
+    
+    //MARK: - body
+    
     var body: some View {
             Button(action: action) {
                 SCNumberIcon(style: style,
-                             number: dateComponents?.day
-                             ?? 0)
+                             number: dateComponents?.day ?? 0)
                 /// 양쪽 layout padding 효과
                 .layoutOfCalendarItem()
                 .background {
@@ -71,7 +86,8 @@ struct CalendarGridItem: View {
 //MARK: - Preview
 
 #Preview {
-    CalendarGridItem(store: .init(.init(initialState: CalendarFeature.State(appearedYear: 0, appearedMonth: 0, appearedDay: 0, appearedDateComponentsMatrix: []), reducer: {CalendarFeature().body}), observe: {$0}), dateComponents: nil) {
+    CalendarGridItem(store: .init(initialState: .init(),
+                                  reducer: { CalendarFeature() })) {
         
     }
 }

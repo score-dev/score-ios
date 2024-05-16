@@ -13,7 +13,7 @@ struct SettingMainFeature {
     
     struct State: Equatable {
         @PresentationState var destination: Destination.State?
-        @BindingState var isPresentedSignOutDialog: Bool = false 
+        @BindingState var isPresentingSignOutDialogDialog: Bool = false 
     }
     
     enum Action: BindableAction {
@@ -61,11 +61,11 @@ struct SettingMainFeature {
                 return .none
                 
             case .signOutButtonTapped:
-                state.isPresentedSignOutDialog = true 
+                state.isPresentingSignOutDialogDialog = true 
                 return .none
                 
             case .dialogDismissButtonTapped:
-                state.isPresentedSignOutDialog = false
+                state.isPresentingSignOutDialogDialog = false
                 return .none
                 
             case .dismissButtonTapped:

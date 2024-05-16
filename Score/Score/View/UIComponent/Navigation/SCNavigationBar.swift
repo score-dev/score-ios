@@ -25,8 +25,8 @@ enum SCNavigationStyle {
 ///     - content: Navigation Bar에 표시하고 싶은 View를 정의합니다. 기본적으로 HStack으로 구현되어 있기 때문에 HStack을 선언하지 않고 필요한 Component를 나열합니다. .pretendard(.title)이 기본 설정입니다.
 ///     - style: Navigation Bar를 display하는 방식을 정의합니다.
 struct SCNavigationBar<Content: View>: View {
+    private let constants = Constants.Layout.self
     let style: SCNavigationStyle
-//    @Dependency(\.dismiss) var dismiss
     @ViewBuilder let content: () -> Content
     
     var body: some View {
@@ -36,9 +36,27 @@ struct SCNavigationBar<Content: View>: View {
                 .foregroundStyle(
                     Color.brandColor(color: .text1)
                 )
+            Spacer()
         }
         .padding(.vertical, 10)
+        .frame(
+            height: constants.navigationBarHeight.rawValue
+        )
         .layout()
+    }
+    
+    //MARK: - backgroundColor
+    
+    @ViewBuilder
+    func backgroundColor(
+        _ color: Color?
+    ) -> some View {
+        if color == nil {
+            self
+        } else {
+            self
+                .background(color ?? .clear)
+        }
     }
 }
 
@@ -52,6 +70,7 @@ extension View {
     @ViewBuilder
     func scNavigationBar<Content: View>(
         style: SCNavigationStyle,
+        backgroundColor: Color? = nil,
         @ViewBuilder content: @escaping () -> Content
     ) -> some View {
         switch style {
@@ -64,13 +83,16 @@ extension View {
                     SCNavigationBar(style: style) {
                         content()
                     }
+                    .backgroundColor(backgroundColor)
                 }
+                
             
         case .vertical:
             VStack(alignment: .leading) {
                 SCNavigationBar(style: style) {
                     content()
                 }
+                .backgroundColor(backgroundColor)
                 
                 self
                     .toolbar(.hidden)
@@ -102,7 +124,8 @@ extension View {
             Image(systemName: "checkmark")
         }
         .navigationTitle("123")
-        .scNavigationBar(style: .overlay) {
+        .scNavigationBar(style: .overlay,
+                         backgroundColor: .blue) {
             DismissButton(style: .chevron,
                           color: .white) {
                 
@@ -142,7 +165,8 @@ extension View {
         .toolbar {
             Image(systemName: "checkmark")
         }
-        .scNavigationBar(style: .vertical) {
+        .scNavigationBar(style: .vertical,
+                         backgroundColor: .yellow) {
             DismissButton(style: .chevron,
                           color: .white) {
                 
