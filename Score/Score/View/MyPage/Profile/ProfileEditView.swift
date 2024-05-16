@@ -16,11 +16,15 @@ struct ProfileEditView: View {
     
     let constant = Contexts.MyPage.self
     
+    //MARK: - init
+    
     init(store: StoreOf<ProfileEditFeature>) {
         self.store = store
         self.viewStore = ViewStore(store,
                                    observe: { $0 })
     }
+    
+    //MARK: - body
     
     var body: some View {
         ScrollView {
@@ -56,6 +60,15 @@ struct ProfileEditView: View {
             
             Text("마이페이지")
         }
+        .sheet(isPresented: viewStore.$isPresentingEditWorkOutTime) {
+            Text("운동 시간 설정 Sheet")
+        }
+        .sheet(isPresented: viewStore.$isPresentingEditSchoolSheet) {
+            Text("학교 설정 Sheet")
+        }
+        .sheet(isPresented: viewStore.$isPresentingEditGradeSheet) {
+            Text("학년 설정 Sheet")
+        }
     }
     
     //MARK: - profileImageSectionBuilder
@@ -63,45 +76,22 @@ struct ProfileEditView: View {
     /// 프로필 이미지를 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
     func profileImageSectionBuilder() -> some View {
-        if let image = viewStore.displayedProfileImage {
-            image
-                .resizable()
-                .frame(width: 130,
-                       height: 130)
-                .background(Color.brandColor(color: .gray2))
-                .clipShape(Circle())
-                .overlay(alignment: .bottomTrailing) {
-                    PhotoPickerView(viewStore: viewStore) {
-                        SCIcon(
-                            style: .init(
-                                size: .medium,
-                                color: .gray3
-                            ),
-                            imageName: .pencil)
-                    }
+        viewStore.displayedProfileImage
+            .imagePlaceHolder(size: 130)
+            .overlay(alignment: .bottomTrailing) {
+                PhotoPickerView(
+                    store: store.scope(state: \.photoPicker,
+                                       action: \.photoPicker)
+                ) {
+                    SCIcon(
+                        style: .init(
+                            size: .medium,
+                            color: .gray3
+                        ),
+                        imageName: .pencil)
                 }
-                .frame(maxWidth: .infinity)
-        } else {
-            // image PlaceHolder
-            Circle()
-                .frame(width: 130,
-                       height: 130)
-            // - FIXME: Color 변경
-                .foregroundStyle(
-                    Color.brandColor(color: .gray1)
-                )
-                .overlay(alignment: .bottomTrailing) {
-                    PhotoPickerView(viewStore: viewStore) {
-                        SCIcon(
-                            style: .init(
-                                size: .medium,
-                                color: .gray3
-                            ),
-                            imageName: .pencil)
-                    }
-                }
-                .frame(maxWidth: .infinity)
-        }
+            }
+            .frame(maxWidth: .infinity)
     }
     
     //MARK: - nickNameSectionBuilder
@@ -109,7 +99,7 @@ struct ProfileEditView: View {
     /// 닉네임을 수정할 수 있는 부분 뷰입니다.
     @ViewBuilder
     func nickNameSectionBuilder() -> some View {
-        Text("닉네임")
+        Text(viewStore.displayedNickName)
             .pretendard(.body2)
             .foregroundStyle(
                 Color.brandColor(color: .text1)
@@ -130,7 +120,7 @@ struct ProfileEditView: View {
             .foregroundStyle(Color.brandColor(color: .text1))
         
         SCButton(style: .gray) {
-            
+            store.send(.workOutTimeButtonTapped)
         } label: {
             Text("매일 오전 00:00")
                 .pretendard(.body1)
@@ -151,7 +141,7 @@ struct ProfileEditView: View {
         SCButton(style: .gray) {
             viewStore.send(.schoolEditButtonTapped)
         } label: {
-            Text("학교")
+            Text(viewStore.displayedSchool)
                 .foregroundStyle(Color.brandColor(color: .text1))
                 .frame(maxWidth: .infinity)
         }
@@ -185,25 +175,25 @@ struct ProfileEditView: View {
             .foregroundStyle(Color.brandColor(color: .text1))
         
         HStack(spacing: 16) {
-            SCButton(
-                style: viewStore.displayedSex == .male ?
-                    .primary : .teritary) {
-                        viewStore.send(.sexSelectButtonTapped(.male))
-                    } label: {
-                        Text("남")
-                            .frame(maxWidth: .infinity)
-                    }
-                    .clipShape(Capsule())
-            
-            SCButton(
-                style: viewStore.displayedSex == .female ?
-                    .primary : .teritary) {
-                        viewStore.send(.sexSelectButtonTapped(.female))
-                    } label: {
-                        Text("여")
-                            .frame(maxWidth: .infinity)
-                    }
-                    .clipShape(Capsule())
+            ForEach(Gender.sex,
+                    id: \.self) { sex in
+                Button {
+                    viewStore.send(.sexSelectButtonTapped(sex))
+                } label: {
+                    Text(sex.rawValue)
+                        .pretendard(.body3)
+                        .foregroundStyle(viewStore.displayedSex == sex ?
+                            .white :
+                            Color.brandColor(color: .text2)
+                        )
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 8)
+                        .padding(.horizontal, 16)
+                        .background(viewStore.displayedSex == sex ? Color.brandColor(color: .main) : .white)
+                        
+                }
+//                .clipShape(Capsule())
+            }
         }
     }
     
@@ -213,6 +203,7 @@ struct ProfileEditView: View {
     @ViewBuilder
     func heightAndWeightSectionBuilder() -> some View {
         HStack(spacing: 32) {
+            // 키
             VStack(alignment: .leading) {
                 Text("키")
                     .pretendard(.body2)
@@ -225,6 +216,7 @@ struct ProfileEditView: View {
                 .keyboardType(.numberPad)
             }
             
+            // 몸무게
             VStack(alignment: .leading) {
                 Text("몸무게")
                     .pretendard(.body2)
@@ -244,16 +236,7 @@ struct ProfileEditView: View {
 
 #Preview {
     ProfileEditView(
-        store: .init(initialState: ProfileEditFeature.State(
-            displayedNickName: "",
-            displayedHeight: "",
-            displayedWeight: "",
-            displayedSex: .female,
-            displayedSchool: "감자",
-            displayedGrade: 1,
-            isPresentingEditGradeSheet: false,
-            isPresentingEditSchoolSheet: false
-        ),
+        store: .init(initialState: .init(displayedSchool: "감자대학교"),
                      reducer: { ProfileEditFeature() }
         )
     )
