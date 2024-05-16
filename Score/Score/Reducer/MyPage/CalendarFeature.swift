@@ -29,10 +29,10 @@ struct CalendarFeature: Reducer {
     private let maxNumberOfDayInWeek: Int = 7
     
     struct State: Equatable {
-        var appearedYear: Int
-        var appearedMonth: Int
-        var appearedDay: Int
-        var appearedDateComponentsMatrix: [[DateComponentsWithID]]
+        var appearedYear: Int = Date.nowDate().year
+        var appearedMonth: Int = Date.nowDate().month
+        var appearedDay: Int = Date.nowDate().day
+        var appearedDateComponentsMatrix: [[DateComponentsWithID]] = []
         var selectedDateComponents: DateComponents?
     }
     
@@ -49,11 +49,12 @@ struct CalendarFeature: Reducer {
         Reduce { state, action in
             switch action {
             case .viewAppearing:
-                // 현재 날짜로 세팅합니다.
-                let nowDate = Date.nowDate()
-                state.appearedYear = nowDate.year
-                state.appearedMonth = nowDate.month
-                state.appearedDay = nowDate.day
+//                // 현재 날짜로 세팅합니다.
+                 // 탭바로 appearing 시 이전 상황이 저장되지 않아서 삭제합니다. 
+//                let nowDate = Date.nowDate()
+//                state.appearedYear = nowDate.year
+//                state.appearedMonth = nowDate.month
+//                state.appearedDay = nowDate.day
                 return .send(.calendarUpdating)
                 
             case .incrementMonthButtonTapped:
