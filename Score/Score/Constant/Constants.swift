@@ -31,6 +31,15 @@ enum Constants {
         case home
         case setting
         
+        // Auth center Icon
+        case kakao
+        case naver
+        case google
+        case apple
+        
+        // Brand Icon
+        case brandIcon
+        
         // Member Icons
         case dustMood = "dust.mood"
         case dustSad = "dust.sad"
@@ -77,16 +86,17 @@ enum Constants {
     enum APIKey {
         //MARK: - Naver
         
-        enum Naver: String {
+        enum Naver: String,
+                    APIKeyProtocol {
             case clientID = "NAVER_CLIENT_ID"
             case secretKey = "NAVER_SECRET_KEY"
-            
-            //MARK: - findValueInBundle
-            
-            func findValueInBundle() -> String {
-                Bundle.main.infoDictionary?[self.rawValue]
-                as? String ?? "none"
-            }
+        }
+        
+        //MARK: - Kakao
+        
+        enum Kakao: String,
+                    APIKeyProtocol {
+            case appID = "KAKAO_APP_ID"
         }
     }
     
@@ -96,6 +106,25 @@ enum Constants {
         case horizontal = 16
         case navigationBarHeight = 56
         case iconSize = 24
+    }
+}
+
+//MARK: - APIKeyProtocol
+
+protocol APIKeyProtocol {
+    var rawValue: String { get }
+    
+    func findValueInBundle() -> String
+}
+
+//MARK: - APIKeyProtocol
+
+extension APIKeyProtocol {
+    //MARK: - findValueInBundle
+    
+    func findValueInBundle() -> String {
+        Bundle.main.infoDictionary?[self.rawValue]
+        as? String ?? "none"
     }
 }
 
