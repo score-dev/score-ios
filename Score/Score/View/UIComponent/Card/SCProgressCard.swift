@@ -23,15 +23,9 @@ struct SCProgressCard: View {
     
     var body: some View {
         HStack(spacing: 12) {
-            image?
-                .resizable()
-                .frame(width: 53, height: 53)
-                .background {
-                    Color.brandColor(color: .gray3)
-                }
-                .clipShape(Circle())
+            image
+                .imagePlaceHolder(size: 53)
                 
-            
             VStack(alignment: .leading,
                    spacing: 4) {
                 HStack {
