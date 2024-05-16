@@ -13,6 +13,7 @@ enum SCCapsuleButtonStyle {
     case primary
     case secondary
     case gray
+    case line
 }
 
 //MARK: - SCCapsuleButton
@@ -53,7 +54,6 @@ struct SCCapsuleButtonViewModifier: ViewModifier {
     
     func body(content: Content) -> some View {
         switch style {
-            
         case .primary:
             content
                 .pretendard(weight: .semiBold,
@@ -61,8 +61,11 @@ struct SCCapsuleButtonViewModifier: ViewModifier {
                 .foregroundStyle(Color.white)
                 .padding(.vertical, 12)
                 .padding(.horizontal, 41)
-                .background(Color.brandColor(color: .main),
-                            in: RoundedRectangle(cornerRadius: 21))
+                .background(
+                    Color.brandColor(color: .main),
+                    in: RoundedRectangle(cornerRadius: 21)
+                )
+            
         case .secondary:
             content
                 .pretendard(weight: .semiBold,
@@ -70,8 +73,10 @@ struct SCCapsuleButtonViewModifier: ViewModifier {
                 .foregroundStyle(Color.brandColor(color: .main))
                 .padding(.vertical, 12)
                 .padding(.horizontal, 41)
-                .background(Color.brandColor(color: .sub3),
-                            in: RoundedRectangle(cornerRadius: 21))
+                .background(
+                    Color.brandColor(color: .sub3),
+                    in: RoundedRectangle(cornerRadius: 21)
+                )
             
         case .gray:
             content
@@ -80,8 +85,24 @@ struct SCCapsuleButtonViewModifier: ViewModifier {
                 .foregroundStyle(.white)
                 .padding(.vertical, 4)
                 .padding(.horizontal, 12)
-                .background(Color.brandColor(color: .gray1),
-                            in: Capsule())
+                .background(
+                    Color.brandColor(color: .gray1),
+                    in: Capsule()
+                )
+            
+        case .line:
+            content
+                .pretendard(.body3)
+                .foregroundStyle(Color.brandColor(color: .text2))
+                .padding(.vertical, 8)
+                .padding(.horizontal, 16)
+                .background {
+                    Capsule()
+                        .stroke(
+                            Color.brandColor(color: .gray3),
+                            lineWidth: 1
+                        )
+                }
         }
     }
 }
@@ -114,6 +135,12 @@ struct SCCapsuleButtonViewModifier: ViewModifier {
             
         } label: {
             Text("gray")
+        }
+        
+        SCCapsuleButton(style: .line) {
+            
+        } label: {
+            Text("line")
         }
     }
 }
