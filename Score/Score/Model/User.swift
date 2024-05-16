@@ -14,7 +14,7 @@ struct User: Equatable,
     // identifier
     let nickName: String
     let profileImageName: String
-    let sex: Sex
+    let gender: Gender
     let height: Int
     let weight: Int
     let schoolName: String
@@ -25,16 +25,20 @@ struct User: Equatable,
     
     static let defaultModel: User = .init(nickName: "왕감자",
                                           profileImageName: "",
-                                          sex: .female,
+                                          gender: .female,
                                           height: 160,
                                           weight: 50,
                                           schoolName: "감자대학교",
                                           grade: 1)
 }
 
-//MARK: - Sex
+//MARK: - Gender
 
-enum Sex: String {
+enum Gender: String, CaseIterable {
+    static let sex: [Gender] = [.male,
+                                .female]
+    
     case male = "남"
     case female = "여"
+    case ect
 }
