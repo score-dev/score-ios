@@ -18,16 +18,16 @@ enum Weather: String {
     //MARK: - imageName
     
     /// 날씨에 해당하는 이미지 이름을 반환합니다.
-    func imageName() -> String {
+    func imageName() -> Constants.ImageName {
         switch self {
         case .sun:
-            return Constants.ImageName.weatherSun.rawValue
+            return .weatherSun
         case .cloudy:
-            return Constants.ImageName.weatherCloudy.rawValue
+            return .weatherCloudy
         case .snow:
-            return Constants.ImageName.weatherSnow.rawValue
+            return .weatherSnow
         case .rain:
-            return Constants.ImageName.weatherSnow.rawValue
+            return .weatherSnow
         }
     }
 }
@@ -42,14 +42,14 @@ enum Dust: String  {
     //MARK: - imageName
     
     /// 미세먼지 농도에 해당하는 이미지 이름을 반환합니다.
-    func imageName() -> String {
+    func imageName() -> Constants.ImageName {
         switch self {
         case .bad:
-            return Constants.ImageName.dustSad.rawValue
+            return .dustSad
         case .regular:
-            return Constants.ImageName.dustMood.rawValue
+            return .dustMood
         case .good:
-            return Constants.ImageName.dustSmile.rawValue
+            return .dustSmile
         }
     }
 }

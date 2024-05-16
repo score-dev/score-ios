@@ -63,7 +63,7 @@ extension View {
 #Preview {
     VStack {
         SCLabel(style: .button,
-                imageName: Constants.ImageName.bell.rawValue,
+                imageName: .bell,
                 title: "1234")
             .foregroundStyle(Color.red)
             .padding(.vertical, 10)

@@ -27,8 +27,12 @@ struct PhotoPickerFeature {
         
         Reduce { state, action in
             switch action {
+            case .binding(\.$photoItem):
+                return .send(.photoSelectChanging(state.photoItem))
+                
             case .binding(_):
                 return .none
+                
             case .photoSelectChanging(let photosPickerItem):
                 guard let photosPickerItem
                 else {
@@ -38,6 +42,7 @@ struct PhotoPickerFeature {
                     let image = try await photosPickerItem.loadTransferable(type: Image.self)
                     await send(.imageUpdating(image))
                 }
+                
             case .imageUpdating(let image):
                 guard let image
                 else { return .none }
