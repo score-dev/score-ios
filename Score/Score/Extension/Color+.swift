@@ -32,6 +32,11 @@ extension Color {
         case text3 = 0xB2B6C2
         
         case icon = 0x6B737F
+        
+        case kakaoBackground = 0xFEE500
+        case kakaoLogo = 0x262200
+        
+        case naverBackground = 0x03C75A
     }
     
     //MARK: - init
