@@ -39,8 +39,15 @@ extension View {
         // 양쪽에 padding이 들어가므로 2배를 곱해줍니다.
         let paddingHorizontal: CGFloat = Constants.Layout.horizontal.rawValue * 2
         frame(
-            width: (UIScreen.main.bounds.width - paddingHorizontal) / 7,
-            height: (UIScreen.main.bounds.width - paddingHorizontal) / 7
+            width: (.deviceWidth - paddingHorizontal) / 7,
+            height: (.deviceWidth - paddingHorizontal) / 7
         )
+    }
+    
+    @ViewBuilder
+    func rectFrame(size: CGFloat) -> some View {
+        self
+            .frame(width: size,
+                   height: size)
     }
 }
