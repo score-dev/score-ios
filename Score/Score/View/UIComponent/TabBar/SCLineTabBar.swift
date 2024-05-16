@@ -5,40 +5,54 @@
 //  Created by sole on 4/14/24.
 //
 
+import ComposableArchitecture
 import SwiftUI
+
+protocol SCLineTabBarItemProtocol: Hashable  {
+    associatedtype Tab: SCLineTabProtocol
+    
+    var title: String { get set }
+    var tab: Tab { get set }
+}
+
+protocol SCLineTabProtocol: Hashable,
+                            Equatable,
+                            CaseIterable {
+}
+
+struct SCLineTabItem<Tab: SCLineTabProtocol>: SCLineTabBarItemProtocol {
+    var title: String
+    var tab: Tab
+}
+
 
 //MARK: - SCLineTabBar
 
-struct SCLineTabBar: View {
-    var items: [String] = []
-    
-    @State var selectedValue: String
+struct SCLineTabBar<Tab: SCLineTabProtocol>: View {
+    let store: StoreOf<SCLineTabBarFeature<Tab>>
+    @ObservedObject var viewStore: ViewStoreOf<SCLineTabBarFeature<Tab>>
     
     //MARK: - init
     
-    init(items: [String]) {
-        self.items = items
-        guard let firstElement = items.first
-        else { 
-            self.selectedValue = "defaultModel"
-            return
-        }
-        self.selectedValue = firstElement
+    init(store: StoreOf<SCLineTabBarFeature<Tab>>) {
+        self.store = store
+        self.viewStore = ViewStore(store,
+                                   observe: { $0 })
     }
     
     var body: some View {
         // - FIXME: 디자인 상의 필요, animation 적용
         HStack(spacing: 50) {
-            ForEach(items,
+            ForEach(viewStore.tabItems,
                     id: \.self) { item in
-                Text("\(item)")
-                    .transition(.slide)
+                Text("\(item.title)")
                     .modifier(
-                        SCLineTabBarItemViewModifier(selectedValue: $selectedValue,
-                                                     item: item)
+                        SCLineTabBarItemViewModifier(
+                            store: store,
+                            item: item
+                        )
                     )
             }
-            
         }
         .frame(maxWidth: .infinity)
     }
@@ -46,20 +60,32 @@ struct SCLineTabBar: View {
 
 //MARK: - SCLineTabBarItemViewModifier
 
-struct SCLineTabBarItemViewModifier: ViewModifier {
-    @Binding var selectedValue: String
-    let item: String
+struct SCLineTabBarItemViewModifier<Tab: SCLineTabProtocol>: ViewModifier {
+    let store: StoreOf<SCLineTabBarFeature<Tab>>
+    let item: SCLineTabItem<Tab>
+    
+    @ObservedObject var viewStore: ViewStoreOf<SCLineTabBarFeature<Tab>>
+    
+    //MARK: - init
+    
+    init(store: StoreOf<SCLineTabBarFeature<Tab>>,
+         item: SCLineTabItem<Tab>) {
+        self.store = store
+        self.viewStore = ViewStore(store,
+                                   observe: { $0 })
+        self.item = item
+    }
     
     func body(content: Content) -> some View {
         Button {
-            withAnimation {
-                selectedValue = item
-            }
+            viewStore.send(.tabBarButtonTapped(item),
+                           animation: .easeIn)
+//            viewStore.send(.tabBarButtonTapped(item))
         } label: {
             content
                 .pretendard(.body2)
                 .foregroundStyle(
-                    selectedValue == item ?
+                    viewStore.selectedTab == item.tab ?
                     Color.brandColor(color: .text1) :
                     Color.brandColor(color: .text3)
                 )
@@ -67,7 +93,7 @@ struct SCLineTabBarItemViewModifier: ViewModifier {
                 .padding(.horizontal, 20)
                 .frame(maxWidth: 120)
                 .edgeBorder(lineWidth: 2,
-                            edges: selectedValue == item ?
+                            edges: viewStore.selectedTab == item.tab ?
                             [.bottom] : [])
         }
     }
@@ -82,21 +108,25 @@ extension View {
     /// - Parameters:
     ///     - items: LineTabBarItem(TabBar title)을 정의합니다.
     @ViewBuilder
-    func scLineTabBar(items: [String]) -> some View {
-        VStack(alignment: .leading,
-               spacing: 2) {
-            SCLineTabBar(items: items)
-            self
+    func scLineTabBar<Tab: SCLineTabProtocol>(
+        store: StoreOf<SCLineTabBarFeature<Tab>>
+    ) -> some View {
+        self
+            .padding(.top, 20)
+            .overlay(alignment: .top) {
+            SCLineTabBar(store: store)
+                .offset(y: -20)
+                .transition(.slide)
         }
     }
 }
 
 //MARK: - Preview
 
-#Preview {
-    Rectangle()
-        .foregroundStyle(.mint)
-        .scLineTabBar(items: ["피드(nn개)",
-                              "캘린더"])
-        .layout()
-}
+//#Preview {
+//    Rectangle()
+//        .foregroundStyle(.mint)
+//        .scLineTabBar(store: .init(initialState: .init(),
+//                                   reducer: { SCLineTabBarFeature() }))
+//        .layout()
+//}
