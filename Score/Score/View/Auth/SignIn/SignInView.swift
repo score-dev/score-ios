@@ -5,11 +5,22 @@
 //  Created by sole on 5/16/24.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 //MARK: - SignInView
 
 struct SignInView: View {
+    let store: StoreOf<AuthFeature>
+    @ObservedObject var viewStore: ViewStoreOf<AuthFeature>
+    
+    init(store: StoreOf<AuthFeature>) {
+        self.store = .init(initialState: .init(),
+                           reducer: { AuthFeature() })
+        self.viewStore = .init(store,
+                               observe: { $0 })
+    }
+    
     var body: some View {
         VStack(spacing: 83) {
             brandSectionBuilder()
@@ -22,6 +33,7 @@ struct SignInView: View {
         .background(
             Color.brandColor(color: .gray2)
         )
+        .onLoading(viewStore.isLoading)
     }
     
     //MARK: - brandSectionBuilder
@@ -54,25 +66,19 @@ struct SignInView: View {
     private func signInButtonSectionBuilder() -> some View {
         VStack(spacing: 14) {
             Button {
-                
+                viewStore.send(.kakaoSignInButtonTapped)
             } label: {
                 signInButtonLabelBuilder(.kakao)
             }
             
             Button {
-                
-            } label: {
-                signInButtonLabelBuilder(.naver)
-            }
-            
-            Button {
-                
+                viewStore.send(.googleSingInButtonTapped)
             } label: {
                 signInButtonLabelBuilder(.google)
             }
             
             Button {
-                
+                viewStore.send(.appleSignInButtonTapped)
             } label: {
                 signInButtonLabelBuilder(.apple)
             }
@@ -105,47 +111,9 @@ struct SignInView: View {
     }
 }
 
-//MARK: - AuthCenter
-
-enum AuthCenter: String {
-    case kakao = "카카오"
-    case naver = "네이버"
-    case google = "구글"
-    case apple = "애플"
-    
-    //MARK: - imageName
-    
-    func imageName() -> Constants.ImageName {
-        switch self {
-        case .kakao:
-            return .kakao
-        case .naver:
-            return .naver
-        case .google:
-            return .google
-        case .apple:
-            return .apple
-        }
-    }
-    
-    //MARK: - backGroundColor
-    
-    func backGroundColor() -> Color {
-        switch self {
-        case .kakao:
-            return .brandColor(color: .kakaoBackground)
-        case .naver:
-            return.white
-        case .google:
-            return .white
-        case .apple:
-            return .white
-        }
-    }
-}
-
 //MARK: - Preview
 
 #Preview {
-    SignInView()
+    SignInView(store: .init(initialState: .init(),
+                            reducer: { AuthFeature() }))
 }
