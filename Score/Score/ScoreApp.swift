@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import KakaoSDKAuth
+import KakaoSDKCommon
 
 @main
 struct ScoreApp: App {
+    let apiKeys = Constants.APIKey.self
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+    }
+    
+    init() {
+        KakaoSDK.initSDK(
+            appKey: apiKeys.Kakao.appID.getValueFromBundle() ?? "none"
+        )
     }
 }
