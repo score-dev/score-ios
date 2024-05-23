@@ -11,6 +11,7 @@
 		FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C39672BA9914B00CC05AA /* ScoreApp.swift */; };
 		FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C39692BA9914B00CC05AA /* ContentView.swift */; };
 		FD0C396C2BA9914D00CC05AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0C396B2BA9914D00CC05AA /* Assets.xcassets */; };
+		FD0C396F2BA9914D00CC05AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0C396E2BA9914D00CC05AA /* Preview Assets.xcassets */; };
 		FD0C39762BA9D99D00CC05AA /* PretendardVariable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */; };
 		FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C39792BA9DA4A00CC05AA /* Font+.swift */; };
 		FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C397C2BA9E48400CC05AA /* Color+.swift */; };
@@ -48,7 +49,6 @@
 		FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */; };
 		FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */; };
 		FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */; };
-		FD4F5BB82BFBB91000E9435D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4F5BB72BFBB91000E9435D /* Preview Assets.xcassets */; };
 		FD8B639B2BD1FF1E000500BF /* SettingMainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B639A2BD1FF1E000500BF /* SettingMainFeature.swift */; };
 		FD8B639D2BD200CD000500BF /* AlarmSettingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B639C2BD200CD000500BF /* AlarmSettingFeature.swift */; };
 		FD8B639F2BD20124000500BF /* PrivacyPolicyFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B639E2BD20124000500BF /* PrivacyPolicyFeature.swift */; };
@@ -75,21 +75,6 @@
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
 		FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */; };
 		FDE9EA252BBED551007AA4D7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FDE9EA242BBED551007AA4D7 /* ComposableArchitecture */; };
-		FDEDB94A2BFBBA6D0040E313 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9492BFBBA6D0040E313 /* APIProtocol.swift */; };
-		FDEDB94D2BFBBBCA0040E313 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FDEDB94C2BFBBBCA0040E313 /* KakaoSDKAuth */; };
-		FDEDB94F2BFBBBCA0040E313 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = FDEDB94E2BFBBBCA0040E313 /* KakaoSDKCommon */; };
-		FDEDB9512BFBBBCA0040E313 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = FDEDB9502BFBBBCA0040E313 /* KakaoSDKUser */; };
-		FDEDB9532BFBBC710040E313 /* BundleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9522BFBBC710040E313 /* BundleProtocol.swift */; };
-		FDEDB9552BFBBD0D0040E313 /* APIKeyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9542BFBBD0D0040E313 /* APIKeyProtocol.swift */; };
-		FDEDB95A2BFBE22D0040E313 /* UserApi+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9592BFBE22D0040E313 /* UserApi+.swift */; };
-		FDEDB95C2BFBE2600040E313 /* AuthFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB95B2BFBE2600040E313 /* AuthFeature.swift */; };
-		FDEDB95E2BFBE97B0040E313 /* SCLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB95D2BFBE97B0040E313 /* SCLoading.swift */; };
-		FDEDB9622BFC17140040E313 /* AuthCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9612BFC17140040E313 /* AuthCenter.swift */; };
-		FDEDB9642BFC17DC0040E313 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9632BFC17DC0040E313 /* AuthToken.swift */; };
-		FDEDB9662BFC188D0040E313 /* KeyChainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9652BFC188D0040E313 /* KeyChainStore.swift */; };
-		FDEDB9682BFC86C70040E313 /* KakaoLoginStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9672BFC86C70040E313 /* KakaoLoginStore.swift */; };
-		FDEDB96A2BFCA6D70040E313 /* SCErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9692BFCA6D70040E313 /* SCErrorProtocol.swift */; };
-		FDEDB96C2BFCA6F70040E313 /* SCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB96B2BFCA6F70040E313 /* SCError.swift */; };
 		FDFAA42D2BCE05BF0053CD9F /* SCLineProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAA42C2BCE05BF0053CD9F /* SCLineProgress.swift */; };
 		FDFAA42F2BCE0A550053CD9F /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAA42E2BCE0A550053CD9F /* Line.swift */; };
 		FDFAA4332BCE1C780053CD9F /* SettingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAA4322BCE1C780053CD9F /* SettingMainView.swift */; };
@@ -119,6 +104,7 @@
 		FD0C39672BA9914B00CC05AA /* ScoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreApp.swift; sourceTree = "<group>"; };
 		FD0C39692BA9914B00CC05AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD0C396B2BA9914D00CC05AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD0C396E2BA9914D00CC05AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD0C39752BA9D99D00CC05AA /* PretendardVariable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PretendardVariable.ttf; sourceTree = "<group>"; };
 		FD0C39782BA9D9DE00CC05AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD0C39792BA9DA4A00CC05AA /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
@@ -157,7 +143,6 @@
 		FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTagChip.swift; sourceTree = "<group>"; };
 		FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecordButton.swift; sourceTree = "<group>"; };
 		FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCapsuleButton.swift; sourceTree = "<group>"; };
-		FD4F5BB72BFBB91000E9435D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD8B639A2BD1FF1E000500BF /* SettingMainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMainFeature.swift; sourceTree = "<group>"; };
 		FD8B639C2BD200CD000500BF /* AlarmSettingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingFeature.swift; sourceTree = "<group>"; };
 		FD8B639E2BD20124000500BF /* PrivacyPolicyFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyFeature.swift; sourceTree = "<group>"; };
@@ -183,18 +168,6 @@
 		FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
 		FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPopUp.swift; sourceTree = "<group>"; };
-		FDEDB9492BFBBA6D0040E313 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
-		FDEDB9522BFBBC710040E313 /* BundleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleProtocol.swift; sourceTree = "<group>"; };
-		FDEDB9542BFBBD0D0040E313 /* APIKeyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyProtocol.swift; sourceTree = "<group>"; };
-		FDEDB9592BFBE22D0040E313 /* UserApi+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserApi+.swift"; sourceTree = "<group>"; };
-		FDEDB95B2BFBE2600040E313 /* AuthFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFeature.swift; sourceTree = "<group>"; };
-		FDEDB95D2BFBE97B0040E313 /* SCLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLoading.swift; sourceTree = "<group>"; };
-		FDEDB9612BFC17140040E313 /* AuthCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCenter.swift; sourceTree = "<group>"; };
-		FDEDB9632BFC17DC0040E313 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
-		FDEDB9652BFC188D0040E313 /* KeyChainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainStore.swift; sourceTree = "<group>"; };
-		FDEDB9672BFC86C70040E313 /* KakaoLoginStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginStore.swift; sourceTree = "<group>"; };
-		FDEDB9692BFCA6D70040E313 /* SCErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCErrorProtocol.swift; sourceTree = "<group>"; };
-		FDEDB96B2BFCA6F70040E313 /* SCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCError.swift; sourceTree = "<group>"; };
 		FDFAA42C2BCE05BF0053CD9F /* SCLineProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLineProgress.swift; sourceTree = "<group>"; };
 		FDFAA42E2BCE0A550053CD9F /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		FDFAA4322BCE1C780053CD9F /* SettingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMainView.swift; sourceTree = "<group>"; };
@@ -221,11 +194,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDEDB94F2BFBBBCA0040E313 /* KakaoSDKCommon in Frameworks */,
 				FDE9EA252BBED551007AA4D7 /* ComposableArchitecture in Frameworks */,
 				08407A14068F2AFB170E1549 /* libPods-Score.a in Frameworks */,
-				FDEDB9512BFBBBCA0040E313 /* KakaoSDKUser in Frameworks */,
-				FDEDB94D2BFBBBCA0040E313 /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +242,6 @@
 			children = (
 				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
 				FDE9EA282BBED5A7007AA4D7 /* View */,
-				FDEDB9482BFBBA550040E313 /* Protocol */,
 				FD8FC3BC2BC86E8C00B80B3D /* Model */,
 				FDE9EA262BBED595007AA4D7 /* Reducer */,
 				FD208FC12BB9B2E400DD4D3B /* Constant */,
@@ -285,7 +254,7 @@
 		FD0C396D2BA9914D00CC05AA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FD4F5BB72BFBB91000E9435D /* Preview Assets.xcassets */,
+				FD0C396E2BA9914D00CC05AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -307,7 +276,6 @@
 				FD208FBD2BB6F70200DD4D3B /* View+.swift */,
 				FD8FC3B12BC826F600B80B3D /* Date+.swift */,
 				FD3428F82BDC24AE0021E542 /* CGFloat+.swift */,
-				FDEDB9592BFBE22D0040E313 /* UserApi+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -577,12 +545,8 @@
 		FD8FC3BC2BC86E8C00B80B3D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FDA9FDC12BFF3B1A00AC4EB7 /* DTO */,
 				FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */,
 				FD9E06FB2BC97D29000109FD /* User.swift */,
-				FDEDB9612BFC17140040E313 /* AuthCenter.swift */,
-				FDEDB9632BFC17DC0040E313 /* AuthToken.swift */,
-				FDEDB96B2BFCA6F70040E313 /* SCError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -590,7 +554,9 @@
 		FD9A6A1B2BF642920067C96F /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				FD9A6A1D2BF642AD0067C96F /* SignUp */,
 				FD9A6A1C2BF642A30067C96F /* SignIn */,
+				FD9A6A222BF643530067C96F /* SignInView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -598,16 +564,15 @@
 		FD9A6A1C2BF642A30067C96F /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				FD9A6A222BF643530067C96F /* SignInView.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
 		};
-		FD9A6A1D2BF642AD0067C96F /* OnBoarding */ = {
+		FD9A6A1D2BF642AD0067C96F /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = OnBoarding;
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		FD9E06FD2BC97DE1000109FD /* MyPage */ = {
@@ -629,13 +594,6 @@
 				FD9E070C2BCB4E66000109FD /* SCNavigationBar.swift */,
 			);
 			path = Navigation;
-			sourceTree = "<group>";
-		};
-		FDA9FDC12BFF3B1A00AC4EB7 /* DTO */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DTO;
 			sourceTree = "<group>";
 		};
 		FDE9EA202BBDCA01007AA4D7 /* PopUp */ = {
@@ -662,7 +620,6 @@
 		FDE9EA282BBED5A7007AA4D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FD9A6A1D2BF642AD0067C96F /* OnBoarding */,
 				FD9A6A1B2BF642920067C96F /* Auth */,
 				FD0C39692BA9914B00CC05AA /* ContentView.swift */,
 				FDFD3CFE2BD85C5600629B8C /* TabRouteView.swift */,
@@ -675,33 +632,11 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FDEDB9482BFBBA550040E313 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				FDEDB9492BFBBA6D0040E313 /* APIProtocol.swift */,
-				FDEDB9522BFBBC710040E313 /* BundleProtocol.swift */,
-				FDEDB9542BFBBD0D0040E313 /* APIKeyProtocol.swift */,
-				FDEDB9692BFCA6D70040E313 /* SCErrorProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		FDEDB9562BFBCFD30040E313 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				FDEDB95B2BFBE2600040E313 /* AuthFeature.swift */,
-				FDEDB9652BFC188D0040E313 /* KeyChainStore.swift */,
-				FDEDB9672BFC86C70040E313 /* KakaoLoginStore.swift */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
 		FDFAA42B2BCE05720053CD9F /* Progress */ = {
 			isa = PBXGroup;
 			children = (
 				FD208FC62BB9E13A00DD4D3B /* SCProgressBar.swift */,
 				FDFAA42C2BCE05BF0053CD9F /* SCLineProgress.swift */,
-				FDEDB95D2BFBE97B0040E313 /* SCLoading.swift */,
 			);
 			path = Progress;
 			sourceTree = "<group>";
@@ -790,7 +725,6 @@
 		FDFD3D092BD85EB000629B8C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				FDEDB9562BFBCFD30040E313 /* Auth */,
 				FDFD3D0A2BD85EBB00629B8C /* AppFeature.swift */,
 			);
 			path = App;
@@ -816,9 +750,6 @@
 			name = Score;
 			packageProductDependencies = (
 				FDE9EA242BBED551007AA4D7 /* ComposableArchitecture */,
-				FDEDB94C2BFBBBCA0040E313 /* KakaoSDKAuth */,
-				FDEDB94E2BFBBBCA0040E313 /* KakaoSDKCommon */,
-				FDEDB9502BFBBBCA0040E313 /* KakaoSDKUser */,
 			);
 			productName = Score;
 			productReference = FD0C39642BA9914B00CC05AA /* Score.app */;
@@ -850,7 +781,6 @@
 			mainGroup = FD0C395B2BA9914B00CC05AA;
 			packageReferences = (
 				FDE9EA232BBED551007AA4D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				FDEDB94B2BFBBBCA0040E313 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 			);
 			productRefGroup = FD0C39652BA9914B00CC05AA /* Products */;
 			projectDirPath = "";
@@ -866,8 +796,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD4F5BB82BFBB91000E9435D /* Preview Assets.xcassets in Resources */,
 				FDC18D392BC6D92A00A86D41 /* Secrets.xcconfig in Resources */,
+				FD0C396F2BA9914D00CC05AA /* Preview Assets.xcassets in Resources */,
 				FD0C396C2BA9914D00CC05AA /* Assets.xcassets in Resources */,
 				FD0C39762BA9D99D00CC05AA /* PretendardVariable.ttf in Resources */,
 			);
@@ -928,9 +858,7 @@
 				FD9E06FF2BC97DF6000109FD /* ProfileEditView.swift in Sources */,
 				FD3428F92BDC24AE0021E542 /* CGFloat+.swift in Sources */,
 				FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */,
-				FDEDB95E2BFBE97B0040E313 /* SCLoading.swift in Sources */,
 				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
-				FDEDB96C2BFCA6F70040E313 /* SCError.swift in Sources */,
 				FD2E8CDF2BD9321E001957F3 /* MyPageMainFeature.swift in Sources */,
 				FDFAA43D2BCE72FB0053CD9F /* PrivacyPolicyView.swift in Sources */,
 				FD8B639D2BD200CD000500BF /* AlarmSettingFeature.swift in Sources */,
@@ -939,7 +867,6 @@
 				FD9E070F2BCB58BC000109FD /* SCLineTabBar.swift in Sources */,
 				FDFAA42D2BCE05BF0053CD9F /* SCLineProgress.swift in Sources */,
 				FD38E9952BD53D8F00D3BDB7 /* SignOutDialog.swift in Sources */,
-				FDEDB95C2BFBE2600040E313 /* AuthFeature.swift in Sources */,
 				FD208FC02BB9AF3500DD4D3B /* SCIcon.swift in Sources */,
 				FDFAA4372BCE23180053CD9F /* SettingNavigation.swift in Sources */,
 				FD0C397A2BA9DA4A00CC05AA /* Font+.swift in Sources */,
@@ -954,8 +881,6 @@
 				FD2E8CE92BDA6763001957F3 /* FeedGridView.swift in Sources */,
 				FD8FC3B02BC8251700B80B3D /* CalendarFeature.swift in Sources */,
 				FDFD3CF92BD85B8800629B8C /* HomeMainView.swift in Sources */,
-				FDEDB9662BFC188D0040E313 /* KeyChainStore.swift in Sources */,
-				FDEDB9532BFBBC710040E313 /* BundleProtocol.swift in Sources */,
 				FD8B639B2BD1FF1E000500BF /* SettingMainFeature.swift in Sources */,
 				FDFD3CF42BD8547900629B8C /* SCTabBarFeature.swift in Sources */,
 				FD8FC3B22BC826F600B80B3D /* Date+.swift in Sources */,
@@ -975,11 +900,9 @@
 				FD9A6A232BF643530067C96F /* SignInView.swift in Sources */,
 				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
 				FD8B639F2BD20124000500BF /* PrivacyPolicyFeature.swift in Sources */,
-				FDEDB94A2BFBBA6D0040E313 /* APIProtocol.swift in Sources */,
 				FD38E9932BD53D0900D3BDB7 /* SignOutFeature.swift in Sources */,
 				FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */,
 				FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */,
-				FDEDB96A2BFCA6D70040E313 /* SCErrorProtocol.swift in Sources */,
 				FD9E070D2BCB4E66000109FD /* SCNavigationBar.swift in Sources */,
 				FDFD3CFF2BD85C5600629B8C /* TabRouteView.swift in Sources */,
 				FD8FC3B92BC8465D00B80B3D /* DayOfWeek.swift in Sources */,
@@ -995,24 +918,19 @@
 				FD208FC32BB9B2FC00DD4D3B /* Constants.swift in Sources */,
 				FD9E07112BCC99DE000109FD /* DismissButton.swift in Sources */,
 				FD38E9A92BD83F0B00D3BDB7 /* EmailGuideSheet.swift in Sources */,
-				FDEDB9552BFBBD0D0040E313 /* APIKeyProtocol.swift in Sources */,
 				FD2E8CE12BD93238001957F3 /* MyPageMainView.swift in Sources */,
 				FDFD3D082BD85E8900629B8C /* SchoolGroupMainFeature.swift in Sources */,
-				FDEDB9642BFC17DC0040E313 /* AuthToken.swift in Sources */,
 				FD38E98E2BD5297E00D3BDB7 /* PolicyView.swift in Sources */,
 				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
 				FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */,
-				FDEDB9682BFC86C70040E313 /* KakaoLoginStore.swift in Sources */,
 				FD8B63A32BD201CC000500BF /* UnregisterFeature.swift in Sources */,
 				FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */,
-				FDEDB9622BFC17140040E313 /* AuthCenter.swift in Sources */,
 				FD2E8CE72BD94F37001957F3 /* SCIconButton.swift in Sources */,
 				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
 				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,
 				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
 				FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */,
 				FDFD3D052BD85E6800629B8C /* RecordMainFeature.swift in Sources */,
-				FDEDB95A2BFBE22D0040E313 /* UserApi+.swift in Sources */,
 				FDFD3CFD2BD85BAF00629B8C /* RecordMainView.swift in Sources */,
 				FDFAA4352BCE21400053CD9F /* AlarmSettingView.swift in Sources */,
 			);
@@ -1252,14 +1170,6 @@
 				minimumVersion = 1.9.2;
 			};
 		};
-		FDEDB94B2BFBBBCA0040E313 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.22.2;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1267,21 +1177,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FDE9EA232BBED551007AA4D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
-		};
-		FDEDB94C2BFBBBCA0040E313 /* KakaoSDKAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FDEDB94B2BFBBBCA0040E313 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKAuth;
-		};
-		FDEDB94E2BFBBBCA0040E313 /* KakaoSDKCommon */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FDEDB94B2BFBBBCA0040E313 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKCommon;
-		};
-		FDEDB9502BFBBBCA0040E313 /* KakaoSDKUser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FDEDB94B2BFBBBCA0040E313 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDKUser;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

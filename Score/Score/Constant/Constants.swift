@@ -83,10 +83,7 @@ enum Constants {
     
     //MARK: - APIKey
     
-    enum APIKey: String,
-                 APIKeyProtocol {
-        case serverBaseURL = "SERVER_BASE_URL"
-        
+    enum APIKey {
         //MARK: - Naver
         
         enum Naver: String,
@@ -109,6 +106,25 @@ enum Constants {
         case horizontal = 16
         case navigationBarHeight = 56
         case iconSize = 24
+    }
+}
+
+//MARK: - APIKeyProtocol
+
+protocol APIKeyProtocol {
+    var rawValue: String { get }
+    
+    func findValueInBundle() -> String
+}
+
+//MARK: - APIKeyProtocol
+
+extension APIKeyProtocol {
+    //MARK: - findValueInBundle
+    
+    func findValueInBundle() -> String {
+        Bundle.main.infoDictionary?[self.rawValue]
+        as? String ?? "none"
     }
 }
 
