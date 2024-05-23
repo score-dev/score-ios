@@ -10,7 +10,8 @@ import Foundation
 //MARK: - User
 
 struct User: Equatable,
-             Hashable {
+             Hashable,
+             Codable {
     // identifier
     let nickName: String
     let profileImageName: String
@@ -30,11 +31,26 @@ struct User: Equatable,
                                           weight: 50,
                                           schoolName: "감자대학교",
                                           grade: 1)
+    
+//    //MARK: - CodingKeys
+//    
+//    enum CodingKeys: String,
+//                     CodingKey {
+//        case nickname
+//        case profileImageName
+//        case gender
+//        case height
+//        case weight
+//        case schoolName
+//        case grade
+//    }
 }
 
 //MARK: - Gender
 
-enum Gender: String, CaseIterable {
+enum Gender: String,
+             CaseIterable,
+             Codable {
     static let sex: [Gender] = [.male,
                                 .female]
     
