@@ -2,12 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>kakao$(KAKAO_APP_ID)</string>
+			</array>
+		</dict>
+	</array>
+	<key>KAKAO_APP_ID</key>
+	<string>$(KAKAO_APP_ID)</string>
 	<key>NAVER_CLIENT_ID</key>
 	<string>$(NAVER_CLIENT_ID)</string>
 	<key>NAVER_SECRET_KEY</key>
 	<string>$(NAVER_SECRET_KEY)</string>
-	<key>KAKAO_APP_ID</key>
-	<string>$(KAKAO_APP_ID)</string>
+	<key>SERVER_BASE_URL</key>
+	<string>$(SERVER_BASE_URL)</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>PretendardVariable.ttf</string>
