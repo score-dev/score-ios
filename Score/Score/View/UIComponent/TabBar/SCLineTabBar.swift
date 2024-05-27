@@ -8,23 +8,6 @@
 import ComposableArchitecture
 import SwiftUI
 
-protocol SCLineTabBarItemProtocol: Hashable  {
-    associatedtype Tab: SCLineTabProtocol
-    
-    var title: String { get set }
-    var tab: Tab { get set }
-}
-
-protocol SCLineTabProtocol: Hashable,
-                            Equatable,
-                            CaseIterable {
-}
-
-struct SCLineTabItem<Tab: SCLineTabProtocol>: SCLineTabBarItemProtocol {
-    var title: String
-    var tab: Tab
-}
-
 
 //MARK: - SCLineTabBar
 

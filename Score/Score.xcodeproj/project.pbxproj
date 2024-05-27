@@ -62,6 +62,7 @@
 		FD8FC3B92BC8465D00B80B3D /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3B82BC8465D00B80B3D /* DayOfWeek.swift */; };
 		FD8FC3BB2BC8470700B80B3D /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3BA2BC8470700B80B3D /* Month.swift */; };
 		FD8FC3BE2BC86EB100B80B3D /* DateComponentsWithID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */; };
+		FD9A17D32C04B6C400E6496C /* SCLineTabProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9A17D22C04B6C400E6496C /* SCLineTabProtocol.swift */; };
 		FD9A6A232BF643530067C96F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9A6A222BF643530067C96F /* SignInView.swift */; };
 		FD9E06FC2BC97D29000109FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E06FB2BC97D29000109FD /* User.swift */; };
 		FD9E06FF2BC97DF6000109FD /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */; };
@@ -72,6 +73,8 @@
 		FD9E070F2BCB58BC000109FD /* SCLineTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E070E2BCB58BC000109FD /* SCLineTabBar.swift */; };
 		FD9E07112BCC99DE000109FD /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07102BCC99DE000109FD /* DismissButton.swift */; };
 		FDC18D392BC6D92A00A86D41 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */; };
+		FDCE428D2C039BC30025FF93 /* AppleAuthFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCE428C2C039BC30025FF93 /* AppleAuthFeature.swift */; };
+		FDE3AF4F2BFF910700ADEFF8 /* AppleAuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3AF4E2BFF910700ADEFF8 /* AppleAuthStore.swift */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
 		FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */; };
 		FDE9EA252BBED551007AA4D7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FDE9EA242BBED551007AA4D7 /* ComposableArchitecture */; };
@@ -108,7 +111,6 @@
 		FDFD3D022BD85E2000629B8C /* HomeMainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3D012BD85E2000629B8C /* HomeMainFeature.swift */; };
 		FDFD3D052BD85E6800629B8C /* RecordMainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3D042BD85E6800629B8C /* RecordMainFeature.swift */; };
 		FDFD3D082BD85E8900629B8C /* SchoolGroupMainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3D072BD85E8900629B8C /* SchoolGroupMainFeature.swift */; };
-		FDFD3D0B2BD85EBB00629B8C /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3D0A2BD85EBB00629B8C /* AppFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -171,6 +173,7 @@
 		FD8FC3B82BC8465D00B80B3D /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		FD8FC3BA2BC8470700B80B3D /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 		FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponentsWithID.swift; sourceTree = "<group>"; };
+		FD9A17D22C04B6C400E6496C /* SCLineTabProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLineTabProtocol.swift; sourceTree = "<group>"; };
 		FD9A6A222BF643530067C96F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FD9E06FB2BC97D29000109FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
@@ -181,6 +184,9 @@
 		FD9E070E2BCB58BC000109FD /* SCLineTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLineTabBar.swift; sourceTree = "<group>"; };
 		FD9E07102BCC99DE000109FD /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
 		FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		FDCE428C2C039BC30025FF93 /* AppleAuthFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthFeature.swift; sourceTree = "<group>"; };
+		FDE3AF4E2BFF910700ADEFF8 /* AppleAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthStore.swift; sourceTree = "<group>"; };
+		FDE3AF502BFF93D000ADEFF8 /* Score.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Score.entitlements; sourceTree = "<group>"; };
 		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
 		FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPopUp.swift; sourceTree = "<group>"; };
 		FDEDB9492BFBBA6D0040E313 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
@@ -213,7 +219,6 @@
 		FDFD3D012BD85E2000629B8C /* HomeMainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainFeature.swift; sourceTree = "<group>"; };
 		FDFD3D042BD85E6800629B8C /* RecordMainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordMainFeature.swift; sourceTree = "<group>"; };
 		FDFD3D072BD85E8900629B8C /* SchoolGroupMainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolGroupMainFeature.swift; sourceTree = "<group>"; };
-		FDFD3D0A2BD85EBB00629B8C /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +275,7 @@
 		FD0C39662BA9914B00CC05AA /* Score */ = {
 			isa = PBXGroup;
 			children = (
+				FDE3AF502BFF93D000ADEFF8 /* Score.entitlements */,
 				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
 				FDE9EA282BBED5A7007AA4D7 /* View */,
 				FDEDB9482BFBBA550040E313 /* Protocol */,
@@ -462,11 +468,11 @@
 		FD38E9AD2BD84A1500D3BDB7 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				FD3428F62BDC13A60021E542 /* FeedMainFeature.swift */,
 				FD2E8CDE2BD9321E001957F3 /* MyPageMainFeature.swift */,
 				FD8FC3AF2BC8251700B80B3D /* CalendarFeature.swift */,
 				FD8B63A42BD217EA000500BF /* Setting */,
 				FD38E9AC2BD849F500D3BDB7 /* Profile */,
-				FD3428F62BDC13A60021E542 /* FeedMainFeature.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -587,6 +593,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FD9A17D42C04B75400E6496C /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				FDE3AF4E2BFF910700ADEFF8 /* AppleAuthStore.swift */,
+				FDEDB9672BFC86C70040E313 /* KakaoLoginStore.swift */,
+				FDEDB9652BFC188D0040E313 /* KeyChainStore.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		FD9A6A1B2BF642920067C96F /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -662,10 +678,10 @@
 		FDE9EA282BBED5A7007AA4D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FDFD3CFE2BD85C5600629B8C /* TabRouteView.swift */,
+				FD0C39692BA9914B00CC05AA /* ContentView.swift */,
 				FD9A6A1D2BF642AD0067C96F /* OnBoarding */,
 				FD9A6A1B2BF642920067C96F /* Auth */,
-				FD0C39692BA9914B00CC05AA /* ContentView.swift */,
-				FDFD3CFE2BD85C5600629B8C /* TabRouteView.swift */,
 				FDFD3CF52BD85B5E00629B8C /* Home */,
 				FDFD3CF62BD85B6800629B8C /* SchoolGroup */,
 				FDFD3CF72BD85B7700629B8C /* Record */,
@@ -682,6 +698,7 @@
 				FDEDB9522BFBBC710040E313 /* BundleProtocol.swift */,
 				FDEDB9542BFBBD0D0040E313 /* APIKeyProtocol.swift */,
 				FDEDB9692BFCA6D70040E313 /* SCErrorProtocol.swift */,
+				FD9A17D22C04B6C400E6496C /* SCLineTabProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -689,9 +706,9 @@
 		FDEDB9562BFBCFD30040E313 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				FD9A17D42C04B75400E6496C /* Singleton */,
 				FDEDB95B2BFBE2600040E313 /* AuthFeature.swift */,
-				FDEDB9652BFC188D0040E313 /* KeyChainStore.swift */,
-				FDEDB9672BFC86C70040E313 /* KakaoLoginStore.swift */,
+				FDCE428C2C039BC30025FF93 /* AppleAuthFeature.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -791,7 +808,6 @@
 			isa = PBXGroup;
 			children = (
 				FDEDB9562BFBCFD30040E313 /* Auth */,
-				FDFD3D0A2BD85EBB00629B8C /* AppFeature.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -936,6 +952,7 @@
 				FD8B639D2BD200CD000500BF /* AlarmSettingFeature.swift in Sources */,
 				FD9E06FC2BC97D29000109FD /* User.swift in Sources */,
 				FDFAA4332BCE1C780053CD9F /* SettingMainView.swift in Sources */,
+				FDE3AF4F2BFF910700ADEFF8 /* AppleAuthStore.swift in Sources */,
 				FD9E070F2BCB58BC000109FD /* SCLineTabBar.swift in Sources */,
 				FDFAA42D2BCE05BF0053CD9F /* SCLineProgress.swift in Sources */,
 				FD38E9952BD53D8F00D3BDB7 /* SignOutDialog.swift in Sources */,
@@ -946,7 +963,6 @@
 				FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */,
 				FD3428F72BDC13A60021E542 /* FeedMainFeature.swift in Sources */,
 				FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */,
-				FDFD3D0B2BD85EBB00629B8C /* AppFeature.swift in Sources */,
 				FD8B63A62BD21802000500BF /* ContactFeature.swift in Sources */,
 				FD8FC3B52BC834F300B80B3D /* CalendarView.swift in Sources */,
 				FD8FC3BB2BC8470700B80B3D /* Month.swift in Sources */,
@@ -1010,11 +1026,13 @@
 				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
 				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,
 				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
+				FD9A17D32C04B6C400E6496C /* SCLineTabProtocol.swift in Sources */,
 				FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */,
 				FDFD3D052BD85E6800629B8C /* RecordMainFeature.swift in Sources */,
 				FDEDB95A2BFBE22D0040E313 /* UserApi+.swift in Sources */,
 				FDFD3CFD2BD85BAF00629B8C /* RecordMainView.swift in Sources */,
 				FDFAA4352BCE21400053CD9F /* AlarmSettingView.swift in Sources */,
+				FDCE428D2C039BC30025FF93 /* AppleAuthFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1148,6 +1166,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Score/Score.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Score/Resource/Preview Content\"";
@@ -1187,6 +1206,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Score/Score.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Score/Resource/Preview Content\"";
