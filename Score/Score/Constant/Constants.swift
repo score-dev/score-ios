@@ -101,6 +101,14 @@ enum Constants {
                     APIKeyProtocol {
             case appID = "KAKAO_APP_ID"
         }
+        
+        //MARK: - Google
+        
+        enum Google: String,
+                     APIKeyProtocol {
+            case clientID = "GIDClientID"
+            case reversedClientID = "GOOGLE_REVERSED_CLIENT_ID"
+        }
     }
     
     //MARK: - Layout
