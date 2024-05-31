@@ -6,11 +6,7 @@
 //
 
 import ComposableArchitecture
-import Foundation
-import KakaoSDKAuth
-import KakaoSDKUser
 import SwiftUI
-import AuthenticationServices
 
 @Reducer
 struct AuthFeature {
@@ -54,7 +50,17 @@ struct AuthFeature {
                 
             case .googleSingInButtonTapped:
                 state.isLoading = true
-                return .none
+                
+                return .run { send in
+                    do {
+                        try await GoogleAuthStore.shared.auth()
+                        let token = AuthToken(accessToken: "google",
+                                              refreshToken: "google")
+                        await send(.signInWithServer(token))
+                    } catch {
+                        await send(.errorAppearing(error))
+                    }
+                }
                 
             case .appleSignInButtonTapped:
                 state.isLoading = true
