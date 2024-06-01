@@ -19,6 +19,7 @@
 		FD0C65242C0A499F0054D9F4 /* ImageAssetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C65232C0A499F0054D9F4 /* ImageAssetProtocol.swift */; };
 		FD0C65262C0A4C670054D9F4 /* SCTabIndexIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C65252C0A4C670054D9F4 /* SCTabIndexIndicator.swift */; };
 		FD0C65292C0B14A20054D9F4 /* OnBoardingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C65282C0B14A20054D9F4 /* OnBoardingFeature.swift */; };
+		FD0C652E2C0B1EA60054D9F4 /* SplashView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0C652D2C0B1EA60054D9F4 /* SplashView.storyboard */; };
 		FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4972BAB56AA0016F0A0 /* SCButton.swift */; };
 		FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */; };
 		FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FB92BB634AF00DD4D3B /* SCTextField.swift */; };
@@ -139,6 +140,7 @@
 		FD0C65232C0A499F0054D9F4 /* ImageAssetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssetProtocol.swift; sourceTree = "<group>"; };
 		FD0C65252C0A4C670054D9F4 /* SCTabIndexIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabIndexIndicator.swift; sourceTree = "<group>"; };
 		FD0C65282C0B14A20054D9F4 /* OnBoardingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingFeature.swift; sourceTree = "<group>"; };
+		FD0C652D2C0B1EA60054D9F4 /* SplashView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashView.storyboard; sourceTree = "<group>"; };
 		FD13D4972BAB56AA0016F0A0 /* SCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCButton.swift; sourceTree = "<group>"; };
 		FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCheckBox.swift; sourceTree = "<group>"; };
 		FD208FB92BB634AF00DD4D3B /* SCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTextField.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		FD0C39662BA9914B00CC05AA /* Score */ = {
 			isa = PBXGroup;
 			children = (
+				FD0C652D2C0B1EA60054D9F4 /* SplashView.storyboard */,
 				FDE3AF502BFF93D000ADEFF8 /* Score.entitlements */,
 				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
 				FD8D1C092C09C9A300B87C43 /* AppDelegate.swift */,
@@ -918,6 +921,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0C652E2C0B1EA60054D9F4 /* SplashView.storyboard in Resources */,
 				FD4F5BB82BFBB91000E9435D /* Preview Assets.xcassets in Resources */,
 				FDC18D392BC6D92A00A86D41 /* Secrets.xcconfig in Resources */,
 				FD0C396C2BA9914D00CC05AA /* Assets.xcassets in Resources */,
@@ -1222,6 +1226,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashView.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -1262,6 +1267,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashView.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
