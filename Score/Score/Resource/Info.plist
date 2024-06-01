@@ -21,12 +21,12 @@
 			</array>
 		</dict>
 	</array>
+	<key>GIDClientID</key>
+	<string>$(GOOGLE_CLIENT_ID)</string>
 	<key>KAKAO_APP_ID</key>
 	<string>$(KAKAO_APP_ID)</string>
 	<key>NAVER_CLIENT_ID</key>
 	<string>$(NAVER_CLIENT_ID)</string>
-	<key>GIDClientID</key>
-	<string>$(GOOGLE_CLIENT_ID)</string>
 	<key>NAVER_SECRET_KEY</key>
 	<string>$(NAVER_SECRET_KEY)</string>
 	<key>SERVER_BASE_URL</key>
