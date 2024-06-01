@@ -13,7 +13,8 @@ enum Constants {
     //MARK: - ImageName
     
     enum ImageName: String,
-                    CaseIterable {
+                    CaseIterable,
+                    ImageAssetProtocol {
         // Plain Icons
         case heart
         case footsteps
@@ -79,6 +80,18 @@ enum Constants {
         case arrowUp = "arrow.up"
         case arrowDown = "arrow.down"
         case flag
+        
+        //MARK: - OnBoarding
+        
+        enum OnBoarding: String,
+                         CaseIterable,
+                         ImageAssetProtocol {
+            // OnBoarding Image
+            case record = "onboarding.record"
+            case group = "onboarding.group"
+            case feed = "onboarding.feed"
+            case school = "onboarding.school"
+        }
     }
     
     //MARK: - APIKey
@@ -117,6 +130,22 @@ enum Constants {
         case horizontal = 16
         case navigationBarHeight = 56
         case iconSize = 24
+    }
+}
+
+//MARK: - Constants.ImageName.OnBoarding+
+
+extension Constants.ImageName.OnBoarding {
+    static subscript(index: Int) -> Image {
+        let allCases = Constants.ImageName.OnBoarding.allCases
+        
+        guard index > -1
+        else { return allCases[0].image() }
+        
+        guard index < allCases.count
+        else { return allCases[allCases.count-1].image() }
+        
+        return allCases[index].image()
     }
 }
 
