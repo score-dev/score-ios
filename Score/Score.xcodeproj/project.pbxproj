@@ -309,7 +309,6 @@
 		FD0C39662BA9914B00CC05AA /* Score */ = {
 			isa = PBXGroup;
 			children = (
-				FDE3AF502BFF93D000ADEFF8 /* Score.entitlements */,
 				FDC7754A2C1F2A4C00871A81 /* Source */,
 				FD6783922BC2DC51008743D4 /* Resource */,
 			);
@@ -593,10 +592,11 @@
 		FD6783922BC2DC51008743D4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FD0C39772BA9D9AA00CC05AA /* Font */,
 				FD0C396D2BA9914D00CC05AA /* Preview Content */,
+				FDE3AF502BFF93D000ADEFF8 /* Score.entitlements */,
 				FD0C39782BA9D9DE00CC05AA /* Info.plist */,
 				FD0C396B2BA9914D00CC05AA /* Assets.xcassets */,
-				FD0C39772BA9D9AA00CC05AA /* Font */,
 				FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */,
 			);
 			path = Resource;
@@ -1257,7 +1257,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Score/Score.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Score/Resource/Score.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Score/Resource/Preview Content\"";
@@ -1298,7 +1298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Score/Score.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Score/Resource/Score.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Score/Resource/Preview Content\"";
