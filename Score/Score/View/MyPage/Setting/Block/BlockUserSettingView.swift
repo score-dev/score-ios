@@ -54,16 +54,9 @@ struct BlockUserRow: View {
     
     var body: some View {
         HStack(spacing: 8) {
-            Image(user.profileImageName)
-                .resizable()
-                .frame(width: 36,
-                       height: 36)
-                .background {
-                    Circle()
-                        .foregroundStyle(
-                            Color.brandColor(color: .gray2)
-                        )
-                }
+            // FIXME: 서버 데이터 형식에 따라 변경 필요
+            Image(user.profileImageName ?? "")
+                .imagePlaceHolder(size: 36)
             
             Text(user.nickName)
                 .pretendard(.body2)
