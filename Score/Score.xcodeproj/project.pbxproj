@@ -52,6 +52,8 @@
 		FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EB72BBC41A000B14FF9 /* SCTabBar.swift */; };
 		FD3C6EBB2BBC79FE00B14FF9 /* SCSearchChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EBA2BBC79FE00B14FF9 /* SCSearchChip.swift */; };
 		FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */; };
+		FD408A9F2C11CFEB00DD8EAF /* TypeNickNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD408A9E2C11CFEB00DD8EAF /* TypeNickNameView.swift */; };
+		FD408AA12C11D12200DD8EAF /* TypeUserInfoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD408AA02C11D12200DD8EAF /* TypeUserInfoFeature.swift */; };
 		FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */; };
 		FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */; };
 		FD4F5BB82BFBB91000E9435D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4F5BB72BFBB91000E9435D /* Preview Assets.xcassets */; };
@@ -82,9 +84,14 @@
 		FD9E070D2BCB4E66000109FD /* SCNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E070C2BCB4E66000109FD /* SCNavigationBar.swift */; };
 		FD9E070F2BCB58BC000109FD /* SCLineTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E070E2BCB58BC000109FD /* SCLineTabBar.swift */; };
 		FD9E07112BCC99DE000109FD /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07102BCC99DE000109FD /* DismissButton.swift */; };
+		FDC09D352C18327B00D5CF5C /* TermsAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D342C18327B00D5CF5C /* TermsAgreementView.swift */; };
+		FDC09D372C18522E00D5CF5C /* TermsAgreementFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D362C18522E00D5CF5C /* TermsAgreementFeature.swift */; };
+		FDC09D392C18644000D5CF5C /* SelectProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D382C18644000D5CF5C /* SelectProfileImageView.swift */; };
 		FDC18D392BC6D92A00A86D41 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */; };
 		FDCE428D2C039BC30025FF93 /* AppleAuthFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCE428C2C039BC30025FF93 /* AppleAuthFeature.swift */; };
 		FDE3AF4F2BFF910700ADEFF8 /* AppleAuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3AF4E2BFF910700ADEFF8 /* AppleAuthStore.swift */; };
+		FDE5C8C32C11F2550021C8E3 /* TypeNickNameFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5C8C22C11F2550021C8E3 /* TypeNickNameFeature.swift */; };
+		FDE5C8C52C11F31D0021C8E3 /* TypeUserInfoMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5C8C42C11F31D0021C8E3 /* TypeUserInfoMainView.swift */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
 		FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */; };
 		FDE9EA252BBED551007AA4D7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FDE9EA242BBED551007AA4D7 /* ComposableArchitecture */; };
@@ -173,6 +180,8 @@
 		FD3C6EB72BBC41A000B14FF9 /* SCTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabBar.swift; sourceTree = "<group>"; };
 		FD3C6EBA2BBC79FE00B14FF9 /* SCSearchChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSearchChip.swift; sourceTree = "<group>"; };
 		FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTagChip.swift; sourceTree = "<group>"; };
+		FD408A9E2C11CFEB00DD8EAF /* TypeNickNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeNickNameView.swift; sourceTree = "<group>"; };
+		FD408AA02C11D12200DD8EAF /* TypeUserInfoFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeUserInfoFeature.swift; sourceTree = "<group>"; };
 		FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecordButton.swift; sourceTree = "<group>"; };
 		FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCapsuleButton.swift; sourceTree = "<group>"; };
 		FD4F5BB72BFBB91000E9435D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -201,10 +210,15 @@
 		FD9E070C2BCB4E66000109FD /* SCNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNavigationBar.swift; sourceTree = "<group>"; };
 		FD9E070E2BCB58BC000109FD /* SCLineTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLineTabBar.swift; sourceTree = "<group>"; };
 		FD9E07102BCC99DE000109FD /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		FDC09D342C18327B00D5CF5C /* TermsAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAgreementView.swift; sourceTree = "<group>"; };
+		FDC09D362C18522E00D5CF5C /* TermsAgreementFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAgreementFeature.swift; sourceTree = "<group>"; };
+		FDC09D382C18644000D5CF5C /* SelectProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfileImageView.swift; sourceTree = "<group>"; };
 		FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		FDCE428C2C039BC30025FF93 /* AppleAuthFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthFeature.swift; sourceTree = "<group>"; };
 		FDE3AF4E2BFF910700ADEFF8 /* AppleAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthStore.swift; sourceTree = "<group>"; };
 		FDE3AF502BFF93D000ADEFF8 /* Score.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Score.entitlements; sourceTree = "<group>"; };
+		FDE5C8C22C11F2550021C8E3 /* TypeNickNameFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeNickNameFeature.swift; sourceTree = "<group>"; };
+		FDE5C8C42C11F31D0021C8E3 /* TypeUserInfoMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeUserInfoMainView.swift; sourceTree = "<group>"; };
 		FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLabel.swift; sourceTree = "<group>"; };
 		FDE9EA212BBDCA10007AA4D7 /* SCPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPopUp.swift; sourceTree = "<group>"; };
 		FDEDB9492BFBBA6D0040E313 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
@@ -490,7 +504,6 @@
 			isa = PBXGroup;
 			children = (
 				FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */,
-				FD9E07092BCB0A1C000109FD /* PhotoPickerFeature.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -523,6 +536,16 @@
 				FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */,
 			);
 			path = Chip;
+			sourceTree = "<group>";
+		};
+		FD408A9D2C11CF5000DD8EAF /* TypeInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FD408A9E2C11CFEB00DD8EAF /* TypeNickNameView.swift */,
+				FDE5C8C42C11F31D0021C8E3 /* TypeUserInfoMainView.swift */,
+				FDC09D382C18644000D5CF5C /* SelectProfileImageView.swift */,
+			);
+			path = TypeInfo;
 			sourceTree = "<group>";
 		};
 		FD4A3B3D2BBADBBE00D2DFFA /* Button */ = {
@@ -645,6 +668,8 @@
 		FD9A6A1C2BF642A30067C96F /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				FDC09D342C18327B00D5CF5C /* TermsAgreementView.swift */,
+				FD408A9D2C11CF5000DD8EAF /* TypeInfo */,
 				FD9A6A222BF643530067C96F /* SignInView.swift */,
 			);
 			path = SignIn;
@@ -743,6 +768,9 @@
 				FD9A17D42C04B75400E6496C /* Singleton */,
 				FDEDB95B2BFBE2600040E313 /* AuthFeature.swift */,
 				FDCE428C2C039BC30025FF93 /* AppleAuthFeature.swift */,
+				FD408AA02C11D12200DD8EAF /* TypeUserInfoFeature.swift */,
+				FDE5C8C22C11F2550021C8E3 /* TypeNickNameFeature.swift */,
+				FDC09D362C18522E00D5CF5C /* TermsAgreementFeature.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -785,6 +813,7 @@
 		FDFD3CF22BD8546100629B8C /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				FD9E07092BCB0A1C000109FD /* PhotoPickerFeature.swift */,
 				FDFD3CF32BD8547900629B8C /* SCTabBarFeature.swift */,
 				FD2E8CE42BD940C2001957F3 /* SCLineTabBarFeature.swift */,
 			);
@@ -984,6 +1013,7 @@
 				FD9E06FF2BC97DF6000109FD /* ProfileEditView.swift in Sources */,
 				FD3428F92BDC24AE0021E542 /* CGFloat+.swift in Sources */,
 				FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */,
+				FDE5C8C52C11F31D0021C8E3 /* TypeUserInfoMainView.swift in Sources */,
 				FDEDB95E2BFBE97B0040E313 /* SCLoading.swift in Sources */,
 				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
 				FDEDB96C2BFCA6F70040E313 /* SCError.swift in Sources */,
@@ -1032,10 +1062,13 @@
 				FDFAA4392BCE6E430053CD9F /* ContactView.swift in Sources */,
 				FD208FC72BB9E13A00DD4D3B /* SCProgressBar.swift in Sources */,
 				FD9A6A232BF643530067C96F /* SignInView.swift in Sources */,
+				FDC09D352C18327B00D5CF5C /* TermsAgreementView.swift in Sources */,
 				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
 				FD8B639F2BD20124000500BF /* PrivacyPolicyFeature.swift in Sources */,
 				FDEDB94A2BFBBA6D0040E313 /* APIProtocol.swift in Sources */,
+				FDC09D372C18522E00D5CF5C /* TermsAgreementFeature.swift in Sources */,
 				FD38E9932BD53D0900D3BDB7 /* SignOutFeature.swift in Sources */,
+				FD408A9F2C11CFEB00DD8EAF /* TypeNickNameView.swift in Sources */,
 				FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */,
 				FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */,
 				FDEDB96A2BFCA6D70040E313 /* SCErrorProtocol.swift in Sources */,
@@ -1048,6 +1081,7 @@
 				FD38E98C2BD527AB00D3BDB7 /* PolicyFeature.swift in Sources */,
 				FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */,
 				FD8B63A12BD2016D000500BF /* ServicePolicyFeature.swift in Sources */,
+				FDE5C8C32C11F2550021C8E3 /* TypeNickNameFeature.swift in Sources */,
 				FDFD3D022BD85E2000629B8C /* HomeMainFeature.swift in Sources */,
 				FD2E8CE32BD94064001957F3 /* MyPageTabRouteView.swift in Sources */,
 				FDFAA42F2BCE0A550053CD9F /* Line.swift in Sources */,
@@ -1070,6 +1104,7 @@
 				FD2E8CE72BD94F37001957F3 /* SCIconButton.swift in Sources */,
 				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
 				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,
+				FD408AA12C11D12200DD8EAF /* TypeUserInfoFeature.swift in Sources */,
 				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
 				FD9A17D32C04B6C400E6496C /* SCLineTabProtocol.swift in Sources */,
 				FD0C65242C0A499F0054D9F4 /* ImageAssetProtocol.swift in Sources */,
@@ -1079,6 +1114,7 @@
 				FDEDB95A2BFBE22D0040E313 /* UserApi+.swift in Sources */,
 				FDFD3CFD2BD85BAF00629B8C /* RecordMainView.swift in Sources */,
 				FDFAA4352BCE21400053CD9F /* AlarmSettingView.swift in Sources */,
+				FDC09D392C18644000D5CF5C /* SelectProfileImageView.swift in Sources */,
 				FDCE428D2C039BC30025FF93 /* AppleAuthFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
