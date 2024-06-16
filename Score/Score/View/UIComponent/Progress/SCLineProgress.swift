@@ -24,7 +24,7 @@ struct SCLineProgress: View {
                 Line(lineWidth: lineWidth)
                     .clipShape(Capsule())
                     .foregroundStyle(
-                        currentStep == step ?
+                        currentStep >= step ?
                         Color.brandColor(color: .main) :
                         Color.brandColor(color: .gray2)
                     )
