@@ -50,6 +50,7 @@ struct OnBoardingMainView: View {
             Button {
                 store.send(.skipButtonTapped)
             } label: {
+                // FIXME: 버튼 영역 재조정 필요
                 Text("건너뛰기")
                     .pretendard(weight: .bold,
                                 size: .s)
