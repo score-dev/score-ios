@@ -13,13 +13,13 @@ struct User: Equatable,
              Hashable,
              Codable {
     // identifier
-    let nickName: String
-    let profileImageName: String
-    let gender: Gender
-    let height: Int
-    let weight: Int
-    let schoolName: String
-    let grade: Int
+    var nickName: String
+    var profileImageName: String?
+    var gender: Gender?
+    var height: Int?
+    var weight: Int?
+    var schoolName: String
+    var grade: Int
     // 운동 알림 시간?
     
     //MARK: - defaultModel

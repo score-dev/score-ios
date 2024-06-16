@@ -25,6 +25,9 @@ struct SCIconStyle {
         case medium
         /// circle: 62, image: 32
         case big
+        /// size: size of width, height,
+        ///  imageScale: size of Image
+        case custom(size: CGFloat, imageScale: CGFloat)
     }
     
     /// Icon의 색상 스타일을 정의합니다.
@@ -84,36 +87,55 @@ struct SCIconViewModifier: ViewModifier {
         switch style.size {
         case .small:
             content
-                .frame(width: 10, height: 10)
+                .rectFrame(size: 10)
                 .foregroundStyle(self.imageColor)
                 .background {
                     Circle()
-                        .foregroundStyle(style.color.backgrounColor())
-                        .frame(width: 20, height: 20)
+                        .foregroundStyle(
+                            style.color.backgrounColor()
+                        )
+                        .rectFrame(size: 20)
                 }
-                .frame(width: 20, height: 20)
+                .rectFrame(size: 20)
             
         case .medium:
             content
-                .frame(width: 19, height: 19)
+                .rectFrame(size: 19)
                 .foregroundStyle(self.imageColor)
                 .background {
                     Circle()
-                        .foregroundStyle(style.color.backgrounColor())
-                        .frame(width: 32, height: 32)
+                        .foregroundStyle(
+                            style.color.backgrounColor()
+                        )
+                        .rectFrame(size: 32)
                 }
-                .frame(width: 32, height: 32)
+                .rectFrame(size: 32)
             
         case .big:
             content
-                .frame(width: 32, height: 32)
+                .rectFrame(size: 32)
                 .foregroundStyle(self.imageColor)
                 .background {
                     Circle()
-                        .foregroundStyle(style.color.backgrounColor())
-                        .frame(width: 62, height: 62)
+                        .foregroundStyle(
+                            style.color.backgrounColor()
+                        )
+                        .rectFrame(size: 62)
                 }
-                .frame(width: 62, height: 62)
+                .rectFrame(size: 62)
+            
+        case .custom(let size, let scale):
+            content
+                .rectFrame(size: scale)
+                .foregroundStyle(self.imageColor)
+                .background {
+                    Circle()
+                        .foregroundStyle(
+                            style.color.backgrounColor()
+                        )
+                        .rectFrame(size: size)
+                }
+                .rectFrame(size: size)
         }
     }
 }
@@ -133,6 +155,10 @@ struct SCIconViewModifier: ViewModifier {
                                 color: .sub2),
                    imageName: .footsteps)
             SCIcon(style: .init(size: .big,
+                                color: .gray3),
+                   imageName: .search)
+            SCIcon(style: .init(size: .custom(size: 100,
+                                              imageScale: 30),
                                 color: .gray3),
                    imageName: .search)
         }

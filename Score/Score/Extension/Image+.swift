@@ -10,7 +10,6 @@ import SwiftUI
 //MARK: - Image+imagePlaceHolder
 
 extension Image {
-    
     //MARK: - imagePlaceHolder
     
     /// image 플레이스 홀더가 필요한 사진의 경우에 사용합니다.
@@ -35,7 +34,10 @@ extension Image {
     }
 }
 
+//MARK: - Image?+imagePlaceHolder
+
 extension Image? {
+    //MARK: - imagePlaceHolder
     
     @ViewBuilder
     func imagePlaceHolder(size: CGFloat) -> some View {

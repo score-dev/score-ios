@@ -81,6 +81,19 @@ enum Constants {
         case arrowDown = "arrow.down"
         case flag
         
+        //MARK: - ScoreCharacter
+        
+        /// 프로필 이미지에 쓰일 스코어 캐릭터 이미지 열거형입니다.
+        enum ScoreCharacter: String,
+                             CaseIterable,
+                             ImageAssetProtocol {
+            case rabbit
+            case turtle
+            case dog
+            case panda
+            case cat
+        }
+        
         //MARK: - OnBoarding
         
         enum OnBoarding: String,
@@ -146,6 +159,25 @@ extension Constants.ImageName.OnBoarding {
         else { return allCases[allCases.count-1].image() }
         
         return allCases[index].image()
+    }
+}
+
+//MARK: - Constants.ImageName.ScoreCharacter+
+
+extension Constants.ImageName.ScoreCharacter {
+    var backgroundColor: Color {
+        switch self {
+        case .rabbit:
+            return .brandColor(color: .lightRed)
+        case .turtle:
+            return .brandColor(color: .lightGreen)
+        case .dog:
+            return .brandColor(color: .lightYellow)
+        case .panda:
+            return .brandColor(color: .lightGray)
+        case .cat:
+            return .brandColor(color: .lightBlue)
+        }
     }
 }
 

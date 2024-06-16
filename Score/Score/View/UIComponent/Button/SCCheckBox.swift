@@ -11,6 +11,18 @@ import SwiftUI
 
 struct SCCheckBox: View {
     @Binding var isOn: Bool
+    let activeColor: Color
+    let checkColor: Color
+    
+    init(
+        isOn: Binding<Bool>,
+        activeColor: Color = .brandColor(color: .main),
+        checkColor: Color = Color.brandColor(color: .icon)
+    ) {
+        self._isOn = isOn
+        self.activeColor = activeColor
+        self.checkColor = checkColor
+    }
     
     var body: some View {
         Button {
@@ -20,23 +32,24 @@ struct SCCheckBox: View {
         }
     }
     
+    //MARK: - labelBuilder
+    
     @ViewBuilder
     func labelBuilder() -> some View {
-        if isOn {
-            Image(systemName: "checkmark")
-                .frame(width: 17, height: 17)
-                .foregroundStyle(Color.white)
-                .padding(5)
-                .background(Color.brandColor(color: .main),
-                            in: Circle())
-        } else {
-            Image(systemName: "checkmark")
-                .frame(width: 17, height: 17)
-                .foregroundStyle(Color.brandColor(color: .icon))
-                .padding(5)
-                .background(Color.brandColor(color: .gray3),
-                            in: Circle())
-        }
+        Image(.check)
+            .resizable()
+            .frame(width: 15, height: 15)
+            .foregroundStyle(
+                isOn ?
+                Color.white : activeColor
+            )
+            .padding(2)
+            .background(
+                isOn ?
+                activeColor :
+                Color.brandColor(color: .gray3),
+                in: Circle()
+            )
     }
 }
 
