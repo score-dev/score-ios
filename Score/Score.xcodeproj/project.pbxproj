@@ -309,16 +309,8 @@
 		FD0C39662BA9914B00CC05AA /* Score */ = {
 			isa = PBXGroup;
 			children = (
-				FD0C652D2C0B1EA60054D9F4 /* SplashView.storyboard */,
 				FDE3AF502BFF93D000ADEFF8 /* Score.entitlements */,
-				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
-				FD8D1C092C09C9A300B87C43 /* AppDelegate.swift */,
-				FDE9EA282BBED5A7007AA4D7 /* View */,
-				FDEDB9482BFBBA550040E313 /* Protocol */,
-				FD8FC3BC2BC86E8C00B80B3D /* Model */,
-				FDE9EA262BBED595007AA4D7 /* Reducer */,
-				FD208FC12BB9B2E400DD4D3B /* Constant */,
-				FD0C397B2BA9E47400CC05AA /* Extension */,
+				FDC7754A2C1F2A4C00871A81 /* Source */,
 				FD6783922BC2DC51008743D4 /* Resource */,
 			);
 			path = Score;
@@ -710,6 +702,22 @@
 			children = (
 			);
 			path = DTO;
+			sourceTree = "<group>";
+		};
+		FDC7754A2C1F2A4C00871A81 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FD0C652D2C0B1EA60054D9F4 /* SplashView.storyboard */,
+				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
+				FD8D1C092C09C9A300B87C43 /* AppDelegate.swift */,
+				FDE9EA282BBED5A7007AA4D7 /* View */,
+				FDEDB9482BFBBA550040E313 /* Protocol */,
+				FD8FC3BC2BC86E8C00B80B3D /* Model */,
+				FDE9EA262BBED595007AA4D7 /* Reducer */,
+				FD208FC12BB9B2E400DD4D3B /* Constant */,
+				FD0C397B2BA9E47400CC05AA /* Extension */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		FDE9EA202BBDCA01007AA4D7 /* PopUp */ = {
