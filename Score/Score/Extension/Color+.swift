@@ -11,7 +11,8 @@ extension Color {
     //MARK: - BrandColor
     
     // Brand Color
-    enum BrandColor: UInt, CaseIterable {
+    enum BrandColor: UInt,
+                     CaseIterable {
         case main = 0xFF6C3E
         case subBlue = 0x19114D
         case subWhite = 0xF5F6F8
@@ -37,6 +38,12 @@ extension Color {
         case kakaoLogo = 0x262200
         
         case naverBackground = 0x03C75A
+        
+        case lightRed = 0xFFF3E5
+        case lightGreen = 0xEBFFE7
+        case lightYellow = 0xFFFAE4
+        case lightGray = 0xF9F9F9
+        case lightBlue = 0xEDF8FF
     }
     
     //MARK: - init
