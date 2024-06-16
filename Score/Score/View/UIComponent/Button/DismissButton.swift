@@ -16,13 +16,13 @@ enum DismissButtonStyle: String {
     //MARK: - imageName
     
     /// 해당하는 이미지 이름을 반환합니다.
-    func imageName() -> String {
+    func imageName() -> Constants.ImageName {
         let constant = Constants.ImageName.self
         switch self {
         case .close:
-            return constant.close.rawValue
+            return constant.close
         case .chevron:
-            return constant.chevronLeft.rawValue
+            return constant.chevronLeft
         }
     }
 }
@@ -30,31 +30,21 @@ enum DismissButtonStyle: String {
 //MARK: - DismissButton
 
 struct DismissButton: View {
-    private let constant = Constants.ImageName.self
-    
     let style: DismissButtonStyle
     let color: Color
     let action: () -> (Void)
     
     init(style: DismissButtonStyle,
-         action: @escaping () -> (Void)) {
-        self.style = style
-        self.color = Color.brandColor(color: .sub1)
-        self.action = action
-    }
-    
-    init(style: DismissButtonStyle,
-         color: Color,
+         color: Color = Color.brandColor(color: .sub1),
          action: @escaping () -> (Void)) {
         self.style = style
         self.color = color
         self.action = action
     }
     
-    
     var body: some View {
         Button(action: action) {
-            Image(style.imageName())
+            style.imageName().image()
                 .renderingMode(.template)
                 .foregroundStyle(color)
         }
