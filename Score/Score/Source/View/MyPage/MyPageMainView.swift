@@ -34,7 +34,7 @@ struct MyPageMainView: View {
                 }
             }
             .scrollIndicators(.hidden)
-            .scNavigationBar(style: .vertical) {
+            .scNavigationBar {
                 // - FIXME: 논의 후 반영
                 DismissButton(style: .chevron) {
                     store.send(.dismissButtonTapped)

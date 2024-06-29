@@ -46,7 +46,9 @@ struct OnBoardingMainView: View {
             .padding(.vertical, 20)
         }
         .layout()
-        .scNavigationBar(style: .vertical) {
+        .scNavigationBar {
+            Spacer()
+            
             Button {
                 store.send(.skipButtonTapped)
             } label: {
@@ -57,8 +59,6 @@ struct OnBoardingMainView: View {
                     .foregroundStyle(
                         Color.brandColor(color: .text1)
                     )
-                    .frame(maxWidth: .infinity,
-                           alignment: .trailing)
             }
         }
     }

@@ -61,7 +61,7 @@ struct TermsAgreementView: View {
         }
         .frame(maxWidth: .infinity)
         .layout()
-        .scNavigationBar(style: .vertical) {
+        .scNavigationBar {
             DismissButton(style: .chevron) {
                 
             }

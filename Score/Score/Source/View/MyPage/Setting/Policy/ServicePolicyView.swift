@@ -20,7 +20,7 @@ struct ServicePolicyView: View {
             
             Spacer()
         }
-        .scNavigationBar(style: .vertical) {
+        .scNavigationBar {
             Text("서비스 이용약관")
             
             Spacer()

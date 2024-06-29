@@ -53,7 +53,7 @@ struct ProfileEditView: View {
             }
             .layout()
         }
-        .scNavigationBar(style: .vertical) {
+        .scNavigationBar {
             DismissButton(style: .chevron) {
                 viewStore.send(.dismissButtonTapped)
             }

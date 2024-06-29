@@ -15,7 +15,7 @@ struct RecordMainView: View {
     
     var body: some View {
         Text("record main view")
-            .scNavigationBar(style: .vertical) {
+            .scNavigationBar {
                 DismissButton(style: .chevron) {
                     store.send(.dismissButtonTapped)
                 }
