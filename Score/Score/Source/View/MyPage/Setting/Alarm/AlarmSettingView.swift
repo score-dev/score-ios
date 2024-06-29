@@ -74,7 +74,7 @@ struct AlarmSettingView: View {
             Spacer()
         }
         .layout()
-        .scNavigationBar(style: .vertical) {
+        .scNavigationBar {
             DismissButton(style: .chevron) {
                 viewStore.send(.dismissButtonTapped)
             }

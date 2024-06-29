@@ -23,7 +23,7 @@ struct PrivacyPolicyView: View {
             }
             .layout()
         }
-        .scNavigationBar(style: .vertical) {
+        .scNavigationBar {
             Text("개인정보처리방침")
             
             Spacer()

@@ -66,7 +66,7 @@ struct TypeUserInfoMainView: View {
             UIScrollView.appearance().isScrollEnabled = true
         }
         .layout()
-        .scNavigationBar(style: .vertical) {
+        .scNavigationBar {
             DismissButton(style: .chevron) {
                 store.send(.tappedDismissButton)
             }

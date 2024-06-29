@@ -79,7 +79,7 @@ struct UnregisterView: View {
             .buttonDisabled(viewStore.isDisableUnregisterButton)
         }
                .layout()
-               .scNavigationBar(style: .vertical) {
+               .scNavigationBar {
                    DismissButton(style: .chevron) {
                        viewStore.send(.dismissButtonTapped)
                    }

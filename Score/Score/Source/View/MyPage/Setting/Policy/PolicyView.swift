@@ -33,7 +33,7 @@ struct PolicyView: View {
             Spacer()
         }
         .layout()
-        .scNavigationBar(style: .vertical) {
+        .scNavigationBar {
             DismissButton(style: .chevron) {
                 store.send(.dismissButtonTapped)
             }
