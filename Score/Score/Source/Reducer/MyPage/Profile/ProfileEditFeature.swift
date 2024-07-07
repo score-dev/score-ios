@@ -24,7 +24,7 @@ struct ProfileEditFeature {
         @BindingState var displayedNickName: String = ""
         @BindingState var displayedHeight: String = ""
         @BindingState var displayedWeight: String = ""
-        @BindingState var displayedSex: Gender = .ect
+        @BindingState var displayedSex: Gender = .etc
         @BindingState var displayedSchool: String = ""
         @BindingState var displayedGrade: Int = 0
         
@@ -68,7 +68,7 @@ struct ProfileEditFeature {
             case .sexSelectButtonTapped(let sex):
                 // - FIXME: 둘 다 선택하지 않을 경우 기타로 할당합니다. (기획 확정 필요)
                 if state.displayedSex == sex {
-                    state.displayedSex = .ect
+                    state.displayedSex = .etc
                 } else {
                     state.displayedSex = sex
                 }
