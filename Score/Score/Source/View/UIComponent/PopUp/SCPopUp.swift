@@ -60,8 +60,10 @@ struct SCPopUpViewModifier: ViewModifier {
             content
                 .padding(.vertical, 16)
                 .padding(.horizontal, 14)
-                .background(Color.white,
-                            in: RoundedRectangle(cornerRadius: 22))
+                .background(
+                    Color.white,
+                    in: RoundedRectangle(cornerRadius: 22)
+                )
         }
     }
 }
@@ -69,12 +71,17 @@ struct SCPopUpViewModifier: ViewModifier {
 //MARK: - View+SCPopUp
 
 extension View {
+    
+    //MARK: - scPopUp
+    
+    /// toast 기본 padding: (vertical: 15, horizontal: 30)
+    /// dialog 기본 padding: (vertical: 16, horizontal: 14)
     @ViewBuilder
     func scPopUp<Content: View>(
         style: SCPopUpStyle,
         isPresented: Binding<Bool>,
-        content: @escaping () -> Content)
-    -> some View {
+        content: @escaping () -> Content
+    ) -> some View {
         if isPresented.wrappedValue {
             switch style {
             case.toast(let displayTime):
