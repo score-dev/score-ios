@@ -30,6 +30,7 @@ struct TypeNickNameView: View {
             
             Spacer()
         }
+        .layout()
         .onTapGesture {
            hideKeyboard()
         }
