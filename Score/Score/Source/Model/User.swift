@@ -56,5 +56,5 @@ enum Gender: String,
     
     case male = "남"
     case female = "여"
-    case ect
+    case etc = "etc."
 }
