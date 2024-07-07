@@ -47,6 +47,7 @@ struct SelectProfileImageView: View {
             
             scoreImageSectionBuilder()
         }
+        .layout()
     }
     
     //MARK: - titleSectionBuilder
@@ -73,7 +74,7 @@ struct SelectProfileImageView: View {
                 action: \.photoPicker
             )
         ) {
-            selectedImageSection()
+            selectedImageSectionBuilder()
                 .overlay(alignment: .bottomTrailing) {
                     SCIcon(
                         style: .init(
@@ -119,8 +120,10 @@ struct SelectProfileImageView: View {
         }
     }
     
+    //MARK: - selectedImageSectionBuilder
+    
     @ViewBuilder
-    private func selectedImageSection() -> some View {
+    private func selectedImageSectionBuilder() -> some View {
         if viewStore.selectedScoreCharacter != nil {
             viewStore.selectedScoreCharacter?.image()
                 .rectFrame(size: 116)
