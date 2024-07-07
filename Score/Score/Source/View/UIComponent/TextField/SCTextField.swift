@@ -79,6 +79,32 @@ struct SCTextField: View {
             hideKeyboard()
         }
     }
+    
+    //MARK: - scTrailingItem
+    
+    /// SCTextField trailing에 뷰가 추가된 형태로 반환됩니다.
+    /// - Parameters:
+    ///     - content: trailing에 추가될 뷰를 정의합니다.
+    @ViewBuilder
+    func scTrailingItem<C: View>(
+        @ViewBuilder content: () -> C
+    ) -> some View {
+        HStack {
+            TextField(placeHolder,
+                      text: $text,
+                      axis: .horizontal)
+            .textInputAutocapitalization(.never)
+            .autocorrectionDisabled()
+            
+            Spacer()
+            
+            content()
+        }
+        .modifier(SCTextFieldViewModifier(style: style))
+        .onTapGesture {
+            hideKeyboard()
+        }
+    }
 }
 
 //MARK: - SCTextFieldViewModifier

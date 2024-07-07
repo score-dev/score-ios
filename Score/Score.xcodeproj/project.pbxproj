@@ -20,6 +20,10 @@
 		FD0C65262C0A4C670054D9F4 /* SCTabIndexIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C65252C0A4C670054D9F4 /* SCTabIndexIndicator.swift */; };
 		FD0C65292C0B14A20054D9F4 /* OnBoardingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0C65282C0B14A20054D9F4 /* OnBoardingFeature.swift */; };
 		FD0C652E2C0B1EA60054D9F4 /* SplashView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0C652D2C0B1EA60054D9F4 /* SplashView.storyboard */; };
+		FD10EB1C2C30228A00C289DB /* SelectGenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10EB1B2C30228A00C289DB /* SelectGenderView.swift */; };
+		FD10EB1E2C30436700C289DB /* TypeSchoolInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10EB1D2C30436700C289DB /* TypeSchoolInfoView.swift */; };
+		FD10EB202C3048DF00C289DB /* TypeBodyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10EB1F2C3048DF00C289DB /* TypeBodyInfoView.swift */; };
+		FD10EB222C3059AD00C289DB /* SelectWorkOutTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10EB212C3059AD00C289DB /* SelectWorkOutTimeView.swift */; };
 		FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4972BAB56AA0016F0A0 /* SCButton.swift */; };
 		FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */; };
 		FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FB92BB634AF00DD4D3B /* SCTextField.swift */; };
@@ -74,6 +78,8 @@
 		FD8FC3B92BC8465D00B80B3D /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3B82BC8465D00B80B3D /* DayOfWeek.swift */; };
 		FD8FC3BB2BC8470700B80B3D /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3BA2BC8470700B80B3D /* Month.swift */; };
 		FD8FC3BE2BC86EB100B80B3D /* DateComponentsWithID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */; };
+		FD995E6B2C3AE19100376823 /* SelectSchoolGradeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD995E6A2C3AE19100376823 /* SelectSchoolGradeSheet.swift */; };
+		FD995E6D2C3AE1A200376823 /* SelectSchoolNameSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD995E6C2C3AE1A200376823 /* SelectSchoolNameSheet.swift */; };
 		FD9A17D32C04B6C400E6496C /* SCLineTabProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9A17D22C04B6C400E6496C /* SCLineTabProtocol.swift */; };
 		FD9A6A232BF643530067C96F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9A6A222BF643530067C96F /* SignInView.swift */; };
 		FD9E06FC2BC97D29000109FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E06FB2BC97D29000109FD /* User.swift */; };
@@ -148,6 +154,10 @@
 		FD0C65252C0A4C670054D9F4 /* SCTabIndexIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabIndexIndicator.swift; sourceTree = "<group>"; };
 		FD0C65282C0B14A20054D9F4 /* OnBoardingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingFeature.swift; sourceTree = "<group>"; };
 		FD0C652D2C0B1EA60054D9F4 /* SplashView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashView.storyboard; sourceTree = "<group>"; };
+		FD10EB1B2C30228A00C289DB /* SelectGenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenderView.swift; sourceTree = "<group>"; };
+		FD10EB1D2C30436700C289DB /* TypeSchoolInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSchoolInfoView.swift; sourceTree = "<group>"; };
+		FD10EB1F2C3048DF00C289DB /* TypeBodyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBodyInfoView.swift; sourceTree = "<group>"; };
+		FD10EB212C3059AD00C289DB /* SelectWorkOutTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWorkOutTimeView.swift; sourceTree = "<group>"; };
 		FD13D4972BAB56AA0016F0A0 /* SCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCButton.swift; sourceTree = "<group>"; };
 		FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCheckBox.swift; sourceTree = "<group>"; };
 		FD208FB92BB634AF00DD4D3B /* SCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTextField.swift; sourceTree = "<group>"; };
@@ -200,6 +210,8 @@
 		FD8FC3B82BC8465D00B80B3D /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		FD8FC3BA2BC8470700B80B3D /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 		FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponentsWithID.swift; sourceTree = "<group>"; };
+		FD995E6A2C3AE19100376823 /* SelectSchoolGradeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSchoolGradeSheet.swift; sourceTree = "<group>"; };
+		FD995E6C2C3AE1A200376823 /* SelectSchoolNameSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSchoolNameSheet.swift; sourceTree = "<group>"; };
 		FD9A17D22C04B6C400E6496C /* SCLineTabProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLineTabProtocol.swift; sourceTree = "<group>"; };
 		FD9A6A222BF643530067C96F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FD9E06FB2BC97D29000109FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -532,9 +544,13 @@
 		FD408A9D2C11CF5000DD8EAF /* TypeInfo */ = {
 			isa = PBXGroup;
 			children = (
-				FD408A9E2C11CFEB00DD8EAF /* TypeNickNameView.swift */,
 				FDE5C8C42C11F31D0021C8E3 /* TypeUserInfoMainView.swift */,
+				FD408A9E2C11CFEB00DD8EAF /* TypeNickNameView.swift */,
+				FD10EB1F2C3048DF00C289DB /* TypeBodyInfoView.swift */,
+				FD995E672C3AE16500376823 /* TypeSchoolInfo */,
+				FD10EB212C3059AD00C289DB /* SelectWorkOutTimeView.swift */,
 				FDC09D382C18644000D5CF5C /* SelectProfileImageView.swift */,
+				FD10EB1B2C30228A00C289DB /* SelectGenderView.swift */,
 			);
 			path = TypeInfo;
 			sourceTree = "<group>";
@@ -636,6 +652,16 @@
 				FDEDB96B2BFCA6F70040E313 /* SCError.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FD995E672C3AE16500376823 /* TypeSchoolInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FD10EB1D2C30436700C289DB /* TypeSchoolInfoView.swift */,
+				FD995E6A2C3AE19100376823 /* SelectSchoolGradeSheet.swift */,
+				FD995E6C2C3AE1A200376823 /* SelectSchoolNameSheet.swift */,
+			);
+			path = TypeSchoolInfo;
 			sourceTree = "<group>";
 		};
 		FD9A17D42C04B75400E6496C /* Singleton */ = {
@@ -1022,16 +1048,20 @@
 				FD3428F92BDC24AE0021E542 /* CGFloat+.swift in Sources */,
 				FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */,
 				FDE5C8C52C11F31D0021C8E3 /* TypeUserInfoMainView.swift in Sources */,
+				FD995E6D2C3AE1A200376823 /* SelectSchoolNameSheet.swift in Sources */,
 				FDEDB95E2BFBE97B0040E313 /* SCLoading.swift in Sources */,
 				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
 				FDEDB96C2BFCA6F70040E313 /* SCError.swift in Sources */,
 				FD2E8CDF2BD9321E001957F3 /* MyPageMainFeature.swift in Sources */,
+				FD10EB222C3059AD00C289DB /* SelectWorkOutTimeView.swift in Sources */,
 				FDFAA43D2BCE72FB0053CD9F /* PrivacyPolicyView.swift in Sources */,
+				FD995E6B2C3AE19100376823 /* SelectSchoolGradeSheet.swift in Sources */,
 				FD8B639D2BD200CD000500BF /* AlarmSettingFeature.swift in Sources */,
 				FD9E06FC2BC97D29000109FD /* User.swift in Sources */,
 				FDFAA4332BCE1C780053CD9F /* SettingMainView.swift in Sources */,
 				FDE3AF4F2BFF910700ADEFF8 /* AppleAuthStore.swift in Sources */,
 				FD9E070F2BCB58BC000109FD /* SCLineTabBar.swift in Sources */,
+				FD10EB1C2C30228A00C289DB /* SelectGenderView.swift in Sources */,
 				FDFAA42D2BCE05BF0053CD9F /* SCLineProgress.swift in Sources */,
 				FD38E9952BD53D8F00D3BDB7 /* SignOutDialog.swift in Sources */,
 				FDEDB95C2BFBE2600040E313 /* AuthFeature.swift in Sources */,
@@ -1045,6 +1075,7 @@
 				FD8FC3B52BC834F300B80B3D /* CalendarView.swift in Sources */,
 				FD8FC3BB2BC8470700B80B3D /* Month.swift in Sources */,
 				FD3428F52BDC04360021E542 /* Image+.swift in Sources */,
+				FD10EB1E2C30436700C289DB /* TypeSchoolInfoView.swift in Sources */,
 				FD2E8CE92BDA6763001957F3 /* FeedGridView.swift in Sources */,
 				FD8FC3B02BC8251700B80B3D /* CalendarFeature.swift in Sources */,
 				FD0C65262C0A4C670054D9F4 /* SCTabIndexIndicator.swift in Sources */,
@@ -1085,6 +1116,7 @@
 				FDFD3CFF2BD85C5600629B8C /* TabRouteView.swift in Sources */,
 				FD8FC3B92BC8465D00B80B3D /* DayOfWeek.swift in Sources */,
 				FD0C396A2BA9914B00CC05AA /* ContentView.swift in Sources */,
+				FD10EB202C3048DF00C289DB /* TypeBodyInfoView.swift in Sources */,
 				FD0C65202C0A3E040054D9F4 /* OnBoardingMainView.swift in Sources */,
 				FD38E98C2BD527AB00D3BDB7 /* PolicyFeature.swift in Sources */,
 				FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */,

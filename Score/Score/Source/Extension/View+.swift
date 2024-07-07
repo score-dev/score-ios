@@ -51,3 +51,24 @@ extension View {
                    height: size)
     }
 }
+
+//MARK: - View+hideKeyBoard
+
+extension View {
+    //MARK: - enableHideKeyBoard
+    
+    /// View tap gesture시 keyboard가 disable 되도록 하는 설정입니다.
+    /// 뷰 전체 영역에서 작동합니다. 
+    @ViewBuilder
+    func enableHideKeyBoard(
+        backgroundColor: Color = .white
+    ) -> some View {
+        self
+            .frame(maxWidth: .infinity,
+                   maxHeight: .infinity)
+            .background(backgroundColor)
+            .onTapGesture {
+                hideKeyboard()
+            }
+    }
+}

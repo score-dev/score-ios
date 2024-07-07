@@ -31,20 +31,20 @@ struct TypeUserInfoMainView: View {
             TabView(selection: viewStore.$currentStep) {
                 TypeNickNameView(store: store)
                     .tag(0)
-                
+           
                 SelectProfileImageView(store: store)
                     .tag(1)
-                
-                Text("학교")
+                  
+                TypeSchoolInfoView()
                     .tag(2)
-                
-                Text("성별")
+                 
+                SelectGenderView()
                     .tag(3)
-                
-                Text("키몸무게")
+                    
+                TypeBodyInfoView()
                     .tag(4)
-                
-                Text("운동 시간")
+                  
+                SelectWorkOutTimeView()
                     .tag(5)
                 
             }
@@ -56,7 +56,9 @@ struct TypeUserInfoMainView: View {
                 Text("다음으로")
                     .frame(maxWidth: .infinity)
             }
+            .layout()
         }
+        .enableHideKeyBoard()
         .onAppear {
             // TabView scroll 방지
             UIScrollView.appearance().isScrollEnabled = false
@@ -65,7 +67,7 @@ struct TypeUserInfoMainView: View {
             // scroll 방지 해제
             UIScrollView.appearance().isScrollEnabled = true
         }
-        .layout()
+        
         .scNavigationBar {
             DismissButton(style: .chevron) {
                 store.send(.tappedDismissButton)
@@ -84,6 +86,47 @@ struct TypeUserInfoMainView: View {
                     )
             }
         }
+        .scPopUp(style: .dialog,
+                 isPresented: .constant(false)) {
+            alertSettingPopUpBuilder()
+        }
+    }
+    
+    //MARK: - alertSettingPopUpBuilder
+    
+    @ViewBuilder
+    func alertSettingPopUpBuilder() -> some View {
+        VStack(alignment: .leading,
+               spacing: 32) {
+            Text(Contexts.popUpTitle.rawValue)
+                .pretendard(.body1)
+                .foregroundStyle(
+                    Color.brandColor(color: .text1)
+                )
+            
+            HStack(spacing: 28) {
+                SCButton(style: .secondary) {
+                    
+                } label: {
+                    Text("허용 안함")
+                        .frame(maxWidth: .infinity)
+                }
+                
+                SCButton(style: .primary) {
+                    
+                } label: {
+                    Text("허용")
+                        .frame(maxWidth: .infinity)
+                }
+
+            }
+        }
+        .padding(.vertical, 12)
+        .padding(.horizontal, 8)
+    }
+    
+    enum Contexts: String {
+        case popUpTitle = "스코어에서\n알림을 보내도록 허용하시겠습니까?"
     }
 }
 
