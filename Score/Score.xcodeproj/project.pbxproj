@@ -160,6 +160,8 @@
 		FD10EB212C3059AD00C289DB /* SelectWorkOutTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWorkOutTimeView.swift; sourceTree = "<group>"; };
 		FD13D4972BAB56AA0016F0A0 /* SCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCButton.swift; sourceTree = "<group>"; };
 		FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCheckBox.swift; sourceTree = "<group>"; };
+		FD1C54392C3D6D8000419364 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		FD1C543A2C3D6DC600419364 /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
 		FD208FB92BB634AF00DD4D3B /* SCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTextField.swift; sourceTree = "<group>"; };
 		FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
 		FD208FBD2BB6F70200DD4D3B /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 		FD0C395B2BA9914B00CC05AA = {
 			isa = PBXGroup;
 			children = (
+				FD1C543B2C3D6DD200419364 /* ci_scripts */,
 				FD0C39662BA9914B00CC05AA /* Score */,
 				FD0C39652BA9914B00CC05AA /* Products */,
 				A889DA542F85709D53DE301F /* Pods */,
@@ -381,6 +384,15 @@
 				FD4A3B3D2BBADBBE00D2DFFA /* Button */,
 			);
 			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		FD1C543B2C3D6DD200419364 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				FD1C543A2C3D6DC600419364 /* ci_pre_xcodebuild.sh */,
+				FD1C54392C3D6D8000419364 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 		FD208FC12BB9B2E400DD4D3B /* Constant */ = {
