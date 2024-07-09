@@ -1,2 +1,2 @@
 # score-ios
-test_pr
+test_pr2
