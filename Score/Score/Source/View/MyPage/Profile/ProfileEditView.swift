@@ -85,8 +85,10 @@ struct ProfileEditView: View {
                 ) {
                     SCIcon(
                         style: .init(
-                            size: .medium,
-                            color: .gray3
+                            imageSize: 17,
+                            circleSize: 27,
+                            imageColor: .brandColor(color: .icon),
+                            circleColor: .brandColor(color: .gray2)
                         ),
                         imageName: .pencil)
                 }
