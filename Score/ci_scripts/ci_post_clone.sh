@@ -14,7 +14,7 @@ pod deintegrate
 pod install
 
 # *.xconfig 파일이 생성될 폴더 경로
-FOLDER_PATH="$CI_PROJECT_DIR/Score/Resource"
+FOLDER_PATH="$CI_PROJECT_DIR/Score/Score/Resource"
 # *.xconfig 파일 이름
 CONFIG_FILENAME="Secrets.xcconfig"
 
