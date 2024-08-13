@@ -9,6 +9,8 @@
 # Install CocoaPods using Homebrew.
 brew install cocoapods
 
+brew install git-lfs
+git-lfs install
 # Install dependencies you manage with CocoaPods.
 pod install
 
