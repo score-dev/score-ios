@@ -76,14 +76,13 @@ struct SelectProfileImageView: View {
         ) {
             selectedImageSectionBuilder()
                 .overlay(alignment: .bottomTrailing) {
-                    SCIcon(
-                        style: .init(
-                            size: .custom(size: 35,
-                                          imageScale: 20),
-                            color: .gray3
-                        ),
-                        imageName: .camera
-                    )
+                    SCIcon(style: .init(
+                        imageSize: 20,
+                        circleSize: 35,
+                        imageColor: .brandColor(color: .gray3),
+                        circleColor: .brandColor(color: .gray1)
+                    ),
+                           imageName: .camera)
                 }
         }
         .frame(maxWidth: .infinity)

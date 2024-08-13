@@ -10,7 +10,7 @@ import SwiftUI
 extension Font {
     //MARK: - Pretendard
     
-    enum Pretendard {
+    struct Pretendard {
         //MARK: - Weight(Pretendard)
         
         @frozen
@@ -44,6 +44,8 @@ extension Font {
             case xl = 22
             /// rawValue: 24
             case xxl = 24
+            /// rawValue: 60
+            case ultra = 60
         }
         
         //MARK: - Style(Pretendard)
@@ -66,31 +68,35 @@ extension Font {
             case caption
             /// semibold s
             case button
-            
-            //MARK: - weightAndSize
-            
-            /// Style에 맞는 weight와 size를 반환하는 메서드입니다.
-            func weightAndSize() -> (weight: Font.Pretendard.Weight,
-                                     size: Font.Pretendard.Size) {
-                switch self {
-                case .headline:
-                    return (.regular, .xxl)
-                case .title:
-                    return (.semiBold, .l)
-                case .body1:
-                    return (.semiBold, .m)
-                case .body2:
-                    return (.semiBold, .s)
-                case .body3:
-                    return (.semiBold, .xs)
-                case .subHeading:
-                    return (.regular, .s)
-                case .caption:
-                    return (.medium, .xxs)
-                case .button:
-                    return (.semiBold, .s)
-                }
-            }
+        }
+    }
+}
+
+// MARK: - Font.Pretendard.Style+weightAndSize
+
+extension Font.Pretendard.Style {
+    //MARK: - weightAndSize
+    
+    /// Style에 맞는 weight와 size를 반환하는 메서드입니다.
+    func weightAndSize() -> (weight: Font.Pretendard.Weight,
+                             size: Font.Pretendard.Size) {
+        switch self {
+        case .headline:
+            return (.regular, .xxl)
+        case .title:
+            return (.semiBold, .l)
+        case .body1:
+            return (.semiBold, .m)
+        case .body2:
+            return (.semiBold, .s)
+        case .body3:
+            return (.semiBold, .xs)
+        case .subHeading:
+            return (.regular, .s)
+        case .caption:
+            return (.medium, .xxs)
+        case .button:
+            return (.semiBold, .s)
         }
     }
 }
