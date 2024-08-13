@@ -26,6 +26,9 @@
 		FD10EB222C3059AD00C289DB /* SelectWorkOutTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10EB212C3059AD00C289DB /* SelectWorkOutTimeView.swift */; };
 		FD13D4982BAB56AA0016F0A0 /* SCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4972BAB56AA0016F0A0 /* SCButton.swift */; };
 		FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */; };
+		FD1C54402C40393800419364 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C543F2C40393800419364 /* CameraView.swift */; };
+		FD1C54432C40493000419364 /* TodayWorkOutRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C54422C40493000419364 /* TodayWorkOutRecordView.swift */; };
+		FD1C54462C40529A00419364 /* AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C54452C40529A00419364 /* AttributedText.swift */; };
 		FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FB92BB634AF00DD4D3B /* SCTextField.swift */; };
 		FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */; };
 		FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD208FBD2BB6F70200DD4D3B /* View+.swift */; };
@@ -58,9 +61,16 @@
 		FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */; };
 		FD408A9F2C11CFEB00DD8EAF /* TypeNickNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD408A9E2C11CFEB00DD8EAF /* TypeNickNameView.swift */; };
 		FD408AA12C11D12200DD8EAF /* TypeUserInfoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD408AA02C11D12200DD8EAF /* TypeUserInfoFeature.swift */; };
+		FD443C212C4DEDBA00C2E62E /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD443C202C4DEDB200C2E62E /* PhotoLibrary.swift */; };
+		FD443C232C4DF1AC00C2E62E /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD443C222C4DF1A500C2E62E /* CameraPreview.swift */; };
+		FD443C252C4DF4A000C2E62E /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD443C242C4DF49C00C2E62E /* Camera.swift */; };
 		FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */; };
 		FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */; };
 		FD4F5BB82BFBB91000E9435D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4F5BB72BFBB91000E9435D /* Preview Assets.xcassets */; };
+		FD584E432C4285AC00E81E07 /* CameraFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD584E422C4285AC00E81E07 /* CameraFeature.swift */; };
+		FD886A512C5D2BCF00049546 /* PhotoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD886A502C5D2BC800049546 /* PhotoPreviewView.swift */; };
+		FD886A532C5FFB7200049546 /* GallaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD886A522C5FFB7200049546 /* GallaryView.swift */; };
+		FD886A552C5FFB7C00049546 /* GallaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD886A542C5FFB7C00049546 /* GallaryDetailView.swift */; };
 		FD8B639B2BD1FF1E000500BF /* SettingMainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B639A2BD1FF1E000500BF /* SettingMainFeature.swift */; };
 		FD8B639D2BD200CD000500BF /* AlarmSettingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B639C2BD200CD000500BF /* AlarmSettingFeature.swift */; };
 		FD8B639F2BD20124000500BF /* PrivacyPolicyFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B639E2BD20124000500BF /* PrivacyPolicyFeature.swift */; };
@@ -162,6 +172,9 @@
 		FD13D4992BAB62370016F0A0 /* SCCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCheckBox.swift; sourceTree = "<group>"; };
 		FD1C54392C3D6D8000419364 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		FD1C543A2C3D6DC600419364 /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
+		FD1C543F2C40393800419364 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		FD1C54422C40493000419364 /* TodayWorkOutRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWorkOutRecordView.swift; sourceTree = "<group>"; };
+		FD1C54452C40529A00419364 /* AttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedText.swift; sourceTree = "<group>"; };
 		FD208FB92BB634AF00DD4D3B /* SCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTextField.swift; sourceTree = "<group>"; };
 		FD208FBB2BB6F2A600DD4D3B /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
 		FD208FBD2BB6F70200DD4D3B /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
@@ -194,9 +207,16 @@
 		FD3C6EBC2BBC7DE700B14FF9 /* SCTagChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTagChip.swift; sourceTree = "<group>"; };
 		FD408A9E2C11CFEB00DD8EAF /* TypeNickNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeNickNameView.swift; sourceTree = "<group>"; };
 		FD408AA02C11D12200DD8EAF /* TypeUserInfoFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeUserInfoFeature.swift; sourceTree = "<group>"; };
+		FD443C202C4DEDB200C2E62E /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
+		FD443C222C4DF1A500C2E62E /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		FD443C242C4DF49C00C2E62E /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		FD4A3B422BBADCD400D2DFFA /* SCRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecordButton.swift; sourceTree = "<group>"; };
 		FD4A3B442BBAF0D100D2DFFA /* SCCapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCapsuleButton.swift; sourceTree = "<group>"; };
 		FD4F5BB72BFBB91000E9435D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD584E422C4285AC00E81E07 /* CameraFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeature.swift; sourceTree = "<group>"; };
+		FD886A502C5D2BC800049546 /* PhotoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewView.swift; sourceTree = "<group>"; };
+		FD886A522C5FFB7200049546 /* GallaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryView.swift; sourceTree = "<group>"; };
+		FD886A542C5FFB7C00049546 /* GallaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryDetailView.swift; sourceTree = "<group>"; };
 		FD8B639A2BD1FF1E000500BF /* SettingMainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMainFeature.swift; sourceTree = "<group>"; };
 		FD8B639C2BD200CD000500BF /* AlarmSettingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingFeature.swift; sourceTree = "<group>"; };
 		FD8B639E2BD20124000500BF /* PrivacyPolicyFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyFeature.swift; sourceTree = "<group>"; };
@@ -371,6 +391,7 @@
 		FD13D4962BAB56A00016F0A0 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				FD1C54442C40527F00419364 /* Text */,
 				FD3428F32BDC04290021E542 /* Image */,
 				FDFAA42B2BCE05720053CD9F /* Progress */,
 				FD9E070B2BCB4E53000109FD /* Navigation */,
@@ -393,6 +414,34 @@
 				FD1C54392C3D6D8000419364 /* ci_post_clone.sh */,
 			);
 			path = ci_scripts;
+			sourceTree = "<group>";
+		};
+		FD1C543E2C40392600419364 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				FD886A502C5D2BC800049546 /* PhotoPreviewView.swift */,
+				FD443C222C4DF1A500C2E62E /* CameraPreview.swift */,
+				FD1C543F2C40393800419364 /* CameraView.swift */,
+				FD886A522C5FFB7200049546 /* GallaryView.swift */,
+				FD886A542C5FFB7C00049546 /* GallaryDetailView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		FD1C54412C40465E00419364 /* TodayWorkOut */ = {
+			isa = PBXGroup;
+			children = (
+				FD1C54422C40493000419364 /* TodayWorkOutRecordView.swift */,
+			);
+			path = TodayWorkOut;
+			sourceTree = "<group>";
+		};
+		FD1C54442C40527F00419364 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				FD1C54452C40529A00419364 /* AttributedText.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 		FD208FC12BB9B2E400DD4D3B /* Constant */ = {
@@ -885,6 +934,8 @@
 		FDFD3CF72BD85B7700629B8C /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				FD1C54412C40465E00419364 /* TodayWorkOut */,
+				FD1C543E2C40392600419364 /* Camera */,
 				FDFD3CFC2BD85BAF00629B8C /* RecordMainView.swift */,
 			);
 			path = Record;
@@ -902,6 +953,9 @@
 			isa = PBXGroup;
 			children = (
 				FDFD3D042BD85E6800629B8C /* RecordMainFeature.swift */,
+				FD584E422C4285AC00E81E07 /* CameraFeature.swift */,
+				FD443C242C4DF49C00C2E62E /* Camera.swift */,
+				FD443C202C4DEDB200C2E62E /* PhotoLibrary.swift */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -1056,9 +1110,11 @@
 				FD9E070A2BCB0A1C000109FD /* PhotoPickerFeature.swift in Sources */,
 				FD8FC3BE2BC86EB100B80B3D /* DateComponentsWithID.swift in Sources */,
 				FD8FC3B72BC8426800B80B3D /* CalendarGridItem.swift in Sources */,
+				FD886A532C5FFB7200049546 /* GallaryView.swift in Sources */,
 				FD9E06FF2BC97DF6000109FD /* ProfileEditView.swift in Sources */,
 				FD3428F92BDC24AE0021E542 /* CGFloat+.swift in Sources */,
 				FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */,
+				FD1C54462C40529A00419364 /* AttributedText.swift in Sources */,
 				FDE5C8C52C11F31D0021C8E3 /* TypeUserInfoMainView.swift in Sources */,
 				FD995E6D2C3AE1A200376823 /* SelectSchoolNameSheet.swift in Sources */,
 				FDEDB95E2BFBE97B0040E313 /* SCLoading.swift in Sources */,
@@ -1097,14 +1153,18 @@
 				FD0C65292C0B14A20054D9F4 /* OnBoardingFeature.swift in Sources */,
 				FD8B639B2BD1FF1E000500BF /* SettingMainFeature.swift in Sources */,
 				FDFD3CF42BD8547900629B8C /* SCTabBarFeature.swift in Sources */,
+				FD1C54432C40493000419364 /* TodayWorkOutRecordView.swift in Sources */,
 				FD8FC3B22BC826F600B80B3D /* Date+.swift in Sources */,
 				FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */,
 				FD9E07082BCB0913000109FD /* PhotoPickerView.swift in Sources */,
 				FD38E99F2BD5C4FD00D3BDB7 /* BlockUserSettingView.swift in Sources */,
 				FDFAA4422BCE7C7D0053CD9F /* UnregisterView.swift in Sources */,
 				FD38E9902BD530AC00D3BDB7 /* SettingNavigationRowViewModifier.swift in Sources */,
+				FD443C212C4DEDBA00C2E62E /* PhotoLibrary.swift in Sources */,
 				FD2E8CE52BD940C2001957F3 /* SCLineTabBarFeature.swift in Sources */,
 				FDFD3CFB2BD85B9F00629B8C /* SchoolGroupMainView.swift in Sources */,
+				FD886A512C5D2BCF00049546 /* PhotoPreviewView.swift in Sources */,
+				FD584E432C4285AC00E81E07 /* CameraFeature.swift in Sources */,
 				FD8D1C012C09C91700B87C43 /* GoogleAuthStore.swift in Sources */,
 				FD3C6EBB2BBC79FE00B14FF9 /* SCSearchChip.swift in Sources */,
 				FD38E9992BD5A1A300D3BDB7 /* BlockUserSettingFeature.swift in Sources */,
@@ -1143,20 +1203,24 @@
 				FD9E07112BCC99DE000109FD /* DismissButton.swift in Sources */,
 				FD38E9A92BD83F0B00D3BDB7 /* EmailGuideSheet.swift in Sources */,
 				FDEDB9552BFBBD0D0040E313 /* APIKeyProtocol.swift in Sources */,
+				FD443C232C4DF1AC00C2E62E /* CameraPreview.swift in Sources */,
 				FD2E8CE12BD93238001957F3 /* MyPageMainView.swift in Sources */,
 				FDFD3D082BD85E8900629B8C /* SchoolGroupMainFeature.swift in Sources */,
+				FD1C54402C40393800419364 /* CameraView.swift in Sources */,
 				FDEDB9642BFC17DC0040E313 /* AuthToken.swift in Sources */,
 				FD38E98E2BD5297E00D3BDB7 /* PolicyView.swift in Sources */,
 				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
 				FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */,
 				FDEDB9682BFC86C70040E313 /* KakaoLoginStore.swift in Sources */,
 				FD8B63A32BD201CC000500BF /* UnregisterFeature.swift in Sources */,
+				FD886A552C5FFB7C00049546 /* GallaryDetailView.swift in Sources */,
 				FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */,
 				FDEDB9622BFC17140040E313 /* AuthCenter.swift in Sources */,
 				FD2E8CE72BD94F37001957F3 /* SCIconButton.swift in Sources */,
 				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
 				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,
 				FD408AA12C11D12200DD8EAF /* TypeUserInfoFeature.swift in Sources */,
+				FD443C252C4DF4A000C2E62E /* Camera.swift in Sources */,
 				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
 				FD9A17D32C04B6C400E6496C /* SCLineTabProtocol.swift in Sources */,
 				FD0C65242C0A499F0054D9F4 /* ImageAssetProtocol.swift in Sources */,
@@ -1311,6 +1375,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Score/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "스코어";
+				INFOPLIST_KEY_NSCameraUsageDescription = "스코어에서 운동 기록 촬영을 위해 카메라에 접근합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "스코어에서 운동 기록 사진 저장을 위해 갤러리에 접근합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "스코어에서 운동 기록 사진 저장을 위해 갤러리에 접근합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1352,6 +1419,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Score/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "스코어";
+				INFOPLIST_KEY_NSCameraUsageDescription = "스코어에서 운동 기록 촬영을 위해 카메라에 접근합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "스코어에서 운동 기록 사진 저장을 위해 갤러리에 접근합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "스코어에서 운동 기록 사진 저장을 위해 갤러리에 접근합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
