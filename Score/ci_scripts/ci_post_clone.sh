@@ -10,7 +10,7 @@
 brew install cocoapods
 
 # Install dependencies you manage with CocoaPods.
-pod install --repo-update
+pod install
 
 # *.xconfig 파일이 생성될 폴더 경로
 FOLDER_PATH="/Volumes/workspace/repository/Score/Score/Resource"
