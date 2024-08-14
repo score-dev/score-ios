@@ -9,6 +9,7 @@ import Foundation
 import GoogleSignIn
 import KakaoSDKAuth
 import KakaoSDKCommon
+import NMapsMap
 
 //MARK: - AppDelegate
 
@@ -21,15 +22,18 @@ class AppDelegate: NSObject,
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
     ) -> Bool {        
-        /// KakaoSDK 초기화
+        // KakaoSDK 초기화
         KakaoSDK.initSDK(
             appKey: self.apiKeys.Kakao.appID.getValueFromBundle() ?? "none"
         )
             
-        /// Google Client ID 초기화
+        // Google Client ID 초기화
         GIDSignIn.sharedInstance.configuration = .init(
             clientID: self.apiKeys.Google.clientID.getValueFromBundle() ?? "none"
         )
+        
+        // Naver Client ID 지정
+        NMFAuthManager.shared().clientId = self.apiKeys.Naver.clientID.getValueFromBundle() ?? "none"
         
         return false
     }
