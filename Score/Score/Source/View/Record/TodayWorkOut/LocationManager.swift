@@ -7,11 +7,13 @@
 
 import CoreLocation
 import os.log
+import ComposableArchitecture
 
 final class LocationManager: CLLocationManager {
-    private(set) var locations: [CLLocation] = []
+    private var store: StoreOf<MapFeature>
     
-    override init() {
+    init(store: StoreOf<MapFeature>) {
+        self.store = store
         super.init()
         self.delegate = self
     }
@@ -42,7 +44,7 @@ extension LocationManager: CLLocationManagerDelegate {
         _ manager: CLLocationManager,
         didUpdateLocations locations: [CLLocation]
     ) {
-        self.locations += locations
+        store.send(.updatingLocations(locations: locations))
     }
 }
 
