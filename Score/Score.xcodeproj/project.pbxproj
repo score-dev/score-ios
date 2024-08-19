@@ -77,6 +77,7 @@
 		FD8B63A12BD2016D000500BF /* ServicePolicyFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B63A02BD2016D000500BF /* ServicePolicyFeature.swift */; };
 		FD8B63A32BD201CC000500BF /* UnregisterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B63A22BD201CC000500BF /* UnregisterFeature.swift */; };
 		FD8B63A62BD21802000500BF /* ContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B63A52BD21802000500BF /* ContactFeature.swift */; };
+		FD8D001C2C6BB391001C126B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8D001B2C6BB391001C126B /* MapView.swift */; };
 		FD8D1C012C09C91700B87C43 /* GoogleAuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8D1C002C09C91700B87C43 /* GoogleAuthStore.swift */; };
 		FD8D1C042C09C92600B87C43 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FD8D1C032C09C92600B87C43 /* GoogleSignIn */; };
 		FD8D1C062C09C92600B87C43 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FD8D1C052C09C92600B87C43 /* GoogleSignInSwift */; };
@@ -100,6 +101,10 @@
 		FD9E070D2BCB4E66000109FD /* SCNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E070C2BCB4E66000109FD /* SCNavigationBar.swift */; };
 		FD9E070F2BCB58BC000109FD /* SCLineTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E070E2BCB58BC000109FD /* SCLineTabBar.swift */; };
 		FD9E07112BCC99DE000109FD /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07102BCC99DE000109FD /* DismissButton.swift */; };
+		FDA1AF212C6CD4FA008A1312 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF202C6CD4F6008A1312 /* MapViewController.swift */; };
+		FDA1AF252C6CD6AB008A1312 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF242C6CD6AB008A1312 /* LocationManager.swift */; };
+		FDA1AF272C6D0B3A008A1312 /* SCMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF262C6D0B3A008A1312 /* SCMapMarker.swift */; };
+		FDA1AF2A2C6E64B4008A1312 /* MapFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF292C6E64AF008A1312 /* MapFeature.swift */; };
 		FDC09D352C18327B00D5CF5C /* TermsAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D342C18327B00D5CF5C /* TermsAgreementView.swift */; };
 		FDC09D372C18522E00D5CF5C /* TermsAgreementFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D362C18522E00D5CF5C /* TermsAgreementFeature.swift */; };
 		FDC09D392C18644000D5CF5C /* SelectProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D382C18644000D5CF5C /* SelectProfileImageView.swift */; };
@@ -223,6 +228,7 @@
 		FD8B63A02BD2016D000500BF /* ServicePolicyFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePolicyFeature.swift; sourceTree = "<group>"; };
 		FD8B63A22BD201CC000500BF /* UnregisterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnregisterFeature.swift; sourceTree = "<group>"; };
 		FD8B63A52BD21802000500BF /* ContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFeature.swift; sourceTree = "<group>"; };
+		FD8D001B2C6BB391001C126B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		FD8D1C002C09C91700B87C43 /* GoogleAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthStore.swift; sourceTree = "<group>"; };
 		FD8D1C092C09C9A300B87C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD8FC3AF2BC8251700B80B3D /* CalendarFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarFeature.swift; sourceTree = "<group>"; };
@@ -244,6 +250,10 @@
 		FD9E070C2BCB4E66000109FD /* SCNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNavigationBar.swift; sourceTree = "<group>"; };
 		FD9E070E2BCB58BC000109FD /* SCLineTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLineTabBar.swift; sourceTree = "<group>"; };
 		FD9E07102BCC99DE000109FD /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		FDA1AF202C6CD4F6008A1312 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FDA1AF242C6CD6AB008A1312 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FDA1AF262C6D0B3A008A1312 /* SCMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMapMarker.swift; sourceTree = "<group>"; };
+		FDA1AF292C6E64AF008A1312 /* MapFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFeature.swift; sourceTree = "<group>"; };
 		FDC09D342C18327B00D5CF5C /* TermsAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAgreementView.swift; sourceTree = "<group>"; };
 		FDC09D362C18522E00D5CF5C /* TermsAgreementFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAgreementFeature.swift; sourceTree = "<group>"; };
 		FDC09D382C18644000D5CF5C /* SelectProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfileImageView.swift; sourceTree = "<group>"; };
@@ -403,6 +413,7 @@
 				FD4A3B3F2BBADBDE00D2DFFA /* Card */,
 				FD4A3B3E2BBADBCE00D2DFFA /* Label */,
 				FD4A3B3D2BBADBBE00D2DFFA /* Button */,
+				FDA1AF282C6D0DAC008A1312 /* MapMarker */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -432,6 +443,9 @@
 			isa = PBXGroup;
 			children = (
 				FD1C54422C40493000419364 /* TodayWorkOutRecordView.swift */,
+				FD8D001B2C6BB391001C126B /* MapView.swift */,
+				FDA1AF202C6CD4F6008A1312 /* MapViewController.swift */,
+				FDA1AF242C6CD6AB008A1312 /* LocationManager.swift */,
 			);
 			path = TodayWorkOut;
 			sourceTree = "<group>";
@@ -784,6 +798,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		FDA1AF282C6D0DAC008A1312 /* MapMarker */ = {
+			isa = PBXGroup;
+			children = (
+				FDA1AF262C6D0B3A008A1312 /* SCMapMarker.swift */,
+			);
+			path = MapMarker;
+			sourceTree = "<group>";
+		};
 		FDA9FDC12BFF3B1A00AC4EB7 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
@@ -952,6 +974,7 @@
 		FDFD3D032BD85E5C00629B8C /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				FDA1AF292C6E64AF008A1312 /* MapFeature.swift */,
 				FDFD3D042BD85E6800629B8C /* RecordMainFeature.swift */,
 				FD584E422C4285AC00E81E07 /* CameraFeature.swift */,
 				FD443C242C4DF49C00C2E62E /* Camera.swift */,
@@ -1115,6 +1138,7 @@
 				FD9E06FF2BC97DF6000109FD /* ProfileEditView.swift in Sources */,
 				FD3428F92BDC24AE0021E542 /* CGFloat+.swift in Sources */,
 				FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */,
+				FD8D001C2C6BB391001C126B /* MapView.swift in Sources */,
 				FD1C54462C40529A00419364 /* AttributedText.swift in Sources */,
 				FDE5C8C52C11F31D0021C8E3 /* TypeUserInfoMainView.swift in Sources */,
 				FD995E6D2C3AE1A200376823 /* SelectSchoolNameSheet.swift in Sources */,
@@ -1178,6 +1202,8 @@
 				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
 				FD8B639F2BD20124000500BF /* PrivacyPolicyFeature.swift in Sources */,
 				FDEDB94A2BFBBA6D0040E313 /* APIProtocol.swift in Sources */,
+				FDA1AF2A2C6E64B4008A1312 /* MapFeature.swift in Sources */,
+				FDA1AF272C6D0B3A008A1312 /* SCMapMarker.swift in Sources */,
 				FDC09D372C18522E00D5CF5C /* TermsAgreementFeature.swift in Sources */,
 				FD38E9932BD53D0900D3BDB7 /* SignOutFeature.swift in Sources */,
 				FD408A9F2C11CFEB00DD8EAF /* TypeNickNameView.swift in Sources */,
@@ -1207,6 +1233,7 @@
 				FD443C232C4DF1AC00C2E62E /* CameraPreview.swift in Sources */,
 				FD2E8CE12BD93238001957F3 /* MyPageMainView.swift in Sources */,
 				FDFD3D082BD85E8900629B8C /* SchoolGroupMainFeature.swift in Sources */,
+				FDA1AF252C6CD6AB008A1312 /* LocationManager.swift in Sources */,
 				FD1C54402C40393800419364 /* CameraView.swift in Sources */,
 				FDEDB9642BFC17DC0040E313 /* AuthToken.swift in Sources */,
 				FD38E98E2BD5297E00D3BDB7 /* PolicyView.swift in Sources */,
@@ -1220,6 +1247,7 @@
 				FD2E8CE72BD94F37001957F3 /* SCIconButton.swift in Sources */,
 				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
 				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,
+				FDA1AF212C6CD4FA008A1312 /* MapViewController.swift in Sources */,
 				FD408AA12C11D12200DD8EAF /* TypeUserInfoFeature.swift in Sources */,
 				FD443C252C4DF4A000C2E62E /* Camera.swift in Sources */,
 				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
@@ -1377,6 +1405,7 @@
 				INFOPLIST_FILE = Score/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "스코어";
 				INFOPLIST_KEY_NSCameraUsageDescription = "스코어에서 운동 기록 촬영을 위해 카메라에 접근합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "스코어에서 운동 기록을 위해 사용자의 위치 정보에 접근합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "스코어에서 운동 기록 사진 저장을 위해 갤러리에 접근합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "스코어에서 운동 기록 사진 저장을 위해 갤러리에 접근합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1421,6 +1450,7 @@
 				INFOPLIST_FILE = Score/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "스코어";
 				INFOPLIST_KEY_NSCameraUsageDescription = "스코어에서 운동 기록 촬영을 위해 카메라에 접근합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "스코어에서 운동 기록을 위해 사용자의 위치 정보에 접근합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "스코어에서 운동 기록 사진 저장을 위해 갤러리에 접근합니다.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "스코어에서 운동 기록 사진 저장을 위해 갤러리에 접근합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
