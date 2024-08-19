@@ -41,9 +41,10 @@ final class MapViewController: UIViewController {
         self.setUpMapMarker()
         view.addSubview(naverMapView)
         
-        store.publisher
-            .map{ $0.locations }
-            .sink{ self.overlayMapPath(locations: $0) }
+        store.publisher.locations
+            .sink{ [weak self] in
+                self?.overlayMapPath(locations: $0)
+            }
             .store(in: &cancellable)
     }
     
