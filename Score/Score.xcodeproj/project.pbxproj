@@ -104,7 +104,7 @@
 		FDA1AF212C6CD4FA008A1312 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF202C6CD4F6008A1312 /* MapViewController.swift */; };
 		FDA1AF252C6CD6AB008A1312 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF242C6CD6AB008A1312 /* LocationManager.swift */; };
 		FDA1AF272C6D0B3A008A1312 /* SCMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF262C6D0B3A008A1312 /* SCMapMarker.swift */; };
-		FDA1AF2A2C6E64B4008A1312 /* MapFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF292C6E64AF008A1312 /* MapFeature.swift */; };
+		FDA1AF2A2C6E64B4008A1312 /* CurrentMapFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF292C6E64AF008A1312 /* CurrentMapFeature.swift */; };
 		FDACBE5B2C73A18E00E94981 /* RecordTimerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACBE5A2C73A18500E94981 /* RecordTimerFeature.swift */; };
 		FDACBE5D2C73A61200E94981 /* TimerRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACBE5C2C73A61200E94981 /* TimerRecordView.swift */; };
 		FDC09D352C18327B00D5CF5C /* TermsAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D342C18327B00D5CF5C /* TermsAgreementView.swift */; };
@@ -255,7 +255,7 @@
 		FDA1AF202C6CD4F6008A1312 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FDA1AF242C6CD6AB008A1312 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FDA1AF262C6D0B3A008A1312 /* SCMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMapMarker.swift; sourceTree = "<group>"; };
-		FDA1AF292C6E64AF008A1312 /* MapFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFeature.swift; sourceTree = "<group>"; };
+		FDA1AF292C6E64AF008A1312 /* CurrentMapFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMapFeature.swift; sourceTree = "<group>"; };
 		FDACBE5A2C73A18500E94981 /* RecordTimerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTimerFeature.swift; sourceTree = "<group>"; };
 		FDACBE5C2C73A61200E94981 /* TimerRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRecordView.swift; sourceTree = "<group>"; };
 		FDC09D342C18327B00D5CF5C /* TermsAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAgreementView.swift; sourceTree = "<group>"; };
@@ -980,7 +980,7 @@
 			isa = PBXGroup;
 			children = (
 				FDACBE5A2C73A18500E94981 /* RecordTimerFeature.swift */,
-				FDA1AF292C6E64AF008A1312 /* MapFeature.swift */,
+				FDA1AF292C6E64AF008A1312 /* CurrentMapFeature.swift */,
 				FDFD3D042BD85E6800629B8C /* RecordMainFeature.swift */,
 				FD584E422C4285AC00E81E07 /* CameraFeature.swift */,
 				FD443C242C4DF49C00C2E62E /* Camera.swift */,
@@ -1209,7 +1209,7 @@
 				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
 				FD8B639F2BD20124000500BF /* PrivacyPolicyFeature.swift in Sources */,
 				FDEDB94A2BFBBA6D0040E313 /* APIProtocol.swift in Sources */,
-				FDA1AF2A2C6E64B4008A1312 /* MapFeature.swift in Sources */,
+				FDA1AF2A2C6E64B4008A1312 /* CurrentMapFeature.swift in Sources */,
 				FDA1AF272C6D0B3A008A1312 /* SCMapMarker.swift in Sources */,
 				FDC09D372C18522E00D5CF5C /* TermsAgreementFeature.swift in Sources */,
 				FD38E9932BD53D0900D3BDB7 /* SignOutFeature.swift in Sources */,
