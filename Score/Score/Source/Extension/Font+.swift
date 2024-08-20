@@ -46,6 +46,8 @@ extension Font {
             case xxl = 24
             /// rawValue: 60
             case ultra = 60
+            /// rawValue: 80
+            case xultra = 80
         }
         
         //MARK: - Style(Pretendard)
