@@ -10,6 +10,7 @@ import SwiftUI
 
 @Reducer
 struct CameraFeature {
+    @Dependency(\.dismiss) var dismiss
     
     struct State: Equatable {
         let camera: Camera = .init()
@@ -38,7 +39,9 @@ struct CameraFeature {
                 }
                 
             case .tappedDismissButton:
-                return .none
+                return .run { _ in
+                    await self.dismiss()
+                }
                 
             case .cameraStarting:
                 state.camera.start()
