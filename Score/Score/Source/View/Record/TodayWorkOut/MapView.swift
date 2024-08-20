@@ -10,9 +10,9 @@ import SwiftUI
 import NMapsMap
 
 struct MapView: UIViewControllerRepresentable {
-    private let store: StoreOf<MapFeature>
+    private let store: StoreOf<CurrentMapFeature>
     
-    init(store: StoreOf<MapFeature>) {
+    init(store: StoreOf<CurrentMapFeature>) {
         self.store = store
     }
     
@@ -31,5 +31,6 @@ struct MapView: UIViewControllerRepresentable {
 }
 
 #Preview {
-    MapView(store: .init(initialState: .init(), reducer: { MapFeature() }))
+    MapView(store: .init(initialState: .init(locationManager: .init()),
+                         reducer: { CurrentMapFeature() }))
 }
