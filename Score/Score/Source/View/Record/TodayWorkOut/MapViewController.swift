@@ -12,8 +12,8 @@ import SwiftUI
 import Combine
 
 final class MapViewController: UIViewController {
-    private let store: StoreOf<MapFeature>
-    private var cancellable: Set<AnyCancellable> = .init()
+    private let store: StoreOf<CurrentMapFeature>
+    @ObservedObject private var viewStore: ViewStoreOf<CurrentMapFeature>
     
     private var naverMapView: NMFNaverMapView!
     private var locationManager: LocationManager!
@@ -25,8 +25,10 @@ final class MapViewController: UIViewController {
         return pathOverlay
     }()
     
-    init(store: StoreOf<MapFeature>) {
+    init(store: StoreOf<CurrentMapFeature>) {
         self.store = store
+        self.viewStore = .init(store,
+                               observe: { $0 })
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -41,17 +43,11 @@ final class MapViewController: UIViewController {
         self.setUpCamera()
         self.setUpMapMarker()
         view.addSubview(naverMapView)
-        
-        store.publisher.locations
-            .sink{ [weak self] in
-                self?.overlayMapPath(locations: $0)
-            }
-            .store(in: &cancellable)
     }
     
     /// locationManager 관련 설정을 세팅합니다. 
     func setUpLocationManager() {
-        self.locationManager = .init(store: store)
+        self.locationManager = viewStore.locationManager
         self.locationManager.requestAuthorization()
         self.locationManager.startUpdatingLocation()
     }
@@ -104,7 +100,7 @@ final class MapViewController: UIViewController {
     }
     
     deinit {
-        cancellable.forEach{ $0.cancel() }
+        self.locationManager.stopUpdatingLocation()
     }
 }
 
