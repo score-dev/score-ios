@@ -12,7 +12,7 @@ import SwiftUI
 import Combine
 
 final class MapViewController: UIViewController {
-    private let store: StoreOf<MapFeature> = .init(initialState: .init(), reducer: { MapFeature() })
+    private let store: StoreOf<MapFeature>
     private var cancellable: Set<AnyCancellable> = .init()
     
     private var naverMapView: NMFNaverMapView!
@@ -25,7 +25,8 @@ final class MapViewController: UIViewController {
         return pathOverlay
     }()
     
-    init() {
+    init(store: StoreOf<MapFeature>) {
+        self.store = store
         super.init(nibName: nil, bundle: nil)
     }
     
