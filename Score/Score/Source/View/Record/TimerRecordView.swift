@@ -52,6 +52,12 @@ struct TimerRecordView: View {
         ) { store in
             MapView(store: store)
         }
+        .onAppear {
+            store.send(.viewAppearing)
+        }
+        .onDisappear {
+            store.send(.viewDisappearing)
+        }
     }
     
     @ViewBuilder
