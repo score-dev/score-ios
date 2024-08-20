@@ -18,6 +18,7 @@ struct RecordTimerFeature {
         @BindingState var isRecording: Bool = false
         var minutes: Int = 0
         var seconds: Int = 0
+        let locationManager: LocationManager = .init()
     }
     
     enum Action: BindableAction {
@@ -30,7 +31,10 @@ struct RecordTimerFeature {
         case tappedMapButton
         case tappedTakePhotoButton
         case tappedRecordFinishButton
+        
+        case viewAppearing
         case tappedDismissButton
+        case viewDisappearing
     }
     
     private enum CancelID: Hashable {
@@ -72,7 +76,7 @@ struct RecordTimerFeature {
                 return .none
                 
             case .tappedMapButton:
-                state.destination = .map(.init())
+                state.destination = .map(.init(locationManager: state.locationManager))
                 return .none
                 
             case .tappedTakePhotoButton:
@@ -81,8 +85,17 @@ struct RecordTimerFeature {
                 
             case .tappedRecordFinishButton:
                 // isRecording을 false로 만들고 다음 뷰로 넘어갑니다.
+                // 지금까지 운동한 경로 [NMGLatLng]를 다음 뷰에 넘겨줍니다.
                 state.isRecording = false
                 return .cancel(id: CancelID.timer)
+                
+            case .viewAppearing:
+                state.locationManager.requestAuthorization()
+                return .none
+                
+            case .viewDisappearing:
+                state.locationManager.stopUpdatingLocation()
+                return .none
                 
             case .tappedDismissButton:
                 return .run { _ in
@@ -110,13 +123,13 @@ struct RecordTimerFeature {
     struct Destination {
         enum State: Equatable {
             case camera(CameraFeature.State)
-            case map(MapFeature.State)
+            case map(CurrentMapFeature.State)
 //            case feed(AddFeadFeature.State)
         }
         
         enum Action {
             case camera(CameraFeature.Action)
-            case map(MapFeature.Action)
+            case map(CurrentMapFeature.Action)
             //            case feed(AddFeadFeature.State)
         }
         
@@ -128,7 +141,7 @@ struct RecordTimerFeature {
             
             Scope(state: \.map,
                   action: \.map) {
-                MapFeature()
+                CurrentMapFeature()
             }
         }
     }
