@@ -105,6 +105,13 @@ enum Constants {
             case feed = "onboarding.feed"
             case school = "onboarding.school"
         }
+        
+        // MARK: - Record
+        
+        enum Record: String,
+                     ImageAssetProtocol {
+            case track = "track"
+        }
     }
     
     //MARK: - APIKey
