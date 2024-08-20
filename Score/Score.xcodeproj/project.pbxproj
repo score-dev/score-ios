@@ -105,6 +105,8 @@
 		FDA1AF252C6CD6AB008A1312 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF242C6CD6AB008A1312 /* LocationManager.swift */; };
 		FDA1AF272C6D0B3A008A1312 /* SCMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF262C6D0B3A008A1312 /* SCMapMarker.swift */; };
 		FDA1AF2A2C6E64B4008A1312 /* MapFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF292C6E64AF008A1312 /* MapFeature.swift */; };
+		FDACBE5B2C73A18E00E94981 /* RecordTimerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACBE5A2C73A18500E94981 /* RecordTimerFeature.swift */; };
+		FDACBE5D2C73A61200E94981 /* TimerRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACBE5C2C73A61200E94981 /* TimerRecordView.swift */; };
 		FDC09D352C18327B00D5CF5C /* TermsAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D342C18327B00D5CF5C /* TermsAgreementView.swift */; };
 		FDC09D372C18522E00D5CF5C /* TermsAgreementFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D362C18522E00D5CF5C /* TermsAgreementFeature.swift */; };
 		FDC09D392C18644000D5CF5C /* SelectProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D382C18644000D5CF5C /* SelectProfileImageView.swift */; };
@@ -254,6 +256,8 @@
 		FDA1AF242C6CD6AB008A1312 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FDA1AF262C6D0B3A008A1312 /* SCMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMapMarker.swift; sourceTree = "<group>"; };
 		FDA1AF292C6E64AF008A1312 /* MapFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFeature.swift; sourceTree = "<group>"; };
+		FDACBE5A2C73A18500E94981 /* RecordTimerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTimerFeature.swift; sourceTree = "<group>"; };
+		FDACBE5C2C73A61200E94981 /* TimerRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRecordView.swift; sourceTree = "<group>"; };
 		FDC09D342C18327B00D5CF5C /* TermsAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAgreementView.swift; sourceTree = "<group>"; };
 		FDC09D362C18522E00D5CF5C /* TermsAgreementFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAgreementFeature.swift; sourceTree = "<group>"; };
 		FDC09D382C18644000D5CF5C /* SelectProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfileImageView.swift; sourceTree = "<group>"; };
@@ -959,6 +963,7 @@
 				FD1C54412C40465E00419364 /* TodayWorkOut */,
 				FD1C543E2C40392600419364 /* Camera */,
 				FDFD3CFC2BD85BAF00629B8C /* RecordMainView.swift */,
+				FDACBE5C2C73A61200E94981 /* TimerRecordView.swift */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -974,6 +979,7 @@
 		FDFD3D032BD85E5C00629B8C /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				FDACBE5A2C73A18500E94981 /* RecordTimerFeature.swift */,
 				FDA1AF292C6E64AF008A1312 /* MapFeature.swift */,
 				FDFD3D042BD85E6800629B8C /* RecordMainFeature.swift */,
 				FD584E422C4285AC00E81E07 /* CameraFeature.swift */,
@@ -1156,6 +1162,7 @@
 				FD9E070F2BCB58BC000109FD /* SCLineTabBar.swift in Sources */,
 				FD10EB1C2C30228A00C289DB /* SelectGenderView.swift in Sources */,
 				FDFAA42D2BCE05BF0053CD9F /* SCLineProgress.swift in Sources */,
+				FDACBE5B2C73A18E00E94981 /* RecordTimerFeature.swift in Sources */,
 				FD38E9952BD53D8F00D3BDB7 /* SignOutDialog.swift in Sources */,
 				FDEDB95C2BFBE2600040E313 /* AuthFeature.swift in Sources */,
 				FD208FC02BB9AF3500DD4D3B /* SCIcon.swift in Sources */,
@@ -1253,6 +1260,7 @@
 				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
 				FD9A17D32C04B6C400E6496C /* SCLineTabProtocol.swift in Sources */,
 				FD0C65242C0A499F0054D9F4 /* ImageAssetProtocol.swift in Sources */,
+				FDACBE5D2C73A61200E94981 /* TimerRecordView.swift in Sources */,
 				FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */,
 				FDFD3D052BD85E6800629B8C /* RecordMainFeature.swift in Sources */,
 				FD0C65222C0A3FE50054D9F4 /* OnBoardingPage.swift in Sources */,
