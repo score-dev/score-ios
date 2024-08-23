@@ -15,7 +15,10 @@ struct ScoreApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                TabRouteView(store: .init(initialState: .init(),
+                                          reducer: { SCTabBarFeature() }))
+            }
         }
     }
 }

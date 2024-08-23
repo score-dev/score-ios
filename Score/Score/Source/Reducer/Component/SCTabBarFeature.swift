@@ -67,16 +67,16 @@ struct SCTabBarFeature {
     @Reducer
     struct Destination {
         enum State: Equatable {
-            case record(RecordMainFeature.State)
+            case record(RecordTimerFeature.State)
         }
         
         enum Action {
-            case record(RecordMainFeature.Action)
+            case record(RecordTimerFeature.Action)
         }
         
         var body: some ReducerOf<Self> {
             Scope(state: \.record, action: \.record) {
-                RecordMainFeature()
+                RecordTimerFeature()
             }
         }
     }

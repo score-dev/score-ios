@@ -43,7 +43,9 @@ struct TabRouteView: View {
                 state: \.$destination.record,
                 action: \.destination.record)
         ) { store in
-            RecordMainView(store: store)
+            NavigationStack {
+                TimerRecordView(store: store)
+            }
         }
     }
 }

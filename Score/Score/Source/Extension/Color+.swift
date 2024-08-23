@@ -44,6 +44,8 @@ extension Color {
         case lightYellow = 0xFFFAE4
         case lightGray = 0xF9F9F9
         case lightBlue = 0xEDF8FF
+        
+        case trackRed = 0xDD5543
     }
     
     //MARK: - init

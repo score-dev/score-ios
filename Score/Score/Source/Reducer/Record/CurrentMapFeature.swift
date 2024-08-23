@@ -10,22 +10,25 @@ import ComposableArchitecture
 import NMapsMap
 
 @Reducer
-struct MapFeature {
+struct CurrentMapFeature {
     struct State: Equatable {
-        var locations: [NMGLatLng] = []
+        let locationManager: LocationManager
+        
     }
     
     enum Action {
-        case updatingLocations(locations: [CLLocation])
+        case viewAppearing
+        case setUpMapMarkers
     }
-    
-    
     
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
-            case .updatingLocations(let locations):
-                state.locations += locations.map{ .init(lat: $0.coordinate.latitude, lng: $0.coordinate.longitude)}
+            case .viewAppearing:
+                // setUp view
+                return .none
+                
+            case .setUpMapMarkers:
                 return .none
             }
         }

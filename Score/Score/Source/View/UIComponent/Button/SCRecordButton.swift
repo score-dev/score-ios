@@ -26,7 +26,7 @@ struct SCRecordButton: View {
     
     @ViewBuilder
     func labelBuilder() -> some View {
-        if isRecording {
+        if !isRecording {
             SCRecordTriangle(cornerRadius: 1)
                 .foregroundStyle(Color.white)
                 .frame(width: 21, height: 35)
