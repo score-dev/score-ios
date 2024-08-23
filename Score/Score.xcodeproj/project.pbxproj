@@ -405,8 +405,9 @@
 		FD13D4962BAB56A00016F0A0 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				FD9DDAE22C78E2D800F82A8F /* Grid */,
+				FD9DDAE12C78E20E00F82A8F /* Photo */,
 				FD1C54442C40527F00419364 /* Text */,
-				FD3428F32BDC04290021E542 /* Image */,
 				FDFAA42B2BCE05720053CD9F /* Progress */,
 				FD9E070B2BCB4E53000109FD /* Navigation */,
 				FDE9EA202BBDCA01007AA4D7 /* PopUp */,
@@ -472,13 +473,6 @@
 				FDFAA43A2BCE6F240053CD9F /* Contexts.swift */,
 			);
 			path = Constant;
-			sourceTree = "<group>";
-		};
-		FD3428F32BDC04290021E542 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Image;
 			sourceTree = "<group>";
 		};
 		FD38E99A2BD5C43000D3BDB7 /* Policy */ = {
@@ -781,6 +775,22 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
+		FD9DDAE12C78E20E00F82A8F /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E07072BCB0913000109FD /* PhotoPickerView.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		FD9DDAE22C78E2D800F82A8F /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				FD2E8CE82BDA6763001957F3 /* FeedGridView.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
 		FD9E06FD2BC97DE1000109FD /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -789,7 +799,6 @@
 				FD8FC3B32BC834E400B80B3D /* Calendar */,
 				FDFAA4312BCE1C4D0053CD9F /* Profile */,
 				FDFAA4302BCE1C400053CD9F /* Setting */,
-				FD2E8CE82BDA6763001957F3 /* FeedGridView.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -926,7 +935,6 @@
 			isa = PBXGroup;
 			children = (
 				FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */,
-				FD9E07072BCB0913000109FD /* PhotoPickerView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
