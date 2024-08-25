@@ -10,24 +10,19 @@ import SwiftUI
 //MARK: - SCIconButton
 
 struct SCIconButton: View {
-    private let iconSize = Constants.Layout.iconSize.rawValue
     let imageName: Constants.ImageName
     let color: Color
+    private let size: CGFloat
     let action: () -> (Void)
     
     init(imageName: Constants.ImageName,
-         color: Color,
+         color: Color = .brandColor(color: .icon),
+         size: CGFloat = Constants.Layout.iconSize.rawValue,
          action: @escaping () -> Void) {
         self.imageName = imageName
-        self.action = action
         self.color = color
-    }
-    
-    init(imageName: Constants.ImageName,
-         action: @escaping () -> Void) {
-        self.imageName = imageName
+        self.size = size
         self.action = action
-        self.color = .brandColor(color: .icon)
     }
     
     var body: some View {
@@ -36,11 +31,9 @@ struct SCIconButton: View {
                 .resizable()
                 .renderingMode(.template)
                 .foregroundStyle(color)
-                .frame(width: iconSize,
-                       height: iconSize)
+                .rectFrame(size: size)
         }
-        .frame(width: iconSize,
-               height: iconSize)
+        .rectFrame(size: size)
     }
 }
 
