@@ -31,6 +31,7 @@ enum Constants {
         case user
         case home
         case setting
+        case dots
         
         // Auth center Icon
         case kakao
