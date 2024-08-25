@@ -120,6 +120,10 @@ extension View {
                                 Color.brandColor(color: .gray1,
                                                  alpha: 0.5)
                             )
+                            .onTapGesture {
+                                isPresented.wrappedValue = false
+                            }
+                        
                         SCPopUp(style: style) {
                             content()
                         }
