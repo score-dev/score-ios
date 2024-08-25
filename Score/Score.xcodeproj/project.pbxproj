@@ -96,6 +96,9 @@
 		FD9DDAE52C78E3AD00F82A8F /* AddNewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAE42C78E3AD00F82A8F /* AddNewGroupView.swift */; };
 		FD9DDAE72C78F13E00F82A8F /* AddNewGroupFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAE62C78F13D00F82A8F /* AddNewGroupFeature.swift */; };
 		FD9DDAE92C7A31F800F82A8F /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAE82C7A31F500F82A8F /* String+.swift */; };
+		FD9DDAEB2C7A3EFC00F82A8F /* RecordTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAEA2C7A3EFC00F82A8F /* RecordTrackView.swift */; };
+		FD9DDAED2C7A5A0500F82A8F /* DetailFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAEC2C7A5A0500F82A8F /* DetailFeedView.swift */; };
+		FD9DDAEF2C7B986200F82A8F /* FeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAEE2C7B986200F82A8F /* FeedListView.swift */; };
 		FD9E06FC2BC97D29000109FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E06FB2BC97D29000109FD /* User.swift */; };
 		FD9E06FF2BC97DF6000109FD /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */; };
 		FD9E07012BC97F20000109FD /* ProfileEditFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */; };
@@ -250,6 +253,9 @@
 		FD9DDAE42C78E3AD00F82A8F /* AddNewGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGroupView.swift; sourceTree = "<group>"; };
 		FD9DDAE62C78F13D00F82A8F /* AddNewGroupFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGroupFeature.swift; sourceTree = "<group>"; };
 		FD9DDAE82C7A31F500F82A8F /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		FD9DDAEA2C7A3EFC00F82A8F /* RecordTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTrackView.swift; sourceTree = "<group>"; };
+		FD9DDAEC2C7A5A0500F82A8F /* DetailFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFeedView.swift; sourceTree = "<group>"; };
+		FD9DDAEE2C7B986200F82A8F /* FeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListView.swift; sourceTree = "<group>"; };
 		FD9E06FB2BC97D29000109FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
 		FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditFeature.swift; sourceTree = "<group>"; };
@@ -969,6 +975,9 @@
 			children = (
 				FDFD3CFA2BD85B9F00629B8C /* SchoolGroupMainView.swift */,
 				FD9DDAE42C78E3AD00F82A8F /* AddNewGroupView.swift */,
+				FD9DDAEA2C7A3EFC00F82A8F /* RecordTrackView.swift */,
+				FD9DDAEC2C7A5A0500F82A8F /* DetailFeedView.swift */,
+				FD9DDAEE2C7B986200F82A8F /* FeedListView.swift */,
 			);
 			path = SchoolGroup;
 			sourceTree = "<group>";
@@ -1166,9 +1175,11 @@
 				FDE5C8C52C11F31D0021C8E3 /* TypeUserInfoMainView.swift in Sources */,
 				FD995E6D2C3AE1A200376823 /* SelectSchoolNameSheet.swift in Sources */,
 				FDEDB95E2BFBE97B0040E313 /* SCLoading.swift in Sources */,
+				FD9DDAEF2C7B986200F82A8F /* FeedListView.swift in Sources */,
 				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
 				FD9DDAE52C78E3AD00F82A8F /* AddNewGroupView.swift in Sources */,
 				FDEDB96C2BFCA6F70040E313 /* SCError.swift in Sources */,
+				FD9DDAEB2C7A3EFC00F82A8F /* RecordTrackView.swift in Sources */,
 				FD2E8CDF2BD9321E001957F3 /* MyPageMainFeature.swift in Sources */,
 				FD10EB222C3059AD00C289DB /* SelectWorkOutTimeView.swift in Sources */,
 				FDFAA43D2BCE72FB0053CD9F /* PrivacyPolicyView.swift in Sources */,
@@ -1189,6 +1200,7 @@
 				FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */,
 				FD3428F72BDC13A60021E542 /* FeedMainFeature.swift in Sources */,
 				FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */,
+				FD9DDAED2C7A5A0500F82A8F /* DetailFeedView.swift in Sources */,
 				FD8B63A62BD21802000500BF /* ContactFeature.swift in Sources */,
 				FD8FC3B52BC834F300B80B3D /* CalendarView.swift in Sources */,
 				FD9DDAE92C7A31F800F82A8F /* String+.swift in Sources */,
