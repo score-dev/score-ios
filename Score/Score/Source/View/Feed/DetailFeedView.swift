@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct DetailFeedView: View {
+    @State var isPresentFeedSettingDialog: Bool = false
     @State var isPresentEmojiSection: Bool = false
     @State var selectedEmoji: String?
-    @State var isPresentedPopUp: Bool = false
     private let emojis: [String] = ["❤️", "👍", "🎉", "🙌"]
     
     var body: some View {
@@ -37,7 +37,7 @@ struct DetailFeedView: View {
                 
                 SCIconButton(imageName: .dots, size: 18) {
                     // to appear setting
-                    isPresentedPopUp = true
+                    isPresentFeedSettingDialog = true
                 }
             }
             .padding(.vertical, 13)
@@ -55,7 +55,20 @@ struct DetailFeedView: View {
                 feedInfoSectionBuilder()
             }
         }
-        // confirmDialog
+        .confirmationDialog(
+            Text("피드를 신고하시겠습니까?"),
+            isPresented: $isPresentFeedSettingDialog,
+            titleVisibility: .hidden
+        ) {
+            // 내 피드가 아닌 경우
+            Button(role: .destructive) {
+                
+            } label: {
+                Text("피드 신고하기")
+            }
+            
+            // 내 피드인 경우 
+        }
         .onTapGesture {
             isPresentEmojiSection = false
         }
@@ -76,6 +89,10 @@ struct DetailFeedView: View {
                     )
                     .clipShape(Circle())
             }
+            .onLongPressGesture(minimumDuration: 0.5) {
+                // modal sheet
+                print("modal")
+            }
             
             Spacer()
         }
@@ -83,7 +100,7 @@ struct DetailFeedView: View {
         .overlay(alignment: .topLeading) {
             if isPresentEmojiSection {
                 emotionButtonSectionBuilder()
-                    .offset(x: 20,y: -55)
+                    .offset(x: 20, y: -55)
             }
         }
     }
