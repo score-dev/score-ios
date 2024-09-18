@@ -94,7 +94,7 @@ struct SCButtonViewModifier: ViewModifier {
                 .foregroundStyle(Color.brandColor(color: .text2))
                 .padding(.vertical, 19)
                 .padding(.horizontal, 38)
-                .background(Color.brandColor(color: .gray3),
+                .background(Color.brandColor(color: .gray2),
                             in: RoundedRectangle(cornerRadius: 15))
         case .black:
             content
