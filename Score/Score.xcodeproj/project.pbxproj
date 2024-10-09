@@ -93,6 +93,13 @@
 		FD995E6D2C3AE1A200376823 /* SelectSchoolNameSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD995E6C2C3AE1A200376823 /* SelectSchoolNameSheet.swift */; };
 		FD9A17D32C04B6C400E6496C /* SCLineTabProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9A17D22C04B6C400E6496C /* SCLineTabProtocol.swift */; };
 		FD9A6A232BF643530067C96F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9A6A222BF643530067C96F /* SignInView.swift */; };
+		FD9DDAE52C78E3AD00F82A8F /* AddNewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAE42C78E3AD00F82A8F /* AddNewGroupView.swift */; };
+		FD9DDAE72C78F13E00F82A8F /* AddNewGroupFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAE62C78F13D00F82A8F /* AddNewGroupFeature.swift */; };
+		FD9DDAE92C7A31F800F82A8F /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAE82C7A31F500F82A8F /* String+.swift */; };
+		FD9DDAEB2C7A3EFC00F82A8F /* RecordTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAEA2C7A3EFC00F82A8F /* RecordTrackView.swift */; };
+		FD9DDAED2C7A5A0500F82A8F /* DetailFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAEC2C7A5A0500F82A8F /* DetailFeedView.swift */; };
+		FD9DDAEF2C7B986200F82A8F /* FeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAEE2C7B986200F82A8F /* FeedListView.swift */; };
+		FD9DDAF12C7BA72B00F82A8F /* FeedReportReasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DDAF02C7BA71400F82A8F /* FeedReportReasonView.swift */; };
 		FD9E06FC2BC97D29000109FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E06FB2BC97D29000109FD /* User.swift */; };
 		FD9E06FF2BC97DF6000109FD /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */; };
 		FD9E07012BC97F20000109FD /* ProfileEditFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */; };
@@ -244,6 +251,13 @@
 		FD995E6C2C3AE1A200376823 /* SelectSchoolNameSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSchoolNameSheet.swift; sourceTree = "<group>"; };
 		FD9A17D22C04B6C400E6496C /* SCLineTabProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLineTabProtocol.swift; sourceTree = "<group>"; };
 		FD9A6A222BF643530067C96F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		FD9DDAE42C78E3AD00F82A8F /* AddNewGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGroupView.swift; sourceTree = "<group>"; };
+		FD9DDAE62C78F13D00F82A8F /* AddNewGroupFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGroupFeature.swift; sourceTree = "<group>"; };
+		FD9DDAE82C7A31F500F82A8F /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		FD9DDAEA2C7A3EFC00F82A8F /* RecordTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTrackView.swift; sourceTree = "<group>"; };
+		FD9DDAEC2C7A5A0500F82A8F /* DetailFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFeedView.swift; sourceTree = "<group>"; };
+		FD9DDAEE2C7B986200F82A8F /* FeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListView.swift; sourceTree = "<group>"; };
+		FD9DDAF02C7BA71400F82A8F /* FeedReportReasonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedReportReasonView.swift; sourceTree = "<group>"; };
 		FD9E06FB2BC97D29000109FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
 		FD9E07002BC97F20000109FD /* ProfileEditFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditFeature.swift; sourceTree = "<group>"; };
@@ -383,6 +397,7 @@
 		FD0C397B2BA9E47400CC05AA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FD9DDAE82C7A31F500F82A8F /* String+.swift */,
 				FD3428F42BDC04360021E542 /* Image+.swift */,
 				FD0C39792BA9DA4A00CC05AA /* Font+.swift */,
 				FD0C397C2BA9E48400CC05AA /* Color+.swift */,
@@ -405,8 +420,9 @@
 		FD13D4962BAB56A00016F0A0 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				FD9DDAE22C78E2D800F82A8F /* Grid */,
+				FD9DDAE12C78E20E00F82A8F /* Photo */,
 				FD1C54442C40527F00419364 /* Text */,
-				FD3428F32BDC04290021E542 /* Image */,
 				FDFAA42B2BCE05720053CD9F /* Progress */,
 				FD9E070B2BCB4E53000109FD /* Navigation */,
 				FDE9EA202BBDCA01007AA4D7 /* PopUp */,
@@ -472,13 +488,6 @@
 				FDFAA43A2BCE6F240053CD9F /* Contexts.swift */,
 			);
 			path = Constant;
-			sourceTree = "<group>";
-		};
-		FD3428F32BDC04290021E542 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Image;
 			sourceTree = "<group>";
 		};
 		FD38E99A2BD5C43000D3BDB7 /* Policy */ = {
@@ -781,6 +790,32 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
+		FD9DDAE12C78E20E00F82A8F /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E07072BCB0913000109FD /* PhotoPickerView.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		FD9DDAE22C78E2D800F82A8F /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				FD2E8CE82BDA6763001957F3 /* FeedGridView.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		FD9DDAF22C7BABD900F82A8F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FD9DDAEC2C7A5A0500F82A8F /* DetailFeedView.swift */,
+				FD9DDAEE2C7B986200F82A8F /* FeedListView.swift */,
+				FD9DDAF02C7BA71400F82A8F /* FeedReportReasonView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		FD9E06FD2BC97DE1000109FD /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -789,7 +824,6 @@
 				FD8FC3B32BC834E400B80B3D /* Calendar */,
 				FDFAA4312BCE1C4D0053CD9F /* Profile */,
 				FDFAA4302BCE1C400053CD9F /* Setting */,
-				FD2E8CE82BDA6763001957F3 /* FeedGridView.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -859,6 +893,7 @@
 			children = (
 				FDFD3CFE2BD85C5600629B8C /* TabRouteView.swift */,
 				FD0C39692BA9914B00CC05AA /* ContentView.swift */,
+				FD9DDAF22C7BABD900F82A8F /* Feed */,
 				FD9A6A1D2BF642AD0067C96F /* OnBoarding */,
 				FD9A6A1B2BF642920067C96F /* Auth */,
 				FDFD3CF52BD85B5E00629B8C /* Home */,
@@ -926,7 +961,6 @@
 			isa = PBXGroup;
 			children = (
 				FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */,
-				FD9E07072BCB0913000109FD /* PhotoPickerView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -953,6 +987,8 @@
 			isa = PBXGroup;
 			children = (
 				FDFD3CFA2BD85B9F00629B8C /* SchoolGroupMainView.swift */,
+				FD9DDAE42C78E3AD00F82A8F /* AddNewGroupView.swift */,
+				FD9DDAEA2C7A3EFC00F82A8F /* RecordTrackView.swift */,
 			);
 			path = SchoolGroup;
 			sourceTree = "<group>";
@@ -992,6 +1028,7 @@
 		FDFD3D062BD85E7C00629B8C /* SchoolGroup */ = {
 			isa = PBXGroup;
 			children = (
+				FD9DDAE62C78F13D00F82A8F /* AddNewGroupFeature.swift */,
 				FDFD3D072BD85E8900629B8C /* SchoolGroupMainFeature.swift */,
 			);
 			path = SchoolGroup;
@@ -1149,8 +1186,11 @@
 				FDE5C8C52C11F31D0021C8E3 /* TypeUserInfoMainView.swift in Sources */,
 				FD995E6D2C3AE1A200376823 /* SelectSchoolNameSheet.swift in Sources */,
 				FDEDB95E2BFBE97B0040E313 /* SCLoading.swift in Sources */,
+				FD9DDAEF2C7B986200F82A8F /* FeedListView.swift in Sources */,
 				FD13D49A2BAB62370016F0A0 /* SCCheckBox.swift in Sources */,
+				FD9DDAE52C78E3AD00F82A8F /* AddNewGroupView.swift in Sources */,
 				FDEDB96C2BFCA6F70040E313 /* SCError.swift in Sources */,
+				FD9DDAEB2C7A3EFC00F82A8F /* RecordTrackView.swift in Sources */,
 				FD2E8CDF2BD9321E001957F3 /* MyPageMainFeature.swift in Sources */,
 				FD10EB222C3059AD00C289DB /* SelectWorkOutTimeView.swift in Sources */,
 				FDFAA43D2BCE72FB0053CD9F /* PrivacyPolicyView.swift in Sources */,
@@ -1171,8 +1211,10 @@
 				FD208FC92BB9EAEF00DD4D3B /* SCProgressCard.swift in Sources */,
 				FD3428F72BDC13A60021E542 /* FeedMainFeature.swift in Sources */,
 				FD0C397D2BA9E48400CC05AA /* Color+.swift in Sources */,
+				FD9DDAED2C7A5A0500F82A8F /* DetailFeedView.swift in Sources */,
 				FD8B63A62BD21802000500BF /* ContactFeature.swift in Sources */,
 				FD8FC3B52BC834F300B80B3D /* CalendarView.swift in Sources */,
+				FD9DDAE92C7A31F800F82A8F /* String+.swift in Sources */,
 				FD8FC3BB2BC8470700B80B3D /* Month.swift in Sources */,
 				FD3428F52BDC04360021E542 /* Image+.swift in Sources */,
 				FD10EB1E2C30436700C289DB /* TypeSchoolInfoView.swift in Sources */,
@@ -1214,6 +1256,7 @@
 				FDC09D372C18522E00D5CF5C /* TermsAgreementFeature.swift in Sources */,
 				FD38E9932BD53D0900D3BDB7 /* SignOutFeature.swift in Sources */,
 				FD408A9F2C11CFEB00DD8EAF /* TypeNickNameView.swift in Sources */,
+				FD9DDAF12C7BA72B00F82A8F /* FeedReportReasonView.swift in Sources */,
 				FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */,
 				FD4A3B452BBAF0D100D2DFFA /* SCCapsuleButton.swift in Sources */,
 				FDEDB96A2BFCA6D70040E313 /* SCErrorProtocol.swift in Sources */,
@@ -1243,6 +1286,7 @@
 				FDA1AF252C6CD6AB008A1312 /* LocationManager.swift in Sources */,
 				FD1C54402C40393800419364 /* CameraView.swift in Sources */,
 				FDEDB9642BFC17DC0040E313 /* AuthToken.swift in Sources */,
+				FD9DDAE72C78F13E00F82A8F /* AddNewGroupFeature.swift in Sources */,
 				FD38E98E2BD5297E00D3BDB7 /* PolicyView.swift in Sources */,
 				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
 				FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */,

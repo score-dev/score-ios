@@ -14,6 +14,7 @@ struct SCRadioButton: View {
     
     var body: some View {
         Button {
+            guard !isOn else { return }
             isOn.toggle()
         } label: {
             labelBuilder()
