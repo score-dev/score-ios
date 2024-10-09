@@ -78,7 +78,6 @@
 		FD8B63A32BD201CC000500BF /* UnregisterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B63A22BD201CC000500BF /* UnregisterFeature.swift */; };
 		FD8B63A62BD21802000500BF /* ContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B63A52BD21802000500BF /* ContactFeature.swift */; };
 		FD8D001C2C6BB391001C126B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8D001B2C6BB391001C126B /* MapView.swift */; };
-		FD8D1C012C09C91700B87C43 /* GoogleAuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8D1C002C09C91700B87C43 /* GoogleAuthStore.swift */; };
 		FD8D1C042C09C92600B87C43 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FD8D1C032C09C92600B87C43 /* GoogleSignIn */; };
 		FD8D1C062C09C92600B87C43 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FD8D1C052C09C92600B87C43 /* GoogleSignInSwift */; };
 		FD8D1C0A2C09C9A300B87C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8D1C092C09C9A300B87C43 /* AppDelegate.swift */; };
@@ -119,7 +118,6 @@
 		FDC09D392C18644000D5CF5C /* SelectProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D382C18644000D5CF5C /* SelectProfileImageView.swift */; };
 		FDC18D392BC6D92A00A86D41 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */; };
 		FDCE428D2C039BC30025FF93 /* AppleAuthFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCE428C2C039BC30025FF93 /* AppleAuthFeature.swift */; };
-		FDE3AF4F2BFF910700ADEFF8 /* AppleAuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3AF4E2BFF910700ADEFF8 /* AppleAuthStore.swift */; };
 		FDE5C8C32C11F2550021C8E3 /* TypeNickNameFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5C8C22C11F2550021C8E3 /* TypeNickNameFeature.swift */; };
 		FDE5C8C52C11F31D0021C8E3 /* TypeUserInfoMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5C8C42C11F31D0021C8E3 /* TypeUserInfoMainView.swift */; };
 		FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE62A0F2BAD959A00DFDA5C /* SCLabel.swift */; };
@@ -136,8 +134,6 @@
 		FDEDB95E2BFBE97B0040E313 /* SCLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB95D2BFBE97B0040E313 /* SCLoading.swift */; };
 		FDEDB9622BFC17140040E313 /* AuthCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9612BFC17140040E313 /* AuthCenter.swift */; };
 		FDEDB9642BFC17DC0040E313 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9632BFC17DC0040E313 /* AuthToken.swift */; };
-		FDEDB9662BFC188D0040E313 /* KeyChainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9652BFC188D0040E313 /* KeyChainStore.swift */; };
-		FDEDB9682BFC86C70040E313 /* KakaoLoginStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9672BFC86C70040E313 /* KakaoLoginStore.swift */; };
 		FDEDB96A2BFCA6D70040E313 /* SCErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB9692BFCA6D70040E313 /* SCErrorProtocol.swift */; };
 		FDEDB96C2BFCA6F70040E313 /* SCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDB96B2BFCA6F70040E313 /* SCError.swift */; };
 		FDFAA42D2BCE05BF0053CD9F /* SCLineProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAA42C2BCE05BF0053CD9F /* SCLineProgress.swift */; };
@@ -150,6 +146,10 @@
 		FDFAA43D2BCE72FB0053CD9F /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAA43C2BCE72FA0053CD9F /* PrivacyPolicyView.swift */; };
 		FDFAA4402BCE7B5F0053CD9F /* ServicePolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAA43F2BCE7B5F0053CD9F /* ServicePolicyView.swift */; };
 		FDFAA4422BCE7C7D0053CD9F /* UnregisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAA4412BCE7C7D0053CD9F /* UnregisterView.swift */; };
+		FDFCA5192CB6CDCB006E4D53 /* AppleAuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5132CB6CDCB006E4D53 /* AppleAuthStore.swift */; };
+		FDFCA51A2CB6CDCB006E4D53 /* GoogleAuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5142CB6CDCB006E4D53 /* GoogleAuthStore.swift */; };
+		FDFCA51B2CB6CDCB006E4D53 /* KakaoLoginStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5152CB6CDCB006E4D53 /* KakaoLoginStore.swift */; };
+		FDFCA51C2CB6CDCB006E4D53 /* KeyChainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5162CB6CDCB006E4D53 /* KeyChainStore.swift */; };
 		FDFD3CF42BD8547900629B8C /* SCTabBarFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3CF32BD8547900629B8C /* SCTabBarFeature.swift */; };
 		FDFD3CF92BD85B8800629B8C /* HomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3CF82BD85B8800629B8C /* HomeMainView.swift */; };
 		FDFD3CFB2BD85B9F00629B8C /* SchoolGroupMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3CFA2BD85B9F00629B8C /* SchoolGroupMainView.swift */; };
@@ -238,7 +238,6 @@
 		FD8B63A22BD201CC000500BF /* UnregisterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnregisterFeature.swift; sourceTree = "<group>"; };
 		FD8B63A52BD21802000500BF /* ContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFeature.swift; sourceTree = "<group>"; };
 		FD8D001B2C6BB391001C126B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		FD8D1C002C09C91700B87C43 /* GoogleAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthStore.swift; sourceTree = "<group>"; };
 		FD8D1C092C09C9A300B87C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD8FC3AF2BC8251700B80B3D /* CalendarFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarFeature.swift; sourceTree = "<group>"; };
 		FD8FC3B12BC826F600B80B3D /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
@@ -277,7 +276,6 @@
 		FDC09D382C18644000D5CF5C /* SelectProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfileImageView.swift; sourceTree = "<group>"; };
 		FDC18D382BC6D86500A86D41 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		FDCE428C2C039BC30025FF93 /* AppleAuthFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthFeature.swift; sourceTree = "<group>"; };
-		FDE3AF4E2BFF910700ADEFF8 /* AppleAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthStore.swift; sourceTree = "<group>"; };
 		FDE3AF502BFF93D000ADEFF8 /* Score.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Score.entitlements; sourceTree = "<group>"; };
 		FDE5C8C22C11F2550021C8E3 /* TypeNickNameFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeNickNameFeature.swift; sourceTree = "<group>"; };
 		FDE5C8C42C11F31D0021C8E3 /* TypeUserInfoMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeUserInfoMainView.swift; sourceTree = "<group>"; };
@@ -291,8 +289,6 @@
 		FDEDB95D2BFBE97B0040E313 /* SCLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLoading.swift; sourceTree = "<group>"; };
 		FDEDB9612BFC17140040E313 /* AuthCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCenter.swift; sourceTree = "<group>"; };
 		FDEDB9632BFC17DC0040E313 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
-		FDEDB9652BFC188D0040E313 /* KeyChainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainStore.swift; sourceTree = "<group>"; };
-		FDEDB9672BFC86C70040E313 /* KakaoLoginStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginStore.swift; sourceTree = "<group>"; };
 		FDEDB9692BFCA6D70040E313 /* SCErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCErrorProtocol.swift; sourceTree = "<group>"; };
 		FDEDB96B2BFCA6F70040E313 /* SCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCError.swift; sourceTree = "<group>"; };
 		FDFAA42C2BCE05BF0053CD9F /* SCLineProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLineProgress.swift; sourceTree = "<group>"; };
@@ -305,6 +301,10 @@
 		FDFAA43C2BCE72FA0053CD9F /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		FDFAA43F2BCE7B5F0053CD9F /* ServicePolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePolicyView.swift; sourceTree = "<group>"; };
 		FDFAA4412BCE7C7D0053CD9F /* UnregisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnregisterView.swift; sourceTree = "<group>"; };
+		FDFCA5132CB6CDCB006E4D53 /* AppleAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthStore.swift; sourceTree = "<group>"; };
+		FDFCA5142CB6CDCB006E4D53 /* GoogleAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthStore.swift; sourceTree = "<group>"; };
+		FDFCA5152CB6CDCB006E4D53 /* KakaoLoginStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginStore.swift; sourceTree = "<group>"; };
+		FDFCA5162CB6CDCB006E4D53 /* KeyChainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainStore.swift; sourceTree = "<group>"; };
 		FDFD3CF32BD8547900629B8C /* SCTabBarFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabBarFeature.swift; sourceTree = "<group>"; };
 		FDFD3CF82BD85B8800629B8C /* HomeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainView.swift; sourceTree = "<group>"; };
 		FDFD3CFA2BD85B9F00629B8C /* SchoolGroupMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolGroupMainView.swift; sourceTree = "<group>"; };
@@ -752,17 +752,6 @@
 			path = TypeSchoolInfo;
 			sourceTree = "<group>";
 		};
-		FD9A17D42C04B75400E6496C /* Singleton */ = {
-			isa = PBXGroup;
-			children = (
-				FDE3AF4E2BFF910700ADEFF8 /* AppleAuthStore.swift */,
-				FDEDB9672BFC86C70040E313 /* KakaoLoginStore.swift */,
-				FDEDB9652BFC188D0040E313 /* KeyChainStore.swift */,
-				FD8D1C002C09C91700B87C43 /* GoogleAuthStore.swift */,
-			);
-			path = Singleton;
-			sourceTree = "<group>";
-		};
 		FD9A6A1B2BF642920067C96F /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -854,9 +843,8 @@
 		FDC7754A2C1F2A4C00871A81 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				FD0C652D2C0B1EA60054D9F4 /* SplashView.storyboard */,
-				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
-				FD8D1C092C09C9A300B87C43 /* AppDelegate.swift */,
+				FDFCA51D2CB6CDD7006E4D53 /* App */,
+				FDFCA5182CB6CDCB006E4D53 /* Util */,
 				FDE9EA282BBED5A7007AA4D7 /* View */,
 				FDEDB9482BFBBA550040E313 /* Protocol */,
 				FD8FC3BC2BC86E8C00B80B3D /* Model */,
@@ -921,7 +909,6 @@
 		FDEDB9562BFBCFD30040E313 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				FD9A17D42C04B75400E6496C /* Singleton */,
 				FDEDB95B2BFBE2600040E313 /* AuthFeature.swift */,
 				FDCE428C2C039BC30025FF93 /* AppleAuthFeature.swift */,
 				FD408AA02C11D12200DD8EAF /* TypeUserInfoFeature.swift */,
@@ -963,6 +950,35 @@
 				FD9E06FE2BC97DF6000109FD /* ProfileEditView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		FDFCA5172CB6CDCB006E4D53 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				FDFCA5132CB6CDCB006E4D53 /* AppleAuthStore.swift */,
+				FDFCA5142CB6CDCB006E4D53 /* GoogleAuthStore.swift */,
+				FDFCA5152CB6CDCB006E4D53 /* KakaoLoginStore.swift */,
+				FDFCA5162CB6CDCB006E4D53 /* KeyChainStore.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		FDFCA5182CB6CDCB006E4D53 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FDFCA5172CB6CDCB006E4D53 /* Singleton */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FDFCA51D2CB6CDD7006E4D53 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FD0C652D2C0B1EA60054D9F4 /* SplashView.storyboard */,
+				FD0C39672BA9914B00CC05AA /* ScoreApp.swift */,
+				FD8D1C092C09C9A300B87C43 /* AppDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		FDFD3CF22BD8546100629B8C /* Component */ = {
@@ -1198,7 +1214,6 @@
 				FD8B639D2BD200CD000500BF /* AlarmSettingFeature.swift in Sources */,
 				FD9E06FC2BC97D29000109FD /* User.swift in Sources */,
 				FDFAA4332BCE1C780053CD9F /* SettingMainView.swift in Sources */,
-				FDE3AF4F2BFF910700ADEFF8 /* AppleAuthStore.swift in Sources */,
 				FD9E070F2BCB58BC000109FD /* SCLineTabBar.swift in Sources */,
 				FD10EB1C2C30228A00C289DB /* SelectGenderView.swift in Sources */,
 				FDFAA42D2BCE05BF0053CD9F /* SCLineProgress.swift in Sources */,
@@ -1222,7 +1237,6 @@
 				FD8FC3B02BC8251700B80B3D /* CalendarFeature.swift in Sources */,
 				FD0C65262C0A4C670054D9F4 /* SCTabIndexIndicator.swift in Sources */,
 				FDFD3CF92BD85B8800629B8C /* HomeMainView.swift in Sources */,
-				FDEDB9662BFC188D0040E313 /* KeyChainStore.swift in Sources */,
 				FDEDB9532BFBBC710040E313 /* BundleProtocol.swift in Sources */,
 				FD0C65292C0B14A20054D9F4 /* OnBoardingFeature.swift in Sources */,
 				FD8B639B2BD1FF1E000500BF /* SettingMainFeature.swift in Sources */,
@@ -1239,7 +1253,6 @@
 				FDFD3CFB2BD85B9F00629B8C /* SchoolGroupMainView.swift in Sources */,
 				FD886A512C5D2BCF00049546 /* PhotoPreviewView.swift in Sources */,
 				FD584E432C4285AC00E81E07 /* CameraFeature.swift in Sources */,
-				FD8D1C012C09C91700B87C43 /* GoogleAuthStore.swift in Sources */,
 				FD3C6EBB2BBC79FE00B14FF9 /* SCSearchChip.swift in Sources */,
 				FD38E9992BD5A1A300D3BDB7 /* BlockUserSettingFeature.swift in Sources */,
 				FD4A3B432BBADCD400D2DFFA /* SCRecordButton.swift in Sources */,
@@ -1290,7 +1303,6 @@
 				FD38E98E2BD5297E00D3BDB7 /* PolicyView.swift in Sources */,
 				FDE62A102BAD959A00DFDA5C /* SCLabel.swift in Sources */,
 				FD3C6EBD2BBC7DE700B14FF9 /* SCTagChip.swift in Sources */,
-				FDEDB9682BFC86C70040E313 /* KakaoLoginStore.swift in Sources */,
 				FD8B63A32BD201CC000500BF /* UnregisterFeature.swift in Sources */,
 				FD886A552C5FFB7C00049546 /* GallaryDetailView.swift in Sources */,
 				FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */,
@@ -1306,6 +1318,10 @@
 				FD0C65242C0A499F0054D9F4 /* ImageAssetProtocol.swift in Sources */,
 				FDACBE5D2C73A61200E94981 /* TimerRecordView.swift in Sources */,
 				FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */,
+				FDFCA5192CB6CDCB006E4D53 /* AppleAuthStore.swift in Sources */,
+				FDFCA51A2CB6CDCB006E4D53 /* GoogleAuthStore.swift in Sources */,
+				FDFCA51B2CB6CDCB006E4D53 /* KakaoLoginStore.swift in Sources */,
+				FDFCA51C2CB6CDCB006E4D53 /* KeyChainStore.swift in Sources */,
 				FDFD3D052BD85E6800629B8C /* RecordMainFeature.swift in Sources */,
 				FD0C65222C0A3FE50054D9F4 /* OnBoardingPage.swift in Sources */,
 				FDEDB95A2BFBE22D0040E313 /* UserApi+.swift in Sources */,
