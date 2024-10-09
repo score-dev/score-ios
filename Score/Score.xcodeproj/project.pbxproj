@@ -150,6 +150,8 @@
 		FDFCA51A2CB6CDCB006E4D53 /* GoogleAuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5142CB6CDCB006E4D53 /* GoogleAuthStore.swift */; };
 		FDFCA51B2CB6CDCB006E4D53 /* KakaoLoginStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5152CB6CDCB006E4D53 /* KakaoLoginStore.swift */; };
 		FDFCA51C2CB6CDCB006E4D53 /* KeyChainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5162CB6CDCB006E4D53 /* KeyChainStore.swift */; };
+		FDFCA5202CB6CED3006E4D53 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = FDFCA51F2CB6CED3006E4D53 /* CombineMoya */; };
+		FDFCA5222CB6CED3006E4D53 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = FDFCA5212CB6CED3006E4D53 /* Moya */; };
 		FDFD3CF42BD8547900629B8C /* SCTabBarFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3CF32BD8547900629B8C /* SCTabBarFeature.swift */; };
 		FDFD3CF92BD85B8800629B8C /* HomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3CF82BD85B8800629B8C /* HomeMainView.swift */; };
 		FDFD3CFB2BD85B9F00629B8C /* SchoolGroupMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3CFA2BD85B9F00629B8C /* SchoolGroupMainView.swift */; };
@@ -322,10 +324,12 @@
 			files = (
 				FDEDB94F2BFBBBCA0040E313 /* KakaoSDKCommon in Frameworks */,
 				FDE9EA252BBED551007AA4D7 /* ComposableArchitecture in Frameworks */,
+				FDFCA5222CB6CED3006E4D53 /* Moya in Frameworks */,
 				FD8D1C062C09C92600B87C43 /* GoogleSignInSwift in Frameworks */,
 				08407A14068F2AFB170E1549 /* libPods-Score.a in Frameworks */,
 				FDEDB9512BFBBBCA0040E313 /* KakaoSDKUser in Frameworks */,
 				FDEDB94D2BFBBBCA0040E313 /* KakaoSDKAuth in Frameworks */,
+				FDFCA5202CB6CED3006E4D53 /* CombineMoya in Frameworks */,
 				FD8D1C042C09C92600B87C43 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -843,12 +847,13 @@
 		FDC7754A2C1F2A4C00871A81 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FDFCA5242CB6CF82006E4D53 /* Repository */,
 				FDFCA51D2CB6CDD7006E4D53 /* App */,
 				FDFCA5182CB6CDCB006E4D53 /* Util */,
 				FDE9EA282BBED5A7007AA4D7 /* View */,
 				FDEDB9482BFBBA550040E313 /* Protocol */,
 				FD8FC3BC2BC86E8C00B80B3D /* Model */,
-				FDE9EA262BBED595007AA4D7 /* Reducer */,
+				FDE9EA262BBED595007AA4D7 /* Feature */,
 				FD208FC12BB9B2E400DD4D3B /* Constant */,
 				FD0C397B2BA9E47400CC05AA /* Extension */,
 			);
@@ -863,7 +868,7 @@
 			path = PopUp;
 			sourceTree = "<group>";
 		};
-		FDE9EA262BBED595007AA4D7 /* Reducer */ = {
+		FDE9EA262BBED595007AA4D7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
 				FDFD3D092BD85EB000629B8C /* App */,
@@ -873,7 +878,7 @@
 				FDFD3CF22BD8546100629B8C /* Component */,
 				FD38E9AD2BD84A1500D3BDB7 /* MyPage */,
 			);
-			path = Reducer;
+			path = Feature;
 			sourceTree = "<group>";
 		};
 		FDE9EA282BBED5A7007AA4D7 /* View */ = {
@@ -981,6 +986,13 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		FDFCA5242CB6CF82006E4D53 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		FDFD3CF22BD8546100629B8C /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -1084,6 +1096,8 @@
 				FDEDB9502BFBBBCA0040E313 /* KakaoSDKUser */,
 				FD8D1C032C09C92600B87C43 /* GoogleSignIn */,
 				FD8D1C052C09C92600B87C43 /* GoogleSignInSwift */,
+				FDFCA51F2CB6CED3006E4D53 /* CombineMoya */,
+				FDFCA5212CB6CED3006E4D53 /* Moya */,
 			);
 			productName = Score;
 			productReference = FD0C39642BA9914B00CC05AA /* Score.app */;
@@ -1117,6 +1131,7 @@
 				FDE9EA232BBED551007AA4D7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				FDEDB94B2BFBBBCA0040E313 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				FD8D1C022C09C92600B87C43 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				FDFCA51E2CB6CED3006E4D53 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = FD0C39652BA9914B00CC05AA /* Products */;
 			projectDirPath = "";
@@ -1594,6 +1609,14 @@
 				minimumVersion = 2.22.2;
 			};
 		};
+		FDFCA51E2CB6CED3006E4D53 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1626,6 +1649,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FDEDB94B2BFBBBCA0040E313 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
 			productName = KakaoSDKUser;
+		};
+		FDFCA51F2CB6CED3006E4D53 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDFCA51E2CB6CED3006E4D53 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		FDFCA5212CB6CED3006E4D53 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDFCA51E2CB6CED3006E4D53 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
