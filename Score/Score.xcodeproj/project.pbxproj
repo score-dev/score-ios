@@ -152,6 +152,15 @@
 		FDFCA51C2CB6CDCB006E4D53 /* KeyChainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5162CB6CDCB006E4D53 /* KeyChainStore.swift */; };
 		FDFCA5202CB6CED3006E4D53 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = FDFCA51F2CB6CED3006E4D53 /* CombineMoya */; };
 		FDFCA5222CB6CED3006E4D53 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = FDFCA5212CB6CED3006E4D53 /* Moya */; };
+		FDFCA52A2CB6D3FB006E4D53 /* JSONCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5292CB6D3F8006E4D53 /* JSONCoder.swift */; };
+		FDFCA52E2CB6D598006E4D53 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA52D2CB6D595006E4D53 /* UserDTO.swift */; };
+		FDFCA5312CB6D69E006E4D53 /* UserTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5302CB6D69B006E4D53 /* UserTarget.swift */; };
+		FDFCA5332CB6D8A7006E4D53 /* LocalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5322CB6D8A3006E4D53 /* LocalTime.swift */; };
+		FDFCA5352CB6D8DC006E4D53 /* SchoolDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5342CB6D8D9006E4D53 /* SchoolDTO.swift */; };
+		FDFCA5372CB6D9AD006E4D53 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5362CB6D9A9006E4D53 /* Notification.swift */; };
+		FDFCA5392CB6D9BC006E4D53 /* GroupDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA5382CB6D9BA006E4D53 /* GroupDTO.swift */; };
+		FDFCA53B2CB6DC02006E4D53 /* WalkingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA53A2CB6DBFF006E4D53 /* WalkingDTO.swift */; };
+		FDFCA53D2CB6DD1B006E4D53 /* FeedDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCA53C2CB6DD19006E4D53 /* FeedDTO.swift */; };
 		FDFD3CF42BD8547900629B8C /* SCTabBarFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3CF32BD8547900629B8C /* SCTabBarFeature.swift */; };
 		FDFD3CF92BD85B8800629B8C /* HomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3CF82BD85B8800629B8C /* HomeMainView.swift */; };
 		FDFD3CFB2BD85B9F00629B8C /* SchoolGroupMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD3CFA2BD85B9F00629B8C /* SchoolGroupMainView.swift */; };
@@ -307,6 +316,15 @@
 		FDFCA5142CB6CDCB006E4D53 /* GoogleAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthStore.swift; sourceTree = "<group>"; };
 		FDFCA5152CB6CDCB006E4D53 /* KakaoLoginStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginStore.swift; sourceTree = "<group>"; };
 		FDFCA5162CB6CDCB006E4D53 /* KeyChainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainStore.swift; sourceTree = "<group>"; };
+		FDFCA5292CB6D3F8006E4D53 /* JSONCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCoder.swift; sourceTree = "<group>"; };
+		FDFCA52D2CB6D595006E4D53 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		FDFCA5302CB6D69B006E4D53 /* UserTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTarget.swift; sourceTree = "<group>"; };
+		FDFCA5322CB6D8A3006E4D53 /* LocalTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTime.swift; sourceTree = "<group>"; };
+		FDFCA5342CB6D8D9006E4D53 /* SchoolDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDTO.swift; sourceTree = "<group>"; };
+		FDFCA5362CB6D9A9006E4D53 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		FDFCA5382CB6D9BA006E4D53 /* GroupDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDTO.swift; sourceTree = "<group>"; };
+		FDFCA53A2CB6DBFF006E4D53 /* WalkingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingDTO.swift; sourceTree = "<group>"; };
+		FDFCA53C2CB6DD19006E4D53 /* FeedDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDTO.swift; sourceTree = "<group>"; };
 		FDFD3CF32BD8547900629B8C /* SCTabBarFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabBarFeature.swift; sourceTree = "<group>"; };
 		FDFD3CF82BD85B8800629B8C /* HomeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainView.swift; sourceTree = "<group>"; };
 		FDFD3CFA2BD85B9F00629B8C /* SchoolGroupMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolGroupMainView.swift; sourceTree = "<group>"; };
@@ -736,7 +754,6 @@
 		FD8FC3BC2BC86E8C00B80B3D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FDA9FDC12BFF3B1A00AC4EB7 /* DTO */,
 				FD8FC3BD2BC86EB100B80B3D /* DateComponentsWithID.swift */,
 				FD9E06FB2BC97D29000109FD /* User.swift */,
 				FDEDB9612BFC17140040E313 /* AuthCenter.swift */,
@@ -837,16 +854,10 @@
 			path = MapMarker;
 			sourceTree = "<group>";
 		};
-		FDA9FDC12BFF3B1A00AC4EB7 /* DTO */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DTO;
-			sourceTree = "<group>";
-		};
 		FDC7754A2C1F2A4C00871A81 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FDFCA52C2CB6D584006E4D53 /* Service */,
 				FDFCA5242CB6CF82006E4D53 /* Repository */,
 				FDFCA51D2CB6CDD7006E4D53 /* App */,
 				FDFCA5182CB6CDCB006E4D53 /* Util */,
@@ -971,6 +982,7 @@
 		FDFCA5182CB6CDCB006E4D53 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				FDFCA5292CB6D3F8006E4D53 /* JSONCoder.swift */,
 				FDFCA5172CB6CDCB006E4D53 /* Singleton */,
 			);
 			path = Util;
@@ -991,6 +1003,37 @@
 			children = (
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		FDFCA52B2CB6D57C006E4D53 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				FDFCA53C2CB6DD19006E4D53 /* FeedDTO.swift */,
+				FDFCA53A2CB6DBFF006E4D53 /* WalkingDTO.swift */,
+				FDFCA5382CB6D9BA006E4D53 /* GroupDTO.swift */,
+				FDFCA5362CB6D9A9006E4D53 /* Notification.swift */,
+				FDFCA5342CB6D8D9006E4D53 /* SchoolDTO.swift */,
+				FDFCA5322CB6D8A3006E4D53 /* LocalTime.swift */,
+				FDFCA52D2CB6D595006E4D53 /* UserDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		FDFCA52C2CB6D584006E4D53 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FDFCA52F2CB6D67F006E4D53 /* Target */,
+				FDFCA52B2CB6D57C006E4D53 /* DTO */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FDFCA52F2CB6D67F006E4D53 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				FDFCA5302CB6D69B006E4D53 /* UserTarget.swift */,
+			);
+			path = Target;
 			sourceTree = "<group>";
 		};
 		FDFD3CF22BD8546100629B8C /* Component */ = {
@@ -1258,13 +1301,16 @@
 				FDFD3CF42BD8547900629B8C /* SCTabBarFeature.swift in Sources */,
 				FD1C54432C40493000419364 /* TodayWorkOutRecordView.swift in Sources */,
 				FD8FC3B22BC826F600B80B3D /* Date+.swift in Sources */,
+				FDFCA52A2CB6D3FB006E4D53 /* JSONCoder.swift in Sources */,
 				FDE9EA222BBDCA10007AA4D7 /* SCPopUp.swift in Sources */,
 				FD9E07082BCB0913000109FD /* PhotoPickerView.swift in Sources */,
+				FDFCA5332CB6D8A7006E4D53 /* LocalTime.swift in Sources */,
 				FD38E99F2BD5C4FD00D3BDB7 /* BlockUserSettingView.swift in Sources */,
 				FDFAA4422BCE7C7D0053CD9F /* UnregisterView.swift in Sources */,
 				FD38E9902BD530AC00D3BDB7 /* SettingNavigationRowViewModifier.swift in Sources */,
 				FD443C212C4DEDBA00C2E62E /* PhotoLibrary.swift in Sources */,
 				FD2E8CE52BD940C2001957F3 /* SCLineTabBarFeature.swift in Sources */,
+				FDFCA53B2CB6DC02006E4D53 /* WalkingDTO.swift in Sources */,
 				FDFD3CFB2BD85B9F00629B8C /* SchoolGroupMainView.swift in Sources */,
 				FD886A512C5D2BCF00049546 /* PhotoPreviewView.swift in Sources */,
 				FD584E432C4285AC00E81E07 /* CameraFeature.swift in Sources */,
@@ -1278,8 +1324,10 @@
 				FDC09D352C18327B00D5CF5C /* TermsAgreementView.swift in Sources */,
 				FD208FBC2BB6F2A600DD4D3B /* EdgeBorder.swift in Sources */,
 				FD8B639F2BD20124000500BF /* PrivacyPolicyFeature.swift in Sources */,
+				FDFCA5352CB6D8DC006E4D53 /* SchoolDTO.swift in Sources */,
 				FDEDB94A2BFBBA6D0040E313 /* APIProtocol.swift in Sources */,
 				FDA1AF2A2C6E64B4008A1312 /* CurrentMapFeature.swift in Sources */,
+				FDFCA53D2CB6DD1B006E4D53 /* FeedDTO.swift in Sources */,
 				FDA1AF272C6D0B3A008A1312 /* SCMapMarker.swift in Sources */,
 				FDC09D372C18522E00D5CF5C /* TermsAgreementFeature.swift in Sources */,
 				FD38E9932BD53D0900D3BDB7 /* SignOutFeature.swift in Sources */,
@@ -1301,6 +1349,7 @@
 				FDE5C8C32C11F2550021C8E3 /* TypeNickNameFeature.swift in Sources */,
 				FDFD3D022BD85E2000629B8C /* HomeMainFeature.swift in Sources */,
 				FD2E8CE32BD94064001957F3 /* MyPageTabRouteView.swift in Sources */,
+				FDFCA5392CB6D9BC006E4D53 /* GroupDTO.swift in Sources */,
 				FDFAA42F2BCE0A550053CD9F /* Line.swift in Sources */,
 				FDFAA43B2BCE6F240053CD9F /* Contexts.swift in Sources */,
 				FD9E07012BC97F20000109FD /* ProfileEditFeature.swift in Sources */,
@@ -1322,6 +1371,7 @@
 				FD886A552C5FFB7C00049546 /* GallaryDetailView.swift in Sources */,
 				FD3C6EB82BBC41A000B14FF9 /* SCTabBar.swift in Sources */,
 				FDEDB9622BFC17140040E313 /* AuthCenter.swift in Sources */,
+				FDFCA5372CB6D9AD006E4D53 /* Notification.swift in Sources */,
 				FD2E8CE72BD94F37001957F3 /* SCIconButton.swift in Sources */,
 				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
 				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,
@@ -1331,12 +1381,14 @@
 				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
 				FD9A17D32C04B6C400E6496C /* SCLineTabProtocol.swift in Sources */,
 				FD0C65242C0A499F0054D9F4 /* ImageAssetProtocol.swift in Sources */,
+				FDFCA5312CB6D69E006E4D53 /* UserTarget.swift in Sources */,
 				FDACBE5D2C73A61200E94981 /* TimerRecordView.swift in Sources */,
 				FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */,
 				FDFCA5192CB6CDCB006E4D53 /* AppleAuthStore.swift in Sources */,
 				FDFCA51A2CB6CDCB006E4D53 /* GoogleAuthStore.swift in Sources */,
 				FDFCA51B2CB6CDCB006E4D53 /* KakaoLoginStore.swift in Sources */,
 				FDFCA51C2CB6CDCB006E4D53 /* KeyChainStore.swift in Sources */,
+				FDFCA52E2CB6D598006E4D53 /* UserDTO.swift in Sources */,
 				FDFD3D052BD85E6800629B8C /* RecordMainFeature.swift in Sources */,
 				FD0C65222C0A3FE50054D9F4 /* OnBoardingPage.swift in Sources */,
 				FDEDB95A2BFBE22D0040E313 /* UserApi+.swift in Sources */,
