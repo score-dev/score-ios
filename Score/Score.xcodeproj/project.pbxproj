@@ -43,6 +43,19 @@
 		FD228A9A2CC39BD600BA59D5 /* SchoolAPITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228A992CC39BCB00BA59D5 /* SchoolAPITarget.swift */; };
 		FD228A9C2CC3A2D900BA59D5 /* SchoolAPITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228A992CC39BCB00BA59D5 /* SchoolAPITarget.swift */; };
 		FD228AA22CC3AE5300BA59D5 /* SchoolOpenAPIXCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AA12CC3AE5300BA59D5 /* SchoolOpenAPIXCTest.swift */; };
+		FD228AA42CC409E600BA59D5 /* ExerciseTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AA32CC409DF00BA59D5 /* ExerciseTarget.swift */; };
+		FD228AA52CC409E600BA59D5 /* ExerciseTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AA32CC409DF00BA59D5 /* ExerciseTarget.swift */; };
+		FD228AA82CC40A0B00BA59D5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AA72CC40A0800BA59D5 /* Environment.swift */; };
+		FD228AAA2CC411EB00BA59D5 /* GroupTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AA92CC411E700BA59D5 /* GroupTarget.swift */; };
+		FD228AAB2CC411EB00BA59D5 /* GroupTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AA92CC411E700BA59D5 /* GroupTarget.swift */; };
+		FD228AAD2CC4207000BA59D5 /* FriendTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AAC2CC4206C00BA59D5 /* FriendTarget.swift */; };
+		FD228AAE2CC4207000BA59D5 /* FriendTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AAC2CC4206C00BA59D5 /* FriendTarget.swift */; };
+		FD228AB02CC4239700BA59D5 /* EmotionTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AAF2CC4239200BA59D5 /* EmotionTarget.swift */; };
+		FD228AB12CC4239700BA59D5 /* EmotionTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AAF2CC4239200BA59D5 /* EmotionTarget.swift */; };
+		FD228AB32CC4260F00BA59D5 /* FeedReportTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AB22CC4260A00BA59D5 /* FeedReportTarget.swift */; };
+		FD228AB42CC4260F00BA59D5 /* FeedReportTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AB22CC4260A00BA59D5 /* FeedReportTarget.swift */; };
+		FD228AB62CC426E000BA59D5 /* NotificationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AB52CC426DA00BA59D5 /* NotificationTarget.swift */; };
+		FD228AB72CC426E000BA59D5 /* NotificationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD228AB52CC426DA00BA59D5 /* NotificationTarget.swift */; };
 		FD2A260A2BAC837000F7B317 /* SCRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A26092BAC837000F7B317 /* SCRadioButton.swift */; };
 		FD2E8CDF2BD9321E001957F3 /* MyPageMainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E8CDE2BD9321E001957F3 /* MyPageMainFeature.swift */; };
 		FD2E8CE12BD93238001957F3 /* MyPageMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2E8CE02BD93238001957F3 /* MyPageMainView.swift */; };
@@ -228,6 +241,13 @@
 		FD228A882CC39AEA00BA59D5 /* SchoolOpenAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolOpenAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD228A992CC39BCB00BA59D5 /* SchoolAPITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAPITarget.swift; sourceTree = "<group>"; };
 		FD228AA12CC3AE5300BA59D5 /* SchoolOpenAPIXCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolOpenAPIXCTest.swift; sourceTree = "<group>"; };
+		FD228AA32CC409DF00BA59D5 /* ExerciseTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTarget.swift; sourceTree = "<group>"; };
+		FD228AA72CC40A0800BA59D5 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		FD228AA92CC411E700BA59D5 /* GroupTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTarget.swift; sourceTree = "<group>"; };
+		FD228AAC2CC4206C00BA59D5 /* FriendTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTarget.swift; sourceTree = "<group>"; };
+		FD228AAF2CC4239200BA59D5 /* EmotionTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionTarget.swift; sourceTree = "<group>"; };
+		FD228AB22CC4260A00BA59D5 /* FeedReportTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedReportTarget.swift; sourceTree = "<group>"; };
+		FD228AB52CC426DA00BA59D5 /* NotificationTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTarget.swift; sourceTree = "<group>"; };
 		FD2A26092BAC837000F7B317 /* SCRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRadioButton.swift; sourceTree = "<group>"; };
 		FD2E8CDE2BD9321E001957F3 /* MyPageMainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageMainFeature.swift; sourceTree = "<group>"; };
 		FD2E8CE02BD93238001957F3 /* MyPageMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageMainView.swift; sourceTree = "<group>"; };
@@ -546,6 +566,14 @@
 				FD228AA12CC3AE5300BA59D5 /* SchoolOpenAPIXCTest.swift */,
 			);
 			path = SchoolOpenAPITests;
+			sourceTree = "<group>";
+		};
+		FD228AA62CC40A0300BA59D5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FD228AA72CC40A0800BA59D5 /* Environment.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		FD38E99A2BD5C43000D3BDB7 /* Policy */ = {
@@ -893,6 +921,7 @@
 		FDC7754A2C1F2A4C00871A81 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FD228AA62CC40A0300BA59D5 /* Core */,
 				FDFCA52C2CB6D584006E4D53 /* Service */,
 				FDFCA5242CB6CF82006E4D53 /* Repository */,
 				FDFCA51D2CB6CDD7006E4D53 /* App */,
@@ -1068,6 +1097,12 @@
 		FDFCA52F2CB6D67F006E4D53 /* Target */ = {
 			isa = PBXGroup;
 			children = (
+				FD228AB52CC426DA00BA59D5 /* NotificationTarget.swift */,
+				FD228AAF2CC4239200BA59D5 /* EmotionTarget.swift */,
+				FD228AB22CC4260A00BA59D5 /* FeedReportTarget.swift */,
+				FD228AAC2CC4206C00BA59D5 /* FriendTarget.swift */,
+				FD228AA32CC409DF00BA59D5 /* ExerciseTarget.swift */,
+				FD228AA92CC411E700BA59D5 /* GroupTarget.swift */,
 				FDFCA5302CB6D69B006E4D53 /* UserTarget.swift */,
 				FD228A992CC39BCB00BA59D5 /* SchoolAPITarget.swift */,
 			);
@@ -1380,6 +1415,7 @@
 				FD38E99F2BD5C4FD00D3BDB7 /* BlockUserSettingView.swift in Sources */,
 				FDFAA4422BCE7C7D0053CD9F /* UnregisterView.swift in Sources */,
 				FD38E9902BD530AC00D3BDB7 /* SettingNavigationRowViewModifier.swift in Sources */,
+				FD228AB02CC4239700BA59D5 /* EmotionTarget.swift in Sources */,
 				FD443C212C4DEDBA00C2E62E /* PhotoLibrary.swift in Sources */,
 				FD2E8CE52BD940C2001957F3 /* SCLineTabBarFeature.swift in Sources */,
 				FDFCA53B2CB6DC02006E4D53 /* WalkingDTO.swift in Sources */,
@@ -1403,6 +1439,7 @@
 				FDA1AF272C6D0B3A008A1312 /* SCMapMarker.swift in Sources */,
 				FDC09D372C18522E00D5CF5C /* TermsAgreementFeature.swift in Sources */,
 				FD38E9932BD53D0900D3BDB7 /* SignOutFeature.swift in Sources */,
+				FD228AA52CC409E600BA59D5 /* ExerciseTarget.swift in Sources */,
 				FD408A9F2C11CFEB00DD8EAF /* TypeNickNameView.swift in Sources */,
 				FD9DDAF12C7BA72B00F82A8F /* FeedReportReasonView.swift in Sources */,
 				FD208FBE2BB6F70200DD4D3B /* View+.swift in Sources */,
@@ -1427,6 +1464,7 @@
 				FD9E07012BC97F20000109FD /* ProfileEditFeature.swift in Sources */,
 				FD208FC32BB9B2FC00DD4D3B /* Constants.swift in Sources */,
 				FD9E07112BCC99DE000109FD /* DismissButton.swift in Sources */,
+				FD228AB62CC426E000BA59D5 /* NotificationTarget.swift in Sources */,
 				FD38E9A92BD83F0B00D3BDB7 /* EmailGuideSheet.swift in Sources */,
 				FD228A832CC39AAB00BA59D5 /* SchoolAPIDTO.swift in Sources */,
 				FDEDB9552BFBBD0D0040E313 /* APIKeyProtocol.swift in Sources */,
@@ -1448,18 +1486,22 @@
 				FD2E8CE72BD94F37001957F3 /* SCIconButton.swift in Sources */,
 				FD208FC52BB9C45700DD4D3B /* SCNumberIcon.swift in Sources */,
 				FD208FCB2BB9EDCD00DD4D3B /* SCInformationCard.swift in Sources */,
+				FD228AA82CC40A0B00BA59D5 /* Environment.swift in Sources */,
 				FDA1AF212C6CD4FA008A1312 /* MapViewController.swift in Sources */,
 				FD408AA12C11D12200DD8EAF /* TypeUserInfoFeature.swift in Sources */,
 				FD443C252C4DF4A000C2E62E /* Camera.swift in Sources */,
 				FD228A9A2CC39BD600BA59D5 /* SchoolAPITarget.swift in Sources */,
+				FD228AAD2CC4207000BA59D5 /* FriendTarget.swift in Sources */,
 				FD208FBA2BB634AF00DD4D3B /* SCTextField.swift in Sources */,
 				FD9A17D32C04B6C400E6496C /* SCLineTabProtocol.swift in Sources */,
 				FD0C65242C0A499F0054D9F4 /* ImageAssetProtocol.swift in Sources */,
 				FDFCA5312CB6D69E006E4D53 /* UserTarget.swift in Sources */,
+				FD228AB42CC4260F00BA59D5 /* FeedReportTarget.swift in Sources */,
 				FDACBE5D2C73A61200E94981 /* TimerRecordView.swift in Sources */,
 				FD0C39682BA9914B00CC05AA /* ScoreApp.swift in Sources */,
 				FDFCA5192CB6CDCB006E4D53 /* AppleAuthStore.swift in Sources */,
 				FDFCA51A2CB6CDCB006E4D53 /* GoogleAuthStore.swift in Sources */,
+				FD228AAB2CC411EB00BA59D5 /* GroupTarget.swift in Sources */,
 				FDFCA51B2CB6CDCB006E4D53 /* KakaoLoginStore.swift in Sources */,
 				FDFCA51C2CB6CDCB006E4D53 /* KeyChainStore.swift in Sources */,
 				FDFCA52E2CB6D598006E4D53 /* UserDTO.swift in Sources */,
@@ -1477,9 +1519,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD228AB32CC4260F00BA59D5 /* FeedReportTarget.swift in Sources */,
+				FD228AAA2CC411EB00BA59D5 /* GroupTarget.swift in Sources */,
 				FD228A9C2CC3A2D900BA59D5 /* SchoolAPITarget.swift in Sources */,
+				FD228AAE2CC4207000BA59D5 /* FriendTarget.swift in Sources */,
 				FD228A912CC39B0A00BA59D5 /* SchoolAPIDTO.swift in Sources */,
+				FD228AB72CC426E000BA59D5 /* NotificationTarget.swift in Sources */,
+				FD228AA42CC409E600BA59D5 /* ExerciseTarget.swift in Sources */,
 				FD228AA22CC3AE5300BA59D5 /* SchoolOpenAPIXCTest.swift in Sources */,
+				FD228AB12CC4239700BA59D5 /* EmotionTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
