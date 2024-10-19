@@ -12,11 +12,7 @@ enum SchoolAPITarget: TargetType {
     case fetch(page: Int, perPage: Int)
 
     var baseURL: URL {
-        guard let baseURLString = Bundle.main.infoDictionary?["SCHOOL_BASE_URL"] as? String,
-              let url = URL(string: baseURLString.replacingOccurrences(of: #"\"#, with: "")) else {
-            fatalError("\(#function)invalid URL for baseURL")
-        }
-        return url
+        Environment.schoolAPIURL
     }
 
     var path: String {
@@ -38,8 +34,7 @@ enum SchoolAPITarget: TargetType {
                     "KEY" : apiKey,
                     "Type" : "json",
                     "pIndex": page,
-                    "pSize": perPage,
-                    "Content-Type" : "application/json"
+                    "pSize": perPage
                 ],
                 encoding: URLEncoding.queryString
             )

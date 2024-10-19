@@ -9,64 +9,107 @@ import Moya
 import Foundation
 
 enum UserTarget {
-    case signUp
-    case signIn
-    case signOut
-    case withdraw
-    case update // user 정보
+    case updateUserInfo(userID: Int64, updateUserDTOData: Data)
+    case updateNotificationSetting(notificationDTOData: Data)
+    case registerUser(registerUserDTOData: Data)
+    /// 닉네임 중복 검사를 요청합니다.
+    case checkNicknameDuplicate(nickName: String)
+    /// 메인 페이지 접속 요청 발생시 jwt 토큰을 검증합니다.
+    case validateAccessToken(accessToken: String)
+    /// 소셜 로그인 인증 완료 후 기존 회원인지 여부를 확인합니다.
+    case auth(providerID: String)
+    case withdrawUser(userID: Int64, reason: String)
+    case reportUser(reportUserDTOData: Data)
 }
 
-// TODO: 해당 내용 채워야 함. 
 extension UserTarget: TargetType {
     var baseURL: URL {
-        .applicationDirectory
+        Environment.baseURL.appending(path: "score")
     }
+
     var path: String {
-        ""
+        switch self {
+        case .updateUserInfo(let userID, _):
+            "user/update/\(userID)"
+        case .updateNotificationSetting:
+            "user/setting/notification"
+        case .registerUser:
+            "onboarding/fin"
+        case .checkNicknameDuplicate(let nickName):
+            "\(nickName)/exists"
+        case .validateAccessToken:
+            "main"
+        case .auth:
+            "auth"
+        case .withdrawUser:
+            "user/withdrawal"
+        case .reportUser:
+            "user/report"
+        }
     }
+
     var method: Moya.Method {
         switch self {
-        case .signUp:
-            break
-        case .signIn:
-            break
-        case .signOut:
-            break
-        case .withdraw:
-            break
-        case .update:
-            break
+        case .updateUserInfo: .put
+        case .updateNotificationSetting: .put
+        case .registerUser: .post
+        case .checkNicknameDuplicate: .get
+        case .validateAccessToken: .get
+        case .auth: .get
+        case .withdrawUser: .delete
+        case .reportUser: .post
         }
-        return .get
     }
+
     var task: Moya.Task {
         switch self {
-        case .signUp:
-            break
-        case .signIn:
-            break
-        case .signOut:
-            break
-        case .withdraw:
-            break
-        case .update:
-            break
+        case .updateUserInfo(let userID, let updateUserDTOData):
+            return .requestData(updateUserDTOData)
+
+        case .updateNotificationSetting(let notificationDTOData):
+            return .requestParameters(
+                parameters: [
+                    "request" : notificationDTOData
+                ],
+                encoding: URLEncoding.queryString
+            )
+
+        case .registerUser(let registerUserDTOData):
+            return .requestData(registerUserDTOData)
+
+        case .checkNicknameDuplicate:
+            return .requestPlain
+
+        case .validateAccessToken:
+            return .requestPlain
+
+        case .auth(let providerID):
+            return .requestParameters(
+                parameters: [
+                    "id" : providerID
+                ],
+                encoding: URLEncoding.queryString
+            )
+
+        case .withdrawUser(let userID, let reason):
+            return .requestParameters(
+                parameters: [
+                    "id" : userID,
+                    "reason" : reason
+                ],
+                encoding: URLEncoding.queryString
+            )
+            
+        case .reportUser(let reportUserDTOData):
+            return .requestData(reportUserDTOData)
         }
-        return .requestPlain
     }
+
     var headers: [String : String]? {
-        switch self {
-        case .signUp:
-            break
-        case .signIn:
-            break
-        case .signOut:
-            break
-        case .withdraw:
-            break
-        case .update:
-            break
+        var defaultHeader = Environment.defaultHeader
+        if case .validateAccessToken(let accessToken) = self {
+            defaultHeader.merge(["Authorization" : "Bearer \(accessToken)"])
         }
-        return nil
+        return defaultHeader
     }
 }
