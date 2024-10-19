@@ -566,6 +566,9 @@
 		FD228AA62CC40A0300BA59D5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FDFCA5182CB6CDCB006E4D53 /* Util */,
+				FD0C397B2BA9E47400CC05AA /* Extension */,
+				FD208FC12BB9B2E400DD4D3B /* Constant */,
 				FD228AA72CC40A0800BA59D5 /* EnvironmentValue.swift */,
 			);
 			path = Core;
@@ -920,13 +923,10 @@
 				FDFCA52C2CB6D584006E4D53 /* Service */,
 				FDFCA5242CB6CF82006E4D53 /* Repository */,
 				FDFCA51D2CB6CDD7006E4D53 /* App */,
-				FDFCA5182CB6CDCB006E4D53 /* Util */,
 				FDE9EA282BBED5A7007AA4D7 /* View */,
 				FDEDB9482BFBBA550040E313 /* Protocol */,
 				FD8FC3BC2BC86E8C00B80B3D /* Model */,
 				FDE9EA262BBED595007AA4D7 /* Feature */,
-				FD208FC12BB9B2E400DD4D3B /* Constant */,
-				FD0C397B2BA9E47400CC05AA /* Extension */,
 			);
 			path = Source;
 			sourceTree = "<group>";
