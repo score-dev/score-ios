@@ -48,7 +48,7 @@ enum GroupTarget: TargetType {
     case removeMate(groupID: Int64, userID: Int64)
 
     var baseURL: URL {
-        Environment.baseURL.appending(path: "api")
+        EnvironmentValue.baseURL.appending(path: "api")
     }
 
     var path: String {
@@ -221,6 +221,6 @@ enum GroupTarget: TargetType {
     }
 
     var headers: [String : String]? {
-        Environment.defaultHeader
+        EnvironmentValue.defaultHeader
     }
 }

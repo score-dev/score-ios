@@ -18,7 +18,7 @@ enum EmotionTarget: TargetType {
     case fetchFeedEmotions(feedID: Int64)
 
     var baseURL: URL {
-        Environment.baseURL.appending(path: "score")
+        EnvironmentValue.baseURL.appending(path: "score")
     }
 
     var path: String {
@@ -76,6 +76,6 @@ enum EmotionTarget: TargetType {
     }
 
     var headers: [String : String]? {
-        Environment.defaultHeader
+        EnvironmentValue.defaultHeader
     }
 }

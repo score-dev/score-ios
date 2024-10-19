@@ -20,7 +20,7 @@ enum NotificationTarget: TargetType {
     case fetchNotifications(userID: Int64, page: Int32)
 
     var baseURL: URL {
-        Environment.baseURL
+        EnvironmentValue.baseURL
     }
 
     var path: String {
@@ -83,6 +83,6 @@ enum NotificationTarget: TargetType {
     }
 
     var headers: [String : String]? {
-        Environment.defaultHeader
+        EnvironmentValue.defaultHeader
     }
 }

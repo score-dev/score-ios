@@ -12,7 +12,7 @@ enum SchoolAPITarget: TargetType {
     case fetch(page: Int, perPage: Int)
 
     var baseURL: URL {
-        Environment.schoolAPIURL
+        EnvironmentValue.schoolAPIURL
     }
 
     var path: String {
@@ -24,14 +24,11 @@ enum SchoolAPITarget: TargetType {
     }
 
     var task: Moya.Task {
-        guard let apiKey = Bundle.main.infoDictionary?["SCHOOL_API_KEY"] as? String else {
-            fatalError("\(#function)invalid URL for API KEY")
-        }
         switch self {
         case .fetch(let page, let perPage):
             return .requestParameters(
                 parameters: [
-                    "KEY" : apiKey,
+                    "KEY" : EnvironmentValue.schoolAPIKey,
                     "Type" : "json",
                     "pIndex": page,
                     "pSize": perPage

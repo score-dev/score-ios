@@ -21,7 +21,7 @@ enum ExerciseTarget: TargetType {
     case deleteFeed(feedID: Int64)
 
     var baseURL: URL {
-        Environment.baseURL.appending(path: "score")
+        EnvironmentValue.baseURL.appending(path: "score")
     }
 
     var path: String {
@@ -94,6 +94,6 @@ enum ExerciseTarget: TargetType {
     }
 
     var headers: [String : String]? {
-        Environment.defaultHeader
+        EnvironmentValue.defaultHeader
     }
 }

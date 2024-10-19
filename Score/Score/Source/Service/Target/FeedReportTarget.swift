@@ -13,7 +13,7 @@ enum FeedReportTarget: TargetType {
     case reportFeed(reportFeedDTOData: Data)
 
     var baseURL: URL {
-        Environment.baseURL.appending(path: "score")
+        EnvironmentValue.baseURL.appending(path: "score")
     }
 
     var path: String {
@@ -32,6 +32,6 @@ enum FeedReportTarget: TargetType {
     }
 
     var headers: [String : String]? {
-        Environment.defaultHeader
+        EnvironmentValue.defaultHeader
     }
 }

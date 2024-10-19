@@ -29,7 +29,7 @@ enum FriendTarget: TargetType {
     case deleteFriend(agentID: Int64, objectID: Int64)
 
     var baseURL: URL {
-        Environment.baseURL.appending(path: "score")
+        EnvironmentValue.baseURL.appending(path: "score")
     }
 
     var path: String {
@@ -122,6 +122,6 @@ enum FriendTarget: TargetType {
     }
 
     var headers: [String : String]? {
-        Environment.defaultHeader
+        EnvironmentValue.defaultHeader
     }
 }

@@ -24,7 +24,7 @@ enum UserTarget {
 
 extension UserTarget: TargetType {
     var baseURL: URL {
-        Environment.baseURL.appending(path: "score")
+        EnvironmentValue.baseURL.appending(path: "score")
     }
 
     var path: String {
@@ -106,7 +106,7 @@ extension UserTarget: TargetType {
     }
 
     var headers: [String : String]? {
-        var defaultHeader = Environment.defaultHeader
+        var defaultHeader = EnvironmentValue.defaultHeader
         if case .validateAccessToken(let accessToken) = self {
             defaultHeader.merge(["Authorization" : "Bearer \(accessToken)"])
         }
