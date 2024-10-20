@@ -10,7 +10,6 @@ import SwiftUI
 
 //MARK: - SCTabBarButtonStyle
 
-@frozen
 enum SCTabBarButtonStyle {
     case plain(item: SCTabItem)
     case floating(item: SCTabItem)

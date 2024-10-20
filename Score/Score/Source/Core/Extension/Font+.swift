@@ -12,8 +12,7 @@ extension Font {
     
     struct Pretendard {
         //MARK: - Weight(Pretendard)
-        
-        @frozen
+
         enum Weight: String {
             case regular = "PretendardVariable-Regular"
             case thin = "PretendardVariable-Thin"
@@ -27,8 +26,7 @@ extension Font {
         }
         
         //MARK: - Size(Pretendard)
-        
-        @frozen
+
         enum Size: CGFloat {
             /// rawValue: 12
             case xxs = 12
@@ -52,7 +50,6 @@ extension Font {
         
         //MARK: - Style(Pretendard)
         
-        @frozen
         enum Style {
             /// regular xxl
             case headline

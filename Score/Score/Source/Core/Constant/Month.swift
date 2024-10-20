@@ -9,7 +9,6 @@ import SwiftUI
 
 //MARK: - Month
 
-@frozen
 enum Month: Int {
     /// 1
     case january = 1

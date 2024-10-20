@@ -9,7 +9,6 @@ import Foundation
 
 //MARK: - DayOfWeek
 
-@frozen
 enum DayOfWeek: Int,
                 CaseIterable {
     case sunday
