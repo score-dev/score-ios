@@ -124,6 +124,7 @@
 		FDA1AF252C6CD6AB008A1312 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF242C6CD6AB008A1312 /* LocationManager.swift */; };
 		FDA1AF272C6D0B3A008A1312 /* SCMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF262C6D0B3A008A1312 /* SCMapMarker.swift */; };
 		FDA1AF2A2C6E64B4008A1312 /* CurrentMapFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA1AF292C6E64AF008A1312 /* CurrentMapFeature.swift */; };
+		FDABD27D2CC51B8E00459735 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDABD27C2CC51B8800459735 /* HapticGenerator.swift */; };
 		FDACBE5B2C73A18E00E94981 /* RecordTimerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACBE5A2C73A18500E94981 /* RecordTimerFeature.swift */; };
 		FDACBE5D2C73A61200E94981 /* TimerRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACBE5C2C73A61200E94981 /* TimerRecordView.swift */; };
 		FDC09D352C18327B00D5CF5C /* TermsAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC09D342C18327B00D5CF5C /* TermsAgreementView.swift */; };
@@ -314,6 +315,7 @@
 		FDA1AF242C6CD6AB008A1312 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FDA1AF262C6D0B3A008A1312 /* SCMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMapMarker.swift; sourceTree = "<group>"; };
 		FDA1AF292C6E64AF008A1312 /* CurrentMapFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentMapFeature.swift; sourceTree = "<group>"; };
+		FDABD27C2CC51B8800459735 /* HapticGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
 		FDACBE5A2C73A18500E94981 /* RecordTimerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTimerFeature.swift; sourceTree = "<group>"; };
 		FDACBE5C2C73A61200E94981 /* TimerRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRecordView.swift; sourceTree = "<group>"; };
 		FDC09D342C18327B00D5CF5C /* TermsAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAgreementView.swift; sourceTree = "<group>"; };
@@ -570,6 +572,7 @@
 				FD0C397B2BA9E47400CC05AA /* Extension */,
 				FD208FC12BB9B2E400DD4D3B /* Constant */,
 				FD228AA72CC40A0800BA59D5 /* EnvironmentValue.swift */,
+				FDABD27B2CC51B5C00459735 /* Haptic */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -914,6 +917,14 @@
 				FDA1AF262C6D0B3A008A1312 /* SCMapMarker.swift */,
 			);
 			path = MapMarker;
+			sourceTree = "<group>";
+		};
+		FDABD27B2CC51B5C00459735 /* Haptic */ = {
+			isa = PBXGroup;
+			children = (
+				FDABD27C2CC51B8800459735 /* HapticGenerator.swift */,
+			);
+			path = Haptic;
 			sourceTree = "<group>";
 		};
 		FDC7754A2C1F2A4C00871A81 /* Source */ = {
@@ -1352,6 +1363,7 @@
 			files = (
 				FD9E070A2BCB0A1C000109FD /* PhotoPickerFeature.swift in Sources */,
 				FD8FC3BE2BC86EB100B80B3D /* DateComponentsWithID.swift in Sources */,
+				FDABD27D2CC51B8E00459735 /* HapticGenerator.swift in Sources */,
 				FD8FC3B72BC8426800B80B3D /* CalendarGridItem.swift in Sources */,
 				FD886A532C5FFB7200049546 /* GallaryView.swift in Sources */,
 				FD9E06FF2BC97DF6000109FD /* ProfileEditView.swift in Sources */,
