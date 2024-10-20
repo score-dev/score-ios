@@ -10,6 +10,7 @@ import SwiftUI
 struct DetailFeedView: View {
     @State var isPresentFeedSettingDialog: Bool = false
     @State var isPresentEmojiSection: Bool = false
+    @State var isPresentEmojiListSheet: Bool = false
     @State var selectedEmoji: String?
     private let emojis: [String] = ["❤️", "👍", "🎉", "🙌"]
     
@@ -53,6 +54,8 @@ struct DetailFeedView: View {
                 emotionSectionBuilder()
                 
                 feedInfoSectionBuilder()
+
+                hashtagSectionBuilder()
             }
         }
         .confirmationDialog(
@@ -62,12 +65,15 @@ struct DetailFeedView: View {
         ) {
             // 내 피드가 아닌 경우
             Button(role: .destructive) {
-                
+                // navigation to feed report view
             } label: {
                 Text("피드 신고하기")
             }
             
-            // 내 피드인 경우 
+            // 내 피드인 경우
+        }
+        .sheet(isPresented: $isPresentEmojiListSheet) {
+            Text("반응 sheet")
         }
         .onTapGesture {
             isPresentEmojiSection = false
@@ -79,21 +85,22 @@ struct DetailFeedView: View {
         HStack {
             Button {
                 isPresentEmojiSection.toggle()
+                HapticGenerator.shared.impactOccurred()
             } label: {
                 Text(selectedEmoji == nil ? "😃" : selectedEmoji!)
                     .padding(9)
                     .background(
                         selectedEmoji == nil ?
                         Color.brandColor(color: .gray2) :
-                        Color.brandColor(color: .sub3)
+                            Color.brandColor(color: .sub3)
                     )
                     .clipShape(Circle())
             }
-            .onLongPressGesture(minimumDuration: 0.5) {
-                // modal sheet
-                print("modal")
+            .onLongPressGesture(minimumDuration: 1) {
+                isPresentEmojiListSheet = true
+                HapticGenerator.shared.impactOccurred()
             }
-            
+
             Spacer()
         }
         .layout()
@@ -122,14 +129,6 @@ struct DetailFeedView: View {
                         .pretendard(weight: .bold,
                                     size: .xxl)
                         .rectFrame(size: 32)
-                        .background {
-                            if selectedEmoji == emoji {
-                               Circle()
-                                    .foregroundStyle(
-                                        Color.brandColor(color: .gray2)
-                                    )
-                            }
-                        }
                 }
             }
         }
@@ -230,6 +229,25 @@ struct DetailFeedView: View {
         .foregroundStyle(
             Color.brandColor(color: .text1)
         )
+    }
+
+    @ViewBuilder
+    private func hashtagSectionBuilder() -> some View {
+        HStack(spacing: 10) {
+            ForEach(0..<3) { _ in
+                Text("#맑은")
+                    .pretendard(.caption)
+                    .foregroundStyle(Color.brandColor(color: .main))
+                    .padding(.vertical, 7)
+                    .padding(.horizontal, 14)
+                    .background {
+                        RoundedRectangle(cornerRadius: 50)
+                            .foregroundStyle(Color.brandColor(color: .sub3))
+                    }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .layout()
     }
 }
 
